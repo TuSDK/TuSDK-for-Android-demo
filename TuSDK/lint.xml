@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="SmallSp">
+        <ignore path="res/layout/tusdk_impl_component_album_photo_list_header.xml" />
+        <ignore path="res/layout/tusdk_impl_component_widget_filter_cell_view.xml" />
+    </issue>
+</lint>

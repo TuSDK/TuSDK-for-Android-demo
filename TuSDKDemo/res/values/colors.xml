@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- flash -->
+    <color name="demo_flash_normal">#fff</color>
+    <color name="demo_flash_selected">#ff5534</color>
+
+</resources>

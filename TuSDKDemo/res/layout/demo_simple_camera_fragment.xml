@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7a7a7a" >
+
+    <RelativeLayout
+        android:id="@+id/cameraView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/configBar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/lsq_alpha_black_80"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/cancelButton"
+            style="@style/demo_camera_configbar_text_button"
+            android:layout_weight="1"
+            android:text="@string/lsq_button_close" />
+
+        <LinearLayout
+            android:id="@+id/flashBar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/flashTitle"
+                style="@style/demo_camera_configbar_text_button"
+                android:layout_weight="1"
+                android:text="@string/lsq_button_flash" />
+
+            <TextView
+                android:id="@+id/flashOffButton"
+                style="@style/demo_camera_configbar_text_button"
+                android:layout_weight="1"
+                android:text="@string/lsq_button_flash_model_off" />
+
+            <TextView
+                android:id="@+id/flashAutoButton"
+                style="@style/demo_camera_configbar_text_button"
+                android:layout_weight="1"
+                android:text="@string/lsq_button_flash_model_auto" />
+
+            <TextView
+                android:id="@+id/flashOpenButton"
+                style="@style/demo_camera_configbar_text_button"
+                android:layout_weight="1"
+                android:text="@string/lsq_button_flash_model_open" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/switchCameraButton"
+            style="@style/demo_camera_configbar_text_button"
+            android:layout_weight="1"
+            android:text="@string/lsq_button_switch_camera" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/demo_filter_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@+id/bottomBar"
+        layout="@layout/tusdk_impl_component_widget_filter_bar" />
+
+    <RelativeLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="#80000000" >
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkButton
+            android:id="@+id/captureButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/demo_simple_camera_button_capture"
+            android:text="" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light.NoTitleBar"></style>
+
+    <!-- Application theme -->
+    <style name="AppTheme" parent="AppBaseTheme"></style>
+
+    <!-- text_button -->
+    <style name="demo_camera_configbar_text_button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>

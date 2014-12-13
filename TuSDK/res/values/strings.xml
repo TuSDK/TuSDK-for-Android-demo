@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="lsq_sdk_name">涂图 - TuSDK</string>
+    <string name="lsq_exit_info">再按一次将退出应用</string>
+    <string name="lsq_text">涂图 - TuSDK</string>
+
+    <!-- refreshListView -->
+    <string name="lsq_refresh_list_view_state_visible">下拉刷新</string>
+    <string name="lsq_refresh_list_view_state_hidden">加载完成</string>
+    <string name="lsq_refresh_list_view_state_triggered">释放开始刷新&#8230;</string>
+    <string name="lsq_refresh_list_view_state_loading">正在加载&#8230;</string>
+    <string name="lsq_refresh_list_view_state_lasttime">上次刷新时间：</string>
+    <string name="lsq_refresh_list_view_state_load_more">正在加载更多</string>
+
+    <!-- Date -->
+    <string name="lsq_date_seconds_ago">秒前</string>
+    <string name="lsq_date_minutes_ago">分钟前</string>
+    <string name="lsq_date_hours_ago">小时前</string>
+    <string name="lsq_date_month">月</string>
+    <string name="lsq_date_year">年</string>
+    <string name="lsq_date_today">今天</string>
+    <string name="lsq_date_formater">yyyy年M月d日</string>
+
+    <!-- nav -->
+    <string name="lsq_nav_cancel">取消</string>
+    <string name="lsq_nav_back">返回</string>
+
+    <!-- button -->
+    <string name="lsq_button_done">我知道了</string>
+    <string name="lsq_button_close">关闭</string>
+    <string name="lsq_button_switch_camera">切换镜头</string>
+    <string name="lsq_button_flash">闪光灯:</string>
+    <string name="lsq_button_flash_model_off">禁用</string>
+    <string name="lsq_button_flash_model_auto">自动</string>
+    <string name="lsq_button_flash_model_open">开启</string>
+
+    <!-- avatar -->
+    <string name="lsq_avatar_actionsheet_title">设置头像</string>
+    <string name="lsq_avatar_actionsheet_cancel">取消</string>
+    <string name="lsq_avatar_actionsheet_camera">拍照</string>
+    <string name="lsq_avatar_actionsheet_album">从相册选择</string>
+
+    <!-- camera -->
+    <string name="lsq_carema_alert_title">无法开启相机</string>
+    <string name="lsq_carema_no_device">您的设备没有相机功能！</string>
+    <string name="lsq_carema_no_access">无法访问系统相机，请在\r\n设置&#045;&#062;应用程序&#045;&#062;应用程序许可&#045;&#062;%1$s&#034; \r\n选中 使用摄像头</string>
+    <string name="lsq_carema_image_process">正在处理&#8230;</string>
+    <string name="lsq_carema_image_process_completed">处理完成</string>
+
+    <!-- album -->
+    <string name="lsq_album_title">相簿</string>
+    <string name="lsq_album_total_format">%1$s 张照片</string>
+    <string name="lsq_album_empty">还没有照片</string>
+
+    <!-- save -->
+    <string name="lsq_save_saveToTemp">正在处理&#8230;</string>
+    <string name="lsq_save_saveToTemp_completed">处理完成</string>
+    <string name="lsq_save_saveToTemp_failed">处理失败</string>
+    <string name="lsq_save_saveToAlbum">正在保存到相册&#8230;</string>
+    <string name="lsq_save_saveToAlbum_succeed">保存成功</string>
+    <string name="lsq_save_saveToAlbum_failed">保存到相册失败</string>
+
+    <!-- edit -->
+    <string name="lsq_edit_button_complete">完成</string>
+    <string name="lsq_edit_filter_processing">正在处理&#8230;</string>
+    <string name="lsq_edit_processing">正在处理&#8230;</string>
+    <string name="lsq_edit_processed">处理完成</string>
+
+    <!-- format -->
+    <string name="las_date_format">yyyy年M月d日</string>
+
+    <!-- Week -->
+    <string name="las_week_Sun">周日</string>
+    <string name="las_week_Mon">周一</string>
+    <string name="las_week_Tue">周二</string>
+    <string name="las_week_Wed">周三</string>
+    <string name="las_week_Thu">周四</string>
+    <string name="las_week_Fri">周五</string>
+    <string name="las_week_Sat">周六</string>
+
+    <!-- Filters -->
+    <string name="lsq_filter_Normal">默认</string>
+    <string name="lsq_filter_Artistic">艺术</string>
+    <string name="lsq_filter_Brilliant">灿烂</string>
+    <string name="lsq_filter_Cheerful">愉悦</string>
+    <string name="lsq_filter_Clear">清澈</string>
+    <string name="lsq_filter_Fade">褪色</string>
+    <string name="lsq_filter_Forest">森林</string>
+    <string name="lsq_filter_Gloss">光泽</string>
+    <string name="lsq_filter_Harmony">和谐</string>
+    <string name="lsq_filter_Instant">鲜艳</string>
+    <string name="lsq_filter_Lightup">明亮</string>
+    <string name="lsq_filter_Morning">清晨</string>
+    <string name="lsq_filter_Newborn">新生</string>
+    <string name="lsq_filter_Noir">黑白</string>
+    <string name="lsq_filter_Relaxed">轻松</string>
+    <string name="lsq_filter_Rough">粗犷</string>
+    <string name="lsq_filter_Thick">浓郁</string>
+    <string name="lsq_filter_Vintage">复古</string>
+
+</resources>

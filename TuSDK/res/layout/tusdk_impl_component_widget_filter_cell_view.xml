@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.lasque.tusdk.impl.components.widget.FilterCellView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dp"
+    android:layout_height="60dp" >
+
+    <org.lasque.tusdk.core.view.TuSdkRelativeLayout
+        android:id="@+id/lsq_filter_wrap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp" >
+
+        <ImageView
+            android:id="@+id/lsq_filter_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/lsq_filter_txt"
+            style="@style/lsq_lineTextShadow"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_alignBottom="@+id/lsq_filter_image"
+            android:layout_centerHorizontal="true"
+            android:background="@color/lsq_alpha_black_66"
+            android:gravity="center"
+            android:textSize="11sp" />
+    </org.lasque.tusdk.core.view.TuSdkRelativeLayout>
+
+</org.lasque.tusdk.impl.components.widget.FilterCellView>

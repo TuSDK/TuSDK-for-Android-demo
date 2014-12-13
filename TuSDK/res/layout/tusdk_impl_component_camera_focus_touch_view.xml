@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.lasque.tusdk.impl.components.camera.TuFocusTouchView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/lsq_focus_range_view"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        layout="@layout/tusdk_impl_component_camera_focus_range_view" />
+
+</org.lasque.tusdk.impl.components.camera.TuFocusTouchView>

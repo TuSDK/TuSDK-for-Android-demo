@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="NestedWeights">
+        <ignore path="res/layout/demo_simple_camera_fragment.xml" />
+    </issue>
+</lint>

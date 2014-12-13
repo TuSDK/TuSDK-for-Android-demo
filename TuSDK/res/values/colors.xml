@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- color -->
+    <color name="lsq_color_white">#ffffff</color>
+    <color name="lsq_color_black">#000000</color>
+    <color name="lsq_color_red">#ff0000</color>
+    <color name="lsq_color_gray">#707070</color>
+    <color name="lsq_color_transparent">#00000000</color>
+
+    <!-- alpha -->
+    <color name="lsq_alpha_black_66">#66000000</color>
+    <color name="lsq_alpha_black_80">#80000000</color>
+    <color name="lsq_alpha_black_B4">#B4000000</color>
+
+    <!-- split -->
+    <color name="lsq_split_alpha">#66000000</color>
+    <color name="lsq_split_bg">#d7d8dc</color>
+    <color name="lsq_split_cell">#3d3d3d</color>
+
+    <!-- text -->
+    <color name="lsq_link_action">#287dfa</color>
+
+    <!-- actionsheet -->
+    <color name="lsq_actionsheet_mask_bg">#66000000</color>
+    <color name="lsq_actionsheet_title_color">#666666</color>
+    <color name="lsq_actionsheet_boutton_bg">#ddffffff</color>
+    <color name="lsq_actionsheet_boutton_bg_selected">#ddcccccc</color>
+    <color name="lsq_actionsheet_text_color">#ff287dfa</color>
+    <color name="lsq_actionsheet_text_stress">#fff6393f</color>
+
+    <!-- focus -->
+    <color name="lsq_focus_normal">#fff</color>
+    <color name="lsq_focus_succeed">#0bff45</color>
+    <color name="lsq_focus_failed">#0b72ff</color>
+
+    <!-- backgroud -->
+    <color name="lsq_backgroud_default">#333333</color>
+    <color name="lsq_backgroud_default_cell">#262625</color>
+    <color name="lsq_backgroud_default_header">#B4262625</color>
+    <color name="lsq_backgroud_edit_bar">#303134</color>
+
+    <!-- text -->
+    <color name="lsq_text_group_header">#9fa0a4</color>
+
+</resources>
