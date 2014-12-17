@@ -334,6 +334,10 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 		// 是否需要统一配置参数 (默认false, 取消三星默认降噪，锐化)
 		// option.setUnifiedParameters(false);
 
+		// 预览视图实时缩放比例 (默认:0.7f, 实时预览时，缩小到全屏大小比例，提升预览效率， 0 < mPreviewEffectScale
+		// <= 1)
+		// option.setPreviewEffectScale(0.7f);
+
 		TuCameraFragment fragment = option.fragment();
 		fragment.setDelegate(this);
 		// 开启相机
