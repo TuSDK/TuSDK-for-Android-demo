@@ -17,7 +17,6 @@ import org.lasque.tusdk.core.utils.hardware.CameraHelper;
 import org.lasque.tusdk.core.utils.hardware.TuSdkCamera;
 import org.lasque.tusdk.core.utils.hardware.TuSdkCamera.CameraState;
 import org.lasque.tusdk.core.utils.hardware.TuSdkCamera.TuSdkCameraListener;
-import org.lasque.tusdk.core.view.TuSdkViewHelper;
 import org.lasque.tusdk.core.view.TuSdkViewHelper.OnSafeClickListener;
 import org.lasque.tusdk.impl.activity.TuFragment;
 import org.lasque.tusdk.impl.components.camera.TuFocusTouchView;
@@ -26,7 +25,6 @@ import org.lasque.tusdk.impl.components.widget.FilterBar.FilterBarDelegate;
 import org.lasque.tusdk.impl.components.widget.FilterTableView;
 
 import android.graphics.Bitmap;
-import android.graphics.Rect;
 import android.hardware.Camera.CameraInfo;
 import android.hardware.Camera.Parameters;
 import android.os.Handler;
@@ -62,7 +60,7 @@ public class SimpleCameraFragment extends TuFragment
 	// 相机视图
 	private RelativeLayout cameraView;
 	// 配置栏
-	private LinearLayout configBar;
+	// private LinearLayout configBar;
 	// 取消按钮
 	private TextView cancelButton;
 	// 闪光灯栏
@@ -76,7 +74,7 @@ public class SimpleCameraFragment extends TuFragment
 	// 切换前后摄像头按钮
 	private TextView switchCameraButton;
 	// 底部栏
-	private RelativeLayout bottomBar;
+	// private RelativeLayout bottomBar;
 	// 拍摄按钮
 	private Button captureButton;
 	// 滤镜选择栏
@@ -97,7 +95,7 @@ public class SimpleCameraFragment extends TuFragment
 		// 相机视图
 		cameraView = this.getViewById(R.id.cameraView);
 		// 配置栏
-		configBar = this.getViewById(R.id.configBar);
+		// configBar = this.getViewById(R.id.configBar);
 		// 取消按钮
 		cancelButton = this.getViewById(R.id.cancelButton);
 		cancelButton.setOnClickListener(mClickListener);
@@ -124,7 +122,7 @@ public class SimpleCameraFragment extends TuFragment
 		// 设置是否显示前后摄像头切换按钮
 		this.showViewIn(switchCameraButton, CameraHelper.cameraCounts() > 1);
 		// 底部栏
-		bottomBar = this.getViewById(R.id.bottomBar);
+		// bottomBar = this.getViewById(R.id.bottomBar);
 		// 拍摄按钮
 		captureButton = this.getViewById(R.id.captureButton);
 		captureButton.setOnClickListener(mClickListener);
@@ -142,13 +140,6 @@ public class SimpleCameraFragment extends TuFragment
 	@Override
 	protected void viewDidLoad(ViewGroup view)
 	{
-		// 计算视图位置为4:3
-		Rect rect = CameraHelper.computerCameraViewRect(this.getActivity(),
-				this.configBar, this.bottomBar, 0.75f);
-
-		TuSdkViewHelper.setViewHeight(this.cameraView, rect.height());
-		TuSdkViewHelper.setViewMarginTop(this.cameraView, rect.top);
-
 		// 创建相机对象
 		mCamera = TuSdk.camera(this.getActivity(),
 				CameraInfo.CAMERA_FACING_BACK, this.cameraView);

@@ -13,20 +13,30 @@
     <RelativeLayout
         android:id="@+id/lsq_configBar"
         android:layout_width="match_parent"
-        android:layout_height="44dp"
-        android:background="@color/lsq_alpha_black_80" >
+        android:layout_height="80dp" >
 
         <org.lasque.tusdk.core.view.widget.button.TuSdkButton
             android:id="@+id/lsq_closeButton"
             android:layout_width="44dp"
-            android:layout_height="match_parent"
+            android:layout_height="44dp"
+            android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
             android:background="@drawable/lsq_style_default_camera_button_close" />
 
         <org.lasque.tusdk.core.view.widget.button.TuSdkButton
+            android:id="@+id/lsq_ratioButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/lsq_flashButton"
+            android:background="@drawable/lsq_style_default_camera_ratio_01" />
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkButton
             android:id="@+id/lsq_flashButton"
             android:layout_width="44dp"
-            android:layout_height="match_parent"
+            android:layout_height="44dp"
+            android:layout_centerVertical="true"
             android:layout_marginRight="10dp"
             android:layout_toLeftOf="@+id/lsq_switchButton"
             android:background="@drawable/lsq_style_default_camera_flash_auto" />
@@ -34,8 +44,9 @@
         <org.lasque.tusdk.core.view.widget.button.TuSdkButton
             android:id="@+id/lsq_switchButton"
             android:layout_width="44dp"
-            android:layout_height="match_parent"
+            android:layout_height="44dp"
             android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
             android:layout_marginRight="10dp"
             android:background="@drawable/lsq_style_default_camera_button_switch" />
     </RelativeLayout>
@@ -51,13 +62,12 @@
         android:id="@+id/lsq_bottomBar"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:layout_alignParentBottom="true"
-        android:background="@color/lsq_alpha_black_80" >
+        android:layout_alignParentBottom="true" >
 
         <org.lasque.tusdk.core.view.widget.button.TuSdkButton
             android:id="@+id/lsq_captureButton"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:layout_centerInParent="true"
             android:background="@drawable/lsq_style_default_camera_button_capture" />
 
@@ -84,7 +94,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_marginRight="41dp"
-            android:layout_marginTop="45dp"
+            android:layout_marginTop="63dp"
             android:background="@drawable/lsq_style_default_camera_bg_pop"
             android:orientation="vertical"
             android:paddingTop="2dp" >

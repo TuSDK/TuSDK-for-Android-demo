@@ -310,8 +310,8 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 		// 触摸聚焦视图ID (默认: tusdk_impl_component_camera_focus_touch_view)
 		// option.setFocusTouchViewId(TuFocusTouchView.getLayoutId());
 
-		// 视频视图显示比例 (默认: 0.75)
-		// option.setCameraViewRatio(0.75f);
+		// 视频视图显示比例 (默认: 0, 全屏)
+		// option.setCameraViewRatio(0);
 
 		// 是否直接输出图片数据 (默认:false，输出已经处理好的图片Bitmap)
 		// option.setOutputImageData(false);
@@ -337,6 +337,12 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 		// 预览视图实时缩放比例 (默认:0.7f, 实时预览时，缩小到全屏大小比例，提升预览效率， 0 < mPreviewEffectScale
 		// <= 1)
 		// option.setPreviewEffectScale(0.7f);
+
+		// 视频覆盖区域颜色 (默认：0xFF000000)
+		// option.setRegionViewColor(0xFF000000);
+		
+		// 开启用户手动设置屏幕比例
+		// option.setEnableManualRatio(true);
 
 		TuCameraFragment fragment = option.fragment();
 		fragment.setDelegate(this);
@@ -423,7 +429,7 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 
 		fragment.setDelegate(this);
 		// 开启相机
-		mComponent.presentModalNavigationActivity(fragment, true);
+		mComponent.presentModalNavigationActivity(fragment);
 	}
 
 	/*************************** editAndCutComponentHandler ****************************/
@@ -450,7 +456,7 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 
 		fragment.setDelegate(this);
 		// 开启相机
-		mComponent.presentModalNavigationActivity(fragment, true);
+		mComponent.presentModalNavigationActivity(fragment);
 	}
 
 	/**
