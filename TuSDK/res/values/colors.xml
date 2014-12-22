@@ -42,5 +42,10 @@
 
     <!-- text -->
     <color name="lsq_text_group_header">#9fa0a4</color>
+    
+    <!-- seekbar -->
+    <color name="lsq_seekbar_drag_color">#0091ff</color>
+    <color name="lsq_seekbar_view_color">#ffffff</color>
+    <color name="lsq_seekbar_side_color">#24000000</color>
 
 </resources>

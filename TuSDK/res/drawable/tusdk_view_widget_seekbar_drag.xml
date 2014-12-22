@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <solid android:color="@color/lsq_seekbar_drag_color" />
+
+    <stroke
+        android:width="2dp"
+        android:color="@color/lsq_seekbar_view_color" />
+    
+    <corners android:radius="10dp" />
+
+</shape>
