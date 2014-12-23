@@ -101,6 +101,7 @@
     <string name="lsq_filter_Vintage">复古</string>
     <!-- Filters Definition -->
     <string name="lsq_filter_SkinTwiceMixed">双混美肤</string>
+    <string name="lsq_filter_SkinTwiceMixedSigma">双混加强</string>
     <string name="lsq_filter_SkinRGBSpace">空间美肤</string>
     <string name="lsq_filter_SkinColorMixed">色混美肤</string>
     <string name="lsq_filter_BokehBlur">模糊</string>
@@ -110,6 +111,7 @@
     <string name="lsq_filter_set_BlurWeight">权重</string>
     <string name="lsq_filter_set_SkinColorThreshold">肤色</string>
     <string name="lsq_filter_set_DistanceNormalizationFactor">边缘</string>
+    <string name="lsq_filter_set_BlurSigma">西格玛</string>
     
     <!-- Filters Definition Bokeh -->
     <string name="lsq_filter_set_IncludeBlurSize">外模糊</string>

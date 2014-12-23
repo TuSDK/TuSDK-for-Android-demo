@@ -298,7 +298,7 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 		// android.hardware.Camera.CameraInfo}
 		// option.setAvPostion(CameraInfo.CAMERA_FACING_BACK);
 
-		// 照片输出分辨率 (默认：1440 * 1920)
+		// 照片输出图片长宽 (默认：全屏)
 		// option.setOutputSize(new TuSdkSize(1440, 1920));
 
 		// 闪关灯模式
