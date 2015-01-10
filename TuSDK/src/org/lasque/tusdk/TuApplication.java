@@ -38,7 +38,10 @@ public class TuApplication extends TuSdkApplication
 
 		// 可选：配置滤镜列表
 		TuSdk.filterManager().configSampleTask(
-				TuSdk.SAMPLE_DEFAULT_ORIGIN_IMAGE_RAW, TuSdk.VERSION, "Normal",
+				TuSdk.SAMPLE_DEFAULT_ORIGIN_IMAGE_RAW, TuSdk.VERSION, "Normal", 
+				/***************************磨皮测试功能，发布正式产品时，请删除该部分选项 ************************************/
+				"SkinTwiceMixed","SkinTwiceMixedSigma", "SkinRGBSpace", "SkinColorMixed", "BokehBlur",
+				/***************************磨皮测试功能，发布正式产品时，请删除该部分选项  ************************************/
 				"Artistic", "Brilliant", "Cheerful", "Clear", "Fade", "Forest",
 				"Gloss", "Harmony", "Instant", "Lightup", "Morning", "Newborn",
 				"Noir", "Relaxed", "Rough", "Thick", "Vintage");

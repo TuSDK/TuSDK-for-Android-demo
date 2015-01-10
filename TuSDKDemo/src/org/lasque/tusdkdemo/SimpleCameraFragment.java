@@ -131,6 +131,7 @@ public class SimpleCameraFragment extends TuFragment
 		filterBar = this.getViewById(R.id.demo_filter_bar);
 		// 绑定选择委托
 		filterBar.setDelegate(mFilterBarDelegate);
+
 		// 滤镜选择栏 设置SDK内置滤镜
 		filterBar.loadFilters();
 
@@ -142,7 +143,7 @@ public class SimpleCameraFragment extends TuFragment
 	{
 		// 创建相机对象
 		mCamera = TuSdk.camera(this.getActivity(),
-				CameraInfo.CAMERA_FACING_BACK, this.cameraView);
+				CameraInfo.CAMERA_FACING_FRONT, this.cameraView);
 		// 相机对象事件监听
 		mCamera.setCameraListener(mCameraListener);
 

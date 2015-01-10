@@ -18,20 +18,12 @@ import org.lasque.tusdk.core.struct.TuSdkSize;
 import org.lasque.tusdk.core.utils.TLog;
 import org.lasque.tusdk.core.utils.hardware.CameraHelper;
 import org.lasque.tusdk.core.utils.image.BitmapHelper;
-import org.lasque.tusdk.core.utils.sqllite.AlbumSqlInfo;
-import org.lasque.tusdk.core.utils.sqllite.ImageSqlInfo;
 import org.lasque.tusdk.core.view.listview.TuSdkArrayListView.ArrayListViewItemClickListener;
 import org.lasque.tusdk.core.view.listview.TuSdkIndexPath;
 import org.lasque.tusdk.impl.activity.TuFragment;
 import org.lasque.tusdk.impl.activity.TuFragmentActivity;
-import org.lasque.tusdk.impl.components.TuSdkComponent;
 import org.lasque.tusdk.impl.components.TuSdkComponent.TuSdkComponentDelegate;
-import org.lasque.tusdk.impl.components.album.TuAlbumListFragment;
-import org.lasque.tusdk.impl.components.album.TuAlbumListFragment.TuAlbumListFragmentDelegate;
-import org.lasque.tusdk.impl.components.album.TuAlbumListOption;
-import org.lasque.tusdk.impl.components.album.TuPhotoListFragment;
-import org.lasque.tusdk.impl.components.album.TuPhotoListFragment.TuPhotoListFragmentDelegate;
-import org.lasque.tusdk.impl.components.album.TuPhotoListOption;
+import org.lasque.tusdk.impl.components.TuSdkHelperComponent;
 import org.lasque.tusdk.impl.components.camera.TuCameraFragment;
 import org.lasque.tusdk.impl.components.camera.TuCameraFragment.TuCameraFragmentDelegate;
 import org.lasque.tusdk.impl.components.camera.TuCameraOption;
@@ -46,7 +38,6 @@ import org.lasque.tusdk.impl.view.widget.listview.TuDefaultLineListView;
  * @author Clear
  */
 public class DemoEntryActivity extends TuFragmentActivity implements
-		TuAlbumListFragmentDelegate, TuPhotoListFragmentDelegate,
 		TuCameraFragmentDelegate, TuEditTurnAndCutFragmentDelegate
 {
 	/**
@@ -81,20 +72,7 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 	/**
 	 * 组件帮助方法
 	 */
-	private TuSdkComponent mComponent = new TuSdkComponent(this)
-	{
-		@Override
-		protected void initComponent()
-		{
-
-		}
-
-		@Override
-		public void showComponent()
-		{
-
-		}
-	};
+	private TuSdkHelperComponent mComponent = new TuSdkHelperComponent(this);
 
 	/**
 	 * 初始化视图
@@ -116,7 +94,7 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 
 		// 创建快速列表
 		String elements[] = { "1-1 快速自定义相机", "2-1 相册组件", "2-2 相机组件",
-				"2-3 图片编辑组件", "2-4 图片编辑组件 (裁剪)", "3-1 头像设置组件" };
+				"2-3 图片编辑组件", "2-4 图片编辑组件 (裁剪)", "3-1 头像设置组件", "4-1 高级图片编辑组件" };
 		mListView.setModeList(new ArrayList<String>(Arrays.asList(elements)));
 	}
 
@@ -163,6 +141,10 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 					// 3-1 头像设置组件
 					avatarComponentHandler();
 					break;
+				case 6:
+					// 4-1 高级图片编辑组件
+					editAdvancedComponentHandler();
+					break;
 				default:
 					break;
 				}
@@ -185,7 +167,9 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 	 */
 	private void albumComponentHandler()
 	{
-		TuAlbumListOption option = new TuAlbumListOption();
+		// TuAlbumComponent cp = TuAlbumComponent.component(activity, delegate);
+
+		// TuAlbumListOption option = cp.componentOption().albumListOption();
 		// 控制器类型
 		// option.setComponentClazz(TuAlbumListFragment.class);
 
@@ -204,25 +188,7 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 		// 是否自动选择相册组 (默认: true, 如果没有设定相册组名称，自动跳转到系统相册组)
 		// option.setAutoSkipToPhotoList(true);
 
-		TuAlbumListFragment fragment = option.fragment();
-		fragment.setDelegate(this);
-		// 开启相册列表
-		mComponent.presentModalNavigationActivity(fragment);
-	}
-
-	/**
-	 * 选中相册组
-	 * 
-	 * @param fragment
-	 *            系统相册控制器
-	 * @param group
-	 *            相册组
-	 */
-	@Override
-	public void onTuAlbumFragmentSelected(TuAlbumListFragment fragment,
-			AlbumSqlInfo group)
-	{
-		TuPhotoListOption option = new TuPhotoListOption();
+		// TuPhotoListOption option = cp.componentOption().photoListOption();
 		// 控制器类型
 		// option.setComponentClazz(TuAlbumListFragment.class);
 
@@ -242,27 +208,21 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 		// 空视图布局ID
 		// option.setEmptyViewLayouId(TuAlbumEmptyView.getLayoutId());
 
-		TuPhotoListFragment photoFragment = option.fragment();
-		photoFragment.setAlbumInfo(group);
-		photoFragment.setDelegate(this);
-		// 开启相片列表
-		fragment.pushFragment(photoFragment);
-	}
-
-	/**
-	 * 选中相片
-	 * 
-	 * @param fragment
-	 *            系统相册控制器
-	 * @param imageSqlInfo
-	 *            相片信息
-	 */
-	@Override
-	public void onTuPhotoFragmentSelected(TuPhotoListFragment fragment,
-			ImageSqlInfo imageSqlInfo)
-	{
-		fragment.dismissActivityWithAnim();
-		TLog.d("onTuPhotoFragmentSelected: %s", imageSqlInfo);
+		TuSdk.albumCommponent(this, new TuSdkComponentDelegate()
+		{
+			@Override
+			public void onComponentFinished(TuSdkResult result, Error error,
+					TuFragment lastFragment)
+			{
+				// if (lastFragment != null)
+				// lastFragment.dismissActivityWithAnim();
+				TLog.d("onAlbumCommponentReaded: %s | %s", result, error);
+			}
+		})
+		// 在组件执行完成后自动关闭组件
+				.setAutoDismissWhenCompleted(true)
+				// 显示组件
+				.showComponent();
 	}
 
 	/*************************** cameraComponentHandler ****************************/
@@ -307,6 +267,12 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 		// 是否开启滤镜支持 (默认: 关闭)
 		option.setEnableFilters(true);
 
+		// 默认是否显示滤镜视图 (默认: 不显示, 如果mEnableFilters = false, mShowFilterDefault将失效)
+		option.setShowFilterDefault(true);
+
+		// 需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜)
+		// option.setFilterGroup(new ArrayList<String>());
+
 		// 触摸聚焦视图ID (默认: tusdk_impl_component_camera_focus_touch_view)
 		// option.setFocusTouchViewId(TuFocusTouchView.getLayoutId());
 
@@ -340,7 +306,7 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 
 		// 视频覆盖区域颜色 (默认：0xFF000000)
 		// option.setRegionViewColor(0xFF000000);
-		
+
 		// 开启用户手动设置屏幕比例
 		// option.setEnableManualRatio(true);
 
@@ -374,12 +340,14 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 	 *            默认相机视图控制器
 	 * @param result
 	 *            拍摄结果
+	 * @return 是否截断默认处理逻辑 (默认: false, 设置为True时使用自定义处理逻辑)
 	 */
 	@Override
-	public void onTuCameraFragmentCapturedAsync(TuCameraFragment fragment,
+	public boolean onTuCameraFragmentCapturedAsync(TuCameraFragment fragment,
 			TuSdkResult result)
 	{
 		TLog.d("onTuCameraFragmentCapturedAsync: %s", result);
+		return false;
 	}
 
 	/*************************** editComponentHandler ****************************/
@@ -410,6 +378,9 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 		// 是否开启滤镜支持 (默认: 关闭)
 		option.setEnableFilters(true);
 
+		// 需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜)
+		// option.setFilterGroup(new ArrayList<String>());
+
 		// 需要裁剪的长宽
 		// option.setCutSize(new TuSdkSize(640, 640));
 
@@ -438,6 +409,32 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 	 */
 	private void editAndCutComponentHandler()
 	{
+		TuSdk.albumCommponent(this, new TuSdkComponentDelegate()
+		{
+			@Override
+			public void onComponentFinished(TuSdkResult result, Error error,
+					TuFragment lastFragment)
+			{
+				openTuEditTurnAndCut(result, error, lastFragment);
+			}
+		}).showComponent();
+	}
+
+	/**
+	 * 开启图片编辑组件 (裁剪)
+	 * 
+	 * @param result
+	 *            返回结果
+	 * @param error
+	 *            异常信息
+	 * @param lastFragment
+	 *            最后显示的控制器
+	 */
+	private void openTuEditTurnAndCut(TuSdkResult result, Error error,
+			TuFragment lastFragment)
+	{
+		if (result == null || lastFragment == null || error != null) return;
+
 		TuEditTurnAndCutOption option = new TuEditTurnAndCutOption();
 
 		// 是否开启滤镜支持 (默认: 关闭)
@@ -452,11 +449,11 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 		TuEditTurnAndCutFragment fragment = option.fragment();
 
 		// 输入的图片对象 (处理优先级: Image > TempFilePath > ImageSqlInfo)
-		fragment.setImage(BitmapHelper.getRawBitmap(this, R.raw.sample_photo));
+		fragment.setImageSqlInfo(result.imageSqlInfo);
 
 		fragment.setDelegate(this);
-		// 开启相机
-		mComponent.presentModalNavigationActivity(fragment);
+		// 开启图片编辑组件 (裁剪)
+		lastFragment.pushFragment(fragment);
 	}
 
 	/**
@@ -486,12 +483,14 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 	 *            旋转和裁剪视图控制器
 	 * @param result
 	 *            旋转和裁剪视图控制器处理结果
+	 * @return 是否截断默认处理逻辑 (默认: false, 设置为True时使用自定义处理逻辑)
 	 */
 	@Override
-	public void onTuEditTurnAndCutFragmentEditedAsync(
+	public boolean onTuEditTurnAndCutFragmentEditedAsync(
 			TuEditTurnAndCutFragment fragment, TuSdkResult result)
 	{
 		TLog.d("onTuEditTurnAndCutFragmentEditedAsync: %s", result);
+		return false;
 	}
 
 	/*************************** avatarComponentHandler ****************************/
@@ -503,11 +502,65 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 		TuSdk.avatarCommponent(this, new TuSdkComponentDelegate()
 		{
 			@Override
-			public void onComponentFinished(TuSdkResult result, Error error)
+			public void onComponentFinished(TuSdkResult result, Error error,
+					TuFragment lastFragment)
 			{
 				TLog.d("onAvatarComponentReaded: %s | %s", result, error);
 			}
+		})
+		// 在组件执行完成后自动关闭组件
+				.setAutoDismissWhenCompleted(true)
+				// 显示组件
+				.showComponent();
+	}
+
+	/*************************** editAdvancedComponentHandler ****************************/
+	/**
+	 * 4-1 高级图片编辑组件
+	 */
+	public void editAdvancedComponentHandler()
+	{
+		TuSdk.albumCommponent(this, new TuSdkComponentDelegate()
+		{
+			@Override
+			public void onComponentFinished(TuSdkResult result, Error error,
+					TuFragment lastFragment)
+			{
+				openEditAdvanced(result, error, lastFragment);
+			}
 		}).showComponent();
+	}
+
+	/**
+	 * 开启图片高级编辑
+	 * 
+	 * @param result
+	 * @param error
+	 * @param lastFragment
+	 */
+	private void openEditAdvanced(TuSdkResult result, Error error,
+			TuFragment lastFragment)
+	{
+		if (result == null || lastFragment == null || error != null) return;
+		TuSdk.editCommponent(lastFragment, new TuSdkComponentDelegate()
+		{
+			@Override
+			public void onComponentFinished(TuSdkResult result, Error error,
+					TuFragment lastFragment)
+			{
+				TLog.d("onEditAdvancedComponentReaded: %s | %s", result, error);
+			}
+		})
+		// 设置图片
+				.setImage(result.image)
+				// 设置系统照片
+				.setImageSqlInfo(result.imageSqlInfo)
+				// 设置临时文件
+				.setTempFilePath(result.imageFile)
+				// 在组件执行完成后自动关闭组件
+				.setAutoDismissWhenCompleted(true)
+				// 开启组件
+				.showComponent();
 	}
 
 	/*************************** avatarComponentHandler ****************************/

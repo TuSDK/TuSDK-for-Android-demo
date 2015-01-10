@@ -30,7 +30,7 @@
             android:layout_centerVertical="true"
             android:layout_marginRight="10dp"
             android:layout_toLeftOf="@+id/lsq_flashButton"
-            android:background="@drawable/lsq_style_default_camera_ratio_01" />
+            android:background="@drawable/lsq_style_default_camera_ratio_orgin" />
 
         <org.lasque.tusdk.core.view.widget.button.TuSdkButton
             android:id="@+id/lsq_flashButton"
@@ -54,7 +54,7 @@
     <include
         android:id="@+id/lsq_filter_bar"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="80dp"
         android:layout_above="@+id/lsq_bottomBar"
         layout="@layout/tusdk_impl_component_widget_filter_bar" />
 

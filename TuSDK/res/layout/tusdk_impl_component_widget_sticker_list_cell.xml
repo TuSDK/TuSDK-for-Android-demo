@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.lasque.tusdk.impl.components.widget.sticker.StickerListCell xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:orientation="horizontal" >
+
+    <include
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        layout="@layout/tusdk_impl_component_widget_sticker_list_grid" />
+
+    <include
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        layout="@layout/tusdk_impl_component_widget_sticker_list_grid" />
+
+    <include
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        layout="@layout/tusdk_impl_component_widget_sticker_list_grid" />
+
+</org.lasque.tusdk.impl.components.widget.sticker.StickerListCell>

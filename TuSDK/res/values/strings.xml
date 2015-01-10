@@ -67,6 +67,23 @@
     <string name="lsq_edit_filter_processing">正在处理&#8230;</string>
     <string name="lsq_edit_processing">正在处理&#8230;</string>
     <string name="lsq_edit_processed">处理完成</string>
+    <string name="lsq_edit_entry_filter">滤镜</string>
+    <string name="lsq_edit_entry_cuter">裁切</string>
+    <string name="lsq_edit_entry_sticker">贴纸</string>
+    <string name="lsq_edit_cuter_ratio_orgin">原始</string>
+    <string name="lsq_edit_cuter_ratio_1_1">1:1</string>
+    <string name="lsq_edit_cuter_ratio_2_3">2:3</string>
+    <string name="lsq_edit_cuter_ratio_3_4">3:4</string>
+    <string name="lsq_edit_cuter_ratio_9_16">9:16</string>
+
+    <!-- sticker -->
+    <string name="lsq_sticker_cate_default">贴纸</string>
+    <string name="lsq_sticker_cate_watermark">水印</string>
+    <string name="lsq_sticker_cate_mood">心情</string>
+    <string name="lsq_sticker_cate_frame">相框</string>
+    <string name="lsq_sticker_loading">正在加载贴纸&#8230;</string>
+    <string name="lsq_sticker_load_unexsit">贴纸不存在，请换一个试试</string>
+    <string name="lsq_sticker_over_limit">OMG, 同时仅允许使用 %s 张贴纸</string>
 
     <!-- format -->
     <string name="las_date_format">yyyy年M月d日</string>
@@ -105,14 +122,14 @@
     <string name="lsq_filter_SkinRGBSpace">空间美肤</string>
     <string name="lsq_filter_SkinColorMixed">色混美肤</string>
     <string name="lsq_filter_BokehBlur">模糊</string>
-    
+
     <!-- Filters Definition skin -->
     <string name="lsq_filter_set_BlurSize">强度</string>
     <string name="lsq_filter_set_BlurWeight">权重</string>
     <string name="lsq_filter_set_SkinColorThreshold">肤色</string>
     <string name="lsq_filter_set_DistanceNormalizationFactor">边缘</string>
     <string name="lsq_filter_set_BlurSigma">西格玛</string>
-    
+
     <!-- Filters Definition Bokeh -->
     <string name="lsq_filter_set_IncludeBlurSize">外模糊</string>
     <string name="lsq_filter_set_ExcludeCircleRadius">内半径</string>

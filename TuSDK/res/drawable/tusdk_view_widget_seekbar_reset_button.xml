@@ -3,6 +3,6 @@
 
     <solid android:color="@color/lsq_seekbar_drag_color" />
 
-    <corners android:radius="5dp" />
+    <corners android:radius="15dp" />
 
 </shape>

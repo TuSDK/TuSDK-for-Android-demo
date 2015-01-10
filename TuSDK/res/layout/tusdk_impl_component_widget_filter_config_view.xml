@@ -2,12 +2,11 @@
 <org.lasque.tusdk.impl.components.widget.FilterConfigView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingRight="10dp"
-    android:paddingTop="80dp" >
+    android:paddingRight="10dp" >
 
     <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
         android:id="@+id/lsq_resetButton"
-        android:layout_width="70dp"
+        android:layout_width="55dp"
         android:layout_height="30dp"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="5dp"
@@ -16,6 +15,13 @@
         android:text="@string/lsq_reset"
         android:textColor="@color/lsq_color_white"
         android:textSize="16sp" />
+
+    <View
+        android:id="@+id/lsq_stateBg"
+        android:layout_width="40dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/lsq_stateButton"
+        android:background="@drawable/tusdk_view_widget_seekbar_state_bg" />
 
     <org.lasque.tusdk.core.view.widget.button.TuSdkButton
         android:id="@+id/lsq_stateButton"

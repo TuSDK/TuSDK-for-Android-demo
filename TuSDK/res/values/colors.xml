@@ -12,6 +12,7 @@
     <color name="lsq_alpha_black_66">#66000000</color>
     <color name="lsq_alpha_black_80">#80000000</color>
     <color name="lsq_alpha_black_B4">#B4000000</color>
+    <color name="lsq_alpha_black_CO">#C0000000</color>
 
     <!-- split -->
     <color name="lsq_split_alpha">#66000000</color>
@@ -35,17 +36,16 @@
     <color name="lsq_focus_failed">#0b72ff</color>
 
     <!-- backgroud -->
-    <color name="lsq_backgroud_default">#333333</color>
+    <color name="lsq_backgroud_default">#1f2226</color>
     <color name="lsq_backgroud_default_cell">#262625</color>
     <color name="lsq_backgroud_default_header">#B4262625</color>
-    <color name="lsq_backgroud_edit_bar">#303134</color>
+    <color name="lsq_backgroud_edit_bar">#32363a</color>
 
     <!-- text -->
     <color name="lsq_text_group_header">#9fa0a4</color>
     
     <!-- seekbar -->
-    <color name="lsq_seekbar_drag_color">#0091ff</color>
+    <color name="lsq_seekbar_drag_color">#ff5534</color>
     <color name="lsq_seekbar_view_color">#ffffff</color>
-    <color name="lsq_seekbar_side_color">#24000000</color>
 
 </resources>
