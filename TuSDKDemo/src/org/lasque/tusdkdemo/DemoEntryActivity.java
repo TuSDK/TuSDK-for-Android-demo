@@ -270,6 +270,9 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 		// 默认是否显示滤镜视图 (默认: 不显示, 如果mEnableFilters = false, mShowFilterDefault将失效)
 		option.setShowFilterDefault(true);
 
+		// 开启滤镜配置选项
+		option.setEnableFilterConfig(true);
+
 		// 需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜)
 		// option.setFilterGroup(new ArrayList<String>());
 
@@ -307,8 +310,8 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 		// 视频覆盖区域颜色 (默认：0xFF000000)
 		// option.setRegionViewColor(0xFF000000);
 
-		// 开启用户手动设置屏幕比例
-		// option.setEnableManualRatio(true);
+		// 禁用前置摄像头自动水平镜像 (默认: false，前置摄像头拍摄结果自动进行水平镜像)
+		// option.setDisableMirrorFrontFacing(true);
 
 		TuCameraFragment fragment = option.fragment();
 		fragment.setDelegate(this);

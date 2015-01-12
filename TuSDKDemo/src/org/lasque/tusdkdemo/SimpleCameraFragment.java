@@ -143,7 +143,7 @@ public class SimpleCameraFragment extends TuFragment
 	{
 		// 创建相机对象
 		mCamera = TuSdk.camera(this.getActivity(),
-				CameraInfo.CAMERA_FACING_FRONT, this.cameraView);
+				CameraInfo.CAMERA_FACING_BACK, this.cameraView);
 		// 相机对象事件监听
 		mCamera.setCameraListener(mCameraListener);
 
@@ -155,6 +155,9 @@ public class SimpleCameraFragment extends TuFragment
 
 		// 可选，设置相机手动聚焦
 		mCamera.setFocusTouchView(TuFocusTouchView.getLayoutId());
+
+		// 禁用前置摄像头自动水平镜像 (默认: false，前置摄像头拍摄结果自动进行水平镜像)
+		// mCamera.setDisableMirrorFrontFacing(true);
 		// 启动相机
 		mCamera.start();
 	}
