@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="lsq_sdk_name">涂图 - TuSDK</string>
+    <string name="lsq_sdk_name">涂图 TuSDK</string>
     <string name="lsq_exit_info">再按一次将退出应用</string>
-    <string name="lsq_text">涂图 - TuSDK</string>
+    <string name="lsq_text">涂图 TuSDK</string>
     <string name="lsq_reset">重置</string>
 
     <!-- refreshListView -->
