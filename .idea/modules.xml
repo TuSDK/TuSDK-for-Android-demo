@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/TuSDK/TuSDK.iml" filepath="$PROJECT_DIR$/TuSDK/TuSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TuSDKDemo/TuSDKDemo.iml" filepath="$PROJECT_DIR$/TuSDKDemo/TuSDKDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tusdk-for-android-demo.iml" filepath="$PROJECT_DIR$/tusdk-for-android-demo.iml" />
+    </modules>
+  </component>
+</project>
+
