@@ -13,7 +13,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 import org.lasque.tusdk.core.TuSdk;
+import org.lasque.tusdk.core.TuSdkContext;
 import org.lasque.tusdk.core.TuSdkResult;
+import org.lasque.tusdk.core.gpuimage.extend.FilterManager;
+import org.lasque.tusdk.core.gpuimage.extend.FilterManager.FilterManagerDelegate;
 import org.lasque.tusdk.core.struct.TuSdkSize;
 import org.lasque.tusdk.core.utils.TLog;
 import org.lasque.tusdk.core.utils.hardware.CameraHelper;
@@ -31,6 +34,7 @@ import org.lasque.tusdk.impl.components.edit.TuEditTurnAndCutFragment;
 import org.lasque.tusdk.impl.components.edit.TuEditTurnAndCutFragment.TuEditTurnAndCutFragmentDelegate;
 import org.lasque.tusdk.impl.components.edit.TuEditTurnAndCutOption;
 import org.lasque.tusdk.impl.view.widget.TuNavigatorBar;
+import org.lasque.tusdk.impl.view.widget.TuProgressHub;
 import org.lasque.tusdk.impl.view.widget.listview.TuDefaultLineListCellView;
 import org.lasque.tusdk.impl.view.widget.listview.TuDefaultLineListView;
 
@@ -96,7 +100,30 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 		String elements[] = { "1-1 快速自定义相机", "2-1 相册组件", "2-2 相机组件",
 				"2-3 图片编辑组件", "2-4 图片编辑组件 (裁剪)", "3-1 头像设置组件", "4-1 高级图片编辑组件" };
 		mListView.setModeList(new ArrayList<String>(Arrays.asList(elements)));
+
+		// 异步方式初始化滤镜管理器
+		// 需要等待滤镜管理器初始化完成，才能使用所有功能
+		// 第二个参数为是否需要生成默认滤镜预览图，如果不生成将会造成相机实时滤镜无法显示预览图
+		TuProgressHub.setStatus(this, TuSdkContext.getString("lsq_initing"));
+		TuSdk.initFilterManager(mFilterManagerDelegate, true);
+
+		// 如果不想使用如上方式等待滤镜管理器初始化完成,允许使用如下方法生成滤镜预览图
+		// 当然，这样做是不安全的，会导致因为未初始化完成，SDK奔溃
+		// TuSdk.filterManager().setInitSample(true);
 	}
+
+	/**
+	 * 滤镜管理器委托
+	 */
+	private FilterManagerDelegate mFilterManagerDelegate = new FilterManagerDelegate()
+	{
+		@Override
+		public void onFilterManagerInited(FilterManager manager)
+		{
+			TuProgressHub.showSuccess(DemoEntryActivity.this,
+					TuSdkContext.getString("lsq_inited"));
+		}
+	};
 
 	private class ListItemClickDelegate implements
 			ArrayListViewItemClickListener<String, TuDefaultLineListCellView>
@@ -246,7 +273,7 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 		// option.setSaveToTemp(false);
 
 		// 保存到系统相册 (默认不保存, 当设置为true时, TuSdkResult.sqlInfo, 处理完成后将自动清理原始图片)
-		// option.setSaveToAlbum(true);
+		option.setSaveToAlbum(true);
 
 		// 保存到系统相册的相册名称
 		// option.setSaveToAlbumName("TuSdk");

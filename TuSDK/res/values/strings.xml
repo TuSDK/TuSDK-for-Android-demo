@@ -5,6 +5,8 @@
     <string name="lsq_exit_info">再按一次将退出应用</string>
     <string name="lsq_text">涂图 TuSDK</string>
     <string name="lsq_reset">重置</string>
+    <string name="lsq_initing">正在初始化</string>
+    <string name="lsq_inited">初始化完成</string>
 
     <!-- refreshListView -->
     <string name="lsq_refresh_list_view_state_visible">下拉刷新</string>
@@ -99,6 +101,9 @@
 
     <!-- Filters -->
     <string name="lsq_filter_Normal">默认</string>
+    <string name="lsq_filter_Lomo">LOMO</string>
+    <string name="lsq_filter_Abao">阿宝</string>
+    <string name="lsq_filter_Nostalgic">怀旧</string>
     <string name="lsq_filter_Artistic">艺术</string>
     <string name="lsq_filter_Brilliant">灿烂</string>
     <string name="lsq_filter_Cheerful">愉悦</string>
@@ -116,26 +121,45 @@
     <string name="lsq_filter_Rough">粗犷</string>
     <string name="lsq_filter_Thick">浓郁</string>
     <string name="lsq_filter_Vintage">复古</string>
+    <string name="lsq_filter_Leica">莱卡</string>
+
     <!-- Filters Definition -->
+    <string name="lsq_filter_SkinWhitening">美白</string>
     <string name="lsq_filter_SkinTwiceMixed">双混美肤</string>
     <string name="lsq_filter_SkinTwiceMixedSigma">双混加强</string>
+    <string name="lsq_filter_SkinWhiteMixed">双混美白</string>
     <string name="lsq_filter_SkinRGBSpace">空间美肤</string>
     <string name="lsq_filter_SkinColorMixed">色混美肤</string>
     <string name="lsq_filter_BokehBlur">模糊</string>
+    <string name="lsq_filter_SenseOfAutumn">秋意浓</string>
+    <string name="lsq_filter_Coloration">着色</string>
+    <string name="lsq_filter_Fluorescent">荧光</string>
+    <string name="lsq_filter_Freshmorning">清晨</string>
+    <string name="lsq_filter_Holidaysunshine">假日</string>
+    <string name="lsq_filter_Purplemoon">紫月亮</string>
+    <string name="lsq_filter_Summersunshine">夏日</string>
+    <string name="lsq_filter_Wintersunshine">冬日</string>
 
     <!-- Filters Definition skin -->
-    <string name="lsq_filter_set_BlurSize">强度</string>
-    <string name="lsq_filter_set_BlurWeight">权重</string>
-    <string name="lsq_filter_set_SkinColorThreshold">肤色</string>
-    <string name="lsq_filter_set_DistanceNormalizationFactor">边缘</string>
-    <string name="lsq_filter_set_BlurSigma">西格玛</string>
+    <string name="lsq_filter_set_smoothing">润滑</string>
+    <string name="lsq_filter_set_whitening">白皙</string>
+    <string name="lsq_filter_set_blurSize">强度</string>
+    <string name="lsq_filter_set_blurWeight">权重</string>
+    <string name="lsq_filter_set_skinColorThreshold">肤色</string>
+    <string name="lsq_filter_set_skinColorThresholdQuadraticMixture">矩阵</string>
+    <string name="lsq_filter_set_distanceNormalizationFactor">边缘</string>
+    <string name="lsq_filter_set_blurSigma">西格玛</string>
+    <string name="lsq_filter_set_mixied">混合</string>
+    <string name="lsq_filter_set_contrast">对比度</string>
+    <string name="lsq_filter_set_sharpness">锐化</string>
+    <string name="lsq_filter_set_autumnColorThreshold">秋意</string>
 
     <!-- Filters Definition Bokeh -->
-    <string name="lsq_filter_set_IncludeBlurSize">外模糊</string>
-    <string name="lsq_filter_set_ExcludeCircleRadius">内半径</string>
-    <string name="lsq_filter_set_ExcludeCirclePointX">中心X</string>
-    <string name="lsq_filter_set_ExcludeCirclePointY">中心Y</string>
-    <string name="lsq_filter_set_ExcludeBlurSize">边缘</string>
-    <string name="lsq_filter_set_ExcludeAspectRatio">内范围</string>
+    <string name="lsq_filter_set_includeBlurSize">外模糊</string>
+    <string name="lsq_filter_set_excludeCircleRadius">内半径</string>
+    <string name="lsq_filter_set_excludeCirclePointX">中心X</string>
+    <string name="lsq_filter_set_excludeCirclePointY">中心Y</string>
+    <string name="lsq_filter_set_excludeBlurSize">边缘</string>
+    <string name="lsq_filter_set_excludeAspectRatio">内范围</string>
 
 </resources>
