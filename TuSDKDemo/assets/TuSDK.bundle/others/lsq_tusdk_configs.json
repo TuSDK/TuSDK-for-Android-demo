@@ -1,8 +1,6 @@
 {
-    /*************filters**************/
     "filterVersion": 0.3,
     "filters": [
-        /*************Color**************/
         { "file": "lsq_filter_Abao.filter" },
         { "file": "lsq_filter_Leica.filter" },
         { "file": "lsq_filter_Nostalgic.filter" },
@@ -22,7 +20,6 @@
         { "file": "lsq_filter_Rough.filter" },
         { "file": "lsq_filter_Instant.filter" },
         { "file": "lsq_filter_Noir.filter" },
-        /*************Sunning**************/
         { "file": "lsq_filter_Coloration.filter" },
         { "file": "lsq_filter_Fluorescent.filter" },
         { "file": "lsq_filter_Freshmorning.filter" },
@@ -30,12 +27,9 @@
         { "file": "lsq_filter_Purplemoon.filter" },
         { "file": "lsq_filter_Summersunshine.filter" },
         { "file": "lsq_filter_Wintersunshine.filter" },
-        /*************Skin**************/
         { "file": "lsq_filter_SkinWhitening.filter" }
     ],
-    /*************stickers**************/
     "stickers": [
-        /*************sticker**************/
         { "file": "lsq_sticker_image_001.sce", "cid": 1 },
         { "file": "lsq_sticker_image_002.sce", "cid": 1 },
         { "file": "lsq_sticker_image_003.sce", "cid": 1 },
@@ -56,7 +50,6 @@
         { "file": "lsq_sticker_image_019.sce", "cid": 1 },
         { "file": "lsq_sticker_image_018.sce", "cid": 1 },
         { "file": "lsq_sticker_image_020.sce", "cid": 1 },
-        /*************mood**************/
         { "file": "lsq_sticker_mood_001.sce", "cid": 2 },
         { "file": "lsq_sticker_mood_002.sce", "cid": 2 },
         { "file": "lsq_sticker_mood_003.sce", "cid": 2 },
@@ -112,7 +105,6 @@
         { "file": "lsq_sticker_mood_054.sce", "cid": 2 },
         { "file": "lsq_sticker_mood_053.sce", "cid": 2 },
         { "file": "lsq_sticker_mood_052.sce", "cid": 2 },
-        /*************watermark**************/
         { "file": "lsq_sticker_watermark_001.sce", "cid": 3 },
         { "file": "lsq_sticker_watermark_002.sce", "cid": 3 },
         { "file": "lsq_sticker_watermark_003.sce", "cid": 3 },
