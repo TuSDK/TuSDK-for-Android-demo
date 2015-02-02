@@ -103,13 +103,8 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 
 		// 异步方式初始化滤镜管理器
 		// 需要等待滤镜管理器初始化完成，才能使用所有功能
-		// 第二个参数为是否需要生成默认滤镜预览图，如果不生成将会造成相机实时滤镜无法显示预览图
 		TuProgressHub.setStatus(this, TuSdkContext.getString("lsq_initing"));
-		TuSdk.initFilterManager(mFilterManagerDelegate, true);
-
-		// 如果不想使用如上方式等待滤镜管理器初始化完成,允许使用如下方法生成滤镜预览图
-		// 当然，这样做是不安全的，会导致因为未初始化完成，SDK奔溃
-		// TuSdk.filterManager().setInitSample(true);
+		TuSdk.checkFilterManager(mFilterManagerDelegate);
 	}
 
 	/**

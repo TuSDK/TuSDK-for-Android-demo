@@ -9,6 +9,12 @@
         android:layout_height="90dp"
         layout="@layout/tusdk_impl_component_camera_focus_range_view" />
 
+    <ImageView
+        android:id="@+id/lsq_screenshotView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
     <org.lasque.tusdk.impl.components.edit.TuEditTurnAndCutRegion
         android:id="@+id/lsq_cutRegionView"
         android:layout_width="match_parent"
