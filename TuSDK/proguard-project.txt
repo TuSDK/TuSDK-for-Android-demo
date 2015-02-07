@@ -75,6 +75,8 @@
 
 -keep class android.support.**{ *; }
 -keep class org.apache.commons.**{ *; }
+-keep class com.nineoldandroids.**{ *; }
+-keep class com.nostra13.universalimageloader.**{ *; }
+-keep class com.loopj.android.http.**{ *; }
 
 -keep class org.lasque.tusdk.**{public *; protected *; }
--keep class com.nineoldandroids.**{ *; }

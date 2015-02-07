@@ -150,8 +150,13 @@
     <string name="lsq_filter_set_distanceNormalizationFactor">边缘</string>
     <string name="lsq_filter_set_blurSigma">西格玛</string>
     <string name="lsq_filter_set_mixied">混合</string>
+    <string name="lsq_filter_set_saturation">饱和度</string>
     <string name="lsq_filter_set_contrast">对比度</string>
     <string name="lsq_filter_set_sharpness">锐化</string>
+    <string name="lsq_filter_set_highlights">高光</string>
+    <string name="lsq_filter_set_shadows">阴影</string>
+    <string name="lsq_filter_set_temperature">色温</string>
+    <string name="lsq_filter_set_skinColor">肤色</string>
     <string name="lsq_filter_set_autumnColorThreshold">秋意</string>
 
     <!-- Filters Definition Bokeh -->
@@ -162,4 +167,12 @@
     <string name="lsq_filter_set_excludeBlurSize">边缘</string>
     <string name="lsq_filter_set_excludeAspectRatio">内范围</string>
 
-</resources>
+    <!-- network -->
+    <string name="lsq_network_request_error">服务器请求错误</string>
+    <string name="lsq_network_request_return_error">服务器返回错误</string>
+    <string name="lsq_network_connection_without">设备无网络</string>
+    <string name="lsq_network_connection_interruption">网络连接中断，请检查网络设置</string>
+    <string name="lsq_network_connection_failed">网络连接失败</string>
+    <string name="lsq_network_connection_timeout">服务器连接超时</string>
+    <string name="lsq_network_paser_data_failed">数据处理失败</string>
+</resources>
