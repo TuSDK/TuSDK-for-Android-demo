@@ -13,16 +13,20 @@ import java.util.ArrayList;
 
 import org.lasque.tusdk.core.TuSdk;
 import org.lasque.tusdk.core.TuSdkResult;
+import org.lasque.tusdk.core.gpuimage.extend.FilterOption;
+import org.lasque.tusdk.core.gpuimage.extend.FiltersConfig;
+import org.lasque.tusdk.core.statistics.StatisticsManger;
 import org.lasque.tusdk.core.utils.hardware.CameraHelper;
 import org.lasque.tusdk.core.utils.hardware.TuSdkCamera;
 import org.lasque.tusdk.core.utils.hardware.TuSdkCamera.CameraState;
 import org.lasque.tusdk.core.utils.hardware.TuSdkCamera.TuSdkCameraListener;
 import org.lasque.tusdk.core.view.TuSdkViewHelper.OnSafeClickListener;
 import org.lasque.tusdk.impl.activity.TuFragment;
+import org.lasque.tusdk.impl.components.base.ComponentActType;
 import org.lasque.tusdk.impl.components.camera.TuFocusTouchView;
-import org.lasque.tusdk.impl.components.widget.FilterBar;
-import org.lasque.tusdk.impl.components.widget.FilterBar.FilterBarDelegate;
-import org.lasque.tusdk.impl.components.widget.FilterTableView;
+import org.lasque.tusdk.impl.components.widget.GroupFilterItem;
+import org.lasque.tusdk.impl.components.widget.GroupFilterView;
+import org.lasque.tusdk.impl.components.widget.GroupFilterView.GroupFilterViewDelegate;
 
 import android.graphics.Bitmap;
 import android.hardware.Camera.CameraInfo;
@@ -78,7 +82,9 @@ public class SimpleCameraFragment extends TuFragment
 	// 拍摄按钮
 	private Button captureButton;
 	// 滤镜选择栏
-	private FilterBar filterBar;
+	private GroupFilterView filterBar;
+	// 滤镜开关按钮
+	private TextView filterToggleButton;
 
 	// 闪光灯按钮列表
 	private ArrayList<TextView> mFlashBtns = new ArrayList<TextView>(3);
@@ -92,6 +98,9 @@ public class SimpleCameraFragment extends TuFragment
 	@Override
 	protected void loadView(ViewGroup view)
 	{
+		// sdk统计代码，请不要加入您的应用
+		StatisticsManger.appendComponent(ComponentActType.sdkSimpleCamera);
+
 		// 相机视图
 		cameraView = this.getViewById(R.id.cameraView);
 		// 配置栏
@@ -127,10 +136,16 @@ public class SimpleCameraFragment extends TuFragment
 		captureButton = this.getViewById(R.id.captureButton);
 		captureButton.setOnClickListener(mClickListener);
 
+		// 滤镜开关按钮
+		filterToggleButton = this.getViewById(R.id.filterButton);
+		filterToggleButton.setOnClickListener(mClickListener);
 		// 滤镜选择栏
-		filterBar = this.getViewById(R.id.demo_filter_bar);
+		filterBar = this.getViewById(R.id.lsq_group_filter_view);
 		// 绑定选择委托
 		filterBar.setDelegate(mFilterBarDelegate);
+
+		// 设置默认是否显示
+		filterBar.setDefaultShowState(true);
 
 		// 滤镜选择栏 设置SDK内置滤镜
 		filterBar.loadFilters();
@@ -196,16 +211,44 @@ public class SimpleCameraFragment extends TuFragment
 	/**
 	 * 滤镜选择栏委托
 	 */
-	private FilterBarDelegate mFilterBarDelegate = new FilterBarDelegate()
+	private GroupFilterViewDelegate mFilterBarDelegate = new GroupFilterViewDelegate()
 	{
+		/**
+		 * @param view
+		 *            滤镜分组视图
+		 * @param itemData
+		 *            滤镜分组元素
+		 * @param canCapture
+		 *            是否允许拍摄
+		 * @return 是否允许继续执行
+		 */
 		@Override
-		public void onFilterBarSelectedFilter(String filterName, int position,
-				FilterTableView tableView)
+		public boolean onGroupFilterSelected(GroupFilterView view,
+				GroupFilterItem itemData, boolean canCapture)
 		{
-			if (handleSwitchFilter(filterName))
+			// 直接拍照
+			if (canCapture)
 			{
-				tableView.setSelectedPosition(position);
+				handleCaptureAction();
+				return true;
 			}
+
+			switch (itemData.type)
+				{
+				case TypeFilter:
+					// 设置滤镜
+					return handleSwitchFilter(itemData.filterOption);
+				default:
+					break;
+				}
+			return true;
+		}
+
+		@Override
+		public void onGroupFilterShowStateChanged(GroupFilterView view,
+				boolean isShow)
+		{
+
 		}
 	};
 
@@ -235,6 +278,10 @@ public class SimpleCameraFragment extends TuFragment
 				case R.id.captureButton:
 					handleCaptureAction();
 					break;
+				// 滤镜开关切换按钮
+				case R.id.filterButton:
+					handleToggleFilterAction();
+					break;
 				default:
 					break;
 				}
@@ -247,6 +294,14 @@ public class SimpleCameraFragment extends TuFragment
 	private void handleCancelAction()
 	{
 		this.dismissActivityWithAnim();
+	}
+
+	/**
+	 * 滤镜开关切换按钮
+	 */
+	protected void handleToggleFilterAction()
+	{
+		filterBar.showGroupView();
 	}
 
 	/**
@@ -309,17 +364,21 @@ public class SimpleCameraFragment extends TuFragment
 	/**
 	 * 处理滤镜切换
 	 * 
-	 * @param filterName
+	 * @param opt
 	 * @return 是否允许切换
 	 */
-	private boolean handleSwitchFilter(String filterName)
+	private boolean handleSwitchFilter(FilterOption opt)
 	{
-		if (mCamera != null)
+		if (mCamera == null) return false;
+
+		String code = FiltersConfig.NormalFilterCode;
+		if (opt != null)
 		{
-			mCamera.setFilterName(filterName);
-			return true;
+			code = opt.code;
 		}
-		return false;
+
+		mCamera.setFilterCode(code);
+		return true;
 	}
 
 	// 相机监听委托

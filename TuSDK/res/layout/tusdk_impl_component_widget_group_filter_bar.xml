@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.lasque.tusdk.impl.components.widget.GroupFilterBar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lsq_backgroud_default" >
+
+    <org.lasque.tusdk.impl.components.widget.GroupFilterTableView
+        android:id="@+id/lsq_group_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </org.lasque.tusdk.impl.components.widget.GroupFilterTableView>
+
+    <org.lasque.tusdk.impl.components.widget.GroupFilterTableView
+        android:id="@+id/lsq_filter_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </org.lasque.tusdk.impl.components.widget.GroupFilterTableView>
+
+    <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+        android:id="@+id/lsq_filter_back_button"
+        android:layout_width="59dp"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:background="#0066ff"
+        android:scaleType="center"
+        android:src="@drawable/lsq_style_default_filter_back" />
+
+</org.lasque.tusdk.impl.components.widget.GroupFilterBar>

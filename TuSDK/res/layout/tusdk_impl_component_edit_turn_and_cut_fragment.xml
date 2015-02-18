@@ -29,11 +29,11 @@
         android:src="@drawable/lsq_style_default_nav_button_back" />
 
     <include
-        android:id="@+id/lsq_filter_bar"
+        android:id="@+id/lsq_group_filter_view"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="match_parent"
         android:layout_above="@+id/lsq_bottomBar"
-        layout="@layout/tusdk_impl_component_widget_filter_bar" />
+        layout="@layout/tusdk_impl_component_edit_turn_and_cut_filter_view" />
 
     <LinearLayout
         android:id="@+id/lsq_bottomBar"

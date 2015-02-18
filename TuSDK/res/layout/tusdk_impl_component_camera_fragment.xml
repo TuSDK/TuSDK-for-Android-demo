@@ -51,13 +51,6 @@
             android:background="@drawable/lsq_style_default_camera_button_switch" />
     </RelativeLayout>
 
-    <include
-        android:id="@+id/lsq_filter_bar"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_above="@+id/lsq_bottomBar"
-        layout="@layout/tusdk_impl_component_widget_filter_bar" />
-
     <RelativeLayout
         android:id="@+id/lsq_bottomBar"
         android:layout_width="match_parent"
@@ -138,6 +131,12 @@
                 android:textSize="14sp" />
         </LinearLayout>
     </RelativeLayout>
+
+    <include
+        android:id="@+id/lsq_group_filter_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/tusdk_impl_component_widget_group_filter_view" />
 
     <ImageView
         android:id="@+id/lsq_startingView"

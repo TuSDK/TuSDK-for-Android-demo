@@ -61,13 +61,6 @@
             android:text="@string/lsq_button_switch_camera" />
     </LinearLayout>
 
-    <include
-        android:id="@+id/demo_filter_bar"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_above="@+id/bottomBar"
-        layout="@layout/tusdk_impl_component_widget_filter_bar" />
-
     <RelativeLayout
         android:id="@+id/bottomBar"
         android:layout_width="match_parent"
@@ -81,6 +74,23 @@
             android:layout_centerInParent="true"
             android:background="@drawable/demo_simple_camera_button_capture"
             android:text="" />
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+            android:id="@+id/filterButton"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/filter_toggle_title"
+            android:textColor="@color/demo_flash_normal"
+            android:textSize="18sp" />
     </RelativeLayout>
+
+    <include
+        android:id="@+id/lsq_group_filter_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/tusdk_impl_component_widget_group_filter_view" />
 
 </RelativeLayout>

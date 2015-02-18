@@ -17,6 +17,7 @@ import org.lasque.tusdk.core.TuSdkContext;
 import org.lasque.tusdk.core.TuSdkResult;
 import org.lasque.tusdk.core.gpuimage.extend.FilterManager;
 import org.lasque.tusdk.core.gpuimage.extend.FilterManager.FilterManagerDelegate;
+import org.lasque.tusdk.core.statistics.StatisticsManger;
 import org.lasque.tusdk.core.struct.TuSdkSize;
 import org.lasque.tusdk.core.utils.TLog;
 import org.lasque.tusdk.core.utils.hardware.CameraHelper;
@@ -25,8 +26,9 @@ import org.lasque.tusdk.core.view.listview.TuSdkArrayListView.ArrayListViewItemC
 import org.lasque.tusdk.core.view.listview.TuSdkIndexPath;
 import org.lasque.tusdk.impl.activity.TuFragment;
 import org.lasque.tusdk.impl.activity.TuFragmentActivity;
-import org.lasque.tusdk.impl.components.TuSdkComponent.TuSdkComponentDelegate;
-import org.lasque.tusdk.impl.components.TuSdkHelperComponent;
+import org.lasque.tusdk.impl.components.base.ComponentActType;
+import org.lasque.tusdk.impl.components.base.TuSdkComponent.TuSdkComponentDelegate;
+import org.lasque.tusdk.impl.components.base.TuSdkHelperComponent;
 import org.lasque.tusdk.impl.components.camera.TuCameraFragment;
 import org.lasque.tusdk.impl.components.camera.TuCameraFragment.TuCameraFragmentDelegate;
 import org.lasque.tusdk.impl.components.camera.TuCameraOption;
@@ -101,7 +103,10 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 				"2-3 图片编辑组件", "2-4 图片编辑组件 (裁剪)", "3-1 头像设置组件", "4-1 高级图片编辑组件" };
 		mListView.setModeList(new ArrayList<String>(Arrays.asList(elements)));
 
-		// 异步方式初始化滤镜管理器
+		// sdk统计代码，请不要加入您的应用
+		StatisticsManger.appendComponent(ComponentActType.sdkComponent);
+
+		// 异步方式初始化滤镜管理器 (注意：如果需要一开启应用马上执行SDK组件，需要做该检测，反之可选)
 		// 需要等待滤镜管理器初始化完成，才能使用所有功能
 		TuProgressHub.setStatus(this, TuSdkContext.getString("lsq_initing"));
 		TuSdk.checkFilterManager(mFilterManagerDelegate);
@@ -296,7 +301,15 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 		option.setEnableFilterConfig(true);
 
 		// 需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜)
-		// option.setFilterGroup(new ArrayList<String>());
+		// String[] filters = { "Brilliant", "Cheerful", "Clear", "Fade",
+		// "Forest", "Gloss" };
+		// option.setFilterGroup(Arrays.asList(filters));
+
+		// 是否保存最后一次使用的滤镜
+		option.setSaveLastFilter(true);
+		
+		// 自动选择分组滤镜指定的默认滤镜
+		option.setAutoSelectGroupDefaultFilter(true);
 
 		// 触摸聚焦视图ID (默认: tusdk_impl_component_camera_focus_touch_view)
 		// option.setFocusTouchViewId(TuFocusTouchView.getLayoutId());

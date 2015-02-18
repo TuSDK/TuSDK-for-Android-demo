@@ -1,33 +1,88 @@
 {
     "filterVersion": 0.3,
-    "filters": [
-        { "file": "lsq_filter_Abao.filter" },
-        { "file": "lsq_filter_Leica.filter" },
-        { "file": "lsq_filter_Nostalgic.filter" },
-        { "file": "lsq_filter_Newborn.filter" },
-        { "file": "lsq_filter_Morning.filter" },
-        { "file": "lsq_filter_Cheerful.filter" },
-        { "file": "lsq_filter_Lightup.filter" },
-        { "file": "lsq_filter_Vintage.filter" },
-        { "file": "lsq_filter_Thick.filter" },
-        { "file": "lsq_filter_Clear.filter" },
-        { "file": "lsq_filter_Artistic.filter" },
-        { "file": "lsq_filter_Brilliant.filter" },
-        { "file": "lsq_filter_Harmony.filter" },
-        { "file": "lsq_filter_Gloss.filter" },
-        { "file": "lsq_filter_Forest.filter" },
-        { "file": "lsq_filter_Relaxed.filter" },
-        { "file": "lsq_filter_Rough.filter" },
-        { "file": "lsq_filter_Instant.filter" },
-        { "file": "lsq_filter_Noir.filter" },
-        { "file": "lsq_filter_Coloration.filter" },
-        { "file": "lsq_filter_Fluorescent.filter" },
-        { "file": "lsq_filter_Freshmorning.filter" },
-        { "file": "lsq_filter_Holidaysunshine.filter" },
-        { "file": "lsq_filter_Purplemoon.filter" },
-        { "file": "lsq_filter_Summersunshine.filter" },
-        { "file": "lsq_filter_Wintersunshine.filter" },
-        { "file": "lsq_filter_SkinWhitening.filter" }
+    "filterGroups": [
+        {
+            "file": "lsq_filter_Leica_1.gfilter",
+            "valid_key": "578b56ffffe1d7dc",
+            "name": "lsq_filter_group_Leica",
+            "thumb": "lsq_filter_group_thumb_1.jpg",
+            "default_filter": 12,
+            "filters": [
+                {
+                    "filter_id": 11,
+                    "name": "lsq_filter_Brilliant",
+                    "thumb": "lsq_filter_thumb_Brilliant"
+                },
+                { "filter_id": 12, "name": "lsq_filter_Leica" },
+                { "filter_id": 13, "name": "lsq_filter_Gloss" },
+                { "filter_id": 14, "name": "lsq_filter_Harmony" },
+                { "filter_id": 15, "name": "lsq_filter_Noir" }
+            ]
+        },
+        {
+            "file": "lsq_filter_Beauty_6.gfilter",
+            "valid_key": "4a4efde0f8894a33",
+            "default_filter": 65,
+            "filters": [
+                { "filter_id": 61, "name": "lsq_filter_SkinNature" },
+                { "filter_id": 62, "name": "lsq_filter_SkinPink" },
+                { "filter_id": 63, "name": "lsq_filter_SkinJelly" },
+                { "filter_id": 64, "name": "lsq_filter_SkinNoir" },
+                { "filter_id": 65, "name": "lsq_filter_SkinRuddy" },
+                { "filter_id": 66, "name": "lsq_filter_SkinPowder" },
+                { "filter_id": 67, "name": "lsq_filter_SkinSugar" }
+            ]
+        },
+        {
+            "file": "lsq_filter_Lomo_2.gfilter",
+            "valid_key": "01eeed9a1fb71e23",
+            "default_filter": 24,
+            "filters": [
+                { "filter_id": 21, "name": "lsq_filter_Lomo" },
+                { "filter_id": 22, "name": "lsq_filter_Clear" },
+                { "filter_id": 23, "name": "lsq_filter_Morning" },
+                { "filter_id": 24, "name": "lsq_filter_Newborn" },
+                { "filter_id": 25, "name": "lsq_filter_Artistic" }
+            ]
+        },
+        {
+            "file": "lsq_filter_Food_3.gfilter",
+            "valid_key": "de07ada99e97f90e",
+            "default_filter": 32,
+            "filters": [
+                { "filter_id": 31, "name": "lsq_filter_Abao" },
+                { "filter_id": 32, "name": "lsq_filter_Thick" },
+                { "filter_id": 33, "name": "lsq_filter_Vintage" },
+                { "filter_id": 34, "name": "lsq_filter_Nostalgic" },
+                { "filter_id": 35, "name": "lsq_filter_Forest" }
+            ]
+        },
+        {
+            "file": "lsq_filter_Enhance_4.gfilter",
+            "valid_key": "9fff8ec0182b803b",
+            "default_filter": 45,
+            "filters": [
+                { "filter_id": 41, "name": "lsq_filter_Cheerful" },
+                { "filter_id": 42, "name": "lsq_filter_Lightup" },
+                { "filter_id": 43, "name": "lsq_filter_Relaxed" },
+                { "filter_id": 44, "name": "lsq_filter_Rough" },
+                { "filter_id": 45, "name": "lsq_filter_Instant" }
+            ]
+        },
+        {
+            "file": "lsq_filter_Glare_5.gfilter",
+            "valid_key": "e27b73af59c102a0",
+            "default_filter": 57,
+            "filters": [
+                { "filter_id": 51, "name": "lsq_filter_Wintersunshine" },
+                { "filter_id": 52, "name": "lsq_filter_Coloration" },
+                { "filter_id": 53, "name": "lsq_filter_Fluorescent" },
+                { "filter_id": 54, "name": "lsq_filter_Freshmorning" },
+                { "filter_id": 55, "name": "lsq_filter_Holidaysunshine" },
+                { "filter_id": 56, "name": "lsq_filter_Purplemoon" },
+                { "filter_id": 57, "name": "lsq_filter_Summersunshine" }
+            ]
+        }
     ],
     "stickers": [
         { "file": "lsq_sticker_image_001.sce", "cid": 1 },

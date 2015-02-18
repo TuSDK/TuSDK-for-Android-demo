@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="lsq_sdk_name">涂图 TuSDK</string>
+    <string name="lsq_sdk_name">TuSDK</string>
     <string name="lsq_exit_info">再按一次将退出应用</string>
-    <string name="lsq_text">涂图 TuSDK</string>
+    <string name="lsq_text">TuSDK</string>
     <string name="lsq_reset">重置</string>
     <string name="lsq_initing">正在初始化</string>
     <string name="lsq_inited">初始化完成</string>
@@ -99,8 +99,15 @@
     <string name="las_week_Fri">周五</string>
     <string name="las_week_Sat">周六</string>
 
+    <!-- FilterGroup -->
+    <string name="lsq_filter_group_Leica">莱卡</string>
+    <string name="lsq_filter_group_Lomo">LOMO</string>
+    <string name="lsq_filter_group_Food">美食</string>
+    <string name="lsq_filter_group_Enhance">增强</string>
+    <string name="lsq_filter_group_Glare">光效</string>
+    <string name="lsq_filter_group_Beauty">人像</string>
     <!-- Filters -->
-    <string name="lsq_filter_Normal">默认</string>
+    <string name="lsq_filter_Normal">无效果</string>
     <string name="lsq_filter_Lomo">LOMO</string>
     <string name="lsq_filter_Abao">阿宝</string>
     <string name="lsq_filter_Nostalgic">怀旧</string>
@@ -122,6 +129,15 @@
     <string name="lsq_filter_Thick">浓郁</string>
     <string name="lsq_filter_Vintage">复古</string>
     <string name="lsq_filter_Leica">莱卡</string>
+
+    <!-- Beauty -->
+    <string name="lsq_filter_SkinNature">自然</string>
+    <string name="lsq_filter_SkinPink">粉嫩</string>
+    <string name="lsq_filter_SkinJelly">果冻</string>
+    <string name="lsq_filter_SkinNoir">黑白</string>
+    <string name="lsq_filter_SkinRuddy">红润</string>
+    <string name="lsq_filter_SkinPowder">蜜粉</string>
+    <string name="lsq_filter_SkinSugar">糖水色</string>
 
     <!-- Filters Definition -->
     <string name="lsq_filter_SkinWhitening">美白</string>
@@ -175,4 +191,5 @@
     <string name="lsq_network_connection_failed">网络连接失败</string>
     <string name="lsq_network_connection_timeout">服务器连接超时</string>
     <string name="lsq_network_paser_data_failed">数据处理失败</string>
-</resources>
+
+</resources>

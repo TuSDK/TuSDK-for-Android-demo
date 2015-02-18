@@ -1,28 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<org.lasque.tusdk.impl.components.edit.TuEditFilterBarView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/lsq_backgroud_default" >
+    android:layout_height="match_parent" >
 
-    <RelativeLayout
-        android:id="@+id/lsq_imageWrapView"
+    <include
+        android:id="@+id/lsq_filter_title_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="144dp"
-        android:background="@color/lsq_color_black" >
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        layout="@layout/tusdk_impl_component_widget_filter_title_view" />
 
-    </RelativeLayout>
+    <include
+        android:id="@+id/lsq_param_config_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_above="@+id/lsq_bar_bottomBar"
+        layout="@layout/tusdk_impl_component_widget_parameter_config_view" />
+
+    <include
+        android:id="@+id/lsq_group_filter_bar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_above="@+id/lsq_bar_bottomBar"
+        layout="@layout/tusdk_impl_component_widget_group_filter_bar" />
 
     <LinearLayout
-        android:id="@+id/lsq_bottomBar"
+        android:id="@+id/lsq_bar_bottomBar"
         android:layout_width="match_parent"
         android:layout_height="44dp"
         android:layout_alignParentBottom="true"
-        android:background="@color/lsq_backgroud_edit_bar"
+        android:background="@color/lsq_backgroud_default"
         android:orientation="horizontal" >
 
         <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
-            android:id="@+id/lsq_cancelButton"
+            android:id="@+id/lsq_bar_cancelButton"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -40,7 +51,7 @@
             android:layout_weight="1" />
 
         <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
-            android:id="@+id/lsq_completeButton"
+            android:id="@+id/lsq_bar_completeButton"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -48,10 +59,4 @@
             android:src="@drawable/lsq_style_default_edit_button_completed" />
     </LinearLayout>
 
-    <include
-        android:id="@+id/lsq_filter_bar"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        layout="@layout/tusdk_impl_component_edit_filter_bar_view" />
-
-</RelativeLayout>
+</org.lasque.tusdk.impl.components.edit.TuEditFilterBarView>
