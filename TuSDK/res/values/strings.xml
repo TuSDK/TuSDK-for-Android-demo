@@ -63,6 +63,9 @@
     <string name="lsq_save_saveToAlbum">正在保存到相册&#8230;</string>
     <string name="lsq_save_saveToAlbum_succeed">保存成功</string>
     <string name="lsq_save_saveToAlbum_failed">保存到相册失败</string>
+    <string name="lsq_save_unsupport_storage_title">无法存储文件</string>
+    <string name="lsq_save_not_found_sdcard">请插入SD Card</string>
+    <string name="lsq_save_insufficient_storage_space">存储空间不足</string>
 
     <!-- edit -->
     <string name="lsq_edit_button_complete">完成</string>
@@ -165,7 +168,7 @@
     <string name="lsq_filter_set_skinColorThresholdQuadraticMixture">矩阵</string>
     <string name="lsq_filter_set_distanceNormalizationFactor">边缘</string>
     <string name="lsq_filter_set_blurSigma">西格玛</string>
-    <string name="lsq_filter_set_mixied">混合</string>
+    <string name="lsq_filter_set_mixied">效果</string>
     <string name="lsq_filter_set_saturation">饱和度</string>
     <string name="lsq_filter_set_contrast">对比度</string>
     <string name="lsq_filter_set_sharpness">锐化</string>

@@ -26,6 +26,8 @@ import org.lasque.tusdk.core.view.listview.TuSdkArrayListView.ArrayListViewItemC
 import org.lasque.tusdk.core.view.listview.TuSdkIndexPath;
 import org.lasque.tusdk.impl.activity.TuFragment;
 import org.lasque.tusdk.impl.activity.TuFragmentActivity;
+import org.lasque.tusdk.impl.components.TuAvatarComponent;
+import org.lasque.tusdk.impl.components.TuEditComponent;
 import org.lasque.tusdk.impl.components.base.ComponentActType;
 import org.lasque.tusdk.impl.components.base.TuSdkComponent.TuSdkComponentDelegate;
 import org.lasque.tusdk.impl.components.base.TuSdkHelperComponent;
@@ -301,13 +303,14 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 		option.setEnableFilterConfig(true);
 
 		// 需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜)
-		// String[] filters = { "Brilliant", "Cheerful", "Clear", "Fade",
-		// "Forest", "Gloss" };
+		// String[] filters = { "SkinNature", "SkinPink", "SkinJelly",
+		// "SkinNoir",
+		// "SkinRuddy", "SkinPowder", "SkinSugar" };
 		// option.setFilterGroup(Arrays.asList(filters));
 
 		// 是否保存最后一次使用的滤镜
 		option.setSaveLastFilter(true);
-		
+
 		// 自动选择分组滤镜指定的默认滤镜
 		option.setAutoSelectGroupDefaultFilter(true);
 
@@ -537,15 +540,25 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 	 */
 	private void avatarComponentHandler()
 	{
-		TuSdk.avatarCommponent(this, new TuSdkComponentDelegate()
-		{
-			@Override
-			public void onComponentFinished(TuSdkResult result, Error error,
-					TuFragment lastFragment)
-			{
-				TLog.d("onAvatarComponentReaded: %s | %s", result, error);
-			}
-		})
+		TuAvatarComponent component = TuSdk.avatarCommponent(this,
+				new TuSdkComponentDelegate()
+				{
+					@Override
+					public void onComponentFinished(TuSdkResult result,
+							Error error, TuFragment lastFragment)
+					{
+						TLog.d("onAvatarComponentReaded: %s | %s", result,
+								error);
+					}
+				});
+
+		// 需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜, 可选)
+		String[] filters = { "SkinNature", "SkinPink", "SkinJelly", "SkinNoir",
+				"SkinRuddy", "SkinPowder", "SkinSugar" };
+		component.componentOption().cameraOption()
+				.setFilterGroup(Arrays.asList(filters));
+
+		component
 		// 在组件执行完成后自动关闭组件
 				.setAutoDismissWhenCompleted(true)
 				// 显示组件
@@ -580,18 +593,21 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 			TuFragment lastFragment)
 	{
 		if (result == null || lastFragment == null || error != null) return;
-		TuSdk.editCommponent(lastFragment, new TuSdkComponentDelegate()
-		{
-			@Override
-			public void onComponentFinished(TuSdkResult result, Error error,
-					TuFragment lastFragment)
-			{
-				TLog.d("onEditAdvancedComponentReaded: %s | %s", result, error);
-			}
-		})
+		TuEditComponent component = TuSdk.editCommponent(lastFragment,
+				new TuSdkComponentDelegate()
+				{
+					@Override
+					public void onComponentFinished(TuSdkResult result,
+							Error error, TuFragment lastFragment)
+					{
+						TLog.d("onEditAdvancedComponentReaded: %s | %s",
+								result, error);
+					}
+				});
+
 		// 设置图片
-				.setImage(result.image)
-				// 设置系统照片
+		component.setImage(result.image)
+		// 设置系统照片
 				.setImageSqlInfo(result.imageSqlInfo)
 				// 设置临时文件
 				.setTempFilePath(result.imageFile)
