@@ -21,7 +21,8 @@
         android:id="@+id/lsq_group_filter_bar"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_above="@+id/lsq_bar_bottomBar"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="44dp"
         layout="@layout/tusdk_impl_component_widget_group_filter_bar" />
 
     <LinearLayout

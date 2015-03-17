@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="lsq_sdk_name">TuSDK</string>
+    <string name="lsq_sdk_name">TuSDK 涂图</string>
     <string name="lsq_exit_info">再按一次将退出应用</string>
-    <string name="lsq_text">TuSDK</string>
+    <string name="lsq_text">TuSDK 涂图</string>
     <string name="lsq_reset">重置</string>
     <string name="lsq_initing">正在初始化</string>
     <string name="lsq_inited">初始化完成</string>

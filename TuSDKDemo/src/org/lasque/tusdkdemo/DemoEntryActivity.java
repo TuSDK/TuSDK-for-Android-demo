@@ -299,6 +299,22 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 		// 默认是否显示滤镜视图 (默认: 不显示, 如果mEnableFilters = false, mShowFilterDefault将失效)
 		option.setShowFilterDefault(true);
 
+		// 滤镜组行视图宽度 (单位:DP)
+		// option.setGroupFilterCellWidthDP(75);
+
+		// 滤镜组选择栏高度 (单位:DP)
+		// option.setFilterBarHeightDP(100);
+
+		// 滤镜分组列表行视图布局资源ID (默认:
+		// tusdk_impl_component_widget_group_filter_group_view，如需自定义请继承自
+		// GroupFilterGroupView)
+		// option.setGroupTableCellLayoutId(GroupFilterGroupView.getLayoutId());
+
+		// 滤镜列表行视图布局资源ID (默认:
+		// tusdk_impl_component_widget_group_filter_item_view，如需自定义请继承自
+		// GroupFilterItemView)
+		// option.setFilterTableCellLayoutId(GroupFilterItemView.getLayoutId());
+
 		// 开启滤镜配置选项
 		option.setEnableFilterConfig(true);
 
@@ -427,6 +443,22 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 
 		// 是否显示处理结果预览图 (默认：关闭，调试时可以开启)
 		// option.setShowResultPreview(false);
+
+		// 滤镜组行视图宽度 (单位:DP)
+		// option.setGroupFilterCellWidthDP(75);
+
+		// 滤镜组选择栏高度 (单位:DP)
+		// option.setFilterBarHeightDP(100);
+
+		// 滤镜分组列表行视图布局资源ID (默认:
+		// tusdk_impl_component_widget_group_filter_group_view，如需自定义请继承自
+		// GroupFilterGroupView)
+		// option.setGroupTableCellLayoutId(GroupFilterGroupView.getLayoutId());
+
+		// 滤镜列表行视图布局资源ID (默认:
+		// tusdk_impl_component_widget_group_filter_item_view，如需自定义请继承自
+		// GroupFilterItemView)
+		// option.setFilterTableCellLayoutId(GroupFilterItemView.getLayoutId());
 
 		TuEditTurnAndCutFragment fragment = option.fragment();
 
