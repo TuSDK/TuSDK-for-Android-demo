@@ -21,7 +21,7 @@
             android:minWidth="45dp"
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
-            android:textColor="@color/lsq_link_action"
+            android:textColor="@color/lsq_navigator_button_title"
             android:textSize="14sp" />
     </RelativeLayout>
 

@@ -28,6 +28,8 @@
     <!-- nav -->
     <string name="lsq_nav_cancel">取消</string>
     <string name="lsq_nav_back">返回</string>
+    <string name="lsq_nav_more">更多</string>
+    <string name="lsq_nav_remove">删除</string>
 
     <!-- button -->
     <string name="lsq_button_done">我知道了</string>
@@ -82,6 +84,7 @@
     <string name="lsq_edit_cuter_ratio_9_16">9:16</string>
 
     <!-- sticker -->
+    <string name="lsq_sticker_title">贴纸</string>
     <string name="lsq_sticker_cate_default">贴纸</string>
     <string name="lsq_sticker_cate_watermark">水印</string>
     <string name="lsq_sticker_cate_mood">心情</string>
@@ -89,6 +92,13 @@
     <string name="lsq_sticker_loading">正在加载贴纸&#8230;</string>
     <string name="lsq_sticker_load_unexsit">贴纸不存在，请换一个试试</string>
     <string name="lsq_sticker_over_limit">OMG, 同时仅允许使用 %s 张贴纸</string>
+    <string name="lsq_sticker_total_format">%1$s 张贴纸</string>
+    <string name="lsq_sticker_empty">还没有贴纸</string>
+    <string name="lsq_sticker_empty_msg">快去贴纸商店挑选海量贴纸</string>
+    <string name="lsq_sticker_1_1">新年大礼包</string>
+    <string name="lsq_sticker_online_title">贴纸商店</string>
+    <string name="lsq_sticker_remove_title">删除贴纸</string>
+    <string name="lsq_sticker_remove_msg">您是否需要删除贴纸 《%s》 ?</string>
 
     <!-- format -->
     <string name="las_date_format">yyyy年M月d日</string>

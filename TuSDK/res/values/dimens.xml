@@ -6,6 +6,8 @@
     <dimen name="lsq_font_size_30">15sp</dimen>
     <dimen name="lsq_font_size_36">18sp</dimen>
 
+    <!-- radius -->
+    <dimen name="lsq_default_radius">5dp</dimen>
     <!-- actionsheet -->
     <dimen name="lsq_actionsheet_radius">5dp</dimen>
     <dimen name="lsq_actionsheet_space_button">1px</dimen>

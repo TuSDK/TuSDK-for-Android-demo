@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.lasque.tusdk.impl.components.widget.sticker.StickerListHeader xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/lsq_split_cell" />
+
+    <TextView
+        android:id="@+id/lsq_titleLabel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:text="@string/lsq_text"
+        android:textColor="@color/lsq_color_white"
+        android:textSize="16sp" />
+
+    <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+        android:id="@+id/lsq_removebutton"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:scaleType="center"
+        android:src="@drawable/lsq_style_default_table_section_header_removel" />
+
+</org.lasque.tusdk.impl.components.widget.sticker.StickerListHeader>

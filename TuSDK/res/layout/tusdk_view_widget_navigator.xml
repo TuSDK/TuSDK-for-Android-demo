@@ -3,7 +3,7 @@
     android:id="@+id/lsq_navigatorBar"
     android:layout_width="match_parent"
     android:layout_height="44dp"
-    android:background="@color/lsq_color_white"
+    android:background="@color/lsq_navigator_bg"
     android:clipChildren="false" >
 
     <TextView
@@ -15,7 +15,7 @@
         android:ellipsize="end"
         android:gravity="center"
         android:maxLines="1"
-        android:textColor="@color/lsq_color_black"
+        android:textColor="@color/lsq_navigator_title"
         android:textSize="@dimen/lsq_font_size_36" />
 
     <org.lasque.tusdk.core.view.widget.button.TuSdkNavigatorBackButton
@@ -33,6 +33,6 @@
         android:layout_height="1px"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="1px"
-        android:background="@color/lsq_split_alpha" />
+        android:background="@color/lsq_navigator_split" />
 
 </org.lasque.tusdk.impl.view.widget.TuNavigatorBar>
