@@ -57,6 +57,7 @@
     <string name="lsq_album_title">相簿</string>
     <string name="lsq_album_total_format">%1$s 张照片</string>
     <string name="lsq_album_empty">还没有照片</string>
+    <string name="lsq_album_broken_msg">该照片文件已经被损坏</string>
 
     <!-- save -->
     <string name="lsq_save_saveToTemp">正在处理&#8230;</string>

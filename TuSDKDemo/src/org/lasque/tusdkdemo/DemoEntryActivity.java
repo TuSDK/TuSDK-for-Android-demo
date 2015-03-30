@@ -5,7 +5,7 @@
  * @author 		Clear
  * @Date 		2014-11-15 下午4:30:52 
  * @Copyright 	(c) 2014 Lasque. All rights reserved.
- * 
+ * @link 		开发文档:http://www.tusdk.com/docs/android/api/
  */
 package org.lasque.tusdkdemo;
 
@@ -26,6 +26,7 @@ import org.lasque.tusdk.core.view.listview.TuSdkArrayListView.ArrayListViewItemC
 import org.lasque.tusdk.core.view.listview.TuSdkIndexPath;
 import org.lasque.tusdk.impl.activity.TuFragment;
 import org.lasque.tusdk.impl.activity.TuFragmentActivity;
+import org.lasque.tusdk.impl.components.TuAlbumComponent;
 import org.lasque.tusdk.impl.components.TuAvatarComponent;
 import org.lasque.tusdk.impl.components.TuEditComponent;
 import org.lasque.tusdk.impl.components.base.ComponentActType;
@@ -55,7 +56,16 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 
 	public DemoEntryActivity()
 	{
-
+		/**
+		 * ！！！！！！！！！！！！！！！！！！！！！！！！！特别提示信息要长！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
+		 * 关于TuSDK体积（SDK编译后仅为0.9MB）：
+		 * 1,如果您不需要使用本地贴纸功能，或仅需要使用在线贴纸功能，请删除/app/assets/TuSDK.bundle/stickers文件夹
+		 * 2,如果您仅需要几款滤镜，您可以删除/app/assets/TuSDK.bundle/textures下的*.gsce文件
+		 * 3,如果您不需要使用滤镜功能，请删除/app/assets/TuSDK.bundle/textures文件夹
+		 * 4,TuSDK在线管理功能请访问：http://tusdk.com/
+		 * 
+		 * 开发文档:http://www.tusdk.com/docs/android/api/
+		 */
 	}
 
 	/**
@@ -80,6 +90,7 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 	/**
 	 * 组件帮助方法
 	 */
+	// see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/base/TuSdkHelperComponent.html
 	private TuSdkHelperComponent mComponent = new TuSdkHelperComponent(this);
 
 	/**
@@ -108,7 +119,18 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 		// sdk统计代码，请不要加入您的应用
 		StatisticsManger.appendComponent(ComponentActType.sdkComponent);
 
-		// 异步方式初始化滤镜管理器 (注意：如果需要一开启应用马上执行SDK组件，需要做该检测，反之可选)
+		/**
+		 * ！！！！！！！！！！！！！！！！！！！！！！！！！特别提示信息要长！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
+		 * 关于TuSDK体积（SDK编译后仅为0.9MB）：
+		 * 1,如果您不需要使用本地贴纸功能，或仅需要使用在线贴纸功能，请删除/app/assets/TuSDK.bundle/stickers文件夹
+		 * 2,如果您仅需要几款滤镜，您可以删除/app/assets/TuSDK.bundle/textures下的*.gsce文件
+		 * 3,如果您不需要使用滤镜功能，请删除/app/assets/TuSDK.bundle/textures文件夹
+		 * 4,TuSDK在线管理功能请访问：http://tusdk.com/
+		 * 
+		 * 开发文档:http://www.tusdk.com/docs/android/api/
+		 */
+
+		// 异步方式初始化滤镜管理器 (注意：如果需要一开启应用马上执行SDK组件，需要做该检测，否则可以忽略检测)
 		// 需要等待滤镜管理器初始化完成，才能使用所有功能
 		TuProgressHub.setStatus(this, TuSdkContext.getString("lsq_initing"));
 		TuSdk.checkFilterManager(mFilterManagerDelegate);
@@ -196,61 +218,34 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 	 */
 	private void albumComponentHandler()
 	{
-		// TuAlbumComponent cp = TuAlbumComponent.component(activity, delegate);
+		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/TuAlbumComponent.html
+		TuAlbumComponent comp = TuSdk.albumCommponent(this,
+				new TuSdkComponentDelegate()
+				{
+					@Override
+					public void onComponentFinished(TuSdkResult result,
+							Error error, TuFragment lastFragment)
+					{
+						// if (lastFragment != null)
+						// lastFragment.dismissActivityWithAnim();
+						TLog.d("onAlbumCommponentReaded: %s | %s", result,
+								error);
+					}
+				});
 
-		// TuAlbumListOption option = cp.componentOption().albumListOption();
-		// 控制器类型
-		// option.setComponentClazz(TuAlbumListFragment.class);
+		// 组件选项配置
+		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/TuAlbumComponentOption.html
+		// comp.componentOption()
 
-		// 设置根视图布局资源ID
-		// option.setRootViewLayoutId(TuAlbumListFragment.getLayoutId());
+		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/album/TuAlbumListOption.html
+		// comp.componentOption().albumListOption()
 
-		// 行视图布局ID
-		// option.setCellLayoutId(TuAlbumListCell.getLayoutId());
+		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/album/TuPhotoListOption.html
+		// comp.componentOption().photoListOption()
 
-		// 空视图布局ID
-		// option.setEmptyViewLayouId(TuAlbumEmptyView.getLayoutId());
-
-		// 需要自动跳转到相册组名称 (需要设定 autoSkipToPhotoList = true)
-		// option.setSkipAlbumName("Camera");
-
-		// 是否自动选择相册组 (默认: true, 如果没有设定相册组名称，自动跳转到系统相册组)
-		// option.setAutoSkipToPhotoList(true);
-
-		// TuPhotoListOption option = cp.componentOption().photoListOption();
-		// 控制器类型
-		// option.setComponentClazz(TuAlbumListFragment.class);
-
-		// 设置根视图布局资源ID
-		// option.setRootViewLayoutId(TuPhotoListFragment.getLayoutId());
-
-		// 行视图布局ID
-		// option.setCellLayoutId(TuPhotoListCell.getLayoutId());
-
-		// 分组头部视图布局ID
-		// option.setHeaderLayoutId(TuPhotoListHeader.getLayoutId());
-
-		// 统计格式化字符
-		// option.setTotalFooterFormater(TuSdkContext
-		// .getString("lsq_album_total_format"));
-
-		// 空视图布局ID
-		// option.setEmptyViewLayouId(TuAlbumEmptyView.getLayoutId());
-
-		TuSdk.albumCommponent(this, new TuSdkComponentDelegate()
-		{
-			@Override
-			public void onComponentFinished(TuSdkResult result, Error error,
-					TuFragment lastFragment)
-			{
-				// if (lastFragment != null)
-				// lastFragment.dismissActivityWithAnim();
-				TLog.d("onAlbumCommponentReaded: %s | %s", result, error);
-			}
-		})
 		// 在组件执行完成后自动关闭组件
-				.setAutoDismissWhenCompleted(true)
-				// 显示组件
+		comp.setAutoDismissWhenCompleted(true)
+		// 显示组件
 				.showComponent();
 	}
 
@@ -262,7 +257,8 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 	{
 		// 如果不支持摄像头显示警告信息
 		if (CameraHelper.showAlertIfNotSupportCamera(this)) return;
-
+		// 组件选项配置
+		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/camera/TuCameraOption.html
 		TuCameraOption option = new TuCameraOption();
 
 		// 控制器类型
@@ -413,6 +409,8 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 	 */
 	private void editComponentHandler()
 	{
+		// 组件选项配置
+		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/edit/TuEditTurnAndCutOption.html
 		TuEditTurnAndCutOption option = new TuEditTurnAndCutOption();
 		// 控制器类型
 		// option.setComponentClazz(TuEditTurnAndCutFragment.class);
@@ -459,6 +457,9 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 		// tusdk_impl_component_widget_group_filter_item_view，如需自定义请继承自
 		// GroupFilterItemView)
 		// option.setFilterTableCellLayoutId(GroupFilterItemView.getLayoutId());
+
+		// 是否在控制器结束后自动删除临时文件
+		option.setAutoRemoveTemp(true);
 
 		TuEditTurnAndCutFragment fragment = option.fragment();
 
@@ -508,6 +509,8 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 	{
 		if (result == null || lastFragment == null || error != null) return;
 
+		// 组件选项配置
+		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/edit/TuEditTurnAndCutOption.html
 		TuEditTurnAndCutOption option = new TuEditTurnAndCutOption();
 
 		// 是否开启滤镜支持 (默认: 关闭)
@@ -515,6 +518,9 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 
 		// 需要裁剪的长宽
 		option.setCutSize(new TuSdkSize(640, 640));
+
+		// 是否在控制器结束后自动删除临时文件
+		option.setAutoRemoveTemp(true);
 
 		// 是否显示处理结果预览图 (默认：关闭，调试时可以开启)
 		option.setShowResultPreview(true);
@@ -572,6 +578,8 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 	 */
 	private void avatarComponentHandler()
 	{
+		// 组件选项配置
+		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/TuAvatarComponent.html
 		TuAvatarComponent component = TuSdk.avatarCommponent(this,
 				new TuSdkComponentDelegate()
 				{
@@ -583,6 +591,22 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 								error);
 					}
 				});
+
+		// 组件选项配置
+		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/TuAvatarComponentOption.html
+		// component.componentOption()
+
+		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/album/TuAlbumListOption.html
+		// component.componentOption().albumListOption()
+
+		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/album/TuPhotoListOption.html
+		// component.componentOption().photoListOption()
+
+		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/camera/TuCameraOption.html
+		// component.componentOption().cameraOption()
+
+		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/edit/TuEditTurnAndCutOption.html
+		// component.componentOption().editTurnAndCutOption()
 
 		// 需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜, 可选)
 		String[] filters = { "SkinNature", "SkinPink", "SkinJelly", "SkinNoir",
@@ -625,6 +649,9 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 			TuFragment lastFragment)
 	{
 		if (result == null || lastFragment == null || error != null) return;
+
+		// 组件选项配置
+		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/TuEditComponent.html
 		TuEditComponent component = TuSdk.editCommponent(lastFragment,
 				new TuSdkComponentDelegate()
 				{
@@ -636,6 +663,21 @@ public class DemoEntryActivity extends TuFragmentActivity implements
 								result, error);
 					}
 				});
+
+		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/TuEditComponentOption.html
+		// component.componentOption()
+
+		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/edit/TuEditEntryOption.html
+		// component.componentOption().editEntryOption()
+
+		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/edit/TuEditCuterOption.html
+		// component.componentOption().editCuterOption()
+
+		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/edit/TuEditFilterOption.html
+		// component.componentOption().editFilterOption()
+
+		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/sticker/TuEditStickerOption.html
+		// component.componentOption().editStickerOption()
 
 		// 设置图片
 		component.setImage(result.image)
