@@ -120,6 +120,7 @@
     <string name="lsq_filter_group_Enhance">增强</string>
     <string name="lsq_filter_group_Glare">光效</string>
     <string name="lsq_filter_group_Beauty">人像</string>
+    <string name="lsq_filter_group_Magic">魔法色</string>
     <!-- Filters -->
     <string name="lsq_filter_Normal">无效果</string>
     <string name="lsq_filter_Lomo">LOMO</string>
@@ -152,6 +153,13 @@
     <string name="lsq_filter_SkinRuddy">红润</string>
     <string name="lsq_filter_SkinPowder">蜜粉</string>
     <string name="lsq_filter_SkinSugar">糖水色</string>
+
+    <!-- Magic -->
+    <string name="lsq_filter_MagicRed">妃红</string>
+    <string name="lsq_filter_MagicYellow">柠檬</string>
+    <string name="lsq_filter_MagicBlue">深竹月</string>
+    <string name="lsq_filter_MagicGreen">沙绿</string>
+    <string name="lsq_filter_MagicPurple">雪紫</string>
 
     <!-- Filters Definition -->
     <string name="lsq_filter_SkinWhitening">美白</string>
@@ -188,6 +196,8 @@
     <string name="lsq_filter_set_temperature">色温</string>
     <string name="lsq_filter_set_skinColor">肤色</string>
     <string name="lsq_filter_set_autumnColorThreshold">秋意</string>
+    <string name="lsq_filter_set_hue">色相</string>
+    <string name="lsq_filter_set_hueSpace">范围</string>
 
     <!-- Filters Definition Bokeh -->
     <string name="lsq_filter_set_includeBlurSize">外模糊</string>

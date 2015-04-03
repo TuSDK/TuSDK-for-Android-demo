@@ -7,16 +7,33 @@
             "name": "lsq_filter_group_Leica",
             "thumb": "lsq_filter_group_thumb_1.jpg",
             "default_filter": 12,
+            "color": "#E74C3C",
             "filters": [
                 {
                     "filter_id": 11,
                     "name": "lsq_filter_Brilliant",
-                    "thumb": "lsq_filter_thumb_Brilliant"
+                    "thumb": "lsq_filter_thumb_Brilliant",
+                    "color": "#E74C3C",
+                    "args": {
+                        "mixied": 0.5
+                    }
                 },
                 { "filter_id": 12, "name": "lsq_filter_Leica" },
                 { "filter_id": 13, "name": "lsq_filter_Gloss" },
                 { "filter_id": 14, "name": "lsq_filter_Harmony" },
                 { "filter_id": 15, "name": "lsq_filter_Noir" }
+            ]
+        },
+        {
+            "file": "lsq_filter_Magic_7.gfilter",
+            "valid_key": "c1c97faef75674ad",
+            "default_filter": 72,
+            "filters": [
+                { "filter_id": 71, "name": "lsq_filter_MagicRed" },
+                { "filter_id": 72, "name": "lsq_filter_MagicYellow" },
+                { "filter_id": 73, "name": "lsq_filter_MagicBlue" },
+                { "filter_id": 74, "name": "lsq_filter_MagicGreen" },
+                { "filter_id": 75, "name": "lsq_filter_MagicPurple" }
             ]
         },
         {
@@ -74,7 +91,13 @@
             "valid_key": "e27b73af59c102a0",
             "default_filter": 57,
             "filters": [
-                { "filter_id": 51, "name": "lsq_filter_Wintersunshine" },
+                {
+                    "filter_id": 51,
+                    "name": "lsq_filter_Wintersunshine",
+                    "args": {
+                        "mixied": 0.5
+                    }
+                 },
                 { "filter_id": 52, "name": "lsq_filter_Coloration" },
                 { "filter_id": 53, "name": "lsq_filter_Fluorescent" },
                 { "filter_id": 54, "name": "lsq_filter_Freshmorning" },
@@ -115,24 +138,7 @@
                 }
             ]
         },
-        { "file": "lsq_sticker_1_2.gsce", "valid_key": "6d83c7b69734704b" },
-        { "file": "lsq_sticker_1_3.gsce", "valid_key": "3b4b1382cba105b9" },
-        { "file": "lsq_sticker_1_4.gsce", "valid_key": "eb7e8594796060a8" },
         { "file": "lsq_sticker_2_5.gsce", "valid_key": "4d573d4813b77d62" },
-        { "file": "lsq_sticker_2_6.gsce", "valid_key": "a0d281592fa44e75" },
-        { "file": "lsq_sticker_2_7.gsce", "valid_key": "3838dc716c516df3" },
-        { "file": "lsq_sticker_2_8.gsce", "valid_key": "318deb7904a2eb99" },
-        { "file": "lsq_sticker_2_9.gsce", "valid_key": "60da504da5c1982e" },
-        { "file": "lsq_sticker_2_10.gsce", "valid_key": "5c7b1a8e7deb8fe9" },
-        { "file": "lsq_sticker_2_11.gsce", "valid_key": "e0708dfa1c3145b2" },
-        { "file": "lsq_sticker_2_12.gsce", "valid_key": "110d58ec80c7d2b3" },
-        { "file": "lsq_sticker_2_13.gsce", "valid_key": "0ffe5b87f8f021c1" },
-        { "file": "lsq_sticker_2_14.gsce", "valid_key": "bf381819897a9a81" },
-        { "file": "lsq_sticker_3_15.gsce", "valid_key": "2a1b7cdf4fa90e8e" },
-        { "file": "lsq_sticker_3_16.gsce", "valid_key": "9eb211379eb534b9" },
-        { "file": "lsq_sticker_3_17.gsce", "valid_key": "30ac830e18d7b924" },
-        { "file": "lsq_sticker_3_18.gsce", "valid_key": "ccb49ecf6ce7dd3f" },
-        { "file": "lsq_sticker_3_19.gsce", "valid_key": "da27e3d3ad73e95a" },
-        { "file": "lsq_sticker_3_20.gsce", "valid_key": "7f7d0bcb73124af6" }
+        { "file": "lsq_sticker_3_15.gsce", "valid_key": "2a1b7cdf4fa90e8e" }
     ]
 }
