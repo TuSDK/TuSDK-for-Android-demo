@@ -407,7 +407,7 @@ public class SimpleCameraFragment extends TuFragment
 				showViewIn(flashBar, false);
 			}
 			// 输出相机设置信息
-			CameraHelper.logParameters(mCamera.getCameraParameters());
+			// CameraHelper.logParameters(mCamera.getCameraParameters());
 		}
 
 		/**

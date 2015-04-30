@@ -30,6 +30,7 @@
     <string name="lsq_nav_back">返回</string>
     <string name="lsq_nav_more">更多</string>
     <string name="lsq_nav_remove">删除</string>
+    <string name="lsq_nav_complete">完成</string>
 
     <!-- button -->
     <string name="lsq_button_done">我知道了</string>
@@ -72,6 +73,7 @@
 
     <!-- edit -->
     <string name="lsq_edit_button_complete">完成</string>
+    <string name="lsq_edit_loading">正在读取&#8230;</string>
     <string name="lsq_edit_filter_processing">正在处理&#8230;</string>
     <string name="lsq_edit_processing">正在处理&#8230;</string>
     <string name="lsq_edit_processed">处理完成</string>
@@ -83,6 +85,9 @@
     <string name="lsq_edit_cuter_ratio_2_3">2:3</string>
     <string name="lsq_edit_cuter_ratio_3_4">3:4</string>
     <string name="lsq_edit_cuter_ratio_9_16">9:16</string>
+    <string name="lsq_edit_title">编辑</string>
+    <string name="lsq_edit_multiple_title">编辑</string>
+    <string name="lsq_edit_skin_title">美颜</string>
 
     <!-- sticker -->
     <string name="lsq_sticker_title">贴纸</string>
@@ -100,6 +105,8 @@
     <string name="lsq_sticker_online_title">贴纸商店</string>
     <string name="lsq_sticker_remove_title">删除贴纸</string>
     <string name="lsq_sticker_remove_msg">您是否需要删除贴纸 《%s》 ?</string>
+    <string name="lsq_sticker_cate_all">全部</string>
+    <string name="lsq_sticker_cate_history">常用</string>
 
     <!-- format -->
     <string name="las_date_format">yyyy年M月d日</string>
@@ -198,6 +205,11 @@
     <string name="lsq_filter_set_autumnColorThreshold">秋意</string>
     <string name="lsq_filter_set_hue">色相</string>
     <string name="lsq_filter_set_hueSpace">范围</string>
+    <string name="lsq_filter_set_brightness">亮度</string>
+    <string name="lsq_filter_set_exposure">曝光度</string>
+    <string name="lsq_filter_set_vignette">晕角</string>
+    <string name="lsq_filter_set_depthfield">景深</string>
+    <string name="lsq_filter_set_adjustment">调整</string>
 
     <!-- Filters Definition Bokeh -->
     <string name="lsq_filter_set_includeBlurSize">外模糊</string>

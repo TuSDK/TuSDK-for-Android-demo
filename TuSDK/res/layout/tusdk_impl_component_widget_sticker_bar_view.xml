@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.lasque.tusdk.impl.components.widget.sticker.StickerBarView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/lsq_backgroud_default"
+    android:orientation="vertical" >
+
+    <org.lasque.tusdk.core.view.TuSdkLinearLayout
+        android:id="@+id/lsq_params_view"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@string/lsq_text"
+            android:textColor="@color/lsq_color_white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@string/lsq_text"
+            android:textColor="@color/lsq_seekbar_drag_color"
+            android:textSize="14sp" />
+    </org.lasque.tusdk.core.view.TuSdkLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/lsq_backgroud_edit_bar" />
+
+    <RelativeLayout
+        android:id="@+id/lsq_list_wrap"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" >
+
+        <org.lasque.tusdk.impl.components.widget.sticker.StickerBarTableView
+            android:id="@+id/lsq_sticker_table_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </org.lasque.tusdk.impl.components.widget.sticker.StickerBarTableView>
+
+        <TextView
+            android:id="@+id/lsq_sticker_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@string/lsq_sticker_empty_msg"
+            android:textColor="@color/lsq_sticker_title_color"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/lsq_backgroud_edit_bar" />
+
+</org.lasque.tusdk.impl.components.widget.sticker.StickerBarView>

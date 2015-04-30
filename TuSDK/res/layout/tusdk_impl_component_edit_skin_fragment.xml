@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lsq_backgroud_default" >
+
+    <RelativeLayout
+        android:id="@+id/lsq_imageWrapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lsq_param_config_view"
+        android:background="@color/lsq_color_black" >
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/lsq_param_config_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_above="@+id/lsq_bottomBar"
+        layout="@layout/tusdk_impl_component_widget_parameter_config_view" />
+
+    <LinearLayout
+        android:id="@+id/lsq_bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lsq_backgroud_edit_bar"
+        android:orientation="horizontal" >
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+            android:id="@+id/lsq_cancelButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:src="@drawable/lsq_style_default_edit_button_cancel" />
+
+        <TextView
+            android:id="@+id/lsq_edit_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/lsq_edit_skin_title"
+            android:textColor="@color/lsq_color_white"
+            android:textSize="18sp" />
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+            android:id="@+id/lsq_completeButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:src="@drawable/lsq_style_default_edit_button_completed" />
+    </LinearLayout>
+
+</RelativeLayout>

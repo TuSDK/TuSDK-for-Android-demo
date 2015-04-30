@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lsq_backgroud_default" >
+
+    <include
+        android:id="@+id/lsq_navigatorBar"
+        layout="@layout/tusdk_view_widget_navigator" />
+
+    <RelativeLayout
+        android:id="@+id/lsq_categoryWrap"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/lsq_navigatorBar" >
+
+        <LinearLayout
+            android:id="@+id/lsq_categoryView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/lsq_sticker_cate_default"
+                android:textColor="@color/lsq_sticker_title_color"
+                android:textSize="16sp" />
+
+            <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/lsq_sticker_cate_watermark"
+                android:textColor="@color/lsq_sticker_title_color"
+                android:textSize="16sp" />
+
+            <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/lsq_sticker_cate_frame"
+                android:textColor="@color/lsq_sticker_title_color"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignBottom="@+id/lsq_selectedCursor"
+            android:background="@color/lsq_split_cell" />
+
+        <View
+            android:id="@+id/lsq_selectedCursor"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/lsq_sticker_title_selected_color" />
+    </RelativeLayout>
+
+    <org.lasque.tusdk.core.view.widget.TuSdkViewPager
+        android:id="@+id/lsq_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lsq_categoryWrap" >
+    </org.lasque.tusdk.core.view.widget.TuSdkViewPager>
+
+</RelativeLayout>

@@ -6,4 +6,19 @@
     <string name="action_settings">Settings</string>
     <string name="filter_toggle_title">滤镜</string>
 
+    <!-- simple group -->
+    <string name="simple_group_adv_comp">高级组件</string>
+    <string name="simple_group_comp">基础组件</string>
+    <string name="simple_group_define">自定义组件</string>
+
+    <!-- simple -->
+    <string name="simple_EditComponent">图片编辑组件</string>
+    <string name="simple_EditAndCutComponent">图片编辑组件 (裁剪)</string>
+    <string name="simple_EditAvatarComponent">头像设置组件(编辑)</string>
+    <string name="simple_EditAdvancedComponent">高级图片编辑组件</string>
+    <string name="simple_EditMultipleComponent">多功能图片编辑组件</string>
+    <string name="simple_AlbumComponent">相册组件</string>
+    <string name="simple_CameraComponent">相机组件</string>
+    <string name="simple_DefineCamera">自定义相机</string>
+
 </resources>

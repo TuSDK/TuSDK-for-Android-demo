@@ -44,7 +44,7 @@
     <color name="lsq_focus_failed">#0b72ff</color>
 
     <!-- backgroud -->
-    <color name="lsq_backgroud_default">#101216</color>
+    <color name="lsq_backgroud_default">#1f2226</color>
     <color name="lsq_backgroud_default_cell">#262625</color>
     <color name="lsq_backgroud_default_header">#B4262625</color>
     <color name="lsq_backgroud_edit_bar">#32363a</color>

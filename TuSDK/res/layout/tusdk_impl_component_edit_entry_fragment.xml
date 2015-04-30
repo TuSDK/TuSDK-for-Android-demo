@@ -67,15 +67,14 @@
             android:scaleType="center"
             android:src="@drawable/lsq_style_default_edit_button_back" />
 
-        <View
+        <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1" />
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/lsq_edit_title"
+            android:textColor="@color/lsq_color_white"
+            android:textSize="18sp" />
 
         <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
             android:id="@+id/lsq_completeButton"

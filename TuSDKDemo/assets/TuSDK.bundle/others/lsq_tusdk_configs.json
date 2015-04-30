@@ -1,16 +1,15 @@
 {
-    "filterVersion": 0.3,
     "filterGroups": [
         {
             "file": "lsq_filter_Leica_1.gfilter",
-            "valid_key": "578b56ffffe1d7dc",
+            "valid_key": "4a32e5610712b947",
             "name": "lsq_filter_group_Leica",
             "thumb": "lsq_filter_group_thumb_1.jpg",
-            "default_filter": 12,
+            "default_filter_id": 12,
             "color": "#E74C3C",
             "filters": [
                 {
-                    "filter_id": 11,
+                    "id": 11,
                     "name": "lsq_filter_Brilliant",
                     "thumb": "lsq_filter_thumb_Brilliant",
                     "color": "#E74C3C",
@@ -18,92 +17,92 @@
                         "mixied": 0.5
                     }
                 },
-                { "filter_id": 12, "name": "lsq_filter_Leica" },
-                { "filter_id": 13, "name": "lsq_filter_Gloss" },
-                { "filter_id": 14, "name": "lsq_filter_Harmony" },
-                { "filter_id": 15, "name": "lsq_filter_Noir" }
+                { "id": 12, "name": "lsq_filter_Leica" },
+                { "id": 13, "name": "lsq_filter_Gloss" },
+                { "id": 14, "name": "lsq_filter_Harmony" },
+                { "id": 15, "name": "lsq_filter_Noir" }
             ]
         },
         {
             "file": "lsq_filter_Magic_7.gfilter",
-            "valid_key": "c1c97faef75674ad",
-            "default_filter": 72,
+            "valid_key": "10a7fa8557837a5c",
+            "default_filter_id": 72,
             "filters": [
-                { "filter_id": 71, "name": "lsq_filter_MagicRed" },
-                { "filter_id": 72, "name": "lsq_filter_MagicYellow" },
-                { "filter_id": 73, "name": "lsq_filter_MagicBlue" },
-                { "filter_id": 74, "name": "lsq_filter_MagicGreen" },
-                { "filter_id": 75, "name": "lsq_filter_MagicPurple" }
+                { "id": 71, "name": "lsq_filter_MagicRed" },
+                { "id": 72, "name": "lsq_filter_MagicYellow" },
+                { "id": 73, "name": "lsq_filter_MagicBlue" },
+                { "id": 74, "name": "lsq_filter_MagicGreen" },
+                { "id": 75, "name": "lsq_filter_MagicPurple" }
             ]
         },
         {
             "file": "lsq_filter_Beauty_6.gfilter",
-            "valid_key": "4a4efde0f8894a33",
-            "default_filter": 65,
+            "valid_key": "4b2493145477da42",
+            "default_filter_id": 65,
             "filters": [
-                { "filter_id": 61, "name": "lsq_filter_SkinNature" },
-                { "filter_id": 62, "name": "lsq_filter_SkinPink" },
-                { "filter_id": 63, "name": "lsq_filter_SkinJelly" },
-                { "filter_id": 64, "name": "lsq_filter_SkinNoir" },
-                { "filter_id": 65, "name": "lsq_filter_SkinRuddy" },
-                { "filter_id": 66, "name": "lsq_filter_SkinPowder" },
-                { "filter_id": 67, "name": "lsq_filter_SkinSugar" }
+                { "id": 61, "name": "lsq_filter_SkinNature" },
+                { "id": 62, "name": "lsq_filter_SkinPink" },
+                { "id": 63, "name": "lsq_filter_SkinJelly" },
+                { "id": 64, "name": "lsq_filter_SkinNoir" },
+                { "id": 65, "name": "lsq_filter_SkinRuddy" },
+                { "id": 66, "name": "lsq_filter_SkinPowder" },
+                { "id": 67, "name": "lsq_filter_SkinSugar" }
             ]
         },
         {
             "file": "lsq_filter_Lomo_2.gfilter",
-            "valid_key": "01eeed9a1fb71e23",
-            "default_filter": 24,
+            "valid_key": "62d9fd597a0e2d9d",
+            "default_filter_id": 24,
             "filters": [
-                { "filter_id": 21, "name": "lsq_filter_Lomo" },
-                { "filter_id": 22, "name": "lsq_filter_Clear" },
-                { "filter_id": 23, "name": "lsq_filter_Morning" },
-                { "filter_id": 24, "name": "lsq_filter_Newborn" },
-                { "filter_id": 25, "name": "lsq_filter_Artistic" }
+                { "id": 21, "name": "lsq_filter_Lomo" },
+                { "id": 22, "name": "lsq_filter_Clear" },
+                { "id": 23, "name": "lsq_filter_Morning" },
+                { "id": 24, "name": "lsq_filter_Newborn" },
+                { "id": 25, "name": "lsq_filter_Artistic" }
             ]
         },
         {
             "file": "lsq_filter_Food_3.gfilter",
-            "valid_key": "de07ada99e97f90e",
-            "default_filter": 32,
+            "valid_key": "9841530ac0eb74d8",
+            "default_filter_id": 32,
             "filters": [
-                { "filter_id": 31, "name": "lsq_filter_Abao" },
-                { "filter_id": 32, "name": "lsq_filter_Thick" },
-                { "filter_id": 33, "name": "lsq_filter_Vintage" },
-                { "filter_id": 34, "name": "lsq_filter_Nostalgic" },
-                { "filter_id": 35, "name": "lsq_filter_Forest" }
+                { "id": 31, "name": "lsq_filter_Abao" },
+                { "id": 32, "name": "lsq_filter_Thick" },
+                { "id": 33, "name": "lsq_filter_Vintage" },
+                { "id": 34, "name": "lsq_filter_Nostalgic" },
+                { "id": 35, "name": "lsq_filter_Forest" }
             ]
         },
         {
             "file": "lsq_filter_Enhance_4.gfilter",
-            "valid_key": "9fff8ec0182b803b",
-            "default_filter": 45,
+            "valid_key": "1ece1ddf404b6f19",
+            "default_filter_id": 45,
             "filters": [
-                { "filter_id": 41, "name": "lsq_filter_Cheerful" },
-                { "filter_id": 42, "name": "lsq_filter_Lightup" },
-                { "filter_id": 43, "name": "lsq_filter_Relaxed" },
-                { "filter_id": 44, "name": "lsq_filter_Rough" },
-                { "filter_id": 45, "name": "lsq_filter_Instant" }
+                { "id": 41, "name": "lsq_filter_Cheerful" },
+                { "id": 42, "name": "lsq_filter_Lightup" },
+                { "id": 43, "name": "lsq_filter_Relaxed" },
+                { "id": 44, "name": "lsq_filter_Rough" },
+                { "id": 45, "name": "lsq_filter_Instant" }
             ]
         },
         {
             "file": "lsq_filter_Glare_5.gfilter",
-            "valid_key": "e27b73af59c102a0",
-            "default_filter": 57,
+            "valid_key": "e76ac25737f771e6",
+            "default_filter_id": 57,
             "filters": [
                 {
-                    "filter_id": 51,
+                    "id": 51,
                     "name": "lsq_filter_Wintersunshine",
                     "args": {
                         "mixied": 0.5
                     }
                  },
-                { "filter_id": 52, "name": "lsq_filter_Coloration" },
-                { "filter_id": 53, "name": "lsq_filter_Fluorescent" },
-                { "filter_id": 54, "name": "lsq_filter_Freshmorning" },
-                { "filter_id": 55, "name": "lsq_filter_Holidaysunshine" },
-                { "filter_id": 56, "name": "lsq_filter_Purplemoon" },
-                { "filter_id": 57, "name": "lsq_filter_Summersunshine" }
+                { "id": 52, "name": "lsq_filter_Coloration" },
+                { "id": 53, "name": "lsq_filter_Fluorescent" },
+                { "id": 54, "name": "lsq_filter_Freshmorning" },
+                { "id": 55, "name": "lsq_filter_Holidaysunshine" },
+                { "id": 56, "name": "lsq_filter_Purplemoon" },
+                { "id": 57, "name": "lsq_filter_Summersunshine" }
             ]
         }
     ],

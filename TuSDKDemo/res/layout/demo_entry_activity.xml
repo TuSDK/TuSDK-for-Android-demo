@@ -7,10 +7,10 @@
         android:id="@+id/lsq_navigatorBar"
         layout="@layout/tusdk_view_widget_navigator" />
 
-    <org.lasque.tusdk.impl.view.widget.listview.TuDefaultLineListView
+    <org.lasque.tusdkdemo.view.DemoListView
         android:id="@+id/lsq_listView"
         style="@style/lsq_listSplitView"
         android:layout_below="@+id/lsq_navigatorBar" >
-    </org.lasque.tusdk.impl.view.widget.listview.TuDefaultLineListView>
+    </org.lasque.tusdkdemo.view.DemoListView>
 
 </RelativeLayout>
