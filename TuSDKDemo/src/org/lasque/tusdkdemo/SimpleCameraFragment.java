@@ -29,6 +29,7 @@ import org.lasque.tusdk.impl.components.widget.GroupFilterView;
 import org.lasque.tusdk.impl.components.widget.GroupFilterView.GroupFilterViewDelegate;
 
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.hardware.Camera.CameraInfo;
 import android.hardware.Camera.Parameters;
 import android.os.Handler;
@@ -441,6 +442,7 @@ public class SimpleCameraFragment extends TuFragment
 		Bitmap image = result.image;
 
 		ImageView imageView = new ImageView(this.getActivity());
+		imageView.setBackgroundColor(Color.GRAY);
 		imageView.setScaleType(ScaleType.FIT_CENTER);
 		imageView.setImageBitmap(image);
 		imageView.setOnClickListener(mImageViewClickListener);

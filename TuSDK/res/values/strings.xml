@@ -207,17 +207,20 @@
     <string name="lsq_filter_set_hueSpace">范围</string>
     <string name="lsq_filter_set_brightness">亮度</string>
     <string name="lsq_filter_set_exposure">曝光度</string>
-    <string name="lsq_filter_set_vignette">晕角</string>
-    <string name="lsq_filter_set_depthfield">景深</string>
+    <string name="lsq_filter_set_vignette">暗角</string>
+    <string name="lsq_filter_set_aperture">光圈</string>
     <string name="lsq_filter_set_adjustment">调整</string>
+    <string name="lsq_filter_set_selective">选区</string>
+    <string name="lsq_filter_set_linear">线性</string>
+    <string name="lsq_filter_set_radial">径向</string>
 
     <!-- Filters Definition Bokeh -->
-    <string name="lsq_filter_set_includeBlurSize">外模糊</string>
-    <string name="lsq_filter_set_excludeCircleRadius">内半径</string>
-    <string name="lsq_filter_set_excludeCirclePointX">中心X</string>
-    <string name="lsq_filter_set_excludeCirclePointY">中心Y</string>
-    <string name="lsq_filter_set_excludeBlurSize">边缘</string>
-    <string name="lsq_filter_set_excludeAspectRatio">内范围</string>
+    <string name="lsq_filter_set_radius">内半径</string>
+    <string name="lsq_filter_set_centerX">中心X</string>
+    <string name="lsq_filter_set_centerY">中心Y</string>
+    <string name="lsq_filter_set_excessive">边缘</string>
+    <string name="lsq_filter_set_maskAlpha">强调</string>
+    <string name="lsq_filter_set_degree">角度</string>
 
     <!-- network -->
     <string name="lsq_network_request_error">服务器请求错误</string>
