@@ -7,12 +7,12 @@
  * @Copyright 	(c) 2015 Lasque. All rights reserved.
  * 
  */
-package org.lasque.tusdkdemo.simple;
+package org.lasque.tusdkdemo.define;
 
 import org.lasque.tusdk.core.utils.hardware.CameraHelper;
 import org.lasque.tusdk.impl.components.base.TuSdkHelperComponent;
 import org.lasque.tusdkdemo.R;
-import org.lasque.tusdkdemo.SimpleCameraFragment;
+import org.lasque.tusdkdemo.simple.SimpleBase;
 
 import android.app.Activity;
 
@@ -21,14 +21,14 @@ import android.app.Activity;
  * 
  * @author Clear
  */
-public class DefineCameraSimple extends SimpleBase
+public class DefineCameraBaseSimple extends SimpleBase
 {
 	/**
 	 * 自定义相机范例
 	 */
-	public DefineCameraSimple()
+	public DefineCameraBaseSimple()
 	{
-		super(4, R.string.simple_DefineCamera);
+		super(4, R.string.define_CameraBase);
 	}
 
 	/**
@@ -48,6 +48,6 @@ public class DefineCameraSimple extends SimpleBase
 		this.componentHelper = new TuSdkHelperComponent(activity);
 
 		this.componentHelper.presentModalNavigationActivity(
-				new SimpleCameraFragment(), true);
+				new DefineCameraBaseFragment(), true);
 	}
 }

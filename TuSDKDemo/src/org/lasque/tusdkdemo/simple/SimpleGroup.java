@@ -78,7 +78,10 @@ public class SimpleGroup
 		// 高级组件分组
 		headers.add(new GroupHeader(2, R.string.simple_group_adv_comp));
 
-		// 自定义组件分组
+		// 扩展组件 - 修改界面
+		headers.add(new GroupHeader(3, R.string.simple_group_extend));
+
+		// 自定义组件 - 底层API
 		headers.add(new GroupHeader(4, R.string.simple_group_define));
 	}
 

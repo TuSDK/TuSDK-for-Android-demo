@@ -7,7 +7,7 @@
  * @Copyright 	(c) 2015 Lasque. All rights reserved.
  * 
  */
-package org.lasque.tusdkdemo.simple;
+package org.lasque.tusdkdemo.extend;
 
 import org.lasque.tusdk.core.TuSdkResult;
 import org.lasque.tusdk.core.utils.TLog;
@@ -18,6 +18,7 @@ import org.lasque.tusdk.impl.components.edit.TuEditTurnAndCutFragment;
 import org.lasque.tusdk.impl.components.edit.TuEditTurnAndCutFragment.TuEditTurnAndCutFragmentDelegate;
 import org.lasque.tusdk.impl.components.edit.TuEditTurnAndCutOption;
 import org.lasque.tusdkdemo.R;
+import org.lasque.tusdkdemo.simple.SimpleBase;
 
 import android.app.Activity;
 
@@ -26,15 +27,15 @@ import android.app.Activity;
  * 
  * @author Clear
  */
-public class EditComponentSimple extends SimpleBase implements
+public class ExtendEditComponentSimple extends SimpleBase implements
 		TuEditTurnAndCutFragmentDelegate
 {
 	/**
 	 * 图片编辑组件范例
 	 */
-	public EditComponentSimple()
+	public ExtendEditComponentSimple()
 	{
-		super(2, R.string.simple_EditComponent);
+		super(3, R.string.extend_EditComponent);
 	}
 
 	/**

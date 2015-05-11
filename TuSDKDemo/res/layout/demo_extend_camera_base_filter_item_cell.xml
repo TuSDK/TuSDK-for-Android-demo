@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.lasque.tusdk.impl.components.widget.GroupFilterItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="75dp"
+    android:layout_height="match_parent"
+    android:paddingBottom="4dp"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:paddingTop="4dp" >
+
+    <org.lasque.tusdk.core.view.TuSdkRelativeLayout
+        android:id="@+id/lsq_item_wrap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/lsq_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <View
+            android:id="@+id/lsq_item_flag"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true" />
+
+        <org.lasque.tusdk.core.view.TuSdkRelativeLayout
+            android:id="@+id/lsq_item_selected"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lsq_alpha_black_80" >
+
+            <ImageView
+                android:id="@+id/lsq_item_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@drawable/lsq_style_default_filter_capture" />
+        </org.lasque.tusdk.core.view.TuSdkRelativeLayout>
+
+        <TextView
+            android:id="@+id/lsq_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_alignParentBottom="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@string/lsq_text"
+            android:textColor="@color/lsq_color_white"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+    </org.lasque.tusdk.core.view.TuSdkRelativeLayout>
+
+</org.lasque.tusdk.impl.components.widget.GroupFilterItemView>

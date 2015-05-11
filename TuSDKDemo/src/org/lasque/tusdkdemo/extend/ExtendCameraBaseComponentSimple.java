@@ -1,40 +1,45 @@
 /** 
  * TuSdkDemo
- * CameraComponentSimple.java
+ * ExtendCameraBaseComponentSimple.java
  *
  * @author 		Clear
- * @Date 		2015-4-21 下午1:40:10 
+ * @Date 		2015-5-11 下午3:33:55 
  * @Copyright 	(c) 2015 Lasque. All rights reserved.
  * 
  */
-package org.lasque.tusdkdemo.simple;
+package org.lasque.tusdkdemo.extend;
+
+import java.util.Arrays;
 
 import org.lasque.tusdk.core.TuSdkResult;
 import org.lasque.tusdk.core.utils.TLog;
 import org.lasque.tusdk.core.utils.hardware.CameraHelper;
+import org.lasque.tusdk.core.utils.image.RatioType;
 import org.lasque.tusdk.impl.activity.TuFragment;
 import org.lasque.tusdk.impl.components.base.TuSdkHelperComponent;
 import org.lasque.tusdk.impl.components.camera.TuCameraFragment;
 import org.lasque.tusdk.impl.components.camera.TuCameraFragment.TuCameraFragmentDelegate;
 import org.lasque.tusdk.impl.components.camera.TuCameraOption;
 import org.lasque.tusdkdemo.R;
+import org.lasque.tusdkdemo.simple.SimpleBase;
 
 import android.app.Activity;
 
 /**
- * 相机组件范例
+ * 相机组件范例 - 修改界面
  * 
  * @author Clear
  */
-public class CameraComponentSimple extends SimpleBase implements
+public class ExtendCameraBaseComponentSimple extends SimpleBase implements
 		TuCameraFragmentDelegate
 {
+
 	/**
-	 * 相机组件范例
+	 * 相机组件范例 - 修改界面
 	 */
-	public CameraComponentSimple()
+	public ExtendCameraBaseComponentSimple()
 	{
-		super(1, R.string.simple_CameraComponent);
+		super(3, R.string.extend_CameraBase);
 	}
 
 	/**
@@ -54,10 +59,10 @@ public class CameraComponentSimple extends SimpleBase implements
 		TuCameraOption option = new TuCameraOption();
 
 		// 控制器类型
-		// option.setComponentClazz(TuCameraFragment.class);
+		option.setComponentClazz(ExtendCameraBaseFragment.class);
 
 		// 设置根视图布局资源ID
-		// option.setRootViewLayoutId(TuCameraFragment.getLayoutId());
+		option.setRootViewLayoutId(ExtendCameraBaseFragment.getLayoutId());
 
 		// 保存到临时文件 (默认不保存, 当设置为true时, TuSdkResult.imageFile, 处理完成后将自动清理原始图片)
 		// option.setSaveToTemp(false);
@@ -85,13 +90,13 @@ public class CameraComponentSimple extends SimpleBase implements
 		option.setEnableFilters(true);
 
 		// 默认是否显示滤镜视图 (默认: 不显示, 如果mEnableFilters = false, mShowFilterDefault将失效)
-		option.setShowFilterDefault(true);
+		// option.setShowFilterDefault(true);
 
 		// 滤镜组行视图宽度 (单位:DP)
-		// option.setGroupFilterCellWidthDP(75);
+		option.setGroupFilterCellWidthDP(60);
 
 		// 滤镜组选择栏高度 (单位:DP)
-		// option.setFilterBarHeightDP(100);
+		option.setFilterBarHeightDP(60);
 
 		// 滤镜分组列表行视图布局资源ID (默认:
 		// tusdk_impl_component_widget_group_filter_group_view，如需自定义请继承自
@@ -101,21 +106,20 @@ public class CameraComponentSimple extends SimpleBase implements
 		// 滤镜列表行视图布局资源ID (默认:
 		// tusdk_impl_component_widget_group_filter_item_view，如需自定义请继承自
 		// GroupFilterItemView)
-		// option.setFilterTableCellLayoutId(GroupFilterItemView.getLayoutId());
+		option.setFilterTableCellLayoutId(R.layout.demo_extend_camera_base_filter_item_cell);
 
 		// 开启滤镜配置选项
-		option.setEnableFilterConfig(true);
+		// option.setEnableFilterConfig(true);
 
 		// 需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜)
 		// 滤镜名称参考 TuSDK.bundle/others/lsq_tusdk_configs.json
 		// filterGroups[]->filters[]->name lsq_filter_%{Brilliant}
-		// String[] filters = { "SkinNature", "SkinPink", "SkinJelly",
-		// "SkinNoir",
-		// "SkinRuddy", "SkinPowder", "SkinSugar" };
-		// option.setFilterGroup(Arrays.asList(filters));
+		String[] filters = { "SkinNature", "SkinPink", "SkinJelly", "SkinNoir",
+				"SkinRuddy", "SkinPowder", "SkinSugar" };
+		option.setFilterGroup(Arrays.asList(filters));
 
 		// 是否保存最后一次使用的滤镜
-		option.setSaveLastFilter(true);
+		// option.setSaveLastFilter(true);
 
 		// 自动选择分组滤镜指定的默认滤镜
 		option.setAutoSelectGroupDefaultFilter(true);
@@ -125,6 +129,10 @@ public class CameraComponentSimple extends SimpleBase implements
 
 		// 视频视图显示比例 (默认: 0, 全屏)
 		// option.setCameraViewRatio(0);
+
+		// 视频视图显示比例类型 (默认:RatioType.ratio_all, 如果设置CameraViewRatio > 0,
+		// 将忽略RatioType)
+		option.setRatioType(RatioType.ratio_orgin);
 
 		// 是否直接输出图片数据 (默认:false，输出已经处理好的图片Bitmap)
 		// option.setOutputImageData(false);

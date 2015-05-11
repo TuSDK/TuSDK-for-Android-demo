@@ -7,7 +7,7 @@
  * @Copyright 	(c) 2014 Lasque. All rights reserved.
  * 
  */
-package org.lasque.tusdkdemo;
+package org.lasque.tusdkdemo.define;
 
 import java.util.ArrayList;
 
@@ -27,6 +27,7 @@ import org.lasque.tusdk.impl.components.camera.TuFocusTouchView;
 import org.lasque.tusdk.impl.components.widget.GroupFilterItem;
 import org.lasque.tusdk.impl.components.widget.GroupFilterView;
 import org.lasque.tusdk.impl.components.widget.GroupFilterView.GroupFilterViewDelegate;
+import org.lasque.tusdkdemo.R;
 
 import android.graphics.Bitmap;
 import android.graphics.Color;
@@ -50,14 +51,14 @@ import android.widget.TextView;
  * 
  * @author Clear
  */
-public class SimpleCameraFragment extends TuFragment
+public class DefineCameraBaseFragment extends TuFragment
 {
 	/**
 	 * 布局ID
 	 */
-	public static final int layoutId = R.layout.demo_simple_camera_fragment;
+	public static final int layoutId = R.layout.demo_define_camera_base_fragment;
 
-	public SimpleCameraFragment()
+	public DefineCameraBaseFragment()
 	{
 		this.setRootViewLayoutId(layoutId);
 	}

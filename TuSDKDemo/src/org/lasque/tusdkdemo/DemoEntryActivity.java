@@ -18,13 +18,14 @@ import org.lasque.tusdk.impl.activity.TuFragmentActivity;
 import org.lasque.tusdk.impl.components.base.ComponentActType;
 import org.lasque.tusdk.impl.view.widget.TuNavigatorBar;
 import org.lasque.tusdk.impl.view.widget.TuProgressHub;
+import org.lasque.tusdkdemo.define.DefineCameraBaseSimple;
+import org.lasque.tusdkdemo.extend.ExtendCameraBaseComponentSimple;
+import org.lasque.tusdkdemo.extend.ExtendEditComponentSimple;
 import org.lasque.tusdkdemo.simple.AlbumComponentSimple;
 import org.lasque.tusdkdemo.simple.CameraComponentSimple;
-import org.lasque.tusdkdemo.simple.DefineCameraSimple;
 import org.lasque.tusdkdemo.simple.EditAdvancedComponentSimple;
 import org.lasque.tusdkdemo.simple.EditAndCutComponentSimple;
 import org.lasque.tusdkdemo.simple.EditAvatarComponentSimple;
-import org.lasque.tusdkdemo.simple.EditComponentSimple;
 import org.lasque.tusdkdemo.simple.EditMultipleComponentSimple;
 import org.lasque.tusdkdemo.simple.SimpleBase;
 import org.lasque.tusdkdemo.simple.SimpleGroup;
@@ -73,7 +74,7 @@ public class DemoEntryActivity extends TuFragmentActivity
 
 	// 范例列表视图
 	private DemoListView mListView;
-	
+
 	/**
 	 * 初始化视图
 	 */
@@ -106,8 +107,6 @@ public class DemoEntryActivity extends TuFragmentActivity
 		group.appendSimple(new AlbumComponentSimple());
 		// 相机组件范例
 		group.appendSimple(new CameraComponentSimple());
-		// 图片编辑组件范例
-		group.appendSimple(new EditComponentSimple());
 		// 图片编辑组件 (裁剪)范例
 		group.appendSimple(new EditAndCutComponentSimple());
 		// 头像设置组件(编辑)范例
@@ -116,8 +115,14 @@ public class DemoEntryActivity extends TuFragmentActivity
 		group.appendSimple(new EditAdvancedComponentSimple());
 		// 多功能图片编辑组件范例
 		group.appendSimple(new EditMultipleComponentSimple());
+
+		// 图片编辑组件范例
+		group.appendSimple(new ExtendEditComponentSimple());
+		// 相机组件范例 - 修改界面
+		group.appendSimple(new ExtendCameraBaseComponentSimple());
+
 		// 自定义相机范例
-		group.appendSimple(new DefineCameraSimple());
+		group.appendSimple(new DefineCameraBaseSimple());
 
 		// 加载范例列表
 		mListView.loadSimples(group);

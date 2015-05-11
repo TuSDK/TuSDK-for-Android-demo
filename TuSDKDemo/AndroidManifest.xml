@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="org.lasque.tusdkdemo"
     android:versionCode="20150511"
-    android:versionName="1.8.1" >
+    android:versionName="1.8.2" >
 
     <uses-sdk
         android:minSdkVersion="11"
