@@ -104,25 +104,25 @@ public class EditMultipleComponentSimple extends SimpleBase
 		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/edit/TuEditCuterOption.html
 		// component.componentOption().editCuterOption()
 
-		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/edit/TuEditFilterOption.html
+		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/filter/TuEditFilterOption.html
 		// component.componentOption().editFilterOption()
 
-		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/edit/TuEditSkinOption.html
+		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/filter/TuEditSkinOption.html
 		// component.componentOption().editSkinOption()
 
 		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/sticker/TuEditStickerOption.html
 		// component.componentOption().editStickerOption()
 
-		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/edit/TuEditAdjustOption.html
+		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/filter/TuEditAdjustOption.html
 		// component.componentOption().editAdjustOption()
 
-		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/edit/TuEditSharpnessOption.html
+		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/filter/TuEditSharpnessOption.html
 		// component.componentOption().editSharpnessOption()
 
-		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/edit/TuEditApertureOption.html
+		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/filter/TuEditApertureOption.html
 		// component.componentOption().editApertureOption()
 
-		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/edit/TuEditVignetteOption.html
+		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/filter/TuEditVignetteOption.html
 		// component.componentOption().editVignetteOption()
 
 		// 设置图片

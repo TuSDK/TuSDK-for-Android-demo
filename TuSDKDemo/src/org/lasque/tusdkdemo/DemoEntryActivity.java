@@ -13,7 +13,7 @@ import org.lasque.tusdk.core.TuSdk;
 import org.lasque.tusdk.core.TuSdkContext;
 import org.lasque.tusdk.core.gpuimage.extend.FilterManager;
 import org.lasque.tusdk.core.gpuimage.extend.FilterManager.FilterManagerDelegate;
-import org.lasque.tusdk.core.statistics.StatisticsManger;
+import org.lasque.tusdk.core.secret.StatisticsManger;
 import org.lasque.tusdk.impl.activity.TuFragmentActivity;
 import org.lasque.tusdk.impl.components.base.ComponentActType;
 import org.lasque.tusdk.impl.view.widget.TuNavigatorBar;

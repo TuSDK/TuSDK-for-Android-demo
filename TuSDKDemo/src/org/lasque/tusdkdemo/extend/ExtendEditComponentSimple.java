@@ -72,6 +72,9 @@ public class ExtendEditComponentSimple extends SimpleBase implements
 		// 是否开启滤镜支持 (默认: 关闭)
 		option.setEnableFilters(true);
 
+		// 开启用户滤镜历史记录
+		option.setEnableFiltersHistory(true);
+
 		// 需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜)
 		// option.setFilterGroup(new ArrayList<String>());
 

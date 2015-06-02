@@ -13,9 +13,9 @@ import java.util.ArrayList;
 
 import org.lasque.tusdk.core.TuSdk;
 import org.lasque.tusdk.core.TuSdkResult;
+import org.lasque.tusdk.core.gpuimage.extend.FilterLocalPackage;
 import org.lasque.tusdk.core.gpuimage.extend.FilterOption;
-import org.lasque.tusdk.core.gpuimage.extend.FiltersConfig;
-import org.lasque.tusdk.core.statistics.StatisticsManger;
+import org.lasque.tusdk.core.secret.StatisticsManger;
 import org.lasque.tusdk.core.utils.hardware.CameraHelper;
 import org.lasque.tusdk.core.utils.hardware.TuSdkCamera;
 import org.lasque.tusdk.core.utils.hardware.TuSdkCamera.CameraState;
@@ -143,6 +143,8 @@ public class DefineCameraBaseFragment extends TuFragment
 		filterToggleButton.setOnClickListener(mClickListener);
 		// 滤镜选择栏
 		filterBar = this.getViewById(R.id.lsq_group_filter_view);
+		// 设置控制器
+		filterBar.setActivity(this.getActivity());
 		// 绑定选择委托
 		filterBar.setDelegate(mFilterBarDelegate);
 
@@ -373,7 +375,7 @@ public class DefineCameraBaseFragment extends TuFragment
 	{
 		if (mCamera == null) return false;
 
-		String code = FiltersConfig.NormalFilterCode;
+		String code = FilterLocalPackage.NormalFilterCode;
 		if (opt != null)
 		{
 			code = opt.code;

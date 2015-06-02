@@ -84,7 +84,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="android-support-v7-recyclerview" level="project" />
     <orderEntry type="library" exported="" name="android-support-v4" level="project" />
-    <orderEntry type="library" exported="" name="TuSDKCore-1.8.1" level="project" />
+    <orderEntry type="library" exported="" name="TuSDKCore-1.8.3" level="project" />
     <orderEntry type="library" exported="" name="Android-Exif-Extended-master-20140716" level="project" />
     <orderEntry type="library" exported="" name="universal-image-loader-1.9.4" level="project" />
     <orderEntry type="library" exported="" name="commons-io-2.4" level="project" />

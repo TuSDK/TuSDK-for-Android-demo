@@ -75,29 +75,12 @@ public class ExtendCameraBaseFragment extends TuCameraFragment
 			mFilterBar = this.getViewById(R.id.demo_group_filter_bar);
 			if (mFilterBar != null)
 			{
-				// 行视图宽度
-				mFilterBar.setGroupFilterCellWidth(this
-						.getGroupFilterCellWidth());
-				// 滤镜组选择栏高度
-				mFilterBar.setFilterBarHeight(this.getFilterBarHeight());
-				// 滤镜分组列表行视图布局资源ID
-				mFilterBar.setGroupTableCellLayoutId(this
-						.getGroupTableCellLayoutId());
-				// 滤镜列表行视图布局资源ID
-				mFilterBar.setFilterTableCellLayoutId(this
-						.getFilterTableCellLayoutId());
-				// 指定显示的滤镜组
-				mFilterBar.setFilterGroup(this.getFilterGroup());
-				// 裁剪与缩放控制器滤镜视图委托
-				mFilterBar.setDelegate(mFilterViewDelegate);
-
-				mFilterBar.setSaveLastFilter(this.isSaveLastFilter());
-				mFilterBar.setAutoSelectGroupDefaultFilter(this
-						.isAutoSelectGroupDefaultFilter());
-
+				this.configGroupFilterView(mFilterBar);
 				// 设置背景透明
 				mFilterBar.getGroupFilterBar().setBackgroundColor(
 						Color.TRANSPARENT);
+				// 裁剪与缩放控制器滤镜视图委托
+				mFilterBar.setDelegate(mFilterViewDelegate);
 			}
 		}
 		return mFilterBar;

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <org.lasque.tusdk.impl.components.widget.GroupFilterGroupView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="75dp"
-    android:layout_height="match_parent"
-    android:paddingBottom="4dp"
-    android:paddingLeft="2dp"
-    android:paddingRight="2dp"
-    android:paddingTop="4dp" >
+    android:layout_height="match_parent" >
 
     <org.lasque.tusdk.core.view.TuSdkRelativeLayout
         android:id="@+id/lsq_item_wrap"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="4dp" >
 
         <ImageView
             android:id="@+id/lsq_item_image"
@@ -49,5 +49,13 @@
             android:textColor="@color/lsq_color_white"
             android:textSize="15sp" />
     </org.lasque.tusdk.core.view.TuSdkRelativeLayout>
+
+    <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+        android:id="@+id/lsq_item_remove_button"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:scaleType="center"
+        android:src="@drawable/lsq_style_default_edit_drag_cancel" />
 
 </org.lasque.tusdk.impl.components.widget.GroupFilterGroupView>

@@ -129,6 +129,9 @@
     <string name="lsq_filter_group_Beauty">人像</string>
     <string name="lsq_filter_group_Magic">魔法色</string>
     <!-- Filters -->
+    <string name="lsq_filter_online_title">在线滤镜</string>
+    <string name="lsq_filter_remove_title">删除滤镜</string>
+    <string name="lsq_filter_remove_msg">您是否需要删除滤镜 《%s》 ?</string>
     <string name="lsq_filter_Normal">无效果</string>
     <string name="lsq_filter_Lomo">LOMO</string>
     <string name="lsq_filter_Abao">阿宝</string>
