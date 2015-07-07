@@ -44,7 +44,7 @@ public class AlbumComponentSimple extends SimpleBase
 	{
 		if (activity == null) return;
 
-		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/TuAlbumComponent.html
+		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/TuAlbumComponent.html
 		TuAlbumComponent comp = TuSdk.albumCommponent(activity,
 				new TuSdkComponentDelegate()
 				{
@@ -60,13 +60,13 @@ public class AlbumComponentSimple extends SimpleBase
 				});
 
 		// 组件选项配置
-		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/TuAlbumComponentOption.html
+		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/TuAlbumComponentOption.html
 		// comp.componentOption()
 
-		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/album/TuAlbumListOption.html
+		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/album/TuAlbumListOption.html
 		// comp.componentOption().albumListOption()
 
-		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/album/TuPhotoListOption.html
+		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/album/TuPhotoListOption.html
 		// comp.componentOption().photoListOption()
 
 		// 在组件执行完成后自动关闭组件

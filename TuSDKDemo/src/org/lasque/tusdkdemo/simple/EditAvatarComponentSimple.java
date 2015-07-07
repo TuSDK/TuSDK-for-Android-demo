@@ -47,7 +47,7 @@ public class EditAvatarComponentSimple extends SimpleBase
 		if (activity == null) return;
 
 		// 组件选项配置
-		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/TuAvatarComponent.html
+		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/TuAvatarComponent.html
 		TuAvatarComponent component = TuSdk.avatarCommponent(activity,
 				new TuSdkComponentDelegate()
 				{
@@ -61,19 +61,19 @@ public class EditAvatarComponentSimple extends SimpleBase
 				});
 
 		// 组件选项配置
-		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/TuAvatarComponentOption.html
+		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/TuAvatarComponentOption.html
 		// component.componentOption()
 
-		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/album/TuAlbumListOption.html
+		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/album/TuAlbumListOption.html
 		// component.componentOption().albumListOption()
 
-		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/album/TuPhotoListOption.html
+		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/album/TuPhotoListOption.html
 		// component.componentOption().photoListOption()
 
-		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/camera/TuCameraOption.html
+		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/camera/TuCameraOption.html
 		// component.componentOption().cameraOption()
 
-		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/edit/TuEditTurnAndCutOption.html
+		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/edit/TuEditTurnAndCutOption.html
 		// component.componentOption().editTurnAndCutOption()
 
 		// 需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜, 可选)

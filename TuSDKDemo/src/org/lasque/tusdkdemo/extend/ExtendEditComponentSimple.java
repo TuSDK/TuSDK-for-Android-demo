@@ -49,7 +49,7 @@ public class ExtendEditComponentSimple extends SimpleBase implements
 		if (activity == null) return;
 
 		// 组件选项配置
-		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/edit/TuEditTurnAndCutOption.html
+		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/edit/TuEditTurnAndCutOption.html
 		TuEditTurnAndCutOption option = new TuEditTurnAndCutOption();
 		// 控制器类型
 		// option.setComponentClazz(TuEditTurnAndCutFragment.class);
@@ -117,7 +117,7 @@ public class ExtendEditComponentSimple extends SimpleBase implements
 
 		fragment.setDelegate(this);
 
-		// see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/base/TuSdkHelperComponent.html
+		// see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/base/TuSdkHelperComponent.html
 		this.componentHelper = new TuSdkHelperComponent(activity);
 		// 开启相机
 		this.componentHelper.presentModalNavigationActivity(fragment);

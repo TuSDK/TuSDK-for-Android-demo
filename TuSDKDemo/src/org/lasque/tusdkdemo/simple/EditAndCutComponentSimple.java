@@ -48,7 +48,7 @@ public class EditAndCutComponentSimple extends SimpleBase implements
 	public void showSimple(Activity activity)
 	{
 		if (activity == null) return;
-		// see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/base/TuSdkHelperComponent.html
+		// see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/base/TuSdkHelperComponent.html
 		this.componentHelper = new TuSdkHelperComponent(activity);
 
 		// 开启相册选择照片
@@ -79,7 +79,7 @@ public class EditAndCutComponentSimple extends SimpleBase implements
 		if (result == null || error != null) return;
 
 		// 组件选项配置
-		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/edit/TuEditTurnAndCutOption.html
+		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/edit/TuEditTurnAndCutOption.html
 		TuEditTurnAndCutOption option = new TuEditTurnAndCutOption();
 
 		// 是否开启滤镜支持 (默认: 关闭)

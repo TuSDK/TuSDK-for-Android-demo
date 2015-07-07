@@ -55,7 +55,7 @@ public class ExtendCameraBaseComponentSimple extends SimpleBase implements
 		// 如果不支持摄像头显示警告信息
 		if (CameraHelper.showAlertIfNotSupportCamera(activity)) return;
 		// 组件选项配置
-		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/camera/TuCameraOption.html
+		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/camera/TuCameraOption.html
 		TuCameraOption option = new TuCameraOption();
 
 		// 控制器类型
@@ -168,7 +168,7 @@ public class ExtendCameraBaseComponentSimple extends SimpleBase implements
 		TuCameraFragment fragment = option.fragment();
 		fragment.setDelegate(this);
 
-		// see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/base/TuSdkHelperComponent.html
+		// see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/base/TuSdkHelperComponent.html
 		this.componentHelper = new TuSdkHelperComponent(activity);
 		// 开启相机
 		this.componentHelper.presentModalNavigationActivity(fragment, true);

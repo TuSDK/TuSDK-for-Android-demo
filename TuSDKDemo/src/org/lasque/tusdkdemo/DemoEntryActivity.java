@@ -5,7 +5,7 @@
  * @author 		Clear
  * @Date 		2014-11-15 下午4:30:52 
  * @Copyright 	(c) 2014 Lasque. All rights reserved.
- * @link 		开发文档:http://www.tusdk.com/docs/android/api/
+ * @link 		开发文档:http://tusdk.com/docs/android/api/
  */
 package org.lasque.tusdkdemo;
 
@@ -52,7 +52,7 @@ public class DemoEntryActivity extends TuFragmentActivity
 		 * 2,如果您仅需要几款滤镜，您可以删除/app/assets/TuSDK.bundle/textures下的*.gsce文件
 		 * 3,如果您不需要使用滤镜功能，请删除/app/assets/TuSDK.bundle/textures文件夹
 		 * 4,TuSDK在线管理功能请访问：http://tusdk.com/
-		 * 开发文档:http://www.tusdk.com/docs/android/api/
+		 * 开发文档:http://tusdk.com/docs/android/api/
 		 */
 	}
 
@@ -134,7 +134,7 @@ public class DemoEntryActivity extends TuFragmentActivity
 		 * 2,如果您仅需要几款滤镜，您可以删除/app/assets/TuSDK.bundle/textures下的*.gsce文件
 		 * 3,如果您不需要使用滤镜功能，请删除/app/assets/TuSDK.bundle/textures文件夹
 		 * 4,TuSDK在线管理功能请访问：http://tusdk.com/
-		 * 开发文档:http://www.tusdk.com/docs/android/api/
+		 * 开发文档:http://tusdk.com/docs/android/api/
 		 */
 
 		// 异步方式初始化滤镜管理器 (注意：如果需要一开启应用马上执行SDK组件，需要做该检测，否则可以忽略检测)

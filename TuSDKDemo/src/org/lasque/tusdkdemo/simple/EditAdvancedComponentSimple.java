@@ -44,7 +44,7 @@ public class EditAdvancedComponentSimple extends SimpleBase
 	public void showSimple(Activity activity)
 	{
 		if (activity == null) return;
-		// see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/base/TuSdkHelperComponent.html
+		// see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/base/TuSdkHelperComponent.html
 		this.componentHelper = new TuSdkHelperComponent(activity);
 
 		TuSdk.albumCommponent(activity, new TuSdkComponentDelegate()
@@ -82,7 +82,7 @@ public class EditAdvancedComponentSimple extends SimpleBase
 		};
 
 		// 组件选项配置
-		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/TuEditComponent.html
+		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/TuEditComponent.html
 		TuEditComponent component = null;
 
 		if (lastFragment == null)
@@ -95,19 +95,19 @@ public class EditAdvancedComponentSimple extends SimpleBase
 			component = TuSdk.editCommponent(lastFragment, delegate);
 		}
 
-		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/TuEditComponentOption.html
+		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/TuEditComponentOption.html
 		// component.componentOption()
 
-		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/edit/TuEditEntryOption.html
+		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/edit/TuEditEntryOption.html
 		// component.componentOption().editEntryOption()
 
-		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/edit/TuEditCuterOption.html
+		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/edit/TuEditCuterOption.html
 		// component.componentOption().editCuterOption()
 
-		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/filter/TuEditFilterOption.html
+		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/filter/TuEditFilterOption.html
 		// component.componentOption().editFilterOption()
 
-		// @see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/sticker/TuStickerChooseOption.html
+		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/sticker/TuStickerChooseOption.html
 		// component.componentOption().editStickerOption()
 
 		// 设置图片

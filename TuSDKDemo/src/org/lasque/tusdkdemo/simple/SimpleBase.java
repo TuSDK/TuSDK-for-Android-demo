@@ -33,7 +33,7 @@ public abstract class SimpleBase
 	/**
 	 * 组件帮助方法
 	 */
-	// see-http://www.tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/base/TuSdkHelperComponent.html
+	// see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/base/TuSdkHelperComponent.html
 	public TuSdkHelperComponent componentHelper;
 
 	/**

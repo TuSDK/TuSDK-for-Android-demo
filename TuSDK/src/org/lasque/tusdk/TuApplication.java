@@ -33,7 +33,7 @@ public class TuApplication extends TuSdkApplication
 		 * 3,如果您不需要使用滤镜功能，请删除/app/assets/TuSDK.bundle/textures文件夹
 		 * 4,TuSDK在线管理功能请访问：http://tusdk.com/
 		 * 
-		 * 开发文档:http://www.tusdk.com/docs/android/api/
+		 * 开发文档:http://tusdk.com/docs/android/api/
 		 */
 
 		// 设置输出状态
