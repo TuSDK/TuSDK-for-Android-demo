@@ -123,6 +123,9 @@ public class CameraComponentSimple extends SimpleBase implements
 		// 开启用户滤镜历史记录
 		option.setEnableFiltersHistory(true);
 
+		// 显示滤镜标题视图
+		option.setDisplayFiltersSubtitles(true);
+
 		// 触摸聚焦视图ID (默认: tusdk_impl_component_camera_focus_touch_view)
 		// option.setFocusTouchViewId(TuFocusTouchView.getLayoutId());
 

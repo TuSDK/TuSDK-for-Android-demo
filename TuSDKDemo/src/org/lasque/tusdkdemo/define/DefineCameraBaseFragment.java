@@ -150,6 +150,8 @@ public class DefineCameraBaseFragment extends TuFragment
 
 		// 设置默认是否显示
 		filterBar.setDefaultShowState(true);
+		// 显示滤镜标题视图
+		filterBar.setDisplaySubtitles(true);
 
 		// 滤镜选择栏 设置SDK内置滤镜
 		filterBar.loadFilters();
