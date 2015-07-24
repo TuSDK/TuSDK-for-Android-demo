@@ -7,7 +7,7 @@
  * Copyright 	(c) 2014 Lasque. All rights reserved.
  * 
  */
-package org.lasque.tusdk;
+package org.lasque.tusdkdemo;
 
 import org.lasque.tusdk.core.TuSdkApplication;
 

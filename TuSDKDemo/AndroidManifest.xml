@@ -3,8 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="org.lasque.tusdkdemo"
-    android:versionCode="20150717"
-    android:versionName="1.8.8" >
+    android:versionCode="20150724"
+    android:versionName="1.8.9" >
 
     <uses-sdk
         android:minSdkVersion="11"
@@ -32,7 +32,7 @@
 
     <application
         tools:replace="android:label, android:theme"
-        android:name="org.lasque.tusdk.TuApplication"
+        android:name="org.lasque.tusdkdemo.TuApplication"
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:icon="@drawable/ic_launcher"

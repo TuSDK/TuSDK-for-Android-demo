@@ -21,7 +21,7 @@
     <uses-feature android:name="android.hardware.camera.flash" />
 
     <application
-        android:name="org.lasque.tusdk.TuApplication"
+        android:name="org.lasque.tusdkdemo.TuApplication"
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:label="@string/lsq_sdk_name"
