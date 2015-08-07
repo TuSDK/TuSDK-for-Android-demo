@@ -7,7 +7,7 @@
     <string name="filter_toggle_title">Filters</string>
 
     <!-- simple group -->
-    <string name="simple_group_adv_comp">Andvanced Components</string>
+    <string name="simple_group_adv_comp">Advanced Components</string>
     <string name="simple_group_comp">Base Components</string>
     <string name="simple_group_extend">Extended Components - Custom UI</string>
     <string name="simple_group_define">Customized Components - Low level API</string>
@@ -16,7 +16,7 @@
     
     <string name="simple_EditAndCutComponent">Edit Component</string>
     <string name="simple_EditAvatarComponent">Avatar Component</string>
-    <string name="simple_EditAdvancedComponent">Andvanced Edit Component</string>
+    <string name="simple_EditAdvancedComponent">Advanced Edit Component</string>
     <string name="simple_EditMultipleComponent">Multifunctional Edit Component</string>
     <string name="simple_CameraAndEditCutComponent">Camera and Edit Component</string>
     <string name="simple_AlbumComponent">Album Component</string>
