@@ -18,6 +18,7 @@
     <string name="simple_EditAvatarComponent">Avatar Component</string>
     <string name="simple_EditAdvancedComponent">Andvanced Edit Component</string>
     <string name="simple_EditMultipleComponent">Multifunctional Edit Component</string>
+    <string name="simple_CameraAndEditCutComponent">Camera and Edit Component</string>
     <string name="simple_AlbumComponent">Album Component</string>
     <string name="simple_CameraComponent">Camera Component</string>
     <string name="extend_EditComponent">Extended Edit Component</string>

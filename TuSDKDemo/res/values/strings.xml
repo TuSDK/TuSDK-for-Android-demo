@@ -18,6 +18,7 @@
     <string name="simple_EditAvatarComponent">头像设置组件(编辑)</string>
     <string name="simple_EditAdvancedComponent">高级图片编辑组件</string>
     <string name="simple_EditMultipleComponent">多功能图片编辑组件</string>
+    <string name="simple_CameraAndEditCutComponent">相机连接图片编辑组件</string>
     <string name="simple_AlbumComponent">相册组件</string>
     <string name="simple_CameraComponent">相机组件</string>
     <string name="extend_EditComponent">图片编辑组件</string>

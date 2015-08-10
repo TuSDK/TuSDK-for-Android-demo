@@ -18,6 +18,7 @@ import org.lasque.tusdk.impl.activity.TuFragmentActivity;
 import org.lasque.tusdk.impl.components.base.ComponentActType;
 import org.lasque.tusdk.impl.view.widget.TuNavigatorBar;
 import org.lasque.tusdk.impl.view.widget.TuProgressHub;
+import org.lasque.tusdkdemo.simple.CameraAndEditCutSimple;
 import org.lasque.tusdkdemo.define.DefineCameraBaseSimple;
 import org.lasque.tusdkdemo.extend.ExtendCameraBaseComponentSimple;
 import org.lasque.tusdkdemo.extend.ExtendEditComponentSimple;
@@ -115,6 +116,9 @@ public class DemoEntryActivity extends TuFragmentActivity
 		group.appendSimple(new EditAdvancedComponentSimple());
 		// 多功能图片编辑组件范例
 		group.appendSimple(new EditMultipleComponentSimple());
+		// 相机连接图片编辑组件范例
+		group.appendSimple(new CameraAndEditCutSimple());
+
 
 		// 图片编辑组件范例
 		group.appendSimple(new ExtendEditComponentSimple());
