@@ -42,7 +42,7 @@ public class TuApplication extends TuSdkApplication
 		this.initPreLoader(this.getApplicationContext(),
 				"12aa4847a3a9ce68-04-ewdjn1");
 
-		// 如果不想继承TuApplication，直接在自定义Application.onCreate()方法中调用以下方法
+		// 如果不想继承TuSdkApplication，直接在自定义Application.onCreate()方法中调用以下方法
 		// 初始化全局变量
 		// TuSdk.enableDebugLog(true);
 		// 开发ID (请前往 http://tusdk.com 获取您的APP 开发秘钥)
