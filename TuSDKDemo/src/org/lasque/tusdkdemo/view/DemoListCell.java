@@ -4,7 +4,7 @@
  *
  * @author 		Clear
  * @Date 		2015-4-21 下午2:12:20 
- * @Copyright 	(c) 2015 Lasque. All rights reserved.
+ * @Copyright 	(c) 2015 tusdk.com. All rights reserved.
  * 
  */
 package org.lasque.tusdkdemo.view;
@@ -24,11 +24,7 @@ import android.widget.TextView;
  */
 public class DemoListCell extends TuSdkCellRelativeLayout<SimpleBase>
 {
-	/**
-	 * 布局ID
-	 * 
-	 * @return
-	 */
+	/** 布局ID */
 	public static int getLayoutId()
 	{
 		return R.layout.demo_view_list_cell;
@@ -49,9 +45,7 @@ public class DemoListCell extends TuSdkCellRelativeLayout<SimpleBase>
 		super(context);
 	}
 
-	/**
-	 * 标题视图
-	 */
+	/** 标题视图 */
 	private TextView mTitleView;
 
 	@Override

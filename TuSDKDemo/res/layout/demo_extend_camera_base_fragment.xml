@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lsq_backgroud_default" >
+    android:background="@color/lsq_background_default" >
 
     <RelativeLayout
         android:id="@+id/lsq_cameraView"
@@ -16,22 +16,24 @@
         android:layout_height="44dp"
         android:background="#A000" >
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkButton
+        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
             android:id="@+id/lsq_flashButton"
             android:layout_width="44dp"
             android:layout_height="44dp"
             android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
-            android:background="@drawable/lsq_style_default_camera_flash_auto" />
+            android:scaleType="center"
+            android:src="@drawable/lsq_style_default_camera_flash_auto" />
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkButton
+        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
             android:id="@+id/lsq_switchButton"
             android:layout_width="44dp"
             android:layout_height="44dp"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="10dp"
-            android:background="@drawable/lsq_style_default_camera_button_switch" />
+            android:scaleType="center"
+            android:src="@drawable/lsq_style_default_camera_button_switch" />
     </RelativeLayout>
 
     <include
@@ -39,7 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/lsq_bottomBar"
-        layout="@layout/tusdk_impl_component_edit_turn_and_cut_filter_view" />
+        layout="@layout/tusdk_impl_component_edit_normal_filter_view" />
 
     <RelativeLayout
         android:id="@+id/lsq_bottomBar"
@@ -48,18 +50,17 @@
         android:layout_alignParentBottom="true"
         android:background="#A000" >
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkButton
+        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
             android:id="@+id/lsq_closeButton"
             android:layout_width="60dp"
             android:layout_height="match_parent"
             android:layout_centerVertical="true"
             android:layout_marginLeft="20dp"
             android:background="#0FFF"
-            android:text="@string/lsq_nav_cancel"
-            android:textColor="@color/lsq_color_white"
-            android:textSize="16sp" />
+            android:scaleType="center"
+            android:src="@drawable/lsq_style_default_camera_button_close" />
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkButton
+        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
             android:id="@+id/lsq_captureButton"
             android:layout_width="50dp"
             android:layout_height="50dp"
@@ -100,6 +101,8 @@
                 android:gravity="center_vertical"
                 android:text="@string/lsq_button_flash_model_auto"
                 android:textColor="@color/lsq_color_white"
+                android:paddingLeft="8dp"
+                android:drawablePadding="8dp"
                 android:textSize="14sp" />
 
             <View
@@ -114,6 +117,8 @@
                 android:gravity="center_vertical"
                 android:text="@string/lsq_button_flash_model_open"
                 android:textColor="@color/lsq_color_white"
+                android:paddingLeft="8dp"
+                android:drawablePadding="8dp"
                 android:textSize="14sp" />
 
             <View
@@ -128,6 +133,8 @@
                 android:gravity="center_vertical"
                 android:text="@string/lsq_button_flash_model_off"
                 android:textColor="@color/lsq_color_white"
+                android:paddingLeft="8dp"
+                android:drawablePadding="8dp"
                 android:textSize="14sp" />
         </LinearLayout>
     </RelativeLayout>

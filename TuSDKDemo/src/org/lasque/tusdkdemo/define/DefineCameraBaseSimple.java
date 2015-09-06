@@ -4,13 +4,13 @@
  *
  * @author 		Clear
  * @Date 		2015-4-21 下午1:40:59 
- * @Copyright 	(c) 2015 Lasque. All rights reserved.
+ * @Copyright 	(c) 2015 tusdk.com. All rights reserved.
  * 
  */
 package org.lasque.tusdkdemo.define;
 
 import org.lasque.tusdk.core.utils.hardware.CameraHelper;
-import org.lasque.tusdk.impl.components.base.TuSdkHelperComponent;
+import org.lasque.tusdk.modules.components.TuSdkHelperComponent;
 import org.lasque.tusdkdemo.R;
 import org.lasque.tusdkdemo.simple.SimpleBase;
 

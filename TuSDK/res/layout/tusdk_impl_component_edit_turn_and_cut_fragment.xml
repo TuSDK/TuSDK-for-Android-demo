@@ -1,46 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/lsq_backgroud_default" >
-
+    android:layout_height="match_parent" >
+	
+    <include
+        android:id="@+id/lsq_navigatorBar"
+        layout="@layout/tusdk_view_widget_navigator" />
+    
     <RelativeLayout
         android:id="@+id/lsq_imageWrapView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/lsq_bottomBar"
+        android:layout_below="@+id/lsq_navigatorBar"
+        android:background="@color/lsq_background_editor"
         android:clipChildren="false"
         android:clipToPadding="false" >
     </RelativeLayout>
 
-    <org.lasque.tusdk.impl.components.edit.TuEditTurnAndCutRegion
+    <org.lasque.tusdk.core.view.widget.TuMaskRegionView
         android:id="@+id/lsq_cutRegionView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/lsq_bottomBar" />
-
-    <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
-        android:id="@+id/lsq_backButton"
-        android:layout_width="40dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="10dp"
-        android:background="@color/lsq_alpha_black_B4"
-        android:scaleType="center"
-        android:src="@drawable/lsq_style_default_nav_button_back" />
+        android:layout_above="@+id/lsq_bottomBar"
+        android:layout_below="@+id/lsq_navigatorBar" />
 
     <include
         android:id="@+id/lsq_group_filter_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/lsq_bottomBar"
-        layout="@layout/tusdk_impl_component_edit_turn_and_cut_filter_view" />
+        layout="@layout/tusdk_impl_component_edit_normal_filter_view" />
 
     <LinearLayout
         android:id="@+id/lsq_bottomBar"
         android:layout_width="match_parent"
-        android:layout_height="44dp"
+        android:layout_height="49dp"
         android:layout_alignParentBottom="true"
-        android:background="@color/lsq_backgroud_edit_bar"
+        android:background="@color/lsq_background_editor_bottom_bar"
         android:orientation="horizontal" >
 
         <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton

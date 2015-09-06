@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<org.lasque.tusdk.impl.components.widget.GroupFilterView xmlns:android="http://schemas.android.com/apk/res/android"
+<org.lasque.tusdk.impl.components.camera.TuCameraFilterView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
@@ -8,20 +8,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@color/lsq_backgroud_default"
+        android:background="@color/lsq_background_option_bar"
         android:orientation="vertical" >
 
         <include
             android:id="@+id/lsq_group_filter_bar"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="80dp"
             layout="@layout/tusdk_impl_component_widget_group_filter_bar" />
 
         <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
             android:id="@+id/lsq_close_button"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@color/lsq_backgroud_default"
+            android:layout_height="36dp"
+            android:background="@color/lsq_background_default"
             android:scaleType="center"
             android:src="@drawable/lsq_style_default_icon_arrow_down" />
     </org.lasque.tusdk.core.view.TuSdkLinearLayout>
@@ -33,4 +33,4 @@
         android:layout_centerVertical="true"
         layout="@layout/tusdk_impl_component_widget_filter_title_view" />
 
-</org.lasque.tusdk.impl.components.widget.GroupFilterView>
+</org.lasque.tusdk.impl.components.camera.TuCameraFilterView>

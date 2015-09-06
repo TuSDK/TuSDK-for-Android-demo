@@ -13,24 +13,24 @@
     <include
         android:id="@+id/lsq_param_config_view"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:layout_above="@+id/lsq_bar_bottomBar"
         layout="@layout/tusdk_impl_component_widget_parameter_config_view" />
 
     <include
         android:id="@+id/lsq_group_filter_bar"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="44dp"
+        android:layout_marginBottom="49dp"
         layout="@layout/tusdk_impl_component_widget_group_filter_bar" />
 
     <LinearLayout
         android:id="@+id/lsq_bar_bottomBar"
         android:layout_width="match_parent"
-        android:layout_height="44dp"
+        android:layout_height="49dp"
         android:layout_alignParentBottom="true"
-        android:background="@color/lsq_backgroud_default"
+        android:background="@color/lsq_background_default"
         android:orientation="horizontal" >
 
         <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton

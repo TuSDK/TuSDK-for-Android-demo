@@ -4,12 +4,12 @@
  *
  * @author 		Clear
  * @Date 		2015-4-21 下午12:52:59 
- * @Copyright 	(c) 2015 Lasque. All rights reserved.
+ * @Copyright 	(c) 2015 tusdk.com. All rights reserved.
  * 
  */
 package org.lasque.tusdkdemo.simple;
 
-import org.lasque.tusdk.impl.components.base.TuSdkHelperComponent;
+import org.lasque.tusdk.modules.components.TuSdkHelperComponent;
 
 import android.app.Activity;
 
@@ -20,19 +20,13 @@ import android.app.Activity;
  */
 public abstract class SimpleBase
 {
-	/**
-	 * 分组ID
-	 */
+	/** 分组ID */
 	public int groupId;
 
-	/**
-	 * 标题资源ID
-	 */
+	/** 标题资源ID */
 	public int titleResId;
 
-	/**
-	 * 组件帮助方法
-	 */
+	/** 组件帮助方法 */
 	// see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/base/TuSdkHelperComponent.html
 	public TuSdkHelperComponent componentHelper;
 
@@ -50,10 +44,6 @@ public abstract class SimpleBase
 		this.titleResId = titleResId;
 	}
 
-	/**
-	 * 显示范例
-	 * 
-	 * @param activity
-	 */
+	/** 显示范例 */
 	public abstract void showSimple(Activity activity);
 }

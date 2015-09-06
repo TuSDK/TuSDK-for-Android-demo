@@ -2,7 +2,7 @@
 <org.lasque.tusdk.impl.components.album.TuAlbumListCell xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/lsq_backgroud_default_cell" >
+    android:background="@color/lsq_background_default_cell" >
 
     <ImageView
         android:id="@+id/lsq_posterView"
@@ -25,13 +25,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_marginLeft="5dp"
+        android:layout_marginLeft="24dp"
         android:layout_toRightOf="@+id/lsq_posterView"
         android:ellipsize="end"
         android:lines="1"
         android:maxWidth="200dp"
         android:text="@string/lsq_text"
         android:textColor="@color/lsq_color_white"
-        android:textSize="15sp" />
+        android:textSize="14sp" />
 
 </org.lasque.tusdk.impl.components.album.TuAlbumListCell>

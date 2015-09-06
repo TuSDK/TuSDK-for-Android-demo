@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.lasque.tusdk.impl.components.album.TuAlbumPopListCell xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lsq_background_default_cell" >
+
+    <ImageView
+        android:id="@+id/lsq_posterView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lsq_background_album_cell"
+        android:scaleType="centerCrop"
+        android:layout_margin="5dp"
+    />
+
+    <TextView
+        android:id="@+id/lsq_titleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_toRightOf="@+id/lsq_posterView"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxWidth="200dp"
+        android:text="@string/lsq_text"
+        android:textColor="@color/lsq_color_white"
+        android:textSize="14sp" />
+
+</org.lasque.tusdk.impl.components.album.TuAlbumPopListCell>

@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lsq_backgroud_default" >
+    android:background="@color/lsq_background_editor" >
 
+    
     <ImageView
         android:id="@+id/lsq_imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/lsq_sticker_bar"
-        android:background="@color/lsq_color_black"
+        android:background="@color/lsq_background_editor"
         android:scaleType="fitCenter" />
 
     <org.lasque.tusdk.impl.components.widget.sticker.StickerView
@@ -19,11 +19,11 @@
         android:layout_above="@+id/lsq_sticker_bar" >
     </org.lasque.tusdk.impl.components.widget.sticker.StickerView>
 
-    <org.lasque.tusdk.impl.components.edit.TuEditTurnAndCutRegion
+    <org.lasque.tusdk.core.view.widget.TuMaskRegionView
         android:id="@+id/lsq_cutRegionView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/lsq_sticker_bar" />
+        android:layout_above="@+id/lsq_sticker_bar"/>
 
     <include
         android:id="@+id/lsq_sticker_bar"
@@ -35,9 +35,9 @@
     <LinearLayout
         android:id="@+id/lsq_bar_bottomBar"
         android:layout_width="match_parent"
-        android:layout_height="44dp"
+        android:layout_height="49dp"
         android:layout_alignParentBottom="true"
-        android:background="@color/lsq_backgroud_default"
+        android:background="@color/lsq_background_editor_bottom_bar"
         android:orientation="horizontal" >
 
         <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton

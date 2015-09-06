@@ -4,7 +4,7 @@
  *
  * @author 		Clear
  * @Date 		2015-5-11 下午3:33:55 
- * @Copyright 	(c) 2015 Lasque. All rights reserved.
+ * @Copyright 	(c) 2015 tusdk.com. All rights reserved.
  * 
  */
 package org.lasque.tusdkdemo.extend;
@@ -16,10 +16,10 @@ import org.lasque.tusdk.core.utils.TLog;
 import org.lasque.tusdk.core.utils.hardware.CameraHelper;
 import org.lasque.tusdk.core.utils.image.RatioType;
 import org.lasque.tusdk.impl.activity.TuFragment;
-import org.lasque.tusdk.impl.components.base.TuSdkHelperComponent;
 import org.lasque.tusdk.impl.components.camera.TuCameraFragment;
 import org.lasque.tusdk.impl.components.camera.TuCameraFragment.TuCameraFragmentDelegate;
 import org.lasque.tusdk.impl.components.camera.TuCameraOption;
+import org.lasque.tusdk.modules.components.TuSdkHelperComponent;
 import org.lasque.tusdkdemo.R;
 import org.lasque.tusdkdemo.simple.SimpleBase;
 
@@ -30,23 +30,16 @@ import android.app.Activity;
  * 
  * @author Clear
  */
-public class ExtendCameraBaseComponentSimple extends SimpleBase implements
-		TuCameraFragmentDelegate
+public class ExtendCameraBaseComponentSimple extends SimpleBase implements TuCameraFragmentDelegate
 {
 
-	/**
-	 * 相机组件范例 - 修改界面
-	 */
+	/** 相机组件范例 - 修改界面 */
 	public ExtendCameraBaseComponentSimple()
 	{
 		super(3, R.string.extend_CameraBase);
 	}
 
-	/**
-	 * 显示范例
-	 * 
-	 * @param activity
-	 */
+	/** 显示范例 */
 	@Override
 	public void showSimple(Activity activity)
 	{
@@ -114,8 +107,8 @@ public class ExtendCameraBaseComponentSimple extends SimpleBase implements
 		// 需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜)
 		// 滤镜名称参考 TuSDK.bundle/others/lsq_tusdk_configs.json
 		// filterGroups[]->filters[]->name lsq_filter_%{Brilliant}
-		String[] filters = { "SkinNature", "SkinPink", "SkinJelly", "SkinNoir",
-				"SkinRuddy", "SkinPowder", "SkinSugar" };
+		String[] filters = {
+				"SkinNature", "SkinPink", "SkinJelly", "SkinNoir", "SkinRuddy", "SkinPowder", "SkinSugar" };
 		option.setFilterGroup(Arrays.asList(filters));
 
 		// 是否保存最后一次使用的滤镜
@@ -183,8 +176,7 @@ public class ExtendCameraBaseComponentSimple extends SimpleBase implements
 	 *            拍摄结果
 	 */
 	@Override
-	public void onTuCameraFragmentCaptured(TuCameraFragment fragment,
-			TuSdkResult result)
+	public void onTuCameraFragmentCaptured(TuCameraFragment fragment, TuSdkResult result)
 	{
 		fragment.hubDismissRightNow();
 		fragment.dismissActivityWithAnim();
@@ -201,18 +193,26 @@ public class ExtendCameraBaseComponentSimple extends SimpleBase implements
 	 * @return 是否截断默认处理逻辑 (默认: false, 设置为True时使用自定义处理逻辑)
 	 */
 	@Override
-	public boolean onTuCameraFragmentCapturedAsync(TuCameraFragment fragment,
-			TuSdkResult result)
+	public boolean onTuCameraFragmentCapturedAsync(TuCameraFragment fragment, TuSdkResult result)
 	{
 		TLog.d("onTuCameraFragmentCapturedAsync: %s", result);
 		return false;
 	}
-
+	
+	/**
+	 * 请求从相机界面跳转到相册界面。只有 设置mDisplayAlbumPoster为true (默认:false) 才会发生该事件
+	 * 
+	 * @param fragment
+	 *            系统相册控制器
+	 */
 	@Override
-	public void onComponentError(TuFragment fragment, TuSdkResult result,
-			Error error)
+	public void onTuAlbumDemand(TuCameraFragment fragment)
 	{
-		TLog.d("onComponentError: fragment - %s, result - %s, error - %s",
-				fragment, result, error);
+		
+	}
+	@Override
+	public void onComponentError(TuFragment fragment, TuSdkResult result, Error error)
+	{
+		TLog.d("onComponentError: fragment - %s, result - %s, error - %s", fragment, result, error);
 	}
 }

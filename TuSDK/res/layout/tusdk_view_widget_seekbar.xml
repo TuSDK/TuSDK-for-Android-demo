@@ -6,14 +6,14 @@
     <View
         android:id="@+id/lsq_seekBottomView"
         android:layout_width="match_parent"
-        android:layout_height="3dp"
+        android:layout_height="2dp"
         android:layout_centerVertical="true"
         android:background="@drawable/tusdk_view_widget_seekbar_bottom_bg" />
 
     <View
         android:id="@+id/lsq_seekTopView"
         android:layout_width="0dp"
-        android:layout_height="3dp"
+        android:layout_height="2dp"
         android:layout_centerVertical="true"
         android:background="@drawable/tusdk_view_widget_seekbar_top_bg" />
 

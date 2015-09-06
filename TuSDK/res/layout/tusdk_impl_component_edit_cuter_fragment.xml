@@ -2,19 +2,19 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lsq_backgroud_default" >
+    android:background="@color/lsq_background_editor" >
 
     <RelativeLayout
         android:id="@+id/lsq_imageWrapView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/lsq_optionBar"
-        android:background="@color/lsq_color_black"
+        android:background="@color/lsq_background_editor"
         android:clipChildren="false"
         android:clipToPadding="false" >
     </RelativeLayout>
 
-    <org.lasque.tusdk.impl.components.edit.TuEditTurnAndCutRegion
+    <org.lasque.tusdk.core.view.widget.TuMaskRegionView
         android:id="@+id/lsq_cutRegionView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -25,6 +25,8 @@
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_above="@+id/lsq_bottomBar"
+        android:gravity="center"
+        android:background="@color/lsq_background_option_bar"
         android:orientation="horizontal" >
 
         <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
@@ -61,9 +63,9 @@
     <LinearLayout
         android:id="@+id/lsq_bottomBar"
         android:layout_width="match_parent"
-        android:layout_height="44dp"
+        android:layout_height="49dp"
         android:layout_alignParentBottom="true"
-        android:background="@color/lsq_backgroud_edit_bar"
+        android:background="@color/lsq_background_editor_bottom_bar"
         android:orientation="horizontal" >
 
         <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton

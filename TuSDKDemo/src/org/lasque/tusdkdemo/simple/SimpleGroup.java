@@ -4,7 +4,7 @@
  *
  * @author 		Clear
  * @Date 		2015-4-21 下午1:00:42 
- * @Copyright 	(c) 2015 Lasque. All rights reserved.
+ * @Copyright 	(c) 2015 tusdk.com. All rights reserved.
  * 
  */
 package org.lasque.tusdkdemo.simple;
@@ -21,26 +21,14 @@ import org.lasque.tusdkdemo.R;
  */
 public class SimpleGroup
 {
-	/**
-	 * 范例分组头部信息
-	 * 
-	 * @author Clear
-	 */
+	/** 范例分组头部信息 */
 	public static class GroupHeader
 	{
-		/**
-		 * 分组ID
-		 */
+		/** 分组ID */
 		public int groupId;
-
-		/**
-		 * 标题资源ID
-		 */
+		/** 标题资源ID */
 		public int titleResId;
-
-		/**
-		 * 数据列表
-		 */
+		/** 数据列表 */
 		public List<SimpleBase> datas;
 
 		/**
@@ -59,14 +47,10 @@ public class SimpleGroup
 		}
 	}
 
-	/**
-	 * 范例分组头部信息列表
-	 */
+	/** 范例分组头部信息列表 */
 	public final List<GroupHeader> headers;
 
-	/**
-	 * 范例分组
-	 */
+	/** 范例分组 */
 	public SimpleGroup()
 	{
 		// 范例分组头部信息列表
@@ -85,11 +69,7 @@ public class SimpleGroup
 		headers.add(new GroupHeader(4, R.string.simple_group_define));
 	}
 
-	/**
-	 * 添加范例
-	 * 
-	 * @param simple
-	 */
+	/** 添加范例 */
 	public void appendSimple(SimpleBase simple)
 	{
 		if (simple == null) return;

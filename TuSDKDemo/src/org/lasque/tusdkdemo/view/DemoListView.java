@@ -4,7 +4,7 @@
  *
  * @author 		Clear
  * @Date 		2015-4-21 下午2:11:42 
- * @Copyright 	(c) 2015 Lasque. All rights reserved.
+ * @Copyright 	(c) 2015 tusdk.com. All rights reserved.
  * 
  */
 package org.lasque.tusdkdemo.view;
@@ -29,31 +29,18 @@ import android.view.View;
  * 
  * @author Clear
  */
-public class DemoListView extends
-		TuGroupListView<SimpleBase, DemoListCell, GroupHeader, DemoListHeader>
+public class DemoListView extends TuGroupListView<SimpleBase, DemoListCell, GroupHeader, DemoListHeader>
 {
-	/**
-	 * 范例列表行点击动作
-	 * 
-	 * @author Clear
-	 */
+	/** 范例列表行点击动作 */
 	public enum DemoListItemAction
 	{
-		/**
-		 * 选中
-		 */
+		/** 选中 */
 		ActionSelected,
-		/**
-		 * 配置
-		 */
+		/** 配置 */
 		ActionConfig,
 	}
 
-	/**
-	 * 范例列表视图委托
-	 * 
-	 * @author Clear
-	 */
+	/** 范例列表视图委托 */
 	public interface DemoListViewDelegate
 	{
 		/**
@@ -66,8 +53,7 @@ public class DemoListView extends
 		 * @param action
 		 *            范例列表行点击动作
 		 */
-		void onDemoListViewSelected(DemoListView view, SimpleBase simple,
-				DemoListItemAction action);
+		void onDemoListViewSelected(DemoListView view, SimpleBase simple, DemoListItemAction action);
 	}
 
 	public DemoListView(Context context, AttributeSet attrs, int defStyle)
@@ -85,25 +71,16 @@ public class DemoListView extends
 		super(context);
 	}
 
-	// 范例列表视图委托
+	/** 范例列表视图委托 */
 	private DemoListViewDelegate mSimpleDelegate;
 
-	/**
-	 * 范例列表视图委托
-	 * 
-	 * @return the mSimpleDelegate
-	 */
+	/** 范例列表视图委托 */
 	public DemoListViewDelegate getSimpleDelegate()
 	{
 		return mSimpleDelegate;
 	}
 
-	/**
-	 * 范例列表视图委托
-	 * 
-	 * @param mDelegate
-	 *            the mDelegate to set
-	 */
+	/** 范例列表视图委托 */
 	public void setSimpleDelegate(DemoListViewDelegate mDelegate)
 	{
 		this.mSimpleDelegate = mDelegate;
@@ -122,70 +99,47 @@ public class DemoListView extends
 	}
 
 	@Override
-	protected void onGroupListViewCreated(DemoListCell view,
-			TuSdkIndexPath indexPath)
+	protected void onGroupListViewCreated(DemoListCell view, TuSdkIndexPath indexPath)
 	{
 
 	}
 
 	@Override
-	protected void onGroupListHeaderCreated(DemoListHeader view,
-			TuSdkIndexPath indexPath)
+	protected void onGroupListHeaderCreated(DemoListHeader view, TuSdkIndexPath indexPath)
 	{
 
 	}
 
-	/**
-	 * 加载范例列表
-	 * 
-	 * @param group
-	 */
+	/** 加载范例列表 */
 	public void loadSimples(SimpleGroup group)
 	{
 		this.setDataSource(new SimpleGroupDataSource(group));
 	}
 
-	/**
-	 * 选中一个示例
-	 * 
-	 * @param itemData
-	 */
+	/** 选中一个示例 */
 	private void onSelectedItem(SimpleBase itemData)
 	{
 		if (this.getSimpleDelegate() == null || itemData == null) return;
-		this.getSimpleDelegate().onDemoListViewSelected(this, itemData,
-				DemoListItemAction.ActionSelected);
+		this.getSimpleDelegate().onDemoListViewSelected(this, itemData, DemoListItemAction.ActionSelected);
 	}
 
-	/**
-	 * 范例列表行点击动作
-	 * 
-	 * @author Clear
-	 */
-	private class DemoListViewItemClick implements
-			GroupListViewItemClickListener<SimpleBase, DemoListCell>
+	/** 范例列表行点击动作 */
+	private class DemoListViewItemClick implements GroupListViewItemClickListener<SimpleBase, DemoListCell>
 	{
 		@Override
-		public void onGroupItemClick(SimpleBase itemData,
-				DemoListCell itemView, TuSdkIndexPath indexPath)
+		public void onGroupItemClick(SimpleBase itemData, DemoListCell itemView, TuSdkIndexPath indexPath)
 		{
 			onSelectedItem(itemData);
 		}
 	}
 
-	/**
-	 * 数组列表数据源
-	 * 
-	 * @author Clear
-	 */
+	/** 数组列表数据源 */
 	private class SimpleGroupDataSource implements TuSdkDataSource
 	{
-		/**
-		 * 索引列表
-		 */
+		/** 索引列表 */
 		private List<TuSdkIndexPath> mIndexPaths;
 
-		// 范例分组
+		/** 范例分组 */
 		private SimpleGroup mGroup;
 
 		private int mTotal;
@@ -201,11 +155,7 @@ public class DemoListView extends
 			this.splitDatas(group);
 		}
 
-		/**
-		 * 分组数据
-		 * 
-		 * @param group
-		 */
+		/** 分组数据 */
 		private void splitDatas(SimpleGroup group)
 		{
 			if (group == null || group.headers == null) return;
@@ -233,11 +183,7 @@ public class DemoListView extends
 			this.mIndexPaths = indexPaths;
 		}
 
-		/**
-		 * 列表视图分组索引
-		 * 
-		 * @return
-		 */
+		/** 列表视图分组索引 */
 		public List<TuSdkIndexPath> getIndexPaths()
 		{
 			if (mIndexPaths == null)
@@ -247,33 +193,20 @@ public class DemoListView extends
 			return mIndexPaths;
 		}
 
-		/**
-		 * 索引
-		 * 
-		 * @param index
-		 * @return
-		 */
+		/** 索引 */
 		public TuSdkIndexPath getIndexPath(int index)
 		{
 			if (mIndexPaths == null || index >= mIndexPaths.size()) return null;
 			return mIndexPaths.get(index);
 		}
 
-		/**
-		 * 视图类型总数
-		 * 
-		 * @return
-		 */
+		/** 视图类型总数 */
 		public int viewTypes()
 		{
 			return 2;
 		}
 
-		/**
-		 * 分组总数
-		 * 
-		 * @return
-		 */
+		/** 分组总数 */
 		public int sectionCount()
 		{
 			if (mGroup != null && mGroup.headers != null)
@@ -299,22 +232,13 @@ public class DemoListView extends
 			return header.datas.size();
 		}
 
-		/**
-		 * 数据总数
-		 * 
-		 * @return
-		 */
+		/** 数据总数 */
 		public int count()
 		{
 			return mTotal;
 		}
 
-		/**
-		 * 视图创建
-		 * 
-		 * @param indexPath
-		 * @param view
-		 */
+		/** 视图创建 */
 		public void onViewBinded(TuSdkIndexPath indexPath, View view)
 		{
 			if (!(view instanceof TuSdkCellViewInterface)) return;
@@ -331,12 +255,7 @@ public class DemoListView extends
 			}
 		}
 
-		/**
-		 * 获取数据
-		 * 
-		 * @param indexPath
-		 * @return
-		 */
+		/** 获取数据 */
 		public Object getItem(TuSdkIndexPath indexPath)
 		{
 			if (indexPath == null || mGroup == null) return 0;
@@ -349,8 +268,7 @@ public class DemoListView extends
 			{
 				return header;
 			}
-			else if (indexPath.viewType == 0 && header.datas != null
-					&& header.datas.size() > indexPath.row)
+			else if (indexPath.viewType == 0 && header.datas != null && header.datas.size() > indexPath.row)
 			{
 				return header.datas.get(indexPath.row);
 			}

@@ -4,21 +4,21 @@
  *
  * @author 		Clear
  * @Date 		2015-4-21 下午1:35:50 
- * @Copyright 	(c) 2015 Lasque. All rights reserved.
+ * @Copyright 	(c) 2015 tusdk.com. All rights reserved.
  * 
  */
 package org.lasque.tusdkdemo.simple;
 
-import org.lasque.tusdk.core.TuSdk;
+import org.lasque.tusdk.TuSdkGeeV1;
 import org.lasque.tusdk.core.TuSdkResult;
 import org.lasque.tusdk.core.struct.TuSdkSize;
 import org.lasque.tusdk.core.utils.TLog;
 import org.lasque.tusdk.impl.activity.TuFragment;
-import org.lasque.tusdk.impl.components.base.TuSdkComponent.TuSdkComponentDelegate;
-import org.lasque.tusdk.impl.components.base.TuSdkHelperComponent;
 import org.lasque.tusdk.impl.components.edit.TuEditTurnAndCutFragment;
 import org.lasque.tusdk.impl.components.edit.TuEditTurnAndCutFragment.TuEditTurnAndCutFragmentDelegate;
 import org.lasque.tusdk.impl.components.edit.TuEditTurnAndCutOption;
+import org.lasque.tusdk.modules.components.TuSdkComponent.TuSdkComponentDelegate;
+import org.lasque.tusdk.modules.components.TuSdkHelperComponent;
 import org.lasque.tusdkdemo.R;
 
 import android.app.Activity;
@@ -28,22 +28,15 @@ import android.app.Activity;
  * 
  * @author Clear
  */
-public class EditAndCutComponentSimple extends SimpleBase implements
-		TuEditTurnAndCutFragmentDelegate
+public class EditAndCutComponentSimple extends SimpleBase implements TuEditTurnAndCutFragmentDelegate
 {
-	/**
-	 * 高级图片编辑组件范例
-	 */
+	/** 图片编辑组件 (裁剪)范例 */
 	public EditAndCutComponentSimple()
 	{
 		super(2, R.string.simple_EditAndCutComponent);
 	}
 
-	/**
-	 * 显示范例
-	 * 
-	 * @param activity
-	 */
+	/** 显示范例 */
 	@Override
 	public void showSimple(Activity activity)
 	{
@@ -52,11 +45,10 @@ public class EditAndCutComponentSimple extends SimpleBase implements
 		this.componentHelper = new TuSdkHelperComponent(activity);
 
 		// 开启相册选择照片
-		TuSdk.albumCommponent(activity, new TuSdkComponentDelegate()
+		TuSdkGeeV1.albumCommponent(activity, new TuSdkComponentDelegate()
 		{
 			@Override
-			public void onComponentFinished(TuSdkResult result, Error error,
-					TuFragment lastFragment)
+			public void onComponentFinished(TuSdkResult result, Error error, TuFragment lastFragment)
 			{
 				openTuEditTurnAndCut(result, error, lastFragment);
 			}
@@ -73,8 +65,7 @@ public class EditAndCutComponentSimple extends SimpleBase implements
 	 * @param lastFragment
 	 *            最后显示的控制器
 	 */
-	private void openTuEditTurnAndCut(TuSdkResult result, Error error,
-			TuFragment lastFragment)
+	private void openTuEditTurnAndCut(TuSdkResult result, Error error, TuFragment lastFragment)
 	{
 		if (result == null || error != null) return;
 
@@ -86,6 +77,8 @@ public class EditAndCutComponentSimple extends SimpleBase implements
 		option.setEnableFilters(true);
 		// 开启用户滤镜历史记录
 		option.setEnableFiltersHistory(true);
+		// 开启在线滤镜
+		option.setEnableOnlineFilter(true);
 
 		// 显示滤镜标题视图
 		option.setDisplayFiltersSubtitles(true);
@@ -127,8 +120,7 @@ public class EditAndCutComponentSimple extends SimpleBase implements
 	 *            旋转和裁剪视图控制器处理结果
 	 */
 	@Override
-	public void onTuEditTurnAndCutFragmentEdited(
-			TuEditTurnAndCutFragment fragment, TuSdkResult result)
+	public void onTuEditTurnAndCutFragmentEdited(TuEditTurnAndCutFragment fragment, TuSdkResult result)
 	{
 		if (!fragment.isShowResultPreview())
 		{
@@ -148,18 +140,15 @@ public class EditAndCutComponentSimple extends SimpleBase implements
 	 * @return 是否截断默认处理逻辑 (默认: false, 设置为True时使用自定义处理逻辑)
 	 */
 	@Override
-	public boolean onTuEditTurnAndCutFragmentEditedAsync(
-			TuEditTurnAndCutFragment fragment, TuSdkResult result)
+	public boolean onTuEditTurnAndCutFragmentEditedAsync(TuEditTurnAndCutFragment fragment, TuSdkResult result)
 	{
 		TLog.d("onTuEditTurnAndCutFragmentEditedAsync: %s", result);
 		return false;
 	}
 
 	@Override
-	public void onComponentError(TuFragment fragment, TuSdkResult result,
-			Error error)
+	public void onComponentError(TuFragment fragment, TuSdkResult result, Error error)
 	{
-		TLog.d("onComponentError: fragment - %s, result - %s, error - %s",
-				fragment, result, error);
+		TLog.d("onComponentError: fragment - %s, result - %s, error - %s", fragment, result, error);
 	}
 }

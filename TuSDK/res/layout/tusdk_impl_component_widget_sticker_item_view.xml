@@ -12,18 +12,20 @@
 
     <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
         android:id="@+id/lsq_sticker_cancelButton"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
         android:scaleType="center"
-        android:src="@drawable/lsq_style_default_edit_drag_cancel" />
+        android:src="@drawable/lsq_style_default_edit_drag_cancel"
+        android:background="@drawable/tusdk_button_edit_sticker_remove" />
 
     <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
         android:id="@+id/lsq_sticker_turnButton"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:scaleType="center"
-        android:src="@drawable/lsq_style_default_edit_drag_rotate_scale" />
+        android:src="@drawable/lsq_style_default_edit_drag_rotate_scale"
+        android:background="@drawable/tusdk_button_edit_sticker_rotate" />
 
 </org.lasque.tusdk.impl.components.widget.sticker.StickerItemView>

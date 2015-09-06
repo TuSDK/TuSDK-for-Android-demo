@@ -4,16 +4,16 @@
  *
  * @author 		Clear
  * @Date 		2015-5-11 下午3:37:04 
- * @Copyright 	(c) 2015 Lasque. All rights reserved.
+ * @Copyright 	(c) 2015 tusdk.com. All rights reserved.
  * 
  */
 package org.lasque.tusdkdemo.extend;
 
 import org.lasque.tusdk.impl.components.camera.TuCameraFragment;
-import org.lasque.tusdk.impl.components.edit.TuEditTurnAndCutFilterView;
-import org.lasque.tusdk.impl.components.edit.TuEditTurnAndCutFilterView.TuEditTurnAndCutFilterViewDelegate;
-import org.lasque.tusdk.impl.components.widget.GroupFilterItem;
-import org.lasque.tusdk.impl.components.widget.GroupFilterItem.GroupFilterItemType;
+import org.lasque.tusdk.impl.components.edit.TuNormalFilterView;
+import org.lasque.tusdk.impl.components.edit.TuNormalFilterView.TuNormalFilterViewDelegate;
+import org.lasque.tusdk.modules.view.widget.filter.GroupFilterItem;
+import org.lasque.tusdk.modules.view.widget.filter.GroupFilterItem.GroupFilterItemType;
 import org.lasque.tusdkdemo.R;
 
 import android.graphics.Color;
@@ -29,27 +29,20 @@ import android.view.ViewGroup;
  */
 public class ExtendCameraBaseFragment extends TuCameraFragment
 {
-	/**
-	 * 布局ID
-	 * 
-	 * @return
-	 */
+	/** 布局ID */
 	public static int getLayoutId()
 	{
 		return R.layout.demo_extend_camera_base_fragment;
 	}
 
-	/**
-	 * 相机组件范例 - 修改界面控制器
-	 */
+	/** 相机组件范例 - 修改界面控制器 */
 	public ExtendCameraBaseFragment()
 	{
 
 	}
 
 	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState)
+	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{
 		if (this.getRootViewLayoutId() == 0)
 		{
@@ -60,15 +53,11 @@ public class ExtendCameraBaseFragment extends TuCameraFragment
 
 	/*************************** view *******************************/
 
-	// 裁剪与缩放控制器滤镜视图
-	private TuEditTurnAndCutFilterView mFilterBar;
+	/** 裁剪与缩放控制器滤镜视图 */
+	private TuNormalFilterView mFilterBar;
 
-	/**
-	 * 裁剪与缩放控制器滤镜视图
-	 * 
-	 * @return the mFilterBar
-	 */
-	public TuEditTurnAndCutFilterView getFilterBar()
+	/** 裁剪与缩放控制器滤镜视图 */
+	public TuNormalFilterView getFilterBar()
 	{
 		if (mFilterBar == null)
 		{
@@ -77,8 +66,7 @@ public class ExtendCameraBaseFragment extends TuCameraFragment
 			{
 				this.configGroupFilterView(mFilterBar);
 				// 设置背景透明
-				mFilterBar.getGroupFilterBar().setBackgroundColor(
-						Color.TRANSPARENT);
+				mFilterBar.getGroupFilterBar().setBackgroundColor(Color.TRANSPARENT);
 				// 裁剪与缩放控制器滤镜视图委托
 				mFilterBar.setDelegate(mFilterViewDelegate);
 			}
@@ -86,14 +74,11 @@ public class ExtendCameraBaseFragment extends TuCameraFragment
 		return mFilterBar;
 	}
 
-	/**
-	 * 裁剪与缩放控制器滤镜视图委托
-	 */
-	private TuEditTurnAndCutFilterViewDelegate mFilterViewDelegate = new TuEditTurnAndCutFilterViewDelegate()
+	/** 裁剪与缩放控制器滤镜视图委托 */
+	private TuNormalFilterViewDelegate mFilterViewDelegate = new TuNormalFilterViewDelegate()
 	{
 		@Override
-		public boolean onTuEditTurnAndCutFilterSelected(
-				TuEditTurnAndCutFilterView view, GroupFilterItem itemData)
+		public boolean onTuNormalFilterViewSelected(TuNormalFilterView view, GroupFilterItem itemData)
 		{
 			if (itemData.type == GroupFilterItemType.TypeFilter)
 			{
@@ -103,9 +88,7 @@ public class ExtendCameraBaseFragment extends TuCameraFragment
 		}
 	};
 
-	/**
-	 * 切换滤镜视图显示
-	 */
+	/** 切换滤镜视图显示 */
 	@Override
 	protected void handleFilterButton()
 	{

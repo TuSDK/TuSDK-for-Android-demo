@@ -2,13 +2,13 @@
 <org.lasque.tusdk.impl.components.widget.sticker.StickerBarView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/lsq_backgroud_default"
+    android:background="@color/lsq_background_option_bar"
     android:orientation="vertical" >
 
     <org.lasque.tusdk.core.view.TuSdkLinearLayout
         android:id="@+id/lsq_params_view"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="25dp"
         android:orientation="horizontal" >
 
         <TextView
@@ -32,17 +32,12 @@
             android:text="@string/lsq_text"
             android:textColor="@color/lsq_seekbar_drag_color"
             android:textSize="14sp" />
-    </org.lasque.tusdk.core.view.TuSdkLinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:background="@color/lsq_backgroud_edit_bar" />
+    </org.lasque.tusdk.core.view.TuSdkLinearLayout>     
 
     <RelativeLayout
         android:id="@+id/lsq_list_wrap"
         android:layout_width="match_parent"
-        android:layout_height="70dp" >
+        android:layout_height="55dp" >
 
         <org.lasque.tusdk.impl.components.widget.sticker.StickerBarTableView
             android:id="@+id/lsq_sticker_table_view"
@@ -61,10 +56,5 @@
             android:textColor="@color/lsq_sticker_title_color"
             android:textSize="16sp" />
     </RelativeLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:background="@color/lsq_backgroud_edit_bar" />
 
 </org.lasque.tusdk.impl.components.widget.sticker.StickerBarView>

@@ -91,6 +91,6 @@
         android:id="@+id/lsq_group_filter_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        layout="@layout/tusdk_impl_component_widget_group_filter_view" />
+        layout="@layout/tusdk_impl_component_camera_filter_view" />
 
 </RelativeLayout>

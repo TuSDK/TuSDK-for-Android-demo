@@ -3,8 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="org.lasque.tusdkdemo"
-    android:versionCode="20150828"
-    android:versionName="1.8.12" >
+    android:versionCode="20151021"
+    android:versionName="2.1.3" >
 
     <uses-sdk
         android:minSdkVersion="11"

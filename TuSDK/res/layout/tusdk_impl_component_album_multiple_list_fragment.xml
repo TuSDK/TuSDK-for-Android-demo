@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lsq_color_transparent" >
+
+    <include
+        android:id="@+id/lsq_navigatorBar"
+        layout="@layout/tusdk_view_widget_navigator" />
+    
+    <org.lasque.tusdk.impl.components.album.TuPhotoGridListView
+        android:id="@+id/lsq_photoListView"
+        android:layout_below="@+id/lsq_navigatorBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:background="@color/lsq_background_album">
+    </org.lasque.tusdk.impl.components.album.TuPhotoGridListView>
+    
+    <RelativeLayout
+        android:id="@+id/lsq_albumGroupArea"
+        android:layout_below="@+id/lsq_navigatorBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </RelativeLayout>
+     
+   <org.lasque.tusdk.impl.components.album.TuAlbumPopList
+        android:id="@+id/lsq_albumListView"
+        style="@style/lsq_listSplitView"
+        android:layout_below="@+id/lsq_navigatorBar"
+        android:background="@color/lsq_background_default_cell"
+        android:divider="@color/lsq_split_cell"
+        >
+    </org.lasque.tusdk.impl.components.album.TuAlbumPopList>
+
+</RelativeLayout>

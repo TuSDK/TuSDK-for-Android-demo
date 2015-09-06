@@ -4,7 +4,7 @@
  *
  * @author 		Clear
  * @Date 		2015-4-21 下午1:40:10 
- * @Copyright 	(c) 2015 Lasque. All rights reserved.
+ * @Copyright 	(c) 2015 tusdk.com. All rights reserved.
  * 
  */
 package org.lasque.tusdkdemo.simple;
@@ -13,10 +13,10 @@ import org.lasque.tusdk.core.TuSdkResult;
 import org.lasque.tusdk.core.utils.TLog;
 import org.lasque.tusdk.core.utils.hardware.CameraHelper;
 import org.lasque.tusdk.impl.activity.TuFragment;
-import org.lasque.tusdk.impl.components.base.TuSdkHelperComponent;
 import org.lasque.tusdk.impl.components.camera.TuCameraFragment;
 import org.lasque.tusdk.impl.components.camera.TuCameraFragment.TuCameraFragmentDelegate;
 import org.lasque.tusdk.impl.components.camera.TuCameraOption;
+import org.lasque.tusdk.modules.components.TuSdkHelperComponent;
 import org.lasque.tusdkdemo.R;
 
 import android.app.Activity;
@@ -26,22 +26,15 @@ import android.app.Activity;
  * 
  * @author Clear
  */
-public class CameraComponentSimple extends SimpleBase implements
-		TuCameraFragmentDelegate
+public class CameraComponentSimple extends SimpleBase implements TuCameraFragmentDelegate
 {
-	/**
-	 * 相机组件范例
-	 */
+	/** 相机组件范例 */
 	public CameraComponentSimple()
 	{
 		super(1, R.string.simple_CameraComponent);
 	}
 
-	/**
-	 * 显示范例
-	 * 
-	 * @param activity
-	 */
+	/** 显示范例 */
 	@Override
 	public void showSimple(Activity activity)
 	{
@@ -88,10 +81,10 @@ public class CameraComponentSimple extends SimpleBase implements
 		option.setShowFilterDefault(true);
 
 		// 滤镜组行视图宽度 (单位:DP)
-		// option.setGroupFilterCellWidthDP(75);
+		// option.setGroupFilterCellWidthDP(60);
 
 		// 滤镜组选择栏高度 (单位:DP)
-		// option.setFilterBarHeightDP(100);
+		// option.setFilterBarHeightDP(80);
 
 		// 滤镜分组列表行视图布局资源ID (默认:
 		// tusdk_impl_component_widget_group_filter_group_view，如需自定义请继承自
@@ -104,7 +97,7 @@ public class CameraComponentSimple extends SimpleBase implements
 		// option.setFilterTableCellLayoutId(GroupFilterItemView.getLayoutId());
 
 		// 开启滤镜配置选项
-		option.setEnableFilterConfig(true);
+		option.setEnableFilterConfig(false);
 
 		// 需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜)
 		// 滤镜名称参考 TuSDK.bundle/others/lsq_tusdk_configs.json
@@ -123,6 +116,9 @@ public class CameraComponentSimple extends SimpleBase implements
 		// 开启用户滤镜历史记录
 		option.setEnableFiltersHistory(true);
 
+		// 开启在线滤镜
+		option.setEnableOnlineFilter(true);
+
 		// 显示滤镜标题视图
 		option.setDisplayFiltersSubtitles(true);
 
@@ -135,8 +131,11 @@ public class CameraComponentSimple extends SimpleBase implements
 		// 是否直接输出图片数据 (默认:false，输出已经处理好的图片Bitmap)
 		// option.setOutputImageData(false);
 
-		// 开启系统拍照声音 (默认:true)
-		// option.setEnableCaptureSound(true);
+		// 禁用持续自动对焦 (默认：false)
+		// option.setDisableContinueFoucs(true);
+
+		// 禁用系统拍照声音 (默认:false)
+		// option.setDisableCaptureSound(true);
 
 		// 自定义拍照声音RAW ID，默认关闭系统发声
 		// option.setCaptureSoundRawId(R.raw.lsq_camera_focus_beep);
@@ -147,8 +146,8 @@ public class CameraComponentSimple extends SimpleBase implements
 		// 开启长按拍摄 (默认：false)
 		option.setEnableLongTouchCapture(true);
 
-		// 开启聚焦声音 (默认:true)
-		// option.setEnableFocusBeep(true);
+		// 禁用聚焦声音 (默认:false)
+		// option.setDisableFocusBeep(true);
 
 		// 是否需要统一配置参数 (默认false, 取消三星默认降噪，锐化)
 		// option.setUnifiedParameters(false);
@@ -181,8 +180,7 @@ public class CameraComponentSimple extends SimpleBase implements
 	 *            拍摄结果
 	 */
 	@Override
-	public void onTuCameraFragmentCaptured(TuCameraFragment fragment,
-			TuSdkResult result)
+	public void onTuCameraFragmentCaptured(TuCameraFragment fragment, TuSdkResult result)
 	{
 		fragment.hubDismissRightNow();
 		fragment.dismissActivityWithAnim();
@@ -199,18 +197,28 @@ public class CameraComponentSimple extends SimpleBase implements
 	 * @return 是否截断默认处理逻辑 (默认: false, 设置为True时使用自定义处理逻辑)
 	 */
 	@Override
-	public boolean onTuCameraFragmentCapturedAsync(TuCameraFragment fragment,
-			TuSdkResult result)
+	public boolean onTuCameraFragmentCapturedAsync(TuCameraFragment fragment, TuSdkResult result)
 	{
 		TLog.d("onTuCameraFragmentCapturedAsync: %s", result);
 		return false;
 	}
+	
+	/**
+	 * 请求从相机界面跳转到相册界面。只有 设置mDisplayAlbumPoster为true (默认:false) 才会发生该事件
+	 * 
+	 * @param fragment
+	 *            系统相册控制器
+	 */
+	@Override
+	public void onTuAlbumDemand(TuCameraFragment fragment)
+	{
+		
+	}
 
 	@Override
-	public void onComponentError(TuFragment fragment, TuSdkResult result,
-			Error error)
+	public void onComponentError(TuFragment fragment, TuSdkResult result, Error error)
 	{
-		TLog.d("onComponentError: fragment - %s, result - %s, error - %s",
-				fragment, result, error);
+		TLog.d("onComponentError: fragment - %s, result - %s, error - %s", fragment, result, error);
 	}
+
 }

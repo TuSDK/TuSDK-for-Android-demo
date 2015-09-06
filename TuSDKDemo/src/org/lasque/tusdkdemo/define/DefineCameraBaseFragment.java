@@ -4,7 +4,7 @@
  *
  * @author 		Clear
  * @Date 		2014-11-20 下午1:22:19 
- * @Copyright 	(c) 2014 Lasque. All rights reserved.
+ * @Copyright 	(c) 2014 tusdk.com. All rights reserved.
  * 
  */
 package org.lasque.tusdkdemo.define;
@@ -13,20 +13,20 @@ import java.util.ArrayList;
 
 import org.lasque.tusdk.core.TuSdk;
 import org.lasque.tusdk.core.TuSdkResult;
-import org.lasque.tusdk.core.gpuimage.extend.FilterLocalPackage;
-import org.lasque.tusdk.core.gpuimage.extend.FilterOption;
 import org.lasque.tusdk.core.secret.StatisticsManger;
+import org.lasque.tusdk.core.seles.tusdk.FilterLocalPackage;
+import org.lasque.tusdk.core.seles.tusdk.FilterOption;
 import org.lasque.tusdk.core.utils.hardware.CameraHelper;
-import org.lasque.tusdk.core.utils.hardware.TuSdkCamera;
-import org.lasque.tusdk.core.utils.hardware.TuSdkCamera.CameraState;
-import org.lasque.tusdk.core.utils.hardware.TuSdkCamera.TuSdkCameraListener;
+import org.lasque.tusdk.core.utils.hardware.TuSdkStillCameraInterface;
+import org.lasque.tusdk.core.utils.hardware.TuSdkStillCameraInterface.TuSdkStillCameraListener;
+import org.lasque.tusdk.core.utils.hardware.TuSdkVideoCameraInterface.CameraState;
 import org.lasque.tusdk.core.view.TuSdkViewHelper.OnSafeClickListener;
 import org.lasque.tusdk.impl.activity.TuFragment;
-import org.lasque.tusdk.impl.components.base.ComponentActType;
+import org.lasque.tusdk.impl.components.camera.TuCameraFilterView;
+import org.lasque.tusdk.impl.components.camera.TuCameraFilterView.TuCameraFilterViewDelegate;
 import org.lasque.tusdk.impl.components.camera.TuFocusTouchView;
-import org.lasque.tusdk.impl.components.widget.GroupFilterItem;
-import org.lasque.tusdk.impl.components.widget.GroupFilterView;
-import org.lasque.tusdk.impl.components.widget.GroupFilterView.GroupFilterViewDelegate;
+import org.lasque.tusdk.modules.components.ComponentActType;
+import org.lasque.tusdk.modules.view.widget.filter.GroupFilterItem;
 import org.lasque.tusdkdemo.R;
 
 import android.graphics.Bitmap;
@@ -53,9 +53,7 @@ import android.widget.TextView;
  */
 public class DefineCameraBaseFragment extends TuFragment
 {
-	/**
-	 * 布局ID
-	 */
+	/** 布局ID */
 	public static final int layoutId = R.layout.demo_define_camera_base_fragment;
 
 	public DefineCameraBaseFragment()
@@ -63,38 +61,35 @@ public class DefineCameraBaseFragment extends TuFragment
 		this.setRootViewLayoutId(layoutId);
 	}
 
-	// 相机视图
+	/** 相机视图 */
 	private RelativeLayout cameraView;
 	// 配置栏
 	// private LinearLayout configBar;
-	// 取消按钮
+	/** 取消按钮 */
 	private TextView cancelButton;
-	// 闪光灯栏
+	/** 闪光灯栏 */
 	private LinearLayout flashBar;
-	// 闪光灯 关闭按钮
+	/** 闪光灯 关闭按钮 */
 	private TextView flashOffButton;
-	// 闪光灯 自动按钮
+	/** 闪光灯 自动按钮 */
 	private TextView flashAutoButton;
-	// 闪光灯 开启按钮
+	/** 闪光灯 开启按钮 */
 	private TextView flashOpenButton;
-	// 切换前后摄像头按钮
+	/** 切换前后摄像头按钮 */
 	private TextView switchCameraButton;
 	// 底部栏
 	// private RelativeLayout bottomBar;
-	// 拍摄按钮
+	/** 拍摄按钮 */
 	private Button captureButton;
-	// 滤镜选择栏
-	private GroupFilterView filterBar;
-	// 滤镜开关按钮
+	/** 滤镜选择栏 */
+	private TuCameraFilterView filterBar;
+	/** 滤镜开关按钮 */
 	private TextView filterToggleButton;
-
-	// 闪光灯按钮列表
+	/** 闪光灯按钮列表 */
 	private ArrayList<TextView> mFlashBtns = new ArrayList<TextView>(3);
-
-	// 相机对象
-	private TuSdkCamera mCamera;
-
-	// 默认闪关灯模式
+	/** 相机对象 */
+	private TuSdkStillCameraInterface mCamera;
+	/** 默认闪关灯模式 */
 	private String mFlashModel = Parameters.FLASH_MODE_OFF;
 
 	@Override
@@ -163,8 +158,7 @@ public class DefineCameraBaseFragment extends TuFragment
 	protected void viewDidLoad(ViewGroup view)
 	{
 		// 创建相机对象
-		mCamera = TuSdk.camera(this.getActivity(),
-				CameraInfo.CAMERA_FACING_BACK, this.cameraView);
+		mCamera = TuSdk.camera(this.getActivity(), CameraInfo.CAMERA_FACING_BACK, this.cameraView);
 		// 相机对象事件监听
 		mCamera.setCameraListener(mCameraListener);
 
@@ -180,7 +174,7 @@ public class DefineCameraBaseFragment extends TuFragment
 		// 禁用前置摄像头自动水平镜像 (默认: false，前置摄像头拍摄结果自动进行水平镜像)
 		// mCamera.setDisableMirrorFrontFacing(true);
 		// 启动相机
-		mCamera.start();
+		mCamera.startCameraCapture();
 	}
 
 	@Override
@@ -189,7 +183,7 @@ public class DefineCameraBaseFragment extends TuFragment
 		super.onResume();
 		if (!this.isFragmentPause() && mCamera != null)
 		{
-			mCamera.start();
+			mCamera.startCameraCapture();
 		}
 	}
 
@@ -214,10 +208,8 @@ public class DefineCameraBaseFragment extends TuFragment
 		}
 	}
 
-	/**
-	 * 滤镜选择栏委托
-	 */
-	private GroupFilterViewDelegate mFilterBarDelegate = new GroupFilterViewDelegate()
+	/** 滤镜选择栏委托 */
+	private TuCameraFilterViewDelegate mFilterBarDelegate = new TuCameraFilterViewDelegate()
 	{
 		/**
 		 * @param view
@@ -229,8 +221,7 @@ public class DefineCameraBaseFragment extends TuFragment
 		 * @return 是否允许继续执行
 		 */
 		@Override
-		public boolean onGroupFilterSelected(GroupFilterView view,
-				GroupFilterItem itemData, boolean canCapture)
+		public boolean onGroupFilterSelected(TuCameraFilterView view, GroupFilterItem itemData, boolean canCapture)
 		{
 			// 直接拍照
 			if (canCapture)
@@ -251,14 +242,13 @@ public class DefineCameraBaseFragment extends TuFragment
 		}
 
 		@Override
-		public void onGroupFilterShowStateChanged(GroupFilterView view,
-				boolean isShow)
+		public void onGroupFilterShowStateChanged(TuCameraFilterView view, boolean isShow)
 		{
 
 		}
 	};
 
-	// 按钮点击事件
+	/** 按钮点击事件 */
 	private OnClickListener mClickListener = new OnSafeClickListener()
 	{
 		@Override
@@ -294,37 +284,25 @@ public class DefineCameraBaseFragment extends TuFragment
 		}
 	};
 
-	/**
-	 * 取消动作
-	 */
+	/** 取消动作 */
 	private void handleCancelAction()
 	{
 		this.dismissActivityWithAnim();
 	}
 
-	/**
-	 * 滤镜开关切换按钮
-	 */
+	/** 滤镜开关切换按钮 */
 	protected void handleToggleFilterAction()
 	{
 		filterBar.showGroupView();
 	}
 
-	/**
-	 * 闪光灯动作
-	 * 
-	 * @param resId
-	 */
+	/** 闪光灯动作 */
 	private void handleFlashAction(View view)
 	{
 		this.setFlashModel((String) view.getTag());
 	}
 
-	/**
-	 * 设置闪光灯模式
-	 * 
-	 * @param flashModel
-	 */
+	/** 设置闪光灯模式 */
 	private void setFlashModel(String flashMode)
 	{
 		mFlashModel = flashMode;
@@ -345,9 +323,7 @@ public class DefineCameraBaseFragment extends TuFragment
 		}
 	}
 
-	/**
-	 * 切换摄像头
-	 */
+	/** 切换摄像头 */
 	private void handleSwitchCameraAction()
 	{
 		if (mCamera != null)
@@ -356,9 +332,7 @@ public class DefineCameraBaseFragment extends TuFragment
 		}
 	}
 
-	/**
-	 * 拍照
-	 */
+	/** 拍照 */
 	private void handleCaptureAction()
 	{
 		if (mCamera != null)
@@ -383,12 +357,12 @@ public class DefineCameraBaseFragment extends TuFragment
 			code = opt.code;
 		}
 
-		mCamera.setFilterCode(code);
+		mCamera.switchFilter(code);
 		return true;
 	}
 
-	// 相机监听委托
-	private TuSdkCameraListener mCameraListener = new TuSdkCameraListener()
+	/** 相机监听委托 */
+	private TuSdkStillCameraListener mCameraListener = new TuSdkStillCameraListener()
 	{
 		/**
 		 * 相机状态改变 (如需操作UI线程， 请检查当前线程是否为主线程)
@@ -399,7 +373,7 @@ public class DefineCameraBaseFragment extends TuFragment
 		 *            相机运行状态
 		 */
 		@Override
-		public void onCameraStateChanged(TuSdkCamera camera, CameraState state)
+		public void onStillCameraStateChanged(TuSdkStillCameraInterface camera, CameraState state)
 		{
 			if (state != CameraState.StateStarted) return;
 
@@ -425,8 +399,7 @@ public class DefineCameraBaseFragment extends TuFragment
 		 *            Sdk执行结果
 		 */
 		@Override
-		public void onCameraTakedPicture(TuSdkCamera camera,
-				final TuSdkResult result)
+		public void onStillCameraTakedPicture(TuSdkStillCameraInterface camera, final TuSdkResult result)
 		{
 			new Handler(Looper.getMainLooper()).post(new Runnable()
 			{
@@ -439,7 +412,7 @@ public class DefineCameraBaseFragment extends TuFragment
 		}
 	};
 
-	// 测试方法
+	/** 测试方法 */
 	private void test(TuSdkResult result)
 	{
 		result.logInfo();
@@ -451,8 +424,7 @@ public class DefineCameraBaseFragment extends TuFragment
 		imageView.setScaleType(ScaleType.FIT_CENTER);
 		imageView.setImageBitmap(image);
 		imageView.setOnClickListener(mImageViewClickListener);
-		cameraView.addView(imageView, new LayoutParams(
-				LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
+		cameraView.addView(imageView, new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
 	}
 
 	private OnClickListener mImageViewClickListener = new OnSafeClickListener()
@@ -462,7 +434,7 @@ public class DefineCameraBaseFragment extends TuFragment
 		{
 			v.setOnClickListener(null);
 			cameraView.removeView(v);
-			mCamera.resume();
+			mCamera.resumeCameraCapture();
 		}
 	};
 }

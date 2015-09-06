@@ -1,8 +1,57 @@
 {
     "filterGroups": [
         {
+            "file": "lsq_filter_Enhance_4.gfilter",
+            "name": "lsq_filter_group_Enhance",
+            "default_filter_id": 45,
+            "filters": [
+                { "id": 41, "name": "lsq_filter_Cheerful", "args": { "mixied": 0.75 } },
+                { "id": 42, "name": "lsq_filter_Lightup", "args": { "mixied": 0.85 } },
+                { "id": 43, "name": "lsq_filter_Relaxed", "args": { "mixied": 0.6 } },
+                { "id": 44, "name": "lsq_filter_Rough", "args": { "mixied": 0.55 } },
+                { "id": 45, "name": "lsq_filter_Instant", "args": { "mixied": 0.5 } }
+            ]
+        },
+        {
+            "file": "lsq_filter_Lomo_2.gfilter",
+            "name": "lsq_filter_group_Lomo",
+            "default_filter_id": 24,
+            "filters": [
+                { "id": 21, "name": "lsq_filter_Lomo", "args": { "mixied": 0.6 } },
+                { "id": 22, "name": "lsq_filter_Clear", "args": { "mixied": 0.6 } },
+                { "id": 23, "name": "lsq_filter_Morning", "args": { "mixied": 0.75 } },
+                { "id": 24, "name": "lsq_filter_Newborn", "args": { "mixied": 0.7 } },
+                { "id": 25, "name": "lsq_filter_Artistic", "args": { "mixied": 0.7 } }
+            ]
+        },
+        {
+            "file": "lsq_filter_Beauty_6.gfilter",
+            "name": "lsq_filter_group_Beauty",
+            "default_filter_id": 65,
+            "filters": [
+                { "id": 61, "name": "lsq_filter_SkinNature", "args": { "smoothing": 0.3 } },
+                { "id": 62, "name": "lsq_filter_SkinPink", "args": { "smoothing": 0.5, "mixied": 0.3 } },
+                { "id": 63, "name": "lsq_filter_SkinJelly", "args": { "smoothing": 0.6, "mixied": 0.4 } },
+                { "id": 64, "name": "lsq_filter_SkinNoir", "args": { "smoothing": 0.5, "mixied": 1.0 } },
+                { "id": 65, "name": "lsq_filter_SkinRuddy", "args": { "smoothing": 0.45, "mixied": 0.25 } },
+                { "id": 66, "name": "lsq_filter_SkinSugar", "args": { "smoothing": 0.6, "mixied": 0.3 } },
+                { "id": 67, "name": "lsq_filter_SkinPowder", "args": { "smoothing": 0.45, "mixied": 0.4 } }
+            ]
+        },
+        {
+            "file": "lsq_filter_Food_3.gfilter",
+            "name": "lsq_filter_group_Food",
+            "default_filter_id": 32,
+            "filters": [
+                { "id": 31, "name": "lsq_filter_Abao", "args": { "mixied": 0.7 } },
+                { "id": 32, "name": "lsq_filter_Thick", "args": { "mixied": 0.65 } },
+                { "id": 33, "name": "lsq_filter_Vintage", "args": { "mixied": 0.7 } },
+                { "id": 34, "name": "lsq_filter_Nostalgic", "args": { "mixied": 0.65 } },
+                { "id": 35, "name": "lsq_filter_Forest", "args": { "mixied": 0.45 } }
+            ]
+        },
+        {
             "file": "lsq_filter_Leica_1.gfilter",
-            "valid_key": "4a32e5610712b947",
             "name": "lsq_filter_group_Leica",
             "default_filter_id": 12,
             "color": "#E74C3C",
@@ -23,75 +72,7 @@
             ]
         },
         {
-            "file": "lsq_filter_Magic_7.gfilter",
-            "valid_key": "10a7fa8557837a5c",
-            "name": "lsq_filter_group_Magic",
-            "default_filter_id": 72,
-            "filters": [
-                { "id": 71, "name": "lsq_filter_MagicRed" },
-                { "id": 72, "name": "lsq_filter_MagicYellow" },
-                { "id": 73, "name": "lsq_filter_MagicBlue" },
-                { "id": 74, "name": "lsq_filter_MagicGreen" },
-                { "id": 75, "name": "lsq_filter_MagicPurple" }
-            ]
-        },
-        {
-            "file": "lsq_filter_Beauty_6.gfilter",
-            "valid_key": "4b2493145477da42",
-            "name": "lsq_filter_group_Beauty",
-            "default_filter_id": 65,
-            "filters": [
-                { "id": 61, "name": "lsq_filter_SkinNature", "args": { "smoothing": 0.4 } },
-                { "id": 62, "name": "lsq_filter_SkinPink", "args": { "smoothing": 0.4, "mixied": 0.55 } },
-                { "id": 63, "name": "lsq_filter_SkinJelly", "args": { "smoothing": 0.4, "mixied": 0.45 } },
-                { "id": 64, "name": "lsq_filter_SkinNoir", "args": { "smoothing": 0.4, "mixied": 1.0 } },
-                { "id": 65, "name": "lsq_filter_SkinRuddy", "args": { "smoothing": 0.4, "mixied": 0.45 } },
-                { "id": 66, "name": "lsq_filter_SkinSugar", "args": { "smoothing": 0.4, "mixied": 0.5 } },
-                { "id": 67, "name": "lsq_filter_SkinPowder", "args": { "smoothing": 0.4, "mixied": 0.6 } }
-            ]
-        },
-        {
-            "file": "lsq_filter_Lomo_2.gfilter",
-            "valid_key": "62d9fd597a0e2d9d",
-            "name": "lsq_filter_group_Lomo",
-            "default_filter_id": 24,
-            "filters": [
-                { "id": 21, "name": "lsq_filter_Lomo", "args": { "mixied": 0.6 } },
-                { "id": 22, "name": "lsq_filter_Clear", "args": { "mixied": 0.6 } },
-                { "id": 23, "name": "lsq_filter_Morning", "args": { "mixied": 0.75 } },
-                { "id": 24, "name": "lsq_filter_Newborn", "args": { "mixied": 0.7 } },
-                { "id": 25, "name": "lsq_filter_Artistic", "args": { "mixied": 0.7 } }
-            ]
-        },
-        {
-            "file": "lsq_filter_Food_3.gfilter",
-            "valid_key": "9841530ac0eb74d8",
-            "name": "lsq_filter_group_Food",
-            "default_filter_id": 32,
-            "filters": [
-                { "id": 31, "name": "lsq_filter_Abao", "args": { "mixied": 0.7 } },
-                { "id": 32, "name": "lsq_filter_Thick", "args": { "mixied": 0.65 } },
-                { "id": 33, "name": "lsq_filter_Vintage", "args": { "mixied": 0.7 } },
-                { "id": 34, "name": "lsq_filter_Nostalgic", "args": { "mixied": 0.65 } },
-                { "id": 35, "name": "lsq_filter_Forest", "args": { "mixied": 0.45 } }
-            ]
-        },
-        {
-            "file": "lsq_filter_Enhance_4.gfilter",
-            "valid_key": "1ece1ddf404b6f19",
-            "name": "lsq_filter_group_Enhance",
-            "default_filter_id": 45,
-            "filters": [
-                { "id": 41, "name": "lsq_filter_Cheerful", "args": { "mixied": 0.75 } },
-                { "id": 42, "name": "lsq_filter_Lightup", "args": { "mixied": 0.85 } },
-                { "id": 43, "name": "lsq_filter_Relaxed", "args": { "mixied": 0.6 } },
-                { "id": 44, "name": "lsq_filter_Rough", "args": { "mixied": 0.55 } },
-                { "id": 45, "name": "lsq_filter_Instant", "args": { "mixied": 0.5 } }
-            ]
-        },
-        {
             "file": "lsq_filter_Glare_5.gfilter",
-            "valid_key": "e76ac25737f771e6",
             "name": "lsq_filter_group_Glare",
             "default_filter_id": 57,
             "filters": [
@@ -109,6 +90,18 @@
                 { "id": 56, "name": "lsq_filter_Purplemoon" },
                 { "id": 57, "name": "lsq_filter_Summersunshine" }
             ]
+        },
+        {
+            "file": "lsq_filter_Magic_7.gfilter",
+            "name": "lsq_filter_group_Magic",
+            "default_filter_id": 72,
+            "filters": [
+                { "id": 71, "name": "lsq_filter_MagicRed" },
+                { "id": 72, "name": "lsq_filter_MagicYellow" },
+                { "id": 73, "name": "lsq_filter_MagicBlue" },
+                { "id": 74, "name": "lsq_filter_MagicGreen" },
+                { "id": 75, "name": "lsq_filter_MagicPurple" }
+            ]
         }
     ],
     "stickerCategories": [
@@ -119,7 +112,6 @@
     "stickerGroups": [
         {
             "file": "lsq_sticker_1_257.gsce",
-            "valid_key": "2935bc45d866c391",
             "name": "lsq_sticker_1_1",
             "stickers": [
                 { "id": 1613 },
@@ -143,7 +135,12 @@
                 }
             ]
         },
-        { "file": "lsq_sticker_2_249.gsce", "valid_key": "69b180a2c62b8686" },
-        { "file": "lsq_sticker_3_250.gsce", "valid_key": "0a39c15b64255477" }
-    ]
+        { "file": "lsq_sticker_2_249.gsce" },
+        { "file": "lsq_sticker_3_250.gsce" }
+    ],
+    "master":"lU7if\/O93p2RClm1FDQfv5wMy2GHmbMDMHYSU\/FSI7QbdA5+UG3qWmHtQH8b9QOa3xG+keZNlr9BrfnQGZlGRh\/c\/nLhi0uxQQVOxSqDh1DTxyUU6OB2Ux9wNqJJGyC5ezqwmjq8oIIi0nangHMYMhoK40xLD\/T\/ykwz8i73DRVngwdSbNi5sVgiu9GHcQA7e9xJyEtKOl9NQxkTFWHc1QMM\/KudkWLfEq28fDBfllNVfYiyOHvc+PKHQblWahHvKtemP583SqGJk\/yEm6bAIaoAhtFHFzuCYaABgpf93Ca93SvRl0em+iFUQk18FWpLXdRVZEc1kSwgU4p2T4fc+9oyaPO9V4cv2rWejLBpDFa\/QCD+2Tv9EbJ2QFXNAM++rHpcLPFsOy6iTtcMxlqdRL0MDrK5zmYi4jVn5jFmcRvA5S5lqQqSw6LedESBDiOf\/w7KSbLdjE7M0XcRk7g3kn\/sUGYBuGtKBVDBVv7DwCSxm7HSZPN1ZDAzNXptOEz\/OJzY7kHbnjugFea9KDzB0p0GndMrHsd0fwtjHYWCPV1qnVRwXGD6JRMKVsQuvDLqv+V8pjUSyLcIlUbRcX9GaaUERsb2Fbc4uQDu8D+sooLK54e9Do+AVjekdvXkypNBqTm\/Fxd9biMun2h5HmXQY5ael1fTS4fD\/+vwhTy1cn8hiZ5XJKQuAWkdLSZpD7Y9dI0lIX4r\/Y6GFHp\/QgDHrVdw+j1tYgDstvj3VAFfFb0Oy3zrzHua3uhMs2SyC73Z7b7OHs8Stzt78qC8hxpaKA==3C48685213",
+    "masters": {
+    	"release": "lU7if\/O93p2RClm1FDQfv5wMy2GHmbMDMHYSU\/FSI7QbdA5+UG3qWmHtQH8b9QOa3xG+keZNlr9BrfnQGZlGRh\/c\/nLhi0uxQQVOxSqDh1DTxyUU6OB2Ux9wNqJJGyC5ezqwmjq8oIIi0nangHMYMhoK40xLD\/T\/ykwz8i73DRVngwdSbNi5sVgiu9GHcQA7e9xJyEtKOl9NQxkTFWHc1QMM\/KudkWLfEq28fDBfllNVfYiyOHvc+PKHQblWahHvKtemP583SqGJk\/yEm6bAIaoAhtFHFzuCYaABgpf93Ca93SvRl0em+iFUQk18FWpLXdRVZEc1kSwgU4p2T4fc+9oyaPO9V4cv2rWejLBpDFa\/QCD+2Tv9EbJ2QFXNAM++rHpcLPFsOy6iTtcMxlqdRL0MDrK5zmYi4jVn5jFmcRvA5S5lqQqSw6LedESBDiOf\/w7KSbLdjE7M0XcRk7g3kn\/sUGYBuGtKBVDBVv7DwCSxm7HSZPN1ZDAzNXptOEz\/OJzY7kHbnjugFea9KDzB0p0GndMrHsd0fwtjHYWCPV1qnVRwXGD6JRMKVsQuvDLqv+V8pjUSyLcIlUbRcX9GaaUERsb2Fbc4uQDu8D+sooLK54e9Do+AVjekdvXkypNBqTm\/Fxd9biMun2h5HmXQY5ael1fTS4fD\/+vwhTy1cn8hiZ5XJKQuAWkdLSZpD7Y9dI0lIX4r\/Y6GFHp\/QgDHrVdw+j1tYgDstvj3VAFfFb0Oy3zrzHua3uhMs2SyC73Z7b7OHs8Stzt78qC8hxpaKA==3C48685213",
+    	"debug": "lU7if\/O93p2RClm1FDQfv5wMy2GHmbMDMHYSU\/FSI7QbdA5+UG3qWmHtQH8b9QOa3xG+keZNlr9BrfnQGZlGRh\/c\/nLhi0uxQQVOxSqDh1DTxyUU6OB2Ux9wNqJJGyC5ezqwmjq8oIIi0nangHMYMhoK40xLD\/T\/ykwz8i73DRVngwdSbNi5sVgiu9GHcQA7e9xJyEtKOl9NQxkTFWHc1QMM\/KudkWLfEq28fDBfllNVfYiyOHvc+PKHQblWahHvKtemP583SqGJk\/yEm6bAIaoAhtFHFzuCYaABgpf93Ca93SvRl0em+iFUQk18FWpLXdRVZEc1kSwgU4p2T4fc+9oyaPO9V4cv2rWejLBpDFa\/QCD+2Tv9EbJ2QFXNAM++rHpcLPFsOy6iTtcMxlqdRL0MDrK5zmYi4jVn5jFmcRvA5S5lqQqSw6LedESBDiOf\/w7KSbLdjE7M0XcRk7g3kn\/sUGYBuGtKBVDBVv7DwCSxm7HSZPN1ZDAzNXptOEz\/OJzY7kHbnjugFea9KDzB0p0GndMrHsd0fwtjHYWCPV1qnVRwXGD6JRMKVsQuvDLqv+V8pjUSyLcIlUbRcX9GaaUERsb2Fbc4uQDu8D+sooLK54e9Do+AVjekdvXkypNBqTm\/Fxd9biMun2h5HmXQY5ael1fTS4fD\/+vwhTy1cn8hiZ5XJKQuAWkdLSZpD7Y9dI0lIX4r\/Y6GFHp\/QgDHrVdw+j1tYgDstvj3VAFfFb0Oy3zrzHua3uhMs2SyC73Z7b7OHs8Stzt78qC8hxpaKA==3C48685213"
+    }
 }

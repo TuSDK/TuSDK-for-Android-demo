@@ -28,11 +28,4 @@
         android:maxLines="1"
         android:paddingLeft="5dp" />
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="1px"
-        android:background="@color/lsq_navigator_split" />
-
 </org.lasque.tusdk.impl.view.widget.TuNavigatorBar>

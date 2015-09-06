@@ -4,18 +4,18 @@
  *
  * @author 		Clear
  * @Date 		2015-4-21 下午1:38:04 
- * @Copyright 	(c) 2015 Lasque. All rights reserved.
+ * @Copyright 	(c) 2015 tusdk.com. All rights reserved.
  * 
  */
 package org.lasque.tusdkdemo.simple;
 
-import org.lasque.tusdk.core.TuSdk;
+import org.lasque.tusdk.TuSdkGeeV1;
 import org.lasque.tusdk.core.TuSdkResult;
 import org.lasque.tusdk.core.utils.TLog;
 import org.lasque.tusdk.impl.activity.TuFragment;
 import org.lasque.tusdk.impl.components.TuEditMultipleComponent;
-import org.lasque.tusdk.impl.components.base.TuSdkComponent.TuSdkComponentDelegate;
-import org.lasque.tusdk.impl.components.base.TuSdkHelperComponent;
+import org.lasque.tusdk.modules.components.TuSdkComponent.TuSdkComponentDelegate;
+import org.lasque.tusdk.modules.components.TuSdkHelperComponent;
 import org.lasque.tusdkdemo.R;
 
 import android.app.Activity;
@@ -27,19 +27,13 @@ import android.app.Activity;
  */
 public class EditMultipleComponentSimple extends SimpleBase
 {
-	/**
-	 * 多功能图片编辑组件范例
-	 */
+	/** 多功能图片编辑组件范例 */
 	public EditMultipleComponentSimple()
 	{
 		super(2, R.string.simple_EditMultipleComponent);
 	}
 
-	/**
-	 * 显示范例
-	 * 
-	 * @param activity
-	 */
+	/** 显示范例 */
 	@Override
 	public void showSimple(Activity activity)
 	{
@@ -47,26 +41,18 @@ public class EditMultipleComponentSimple extends SimpleBase
 		// see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/base/TuSdkHelperComponent.html
 		this.componentHelper = new TuSdkHelperComponent(activity);
 
-		TuSdk.albumCommponent(activity, new TuSdkComponentDelegate()
+		TuSdkGeeV1.albumCommponent(activity, new TuSdkComponentDelegate()
 		{
 			@Override
-			public void onComponentFinished(TuSdkResult result, Error error,
-					TuFragment lastFragment)
+			public void onComponentFinished(TuSdkResult result, Error error, TuFragment lastFragment)
 			{
 				openEditMultiple(result, error, lastFragment);
 			}
 		}).showComponent();
 	}
 
-	/**
-	 * 开启多功能图片编辑
-	 * 
-	 * @param result
-	 * @param error
-	 * @param lastFragment
-	 */
-	private void openEditMultiple(TuSdkResult result, Error error,
-			TuFragment lastFragment)
+	/** 开启多功能图片编辑 */
+	private void openEditMultiple(TuSdkResult result, Error error, TuFragment lastFragment)
 	{
 		if (result == null || error != null) return;
 
@@ -74,8 +60,7 @@ public class EditMultipleComponentSimple extends SimpleBase
 		TuSdkComponentDelegate delegate = new TuSdkComponentDelegate()
 		{
 			@Override
-			public void onComponentFinished(TuSdkResult result, Error error,
-					TuFragment lastFragment)
+			public void onComponentFinished(TuSdkResult result, Error error, TuFragment lastFragment)
 			{
 				TLog.d("onEditMultipleComponentReaded: %s | %s", result, error);
 			}
@@ -87,12 +72,11 @@ public class EditMultipleComponentSimple extends SimpleBase
 
 		if (lastFragment == null)
 		{
-			component = TuSdk.editMultipleCommponent(
-					this.componentHelper.activity(), delegate);
+			component = TuSdkGeeV1.editMultipleCommponent(this.componentHelper.activity(), delegate);
 		}
 		else
 		{
-			component = TuSdk.editMultipleCommponent(lastFragment, delegate);
+			component = TuSdkGeeV1.editMultipleCommponent(lastFragment, delegate);
 		}
 
 		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/TuEditMultipleComponentOption.html

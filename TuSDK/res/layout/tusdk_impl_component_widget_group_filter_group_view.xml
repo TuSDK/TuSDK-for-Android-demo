@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<org.lasque.tusdk.impl.components.widget.GroupFilterGroupView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="75dp"
+<org.lasque.tusdk.impl.components.widget.filter.GroupFilterGroupView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dp"
     android:layout_height="match_parent" >
 
     <org.lasque.tusdk.core.view.TuSdkRelativeLayout
@@ -8,26 +8,25 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="4dp"
-        android:layout_marginLeft="2dp"
-        android:layout_marginRight="2dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="0dp"
         android:layout_marginTop="4dp" >
 
         <ImageView
             android:id="@+id/lsq_item_image"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
-
-        <View
-            android:id="@+id/lsq_item_flag"
+        
+        <View android:id="@+id/lsq_item_image_mask"
             android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:layout_alignParentBottom="true" />
+            android:layout_height="match_parent"
+            android:background="@color/lsq_filter_group_cell_selected_color"/>
 
         <org.lasque.tusdk.core.view.TuSdkRelativeLayout
             android:id="@+id/lsq_item_selected"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/lsq_alpha_black_80" >
+            android:background="@drawable/tusdk_component_group_filter_item_highlight" >
 
             <ImageView
                 android:id="@+id/lsq_item_icon"
@@ -40,14 +39,14 @@
         <TextView
             android:id="@+id/lsq_item_title"
             android:layout_width="match_parent"
-            android:layout_height="24dp"
-            android:layout_above="@+id/lsq_item_flag"
+            android:layout_height="16dp"
+            android:layout_alignParentBottom="true"
             android:ellipsize="end"
             android:gravity="center"
             android:lines="1"
             android:text="@string/lsq_text"
             android:textColor="@color/lsq_color_white"
-            android:textSize="15sp" />
+            android:textSize="10sp" />
     </org.lasque.tusdk.core.view.TuSdkRelativeLayout>
 
     <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
@@ -55,7 +54,9 @@
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_alignParentRight="true"
+        android:layout_marginTop="4dp"
         android:scaleType="center"
-        android:src="@drawable/lsq_style_default_edit_drag_cancel" />
+        android:src="@drawable/lsq_style_default_edit_remove"
+        android:background="@color/lsq_filter_group_remove_bg" />
 
-</org.lasque.tusdk.impl.components.widget.GroupFilterGroupView>
+</org.lasque.tusdk.impl.components.widget.filter.GroupFilterGroupView>

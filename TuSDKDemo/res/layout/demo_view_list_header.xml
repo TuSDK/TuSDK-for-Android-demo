@@ -2,7 +2,7 @@
 <org.lasque.tusdkdemo.view.DemoListHeader xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="40dp"
-    android:background="@color/lsq_backgroud_default_header"
+    android:background="@color/lsq_background_default_header"
     android:paddingLeft="10dp"
     android:paddingRight="10dp" >
 

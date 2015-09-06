@@ -7,13 +7,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="2dp"
-        android:background="@color/lsq_backgroud_default" >
+        android:background="@color/lsq_background_default" >
 
         <ImageView
             android:id="@+id/lsq_posterView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/lsq_color_gray"
+            android:background="@color/lsq_background_album_cell"
             android:scaleType="centerCrop" />
 
     </RelativeLayout>

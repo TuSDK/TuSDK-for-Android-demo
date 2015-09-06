@@ -4,7 +4,7 @@
  *
  * @author 		Clear
  * @Date 		2015-4-21 下午1:33:49 
- * @Copyright 	(c) 2015 Lasque. All rights reserved.
+ * @Copyright 	(c) 2015 tusdk.com. All rights reserved.
  * 
  */
 package org.lasque.tusdkdemo.extend;
@@ -13,10 +13,10 @@ import org.lasque.tusdk.core.TuSdkResult;
 import org.lasque.tusdk.core.utils.TLog;
 import org.lasque.tusdk.core.utils.image.BitmapHelper;
 import org.lasque.tusdk.impl.activity.TuFragment;
-import org.lasque.tusdk.impl.components.base.TuSdkHelperComponent;
 import org.lasque.tusdk.impl.components.edit.TuEditTurnAndCutFragment;
 import org.lasque.tusdk.impl.components.edit.TuEditTurnAndCutFragment.TuEditTurnAndCutFragmentDelegate;
 import org.lasque.tusdk.impl.components.edit.TuEditTurnAndCutOption;
+import org.lasque.tusdk.modules.components.TuSdkHelperComponent;
 import org.lasque.tusdkdemo.R;
 import org.lasque.tusdkdemo.simple.SimpleBase;
 
@@ -27,22 +27,15 @@ import android.app.Activity;
  * 
  * @author Clear
  */
-public class ExtendEditComponentSimple extends SimpleBase implements
-		TuEditTurnAndCutFragmentDelegate
+public class ExtendEditComponentSimple extends SimpleBase implements TuEditTurnAndCutFragmentDelegate
 {
-	/**
-	 * 图片编辑组件范例
-	 */
+	/** 图片编辑组件范例 */
 	public ExtendEditComponentSimple()
 	{
 		super(3, R.string.extend_EditComponent);
 	}
 
-	/**
-	 * 显示范例
-	 * 
-	 * @param activity
-	 */
+	/** 显示范例 */
 	@Override
 	public void showSimple(Activity activity)
 	{
@@ -75,6 +68,9 @@ public class ExtendEditComponentSimple extends SimpleBase implements
 		// 开启用户滤镜历史记录
 		option.setEnableFiltersHistory(true);
 
+		// 开启在线滤镜
+		option.setEnableOnlineFilter(true);
+
 		// 显示滤镜标题视图
 		option.setDisplayFiltersSubtitles(true);
 
@@ -88,10 +84,10 @@ public class ExtendEditComponentSimple extends SimpleBase implements
 		// option.setShowResultPreview(false);
 
 		// 滤镜组行视图宽度 (单位:DP)
-		// option.setGroupFilterCellWidthDP(75);
+		// option.setGroupFilterCellWidthDP(60);
 
 		// 滤镜组选择栏高度 (单位:DP)
-		// option.setFilterBarHeightDP(100);
+		// option.setFilterBarHeightDP(80);
 
 		// 滤镜分组列表行视图布局资源ID (默认:
 		// tusdk_impl_component_widget_group_filter_group_view，如需自定义请继承自
@@ -109,8 +105,7 @@ public class ExtendEditComponentSimple extends SimpleBase implements
 		TuEditTurnAndCutFragment fragment = option.fragment();
 
 		// 输入的图片对象 (处理优先级: Image > TempFilePath > ImageSqlInfo)
-		fragment.setImage(BitmapHelper.getRawBitmap(activity,
-				R.raw.sample_photo));
+		fragment.setImage(BitmapHelper.getRawBitmap(activity, R.raw.sample_photo));
 
 		// 输入的临时文件目录 (处理优先级: Image > TempFilePath > ImageSqlInfo)
 		// editFragment.setTempFilePath(result.imageFile);
@@ -135,8 +130,7 @@ public class ExtendEditComponentSimple extends SimpleBase implements
 	 *            旋转和裁剪视图控制器处理结果
 	 */
 	@Override
-	public void onTuEditTurnAndCutFragmentEdited(
-			TuEditTurnAndCutFragment fragment, TuSdkResult result)
+	public void onTuEditTurnAndCutFragmentEdited(TuEditTurnAndCutFragment fragment, TuSdkResult result)
 	{
 		if (!fragment.isShowResultPreview())
 		{
@@ -156,18 +150,15 @@ public class ExtendEditComponentSimple extends SimpleBase implements
 	 * @return 是否截断默认处理逻辑 (默认: false, 设置为True时使用自定义处理逻辑)
 	 */
 	@Override
-	public boolean onTuEditTurnAndCutFragmentEditedAsync(
-			TuEditTurnAndCutFragment fragment, TuSdkResult result)
+	public boolean onTuEditTurnAndCutFragmentEditedAsync(TuEditTurnAndCutFragment fragment, TuSdkResult result)
 	{
 		TLog.d("onTuEditTurnAndCutFragmentEditedAsync: %s", result);
 		return false;
 	}
 
 	@Override
-	public void onComponentError(TuFragment fragment, TuSdkResult result,
-			Error error)
+	public void onComponentError(TuFragment fragment, TuSdkResult result, Error error)
 	{
-		TLog.d("onComponentError: fragment - %s, result - %s, error - %s",
-				fragment, result, error);
+		TLog.d("onComponentError: fragment - %s, result - %s, error - %s", fragment, result, error);
 	}
 }

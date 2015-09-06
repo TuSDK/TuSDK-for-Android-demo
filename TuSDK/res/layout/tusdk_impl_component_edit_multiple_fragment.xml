@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lsq_backgroud_default" >
+    android:background="@color/lsq_background_editor" >
 
     <include
         android:id="@+id/lsq_navigatorBar"
@@ -11,9 +11,9 @@
     <HorizontalScrollView
         android:id="@+id/lsq_bar_bottomBar"
         android:layout_width="match_parent"
-        android:layout_height="90dp"
+        android:layout_height="80dp"
         android:layout_alignParentBottom="true"
-        android:background="@color/lsq_navigator_bg" >
+        android:background="@color/lsq_background_editor_bottom_bar" >
 
         <LinearLayout
             android:id="@+id/lsq_actions_wrapview"
@@ -55,29 +55,31 @@
         android:id="@+id/lsq_imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/lsq_bar_bottomBar"
-        android:layout_below="@+id/lsq_navigatorBar"
+        android:layout_above="@+id/lsq_stepwrap"
         android:scaleType="fitCenter" />
 
     <LinearLayout
         android:id="@+id/lsq_stepwrap"
         android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_alignBottom="@+id/lsq_imageView"
+        android:layout_height="49dp"
+        android:layout_above="@+id/lsq_bar_bottomBar"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp"
         android:orientation="horizontal" >
 
         <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
             android:id="@+id/lsq_step_prev"
-            android:layout_width="60dp"
+            android:layout_width="44dp"
             android:layout_height="match_parent"
             android:scaleType="centerInside"
             android:src="@drawable/lsq_style_default_edit_step_prev" />
+        
+        <View 
+            android:layout_width="28dp"
+            android:layout_height="match_parent"/>
 
         <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
             android:id="@+id/lsq_step_next"
-            android:layout_width="60dp"
+            android:layout_width="44dp"
             android:layout_height="match_parent"
             android:scaleType="centerInside"
             android:src="@drawable/lsq_style_default_edit_step_next" />
