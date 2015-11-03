@@ -90,7 +90,6 @@
     <orderEntry type="library" exported="" name="Android-Exif-Extended-master-20140716" level="project" />
     <orderEntry type="library" exported="" name="universal-image-loader-1.9.4" level="project" />
     <orderEntry type="library" exported="" name="commons-io-2.4" level="project" />
-    <orderEntry type="library" exported="" name="TuSDKCore-2.1.3" level="project" />
-    <orderEntry type="library" exported="" name="android-async-http-1.4.5" level="project" />
+    <orderEntry type="library" exported="" name="TuSDKCore-2.1.4" level="project" />
   </component>
 </module>

@@ -91,6 +91,8 @@ public class EditAndCutComponentSimple extends SimpleBase implements TuEditTurnA
 
 		// 是否显示处理结果预览图 (默认：关闭，调试时可以开启)
 		option.setShowResultPreview(true);
+		// 是否渲染滤镜封面 (使用设置的滤镜直接渲染，需要拥有滤镜列表封面设置权限，请访问TuSDK.com控制台)
+		// option.setRenderFilterThumb(true);
 
 		TuEditTurnAndCutFragment fragment = option.fragment();
 

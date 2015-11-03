@@ -76,7 +76,6 @@
 -keep class android.support.**{ *; }
 -keep class org.apache.commons.**{ *; }
 -keep class com.nostra13.universalimageloader.**{ *; }
--keep class com.loopj.android.http.**{ *; }
 -keep class it.sephiroth.android.library.exif2.**{ *; }
 
 -keep class org.lasque.tusdk.**{public *; protected *; }

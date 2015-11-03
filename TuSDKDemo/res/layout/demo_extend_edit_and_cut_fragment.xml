@@ -37,7 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="49dp"
         android:layout_alignParentBottom="true"
-        android:background="@color/lsq_background_editor_bottom_bar"
+        android:background="#FF7B2C"
         android:orientation="horizontal" >
 
         <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
@@ -57,12 +57,12 @@
             android:src="@drawable/lsq_style_default_edit_button_trun_left" />
 
         <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
-            android:id="@+id/lsq_mirrorButton"
+            android:id="@+id/lsq_trunRightButton"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:scaleType="center"
-            android:src="@drawable/lsq_style_default_edit_button_horizontal_mirror" />
+            android:src="@drawable/lsq_style_default_edit_button_trun_right" />
 
         <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
             android:id="@+id/lsq_completeButton"

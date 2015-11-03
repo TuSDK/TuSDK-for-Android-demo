@@ -45,10 +45,10 @@ public class ExtendEditComponentSimple extends SimpleBase implements TuEditTurnA
 		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/edit/TuEditTurnAndCutOption.html
 		TuEditTurnAndCutOption option = new TuEditTurnAndCutOption();
 		// 控制器类型
-		// option.setComponentClazz(TuEditTurnAndCutFragment.class);
+		option.setComponentClazz(ExtendEditTurnAndCutFragment.class);
 
 		// 设置根视图布局资源ID
-		// option.setRootViewLayoutId(TuEditTurnAndCutFragment.getLayoutId());
+		option.setRootViewLayoutId(R.layout.demo_extend_edit_and_cut_fragment);
 
 		// 保存到临时文件 (默认不保存, 当设置为true时, TuSdkResult.imageFile, 处理完成后将自动清理原始图片)
 		// option.setSaveToTemp(false);
@@ -101,6 +101,9 @@ public class ExtendEditComponentSimple extends SimpleBase implements TuEditTurnA
 
 		// 是否在控制器结束后自动删除临时文件
 		option.setAutoRemoveTemp(true);
+
+		// 是否渲染滤镜封面 (使用设置的滤镜直接渲染，需要拥有滤镜列表封面设置权限，请访问TuSDK.com控制台)
+		// option.setRenderFilterThumb(true);
 
 		TuEditTurnAndCutFragment fragment = option.fragment();
 
