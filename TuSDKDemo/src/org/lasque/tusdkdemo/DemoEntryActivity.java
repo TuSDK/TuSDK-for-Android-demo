@@ -10,6 +10,7 @@
 package org.lasque.tusdkdemo;
 
 import org.lasque.tusdk.core.TuSdk;
+import org.lasque.tusdk.core.TuSdkContext;
 import org.lasque.tusdk.core.secret.StatisticsManger;
 import org.lasque.tusdk.core.seles.tusdk.FilterManager;
 import org.lasque.tusdk.core.seles.tusdk.FilterManager.FilterManagerDelegate;
@@ -82,7 +83,7 @@ public class DemoEntryActivity extends TuFragmentActivity
 
 		// 导航栏 实现类
 		mNavigatorBar = this.getViewById(R.id.lsq_navigatorBar);
-		mNavigatorBar.setTitle(R.string.lsq_sdk_name);
+		mNavigatorBar.setTitle(String.format("%s %s", TuSdkContext.getString(R.string.lsq_sdk_name), TuSdk.SDK_VERSION));
 		mNavigatorBar.setBackButtonId(R.id.lsq_backButton);
 		mNavigatorBar.showBackButton(false);
 

@@ -22,7 +22,6 @@
 
     <!-- navigatorBar -->
     <color name="lsq_navigator_bg">#403e43</color>
-    <color name="lsq_navigator_editor_bg">#59403e43</color>
     <color name="lsq_navigator_title">#ffffff</color>
     <color name="lsq_navigator_button_title">#ffffff</color>
     <color name="lsq_navigator_button_right_title">#ff6633</color>
@@ -73,4 +72,7 @@
     <color name="lsq_filter_cell_selected_color">#4C000000</color>
     <color name="lsq_filter_group_remove_bg">#CCff6633</color>
     <color name="lsq_filter_config_highlight">#ff6633</color>
+    
+    <!--  brush -->
+    <color name="lsq_brush_cell_selected_color">#66000000</color>
 </resources>

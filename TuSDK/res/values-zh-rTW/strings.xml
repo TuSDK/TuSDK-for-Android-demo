@@ -80,6 +80,7 @@
     <string name="lsq_edit_entry_filter">濾鏡</string>
     <string name="lsq_edit_entry_cuter">裁切</string>
     <string name="lsq_edit_entry_sticker">貼紙</string>
+    <string name="lsq_edit_entry_smudge">涂抹</string>
     <string name="lsq_edit_cuter_ratio_orgin">原始</string>
     <string name="lsq_edit_cuter_ratio_1_1">1:1</string>
     <string name="lsq_edit_cuter_ratio_2_3">2:3</string>
@@ -224,6 +225,24 @@
     <string name="lsq_filter_set_excessive">邊緣</string>
     <string name="lsq_filter_set_maskAlpha">強調</string>
     <string name="lsq_filter_set_degree">角度</string>
+    
+    <!-- Brush Definition -->
+    <string name="lsq_brush_Eraser">橡皮擦</string>
+    <string name="lsq_brush_Mosaic">馬賽克</string>
+    <string name="lsq_brush_OilPaint">油畫</string>
+    <string name="lsq_brush_Gouache">水粉</string>
+    <string name="lsq_brush_WaterColor">水彩</string>
+    <string name="lsq_brush_ColorLead">彩鉛</string>
+    <string name="lsq_brush_MapleLeaf">葉子</string>
+    
+    <string name="lsq_brush_remove_title">刪除筆刷</string>
+    <string name="lsq_brush_remove_msg">您是否需要刪除筆刷「%s」？</string>
+    
+    <!-- Brush Size Definition -->
+    <string name="lsq_brush_size_small">细</string>
+    <string name="lsq_brush_size_medium">中</string>
+    <string name="lsq_brush_size_large">粗</string>
+    <string name="lsq_brush_size_label">笔尖：%s</string>
 
     <!-- network -->
     <string name="lsq_network_request_error">服務器請求錯誤</string>

@@ -80,6 +80,7 @@
     <string name="lsq_edit_entry_filter">Filters</string>
     <string name="lsq_edit_entry_cuter">Crop</string>
     <string name="lsq_edit_entry_sticker">Stickers</string>
+    <string name="lsq_edit_entry_smudge">Smudge</string>
     <string name="lsq_edit_cuter_ratio_orgin">Original</string>
     <string name="lsq_edit_cuter_ratio_1_1">1:1</string>
     <string name="lsq_edit_cuter_ratio_2_3">2:3</string>
@@ -224,6 +225,24 @@
     <string name="lsq_filter_set_excessive">Edge</string>
     <string name="lsq_filter_set_maskAlpha">Mask</string>
     <string name="lsq_filter_set_degree">Degree</string>
+    
+    <!-- Brush Definition -->
+    <string name="lsq_brush_Eraser">Eraser</string>
+    <string name="lsq_brush_Mosaic">Mosaic</string>
+    <string name="lsq_brush_OilPaint">OilPaint</string>
+    <string name="lsq_brush_Gouache">Gouache</string>
+    <string name="lsq_brush_WaterColor">WaterColor</string>
+    <string name="lsq_brush_ColorLead">ColorPen</string>
+    <string name="lsq_brush_MapleLeaf">Leaf</string>
+    
+    <string name="lsq_brush_remove_title">Remove Brush</string>
+    <string name="lsq_brush_remove_msg">Are you sure to remove the brush「%s」？</string>
+    
+    <!-- Brush Size Definition -->
+    <string name="lsq_brush_size_small">Small</string>
+    <string name="lsq_brush_size_medium">Medium</string>
+    <string name="lsq_brush_size_large">Large</string>
+    <string name="lsq_brush_size_label">%s</string>
 
     <!-- network -->
     <string name="lsq_network_request_error">Network request error</string>

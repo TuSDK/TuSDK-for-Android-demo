@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.lasque.tusdk.impl.components.widget.smudge.BrushBarItemCell xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dp"
+    android:layout_height="match_parent" >
+
+    <org.lasque.tusdk.core.view.TuSdkRelativeLayout
+        android:id="@+id/lsq_item_wrap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginTop="4dp" >
+
+        <ImageView
+            android:id="@+id/lsq_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"/>
+
+        <org.lasque.tusdk.core.view.TuSdkRelativeLayout
+            android:id="@+id/lsq_item_selected"
+            android:layout_width="match_parent"
+            android:layout_height="56dp" 
+            android:background="@color/lsq_brush_cell_selected_color">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@drawable/lsq_style_default_edit_icon_item_selected" />
+        </org.lasque.tusdk.core.view.TuSdkRelativeLayout>
+
+        <TextView
+            android:id="@+id/lsq_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_alignParentBottom="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@string/lsq_text"
+            android:textColor="@color/lsq_color_white"
+            android:textSize="10sp" />
+    </org.lasque.tusdk.core.view.TuSdkRelativeLayout>
+
+    <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+        android:id="@+id/lsq_item_remove_button"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="4dp"
+        android:scaleType="center"
+        android:src="@drawable/lsq_style_default_edit_remove"
+        android:background="@color/lsq_filter_group_remove_bg" />
+
+</org.lasque.tusdk.impl.components.widget.smudge.BrushBarItemCell>

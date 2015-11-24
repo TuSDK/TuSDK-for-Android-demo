@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.lasque.tusdk.impl.components.widget.smudge.BrushBarView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lsq_background_option_bar" >
+     
+    <RelativeLayout
+        android:id="@+id/lsq_configWrap"
+        android:layout_width="64dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp">
+       
+        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+	        android:id="@+id/lsq_size_image"
+	        android:layout_width="44dp"
+	        android:layout_height="44dp"
+	        android:layout_marginTop="8dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginStart="10dp"
+	        android:scaleType="center"
+	        android:src="@drawable/lsq_style_default_edit_brush_medium"
+	        android:background="@drawable/tusdk_button_brush_size_background" />
+		
+        <TextView
+            android:id="@+id/lsq_size_title"
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:layout_alignParentBottom="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:textColor="@color/lsq_color_white"
+            android:textSize="10sp" />
+        
+    </RelativeLayout>
+    
+    <org.lasque.tusdk.impl.components.widget.smudge.BrushBarTableView
+        android:id="@+id/lsq_brush_list_view"
+        android:layout_toRightOf="@+id/lsq_configWrap"
+        android:layout_toEndOf="@+id/lsq_configWrap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</org.lasque.tusdk.impl.components.widget.smudge.BrushBarView>

@@ -87,9 +87,7 @@
     <orderEntry type="library" exported="" name="android-support-v4" level="project" />
     <orderEntry type="library" exported="" name="android-support-v7-recyclerview" level="project" />
     <orderEntry type="library" exported="" name="TuSDKGee-1.9.0" level="project" />
-    <orderEntry type="library" exported="" name="Android-Exif-Extended-master-20140716" level="project" />
     <orderEntry type="library" exported="" name="universal-image-loader-1.9.4" level="project" />
-    <orderEntry type="library" exported="" name="commons-io-2.4" level="project" />
-    <orderEntry type="library" exported="" name="TuSDKCore-2.1.4" level="project" />
+    <orderEntry type="library" exported="" name="TuSDKCore-2.2.0" level="project" />
   </component>
 </module>

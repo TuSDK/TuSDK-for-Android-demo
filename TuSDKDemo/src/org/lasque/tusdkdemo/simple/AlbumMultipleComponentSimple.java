@@ -66,8 +66,8 @@ public class AlbumMultipleComponentSimple extends SimpleBase
 		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/album/TuAlbumListOption.html
 		// comp.componentOption().albumListOption()
 
-		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/album/TuPhotoListOption.html
-		// comp.componentOption().photoListOption()
+		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/camera/TuCameraOption.html
+		// comp.componentOption().cameraOption()
 
 		// 在组件执行完成后自动关闭组件
 		comp.setAutoDismissWhenCompleted(true)
