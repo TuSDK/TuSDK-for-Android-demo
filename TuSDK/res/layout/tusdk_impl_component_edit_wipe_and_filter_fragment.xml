@@ -4,25 +4,60 @@
     android:layout_height="match_parent"
     android:background="@color/lsq_background_editor" >
 	
-    <org.lasque.tusdk.impl.components.widget.smudge.SmudgeView
+    <org.lasque.tusdk.impl.components.widget.smudge.FilterSmudgeView
         android:id="@+id/lsq_smudgeView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/lsq_background_editor"
-        android:layout_above="@+id/lsq_brush_bar" />
+        android:layout_above="@+id/lsq_bar_configBar" />
     
-    <org.lasque.tusdk.impl.components.widget.smudge.TuBrushSizeAnimView
-        android:id="@+id/lsq_size_anim_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/lsq_brush_bar"/>
+    <ImageView 
+        android:id="@+id/lsq_zoomInView"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:padding="2dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/tusdk_component_smudge_zoomin_background"
+        />
 
-    <include
-        android:id="@+id/lsq_brush_bar"
+    <RelativeLayout 
+        android:id="@+id/lsq_bar_configBar"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_above="@+id/lsq_bar_bottomBar"
-        layout="@layout/tusdk_impl_component_widget_brush_bar_view" />
+        android:background="@color/lsq_background_option_bar" >
+        
+        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+            android:id="@+id/lsq_small_size"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_toLeftOf="@+id/lsq_medium_size"
+            android:layout_marginRight="64dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/lsq_style_default_edit_pen_small" />
+        
+        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+            android:id="@+id/lsq_medium_size"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/lsq_style_default_edit_pen_medium" />
+        
+        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+            android:id="@+id/lsq_large_size"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_toRightOf="@+id/lsq_medium_size"
+            android:layout_marginLeft="64dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/lsq_style_default_edit_pen_large" />
+        
+    </RelativeLayout>
 
     <LinearLayout
         android:id="@+id/lsq_bar_bottomBar"

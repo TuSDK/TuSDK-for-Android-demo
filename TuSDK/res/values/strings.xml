@@ -81,6 +81,7 @@
     <string name="lsq_edit_entry_cuter">裁切</string>
     <string name="lsq_edit_entry_sticker">贴纸</string>
     <string name="lsq_edit_entry_smudge">涂抹</string>
+    <string name="lsq_edit_entry_smudge_filter">模糊</string>
     <string name="lsq_edit_cuter_ratio_orgin">原始</string>
     <string name="lsq_edit_cuter_ratio_1_1">1:1</string>
     <string name="lsq_edit_cuter_ratio_2_3">2:3</string>
@@ -102,7 +103,7 @@
     <string name="lsq_sticker_total_format">%1$s 张贴纸</string>
     <string name="lsq_sticker_empty">还没有贴纸</string>
     <string name="lsq_sticker_empty_msg">快去贴纸商店挑选海量贴纸</string>
-    <string name="lsq_sticker_1_1">手部</string>
+    <string name="lsq_sticker_1_1">怪咖营地4</string>
     <string name="lsq_sticker_online_title">贴纸商店</string>
     <string name="lsq_sticker_remove_title">删除贴纸</string>
     <string name="lsq_sticker_remove_msg">您是否需要删除贴纸「%s」？</string>

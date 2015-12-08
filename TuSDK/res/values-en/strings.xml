@@ -81,6 +81,7 @@
     <string name="lsq_edit_entry_cuter">Crop</string>
     <string name="lsq_edit_entry_sticker">Stickers</string>
     <string name="lsq_edit_entry_smudge">Smudge</string>
+     <string name="lsq_edit_entry_smudge_filter">Blur</string>
     <string name="lsq_edit_cuter_ratio_orgin">Original</string>
     <string name="lsq_edit_cuter_ratio_1_1">1:1</string>
     <string name="lsq_edit_cuter_ratio_2_3">2:3</string>
@@ -102,7 +103,7 @@
     <string name="lsq_sticker_total_format">%1$s stickers</string>
     <string name="lsq_sticker_empty">No stickers yet</string>
     <string name="lsq_sticker_empty_msg">Go get some in the Stickers Shop</string>
-    <string name="lsq_sticker_1_1">Arms</string>
+    <string name="lsq_sticker_1_1">Monsters 4</string>
     <string name="lsq_sticker_online_title">Online Stickers</string>
     <string name="lsq_sticker_remove_title">Remove Sticker</string>
     <string name="lsq_sticker_remove_msg">Are you sure to remove the sticker %s?</string>

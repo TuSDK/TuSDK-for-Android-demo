@@ -24,6 +24,5 @@
     <string name="extend_EditComponent">图片编辑组件</string>
     <string name="extend_CameraBase">基础相机界面修改</string>
     <string name="define_CameraBase">基础相机自定义</string>
-    <string name="define_Test">测试</string>
 
 </resources>
