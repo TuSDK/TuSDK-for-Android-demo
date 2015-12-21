@@ -10,28 +10,16 @@
 package org.lasque.tusdkdemo;
 
 import org.lasque.tusdk.core.TuSdk;
-import org.lasque.tusdk.core.TuSdkContext;
 import org.lasque.tusdk.core.secret.StatisticsManger;
 import org.lasque.tusdk.core.seles.tusdk.FilterManager;
 import org.lasque.tusdk.core.seles.tusdk.FilterManager.FilterManagerDelegate;
 import org.lasque.tusdk.impl.activity.TuFragmentActivity;
-import org.lasque.tusdk.impl.view.widget.TuNavigatorBar;
 import org.lasque.tusdk.modules.components.ComponentActType;
-import org.lasque.tusdkdemo.define.DefineCameraBaseSimple;
-import org.lasque.tusdkdemo.extend.ExtendCameraBaseComponentSimple;
-import org.lasque.tusdkdemo.extend.ExtendEditComponentSimple;
-import org.lasque.tusdkdemo.simple.AlbumComponentSimple;
-import org.lasque.tusdkdemo.simple.AlbumMultipleComponentSimple;
 import org.lasque.tusdkdemo.simple.CameraComponentSimple;
-import org.lasque.tusdkdemo.simple.EditAdvancedComponentSimple;
-import org.lasque.tusdkdemo.simple.EditAndCutComponentSimple;
-import org.lasque.tusdkdemo.simple.EditAvatarComponentSimple;
 import org.lasque.tusdkdemo.simple.EditMultipleComponentSimple;
-import org.lasque.tusdkdemo.simple.SimpleBase;
-import org.lasque.tusdkdemo.simple.SimpleGroup;
-import org.lasque.tusdkdemo.view.DemoListView;
-import org.lasque.tusdkdemo.view.DemoListView.DemoListItemAction;
-import org.lasque.tusdkdemo.view.DemoListView.DemoListViewDelegate;
+
+import android.content.Intent;
+import android.view.View;
 
 /**
  * @author Clear
@@ -65,11 +53,14 @@ public class DemoEntryActivity extends TuFragmentActivity
 		this.setAppExitInfoId(R.string.lsq_exit_info);
 	}
 
-	/** 导航栏 实现类 */
-	private TuNavigatorBar mNavigatorBar;
+	/** 相机按钮容器 */
+	private View mCameraButtonView;
 
-	/** 范例列表视图 */
-	private DemoListView mListView;
+	/** 编辑器按钮容器 */
+	private View mEditorButtonView;
+
+	/** 组件列表按钮容器 */
+	private View mComponentListButtonView;
 
 	/**
 	 * 初始化视图
@@ -80,50 +71,6 @@ public class DemoEntryActivity extends TuFragmentActivity
 		super.initView();
 		// sdk统计代码，请不要加入您的应用
 		StatisticsManger.appendComponent(ComponentActType.sdkComponent);
-
-		// 导航栏 实现类
-		mNavigatorBar = this.getViewById(R.id.lsq_navigatorBar);
-		mNavigatorBar.setTitle(String.format("%s %s", TuSdkContext.getString(R.string.lsq_sdk_name), TuSdk.SDK_VERSION));
-		mNavigatorBar.setBackButtonId(R.id.lsq_backButton);
-		mNavigatorBar.showBackButton(false);
-
-		// 默认单行列表
-		mListView = this.getViewById(R.id.lsq_listView);
-		mListView.setSimpleDelegate(mDemoListViewDelegate);
-
-		/**
-		 * ！！！！！！！！！！！！！！！！！！！！！！！！！特别提示信息要长！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
-		 * 您可以通过查看 group.appendSimple 的具体类showSimple(Activity
-		 * activity)方法，学习使用范例。
-		 */
-
-		// 范例分组
-		SimpleGroup group = new SimpleGroup();
-		// 相册组件范例
-		group.appendSimple(new AlbumComponentSimple());
-		// 相册组件 (带相机)范例
-		group.appendSimple(new AlbumMultipleComponentSimple());
-		// 相机组件范例
-		group.appendSimple(new CameraComponentSimple());
-		// 图片编辑组件 (裁剪)范例
-		group.appendSimple(new EditAndCutComponentSimple());
-		// 头像设置组件(编辑)范例
-		group.appendSimple(new EditAvatarComponentSimple());
-		// 高级图片编辑组件范例
-		group.appendSimple(new EditAdvancedComponentSimple());
-		// 多功能图片编辑组件范例
-		group.appendSimple(new EditMultipleComponentSimple());
-
-		// 图片编辑组件范例
-		group.appendSimple(new ExtendEditComponentSimple());
-		// 相机组件范例 - 修改界面
-		group.appendSimple(new ExtendCameraBaseComponentSimple());
-
-		// 自定义相机范例
-		group.appendSimple(new DefineCameraBaseSimple());
-
-		// 加载范例列表
-		mListView.loadSimples(group);
 
 		/**
 		 * ！！！！！！！！！！！！！！！！！！！！！！！！！特别提示信息要长！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
@@ -139,6 +86,14 @@ public class DemoEntryActivity extends TuFragmentActivity
 		// 需要等待滤镜管理器初始化完成，才能使用所有功能
 		TuSdk.messageHub().setStatus(this, R.string.lsq_initing);
 		TuSdk.checkFilterManager(mFilterManagerDelegate);
+
+		mCameraButtonView = this.getViewById(R.id.lsq_entry_camera);
+		mEditorButtonView = this.getViewById(R.id.lsq_entry_editor);
+		mComponentListButtonView = this.getViewById(R.id.lsq_entry_list);
+
+		mCameraButtonView.setOnClickListener(mButtonClickListener);
+		mEditorButtonView.setOnClickListener(mButtonClickListener);
+		mComponentListButtonView.setOnClickListener(mButtonClickListener);
 	}
 
 	/** 滤镜管理器委托 */
@@ -151,28 +106,43 @@ public class DemoEntryActivity extends TuFragmentActivity
 		}
 	};
 
-	/** 范例列表视图委托 */
-	private DemoListViewDelegate mDemoListViewDelegate = new DemoListViewDelegate()
+	/** 按钮点击事件处理 */
+	private View.OnClickListener mButtonClickListener = new View.OnClickListener()
 	{
-		@Override
-		public void onDemoListViewSelected(DemoListView view, SimpleBase simple, DemoListItemAction action)
+		public void onClick(View v)
 		{
-			onSelectedSimple(simple, action);
+
+			if (v == mCameraButtonView)
+			{
+				showCameraComponent();
+			}
+			else if (v == mEditorButtonView)
+			{
+				showEditorComponent();
+			}
+			else if (v == mComponentListButtonView)
+			{
+				showComponentList();
+			}
 		}
 	};
 
-	/** 选中范例 */
-	private void onSelectedSimple(SimpleBase simple, DemoListItemAction action)
+	/** 打开相机组件 */
+	private void showCameraComponent()
 	{
-		if (simple == null || action == null) return;
+		new CameraComponentSimple().showSimple(this);
+	}
 
-		switch (action)
-			{
-			case ActionSelected:
-				simple.showSimple(this);
-				break;
-			default:
-				break;
-			}
+	/** 打开多功能编辑组件 */
+	private void showEditorComponent()
+	{
+		new EditMultipleComponentSimple().showSimple(this);
+	}
+
+	/** 显示组件列表页面 */
+	private void showComponentList()
+	{
+		Intent intent = new Intent(this, TuComponentListActivity.class);
+		startActivity(intent);
 	}
 }

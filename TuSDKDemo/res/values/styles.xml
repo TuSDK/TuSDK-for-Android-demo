@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <style name="AppBaseTheme" parent="android:Theme.Light.NoTitleBar"></style>
 
@@ -12,5 +12,14 @@
         <item name="android:gravity">center</item>
         <item name="android:textColor">#FFF</item>
         <item name="android:textSize">12sp</item>
+    </style>
+    
+    <!-- component entry button -->
+    <style name="demo_component_entry_button">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:drawablePadding">16dp</item>
     </style>
 </resources>

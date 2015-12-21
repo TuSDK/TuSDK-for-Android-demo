@@ -16,10 +16,12 @@ import org.lasque.tusdk.core.TuSdkResult;
 import org.lasque.tusdk.core.secret.StatisticsManger;
 import org.lasque.tusdk.core.seles.tusdk.FilterLocalPackage;
 import org.lasque.tusdk.core.seles.tusdk.FilterOption;
+import org.lasque.tusdk.core.utils.hardware.CameraConfigs.CameraFacing;
+import org.lasque.tusdk.core.utils.hardware.CameraConfigs.CameraFlash;
 import org.lasque.tusdk.core.utils.hardware.CameraHelper;
+import org.lasque.tusdk.core.utils.hardware.TuSdkStillCameraAdapter.CameraState;
 import org.lasque.tusdk.core.utils.hardware.TuSdkStillCameraInterface;
 import org.lasque.tusdk.core.utils.hardware.TuSdkStillCameraInterface.TuSdkStillCameraListener;
-import org.lasque.tusdk.core.utils.hardware.TuSdkVideoCameraInterface.CameraState;
 import org.lasque.tusdk.core.view.TuSdkViewHelper.OnSafeClickListener;
 import org.lasque.tusdk.impl.activity.TuFragment;
 import org.lasque.tusdk.impl.components.camera.TuCameraFilterView;
@@ -31,8 +33,6 @@ import org.lasque.tusdkdemo.R;
 
 import android.graphics.Bitmap;
 import android.graphics.Color;
-import android.hardware.Camera.CameraInfo;
-import android.hardware.Camera.Parameters;
 import android.os.Handler;
 import android.os.Looper;
 import android.view.View;
@@ -51,6 +51,7 @@ import android.widget.TextView;
  * 
  * @author Clear
  */
+
 public class DefineCameraBaseFragment extends TuFragment
 {
 	/** 布局ID */
@@ -90,7 +91,7 @@ public class DefineCameraBaseFragment extends TuFragment
 	/** 相机对象 */
 	private TuSdkStillCameraInterface mCamera;
 	/** 默认闪关灯模式 */
-	private String mFlashModel = Parameters.FLASH_MODE_OFF;
+	private CameraFlash mFlashModel = CameraFlash.Off;
 
 	@Override
 	protected void loadView(ViewGroup view)
@@ -110,17 +111,17 @@ public class DefineCameraBaseFragment extends TuFragment
 		// 闪光灯 关闭按钮
 		flashOffButton = this.getViewById(R.id.flashOffButton);
 		flashOffButton.setOnClickListener(mClickListener);
-		flashOffButton.setTag(Parameters.FLASH_MODE_OFF);
+		flashOffButton.setTag(CameraFlash.Off);
 		mFlashBtns.add(flashOffButton);
 		// 闪光灯 自动按钮
 		flashAutoButton = this.getViewById(R.id.flashAutoButton);
 		flashAutoButton.setOnClickListener(mClickListener);
-		flashAutoButton.setTag(Parameters.FLASH_MODE_AUTO);
+		flashAutoButton.setTag(CameraFlash.Auto);
 		mFlashBtns.add(flashAutoButton);
 		// 闪光灯 开启按钮
 		flashOpenButton = this.getViewById(R.id.flashOpenButton);
 		flashOpenButton.setOnClickListener(mClickListener);
-		flashOpenButton.setTag(Parameters.FLASH_MODE_ON);
+		flashOpenButton.setTag(CameraFlash.On);
 		mFlashBtns.add(flashOpenButton);
 		// 切换前后摄像头按钮
 		switchCameraButton = this.getViewById(R.id.switchCameraButton);
@@ -158,7 +159,7 @@ public class DefineCameraBaseFragment extends TuFragment
 	protected void viewDidLoad(ViewGroup view)
 	{
 		// 创建相机对象
-		mCamera = TuSdk.camera(this.getActivity(), CameraInfo.CAMERA_FACING_BACK, this.cameraView);
+		mCamera = TuSdk.camera(this.getActivity(), CameraFacing.Back, this.cameraView);
 		// 相机对象事件监听
 		mCamera.setCameraListener(mCameraListener);
 
@@ -169,8 +170,9 @@ public class DefineCameraBaseFragment extends TuFragment
 		// mCamera.setOutputSize(new TuSdkSize(5312, 2988));
 
 		// 可选，设置相机手动聚焦
-		mCamera.setFocusTouchView(TuFocusTouchView.getLayoutId());
-
+		mCamera.adapter().setFocusTouchView(TuFocusTouchView.getLayoutId());
+		// 是否开启脸部追踪 (需要相机人脸追踪权限，请访问tusdk.com 控制台开启权限)
+		mCamera.setEnableFaceDetection(true);
 		// 禁用前置摄像头自动水平镜像 (默认: false，前置摄像头拍摄结果自动进行水平镜像)
 		// mCamera.setDisableMirrorFrontFacing(true);
 		// 启动相机
@@ -191,10 +193,7 @@ public class DefineCameraBaseFragment extends TuFragment
 	public void onPause()
 	{
 		super.onPause();
-		if (mCamera != null)
-		{
-			mCamera.release();
-		}
+		if (mCamera != null) mCamera.stopCameraCapture();
 	}
 
 	@Override
@@ -203,7 +202,7 @@ public class DefineCameraBaseFragment extends TuFragment
 		super.onDestroyView();
 		if (mCamera != null)
 		{
-			mCamera.release();
+			mCamera.destroy();
 			mCamera = null;
 		}
 	}
@@ -299,16 +298,16 @@ public class DefineCameraBaseFragment extends TuFragment
 	/** 闪光灯动作 */
 	private void handleFlashAction(View view)
 	{
-		this.setFlashModel((String) view.getTag());
+		this.setFlashModel((CameraFlash) view.getTag());
 	}
 
 	/** 设置闪光灯模式 */
-	private void setFlashModel(String flashMode)
+	private void setFlashModel(CameraFlash flashMode)
 	{
 		mFlashModel = flashMode;
 		for (TextView btn : mFlashBtns)
 		{
-			if (flashMode.equalsIgnoreCase(btn.getTag().toString()))
+			if (flashMode.equals(btn.getTag()))
 			{
 				btn.setTextColor(this.getResColor(R.color.demo_flash_selected));
 			}

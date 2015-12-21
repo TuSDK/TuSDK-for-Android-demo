@@ -53,6 +53,7 @@
     <string name="lsq_carema_no_access">Can’t access camera. Please turn the camera permission on in Settings.</string>
     <string name="lsq_carema_image_process">Processing&#8230;</string>
     <string name="lsq_carema_image_process_completed">Process completed</string>
+    <string name="lsq_carema_unsupport_camera2">The version of system is lower then 5.0 or Camera2 API is not supported in this device 2, Camera2 couldnot be launched</string>
 
     <!-- album -->
     <string name="lsq_album_title">Albums</string>
@@ -90,6 +91,7 @@
     <string name="lsq_edit_title">Edit</string>
     <string name="lsq_edit_multiple_title">Edit</string>
     <string name="lsq_edit_skin_title">Beautify</string>
+    <string name="lsq_edit_holy_light">Holy Light</string>
 
     <!-- sticker -->
     <string name="lsq_sticker_title">Stickers</string>

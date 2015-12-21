@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- entry on home page -->
+    <color name="demo_entry_camera">#ff5534</color>
+    <color name="demo_entry_camera_focused">#B2ff5534</color>
+    
+    <color name="demo_entry_editor">#e64c2e</color>
+    <color name="demo_entry_editor_focused">#B2e64c2e</color>
+    
+    <color name="demo_entry_list">#cc4429</color>
+    <color name="demo_entry_list_focused">#B2cc4429</color>
+    
     <!-- flash -->
     <color name="demo_flash_normal">#fff</color>
     <color name="demo_flash_selected">#ff5534</color>

@@ -108,6 +108,12 @@ public class EditMultipleComponentSimple extends SimpleBase
 
 		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/filter/TuEditVignetteOption.html
 		// component.componentOption().editVignetteOption()
+		
+		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/smudge/TuEditSmudgeOption.html
+		// component.componentOption().editSmudgeOption()
+		
+		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/filter/TuEditWipeAndFilterOption.html
+		// component.componentOption().editWipeAndFilterOption()
 
 		// 设置图片
 		component.setImage(result.image)

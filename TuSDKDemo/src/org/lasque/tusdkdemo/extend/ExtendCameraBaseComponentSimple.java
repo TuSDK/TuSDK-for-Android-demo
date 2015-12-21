@@ -148,7 +148,7 @@ public class ExtendCameraBaseComponentSimple extends SimpleBase implements TuCam
 		// 是否需要统一配置参数 (默认false, 取消三星默认降噪，锐化)
 		// option.setUnifiedParameters(false);
 
-		// 预览视图实时缩放比例 (默认:0.7f, 实时预览时，缩小到全屏大小比例，提升预览效率， 0 < mPreviewEffectScale
+		// 预览视图实时缩放比例 (默认:0.75f, 实时预览时，缩小到全屏大小比例，提升预览效率， 0 < mPreviewEffectScale
 		// <= 1)
 		// option.setPreviewEffectScale(0.7f);
 
@@ -157,6 +157,9 @@ public class ExtendCameraBaseComponentSimple extends SimpleBase implements TuCam
 
 		// 禁用前置摄像头自动水平镜像 (默认: false，前置摄像头拍摄结果自动进行水平镜像)
 		// option.setDisableMirrorFrontFacing(true);
+		
+		// 是否开启脸部追踪 (需要相机人脸追踪权限，请访问tusdk.com 控制台开启权限)
+		option.enableFaceDetection = true;
 
 		TuCameraFragment fragment = option.fragment();
 		fragment.setDelegate(this);

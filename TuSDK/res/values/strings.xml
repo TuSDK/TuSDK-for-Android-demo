@@ -53,6 +53,7 @@
     <string name="lsq_carema_no_access">无法访问系统相机，请在\r\n设置&#045;&#062;应用程序&#045;&#062;应用程序许可&#045;&#062;%1$s&#034; \r\n选中 使用摄像头</string>
     <string name="lsq_carema_image_process">正在处理&#8230;</string>
     <string name="lsq_carema_image_process_completed">处理完成</string>
+    <string name="lsq_carema_unsupport_camera2">您当前的系统版本小于5.0或硬件设备对Camera2 API为有限支持，无法开启Camera2</string>
 
     <!-- album -->
     <string name="lsq_album_title">相簿</string>
@@ -90,6 +91,7 @@
     <string name="lsq_edit_title">编辑</string>
     <string name="lsq_edit_multiple_title">编辑</string>
     <string name="lsq_edit_skin_title">美颜</string>
+    <string name="lsq_edit_holy_light">圣光</string>
 
     <!-- sticker -->
     <string name="lsq_sticker_title">贴纸</string>

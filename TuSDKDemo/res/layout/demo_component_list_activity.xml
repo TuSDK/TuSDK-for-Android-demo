@@ -1,0 +1,16 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/lsq_navigatorBar"
+        layout="@layout/tusdk_view_widget_navigator" />
+
+    <org.lasque.tusdkdemo.view.DemoListView
+        android:id="@+id/lsq_listView"
+        style="@style/lsq_listSplitView"
+        android:layout_below="@+id/lsq_navigatorBar" >
+    </org.lasque.tusdkdemo.view.DemoListView>
+
+</RelativeLayout>

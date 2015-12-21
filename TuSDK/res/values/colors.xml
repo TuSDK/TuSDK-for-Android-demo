@@ -42,6 +42,7 @@
     <color name="lsq_focus_normal">#fff</color>
     <color name="lsq_focus_succeed">#0bff45</color>
     <color name="lsq_focus_failed">#0b72ff</color>
+    <color name="lsq_focus_face">#ffc000</color>
 
     <!-- backgroud -->
     <color name="lsq_background_default">#2e2c30</color>

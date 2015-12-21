@@ -2,9 +2,12 @@
 <resources>
 
     <string name="app_name">TuSDK</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
     <string name="filter_toggle_title">Filters</string>
+    
+    <!-- Nav label -->
+    <string name="component_camera">Effect Camera</string>
+    <string name="component_editor">Photo Editor</string>
+    <string name="component_list">Component Kit</string>
 
     <!-- simple group -->
     <string name="simple_group_adv_comp">Advanced Components</string>
@@ -24,5 +27,6 @@
     <string name="extend_EditComponent">Extended Edit Component</string>
     <string name="extend_CameraBase">Extended Camera Component</string>
     <string name="define_CameraBase">Customized Camera Component</string>
+    <string name="define_Camera2Base">Customized Camera Component (Camera2)</string>
 
 </resources>

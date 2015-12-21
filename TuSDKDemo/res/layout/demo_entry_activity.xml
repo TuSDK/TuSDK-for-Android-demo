@@ -1,16 +1,71 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
 
-    <include
-        android:id="@+id/lsq_navigatorBar"
-        layout="@layout/tusdk_view_widget_navigator" />
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/top_background">
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/top_logo"/>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/lsq_entry_camera"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/demo_entry_camera_background">
+        
+        <Button   
+            android:clickable="false"
+            android:layout_width="wrap_content"
+        	android:layout_height="match_parent"
+        	android:layout_centerInParent="true"
+        	style="@style/demo_component_entry_button"
+        	android:text="@string/component_camera"
+        	android:drawableLeft="@drawable/icon_camera"/>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/lsq_entry_editor"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/demo_entry_editor_background">
+        
+        <Button
+            android:clickable="false"
+            android:layout_width="wrap_content"
+        	android:layout_height="match_parent"
+        	android:layout_centerInParent="true"
+        	style="@style/demo_component_entry_button"
+        	android:text="@string/component_editor"
+        	android:drawableLeft="@drawable/icon_editor"/>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/lsq_entry_list"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/demo_entry_list_background">
+        
+        <Button
+            android:clickable="false"
+            android:layout_width="wrap_content"
+        	android:layout_height="match_parent"
+        	android:layout_centerInParent="true"
+        	style="@style/demo_component_entry_button"
+        	android:text="@string/component_list"
+        	android:drawableLeft="@drawable/icon_component_list"/>
+        
+    </RelativeLayout>
 
-    <org.lasque.tusdkdemo.view.DemoListView
-        android:id="@+id/lsq_listView"
-        style="@style/lsq_listSplitView"
-        android:layout_below="@+id/lsq_navigatorBar" >
-    </org.lasque.tusdkdemo.view.DemoListView>
-
-</RelativeLayout>
+</LinearLayout>

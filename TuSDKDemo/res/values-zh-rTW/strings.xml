@@ -2,9 +2,12 @@
 <resources>
 
     <string name="app_name">TuSDK 塗圖</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
     <string name="filter_toggle_title">濾鏡</string>
+    
+    <!-- Nav label -->
+    <string name="component_camera">特效相機</string>
+    <string name="component_editor">照片美化</string>
+    <string name="component_list">開發套件</string>
 
     <!-- simple group -->
     <string name="simple_group_adv_comp">高級組件</string>
@@ -24,5 +27,6 @@
     <string name="extend_EditComponent">圖片編輯組件</string>
     <string name="extend_CameraBase">基礎相機界面修改</string>
     <string name="define_CameraBase">基礎相機自定義</string>
+    <string name="define_Camera2Base">基礎相機自定義 (Camera2)</string>
 
 </resources>

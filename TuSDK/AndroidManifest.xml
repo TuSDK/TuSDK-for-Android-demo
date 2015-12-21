@@ -7,6 +7,13 @@
         android:minSdkVersion="11"
         android:targetSdkVersion="21" />
 
+    <!-- 访问网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取WIFI信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许访问GPS -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <!-- 允许应用程序写数据到外部存储设备（主要是SD卡） -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <!-- 在sdcard中创建/删除文件的权限 -->
@@ -21,12 +28,9 @@
     <uses-feature android:name="android.hardware.camera.flash" />
 
     <application
-        android:name="org.lasque.tusdkdemo.TuApplication"
         android:allowBackup="true"
         android:hardwareAccelerated="true"
-        android:label="@string/lsq_sdk_name"
-        android:largeHeap="true"
-        android:theme="@style/lsq_sdkTheme" >
+        android:largeHeap="true" >
     </application>
 
 </manifest>
