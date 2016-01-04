@@ -27,6 +27,7 @@
     <string name="extend_EditComponent">圖片編輯組件</string>
     <string name="extend_CameraBase">基礎相機界面修改</string>
     <string name="define_CameraBase">基礎相機自定義</string>
-    <string name="define_Camera2Base">基礎相機自定義 (Camera2)</string>
+    <string name="define_Camera1Base">底層相機自定義 (Camera1)</string>
+    <string name="define_Camera2Base">底層相機自定義 (Camera2)</string>
 
 </resources>

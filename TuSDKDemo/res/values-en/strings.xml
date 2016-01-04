@@ -27,6 +27,7 @@
     <string name="extend_EditComponent">Extended Edit Component</string>
     <string name="extend_CameraBase">Extended Camera Component</string>
     <string name="define_CameraBase">Customized Camera Component</string>
-    <string name="define_Camera2Base">Customized Camera Component (Camera2)</string>
+    <string name="define_Camera1Base">API Camera Component (Camera1)</string>
+    <string name="define_Camera2Base">API Camera Component (Camera2)</string>
 
 </resources>

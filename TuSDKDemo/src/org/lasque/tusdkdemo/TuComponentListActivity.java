@@ -12,6 +12,7 @@ package org.lasque.tusdkdemo;
 import org.lasque.tusdk.core.TuSdk;
 import org.lasque.tusdk.core.TuSdkContext;
 import org.lasque.tusdk.core.secret.StatisticsManger;
+import org.lasque.tusdk.core.utils.ContextUtils;
 import org.lasque.tusdk.core.view.widget.TuSdkNavigatorBar.NavigatorBarButtonInterface;
 import org.lasque.tusdk.core.view.widget.TuSdkNavigatorBar.NavigatorBarButtonType;
 import org.lasque.tusdk.core.view.widget.TuSdkNavigatorBar.TuSdkNavigatorBarDelegate;
@@ -33,6 +34,9 @@ import org.lasque.tusdkdemo.simple.SimpleGroup;
 import org.lasque.tusdkdemo.view.DemoListView;
 import org.lasque.tusdkdemo.view.DemoListView.DemoListItemAction;
 import org.lasque.tusdkdemo.view.DemoListView.DemoListViewDelegate;
+
+import android.view.GestureDetector;
+import android.view.MotionEvent;
 
 /**
  * @author Clear
@@ -69,6 +73,9 @@ public class TuComponentListActivity extends TuFragmentActivity implements TuSdk
 	/** 范例列表视图 */
 	private DemoListView mListView;
 
+	// 滑动后退手势
+	GestureDetector gdDetector;
+
 	/**
 	 * 初始化视图
 	 */
@@ -89,6 +96,9 @@ public class TuComponentListActivity extends TuFragmentActivity implements TuSdk
 		// 默认单行列表
 		mListView = this.getViewById(R.id.lsq_listView);
 		mListView.setSimpleDelegate(mDemoListViewDelegate);
+
+		// 滑动后退手势
+		gdDetector = new GestureDetector(this, gestureListener);
 
 		/**
 		 * ！！！！！！！！！！！！！！！！！！！！！！！！！特别提示信息要长！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
@@ -135,6 +145,28 @@ public class TuComponentListActivity extends TuFragmentActivity implements TuSdk
 		}
 	};
 
+	/** 滑动后退手势监听 */
+	GestureDetector.SimpleOnGestureListener gestureListener = new GestureDetector.SimpleOnGestureListener()
+	{
+		@Override
+		public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY)
+		{
+			// 移动距离
+			if (e2.getRawX() - e1.getRawX() < ContextUtils.getScreenSize(TuComponentListActivity.this).width * MAX_SLIDE_DISTANCE) return false;
+
+			// 滑动位置
+			if (e1.getRawX() > ContextUtils.getScreenSize(TuComponentListActivity.this).width * 0.2) return false;
+
+			// 滑动速度
+			if (Math.abs(velocityX) < Math.abs(velocityY) || velocityX < MAX_SLIDE_SPEED) return false;
+
+			// 关闭界面
+			TuComponentListActivity.this.finish();
+
+			return true;
+		}
+	};
+
 	/** 选中范例 */
 	private void onSelectedSimple(SimpleBase simple, DemoListItemAction action)
 	{
@@ -149,7 +181,7 @@ public class TuComponentListActivity extends TuFragmentActivity implements TuSdk
 				break;
 			}
 	}
-	
+
 	/**
 	 * 后退按钮
 	 */
@@ -159,5 +191,15 @@ public class TuComponentListActivity extends TuFragmentActivity implements TuSdk
 		{
 			this.finish();
 		}
+	}
+
+	/**
+	 * 分发触摸事件
+	 */
+	@Override
+	public boolean dispatchTouchEvent(MotionEvent ev)
+	{
+		gdDetector.onTouchEvent(ev);
+		return super.dispatchTouchEvent(ev);
 	}
 }
