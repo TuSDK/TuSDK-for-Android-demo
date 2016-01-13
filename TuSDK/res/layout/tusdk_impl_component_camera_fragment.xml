@@ -97,8 +97,7 @@
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:layout_centerInParent="true"
-            android:background="@drawable/lsq_style_default_camera_button_capture_bg"
-            android:src="@drawable/lsq_style_default_camera_button_capture_icon"
+            android:background="@drawable/lsq_style_default_camera_button_capture"
             android:scaleType="matrix" />
 
         <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton

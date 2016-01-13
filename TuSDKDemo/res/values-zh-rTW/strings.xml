@@ -24,6 +24,7 @@
     <string name="simple_AlbumComponent">相冊組件</string>
     <string name="simple_AlbumMultipleComponent">相冊組件 (带相機)</string>
     <string name="simple_CameraComponent">相機組件</string>
+    <string name="simple_GifComponent">Gif組件</string>
     <string name="extend_EditComponent">圖片編輯組件</string>
     <string name="extend_CameraBase">基礎相機界面修改</string>
     <string name="define_CameraBase">基礎相機自定義</string>

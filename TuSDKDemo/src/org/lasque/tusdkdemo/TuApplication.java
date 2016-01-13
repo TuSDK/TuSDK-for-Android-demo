@@ -36,9 +36,17 @@ public class TuApplication extends TuSdkApplication
 
 		// 设置输出状态
 		this.setEnableLog(true);
-		// 初始化SDK (请前往 http://tusdk.com 获取您的APP 开发秘钥)
+		/**
+	     *  初始化SDK，应用密钥是您的应用在 TuSDK 的唯一标识符。每个应用的包名(Bundle Identifier)、密钥、资源包(滤镜、贴纸等)三者需要匹配，否则将会报错。
+	     *
+	     *  @param appkey 应用秘钥 (请前往 http://tusdk.com 申请秘钥)
+	     */
 		this.initPreLoader(this.getApplicationContext(), "12aa4847a3a9ce68-04-ewdjn1");
-		// 需要指定开发模式 需要与lsq_tusdk_configs.json中masters.key匹配， 如果找不到devType将默认读取master字段
+		
+		/**
+	     *  指定开发模式,需要与lsq_tusdk_configs.json中masters.key匹配， 如果找不到devType将默认读取master字段
+	     *  如果一个应用对应多个包名，则可以使用这种方式来进行集成调试。
+	     */
 		// this.initPreLoader(this.getApplicationContext(), "12aa4847a3a9ce68-04-ewdjn1", "debug");
 
 		// 如果不想继承TuSdkApplication，直接在自定义Application.onCreate()方法中调用以下方法

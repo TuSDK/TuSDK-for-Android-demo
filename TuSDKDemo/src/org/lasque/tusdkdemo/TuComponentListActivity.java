@@ -29,6 +29,7 @@ import org.lasque.tusdkdemo.simple.EditAdvancedComponentSimple;
 import org.lasque.tusdkdemo.simple.EditAndCutComponentSimple;
 import org.lasque.tusdkdemo.simple.EditAvatarComponentSimple;
 import org.lasque.tusdkdemo.simple.EditMultipleComponentSimple;
+import org.lasque.tusdkdemo.simple.GifImageViewSimple;
 import org.lasque.tusdkdemo.simple.SimpleBase;
 import org.lasque.tusdkdemo.simple.SimpleGroup;
 import org.lasque.tusdkdemo.view.DemoListView;
@@ -114,6 +115,8 @@ public class TuComponentListActivity extends TuFragmentActivity implements TuSdk
 		group.appendSimple(new AlbumMultipleComponentSimple());
 		// 相机组件范例
 		group.appendSimple(new CameraComponentSimple());
+		// Gif组件范例
+		group.appendSimple(new GifImageViewSimple());
 		// 图片编辑组件 (裁剪)范例
 		group.appendSimple(new EditAndCutComponentSimple());
 		// 头像设置组件(编辑)范例
@@ -130,7 +133,7 @@ public class TuComponentListActivity extends TuFragmentActivity implements TuSdk
 
 		// 自定义相机范例
 		group.appendSimple(new DefineCameraBaseSimple());
-		
+
 		// 加载范例列表
 		mListView.loadSimples(group);
 	}

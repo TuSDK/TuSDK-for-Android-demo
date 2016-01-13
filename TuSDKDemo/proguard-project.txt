@@ -79,3 +79,4 @@
 -keep class it.sephiroth.android.library.exif2.**{ *; }
 
 -keep class org.lasque.tusdk.**{public *; protected *; }
+-keep class org.lasque.tusdk.core.utils.image.GifHelper{ *; }

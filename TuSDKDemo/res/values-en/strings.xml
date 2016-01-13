@@ -24,6 +24,7 @@
     <string name="simple_AlbumComponent">Album Component</string>
     <string name="simple_AlbumMultipleComponent">Multifunctional Album Component</string>
     <string name="simple_CameraComponent">Camera Component</string>
+    <string name="simple_GifComponent">Gif Component</string>
     <string name="extend_EditComponent">Extended Edit Component</string>
     <string name="extend_CameraBase">Extended Camera Component</string>
     <string name="define_CameraBase">Customized Camera Component</string>
