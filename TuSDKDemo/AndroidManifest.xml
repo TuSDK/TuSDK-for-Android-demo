@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.lasque.tusdkdemo"
-    android:versionCode="20160113"
-    android:versionName="2.3.3" xmlns:tools="http://schemas.android.com/tools">
+    android:versionCode="20160216"
+    android:versionName="2.4.0" xmlns:tools="http://schemas.android.com/tools">
 
     <uses-sdk
         android:minSdkVersion="11"
@@ -62,6 +62,21 @@
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />
+        
+        <!-- 示例 -->
+        <activity
+            android:name="org.lasque.tusdkdemo.examples.component.GifImageViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            />
+        
+        <activity
+            android:name="org.lasque.tusdkdemo.examples.feature.FilterEditorSampleActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            />
     </application>
 
 </manifest>

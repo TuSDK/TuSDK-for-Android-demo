@@ -16,9 +16,9 @@ import org.lasque.tusdk.core.view.listview.TuSdkCellViewInterface;
 import org.lasque.tusdk.core.view.listview.TuSdkIndexPath;
 import org.lasque.tusdk.core.view.listview.TuSdkIndexPath.TuSdkDataSource;
 import org.lasque.tusdk.impl.view.widget.listview.TuGroupListView;
-import org.lasque.tusdkdemo.simple.SimpleBase;
-import org.lasque.tusdkdemo.simple.SimpleGroup;
-import org.lasque.tusdkdemo.simple.SimpleGroup.GroupHeader;
+import org.lasque.tusdkdemo.SampleBase;
+import org.lasque.tusdkdemo.SampleGroup;
+import org.lasque.tusdkdemo.SampleGroup.GroupHeader;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -29,7 +29,7 @@ import android.view.View;
  * 
  * @author Clear
  */
-public class DemoListView extends TuGroupListView<SimpleBase, DemoListCell, GroupHeader, DemoListHeader>
+public class DemoListView extends TuGroupListView<SampleBase, DemoListCell, GroupHeader, DemoListHeader>
 {
 	/** 范例列表行点击动作 */
 	public enum DemoListItemAction
@@ -53,7 +53,7 @@ public class DemoListView extends TuGroupListView<SimpleBase, DemoListCell, Grou
 		 * @param action
 		 *            范例列表行点击动作
 		 */
-		void onDemoListViewSelected(DemoListView view, SimpleBase simple, DemoListItemAction action);
+		void onDemoListViewSelected(DemoListView view, SampleBase simple, DemoListItemAction action);
 	}
 
 	public DemoListView(Context context, AttributeSet attrs, int defStyle)
@@ -111,23 +111,23 @@ public class DemoListView extends TuGroupListView<SimpleBase, DemoListCell, Grou
 	}
 
 	/** 加载范例列表 */
-	public void loadSimples(SimpleGroup group)
+	public void loadSimples(SampleGroup group)
 	{
 		this.setDataSource(new SimpleGroupDataSource(group));
 	}
 
 	/** 选中一个示例 */
-	private void onSelectedItem(SimpleBase itemData)
+	private void onSelectedItem(SampleBase itemData)
 	{
 		if (this.getSimpleDelegate() == null || itemData == null) return;
 		this.getSimpleDelegate().onDemoListViewSelected(this, itemData, DemoListItemAction.ActionSelected);
 	}
 
 	/** 范例列表行点击动作 */
-	private class DemoListViewItemClick implements GroupListViewItemClickListener<SimpleBase, DemoListCell>
+	private class DemoListViewItemClick implements GroupListViewItemClickListener<SampleBase, DemoListCell>
 	{
 		@Override
-		public void onGroupItemClick(SimpleBase itemData, DemoListCell itemView, TuSdkIndexPath indexPath)
+		public void onGroupItemClick(SampleBase itemData, DemoListCell itemView, TuSdkIndexPath indexPath)
 		{
 			onSelectedItem(itemData);
 		}
@@ -140,7 +140,7 @@ public class DemoListView extends TuGroupListView<SimpleBase, DemoListCell, Grou
 		private List<TuSdkIndexPath> mIndexPaths;
 
 		/** 范例分组 */
-		private SimpleGroup mGroup;
+		private SampleGroup mGroup;
 
 		private int mTotal;
 
@@ -150,13 +150,13 @@ public class DemoListView extends TuGroupListView<SimpleBase, DemoListCell, Grou
 		 * @param group
 		 *            范例分组
 		 */
-		public SimpleGroupDataSource(SimpleGroup group)
+		public SimpleGroupDataSource(SampleGroup group)
 		{
 			this.splitDatas(group);
 		}
 
 		/** 分组数据 */
-		private void splitDatas(SimpleGroup group)
+		private void splitDatas(SampleGroup group)
 		{
 			if (group == null || group.headers == null) return;
 			mGroup = group;
@@ -247,7 +247,7 @@ public class DemoListView extends TuGroupListView<SimpleBase, DemoListCell, Grou
 
 			if (view instanceof DemoListCell)
 			{
-				((DemoListCell) view).setModel((SimpleBase) mode);
+				((DemoListCell) view).setModel((SampleBase) mode);
 			}
 			else if (view instanceof DemoListHeader)
 			{

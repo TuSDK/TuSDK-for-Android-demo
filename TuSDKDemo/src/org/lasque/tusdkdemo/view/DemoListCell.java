@@ -11,7 +11,7 @@ package org.lasque.tusdkdemo.view;
 
 import org.lasque.tusdk.core.view.listview.TuSdkCellRelativeLayout;
 import org.lasque.tusdkdemo.R;
-import org.lasque.tusdkdemo.simple.SimpleBase;
+import org.lasque.tusdkdemo.SampleBase;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -22,7 +22,7 @@ import android.widget.TextView;
  * 
  * @author Clear
  */
-public class DemoListCell extends TuSdkCellRelativeLayout<SimpleBase>
+public class DemoListCell extends TuSdkCellRelativeLayout<SampleBase>
 {
 	/** 布局ID */
 	public static int getLayoutId()

@@ -15,8 +15,8 @@ import org.lasque.tusdk.core.seles.tusdk.FilterManager;
 import org.lasque.tusdk.core.seles.tusdk.FilterManager.FilterManagerDelegate;
 import org.lasque.tusdk.impl.activity.TuFragmentActivity;
 import org.lasque.tusdk.modules.components.ComponentActType;
-import org.lasque.tusdkdemo.simple.CameraComponentSimple;
-import org.lasque.tusdkdemo.simple.EditMultipleComponentSimple;
+import org.lasque.tusdkdemo.examples.suite.CameraComponentSample;
+import org.lasque.tusdkdemo.examples.suite.EditMultipleComponentSample;
 
 import android.content.Intent;
 import android.view.View;
@@ -32,13 +32,21 @@ public class DemoEntryActivity extends TuFragmentActivity
 	public DemoEntryActivity()
 	{
 		/**
-		 * ！！！！！！！！！！！！！！！！！！！！！！！！！特别提示信息要长！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
-		 * 关于TuSDK体积（SDK编译后仅为0.9MB）：
-		 * 1,如果您不需要使用本地贴纸功能，或仅需要使用在线贴纸功能，请删除/app/assets/TuSDK.bundle/stickers文件夹
-		 * 2,如果您仅需要几款滤镜，您可以删除/app/assets/TuSDK.bundle/textures下的*.gsce文件
-		 * 3,如果您不需要使用滤镜功能，请删除/app/assets/TuSDK.bundle/textures文件夹
-		 * 4,TuSDK在线管理功能请访问：http://tusdk.com/
-		 * 开发文档:http://tusdk.com/docs/android/api/
+		 ************************* TuSDK 集成三部曲 *************************
+		 * 
+		 * 1. 在官网注册开发者账户
+		 * 
+		 * 2. 下载SDK和示例代码
+		 * 
+		 * 3. 创建应用，获取appkey，导出资源包
+		 * 
+		 ************************* TuSDK 集成三部曲 ************************* 
+		 * 
+		 * 关于TuSDK体积（SDK编译后仅为0.9MB）
+		 * 
+		 * 开发文档:http://tusdk.com/doc
+		 * 
+		 * 请参见TuApplication类中的SDK初始化代码。 
 		 */
 	}
 
@@ -73,12 +81,18 @@ public class DemoEntryActivity extends TuFragmentActivity
 		StatisticsManger.appendComponent(ComponentActType.sdkComponent);
 
 		/**
-		 * ！！！！！！！！！！！！！！！！！！！！！！！！！特别提示信息要长！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
-		 * 关于TuSDK体积（SDK编译后仅为0.9MB）：
-		 * 1,如果您不需要使用本地贴纸功能，或仅需要使用在线贴纸功能，请删除/app/assets/TuSDK.bundle/stickers文件夹
-		 * 2,如果您仅需要几款滤镜，您可以删除/app/assets/TuSDK.bundle/textures下的*.gsce文件
-		 * 3,如果您不需要使用滤镜功能，请删除/app/assets/TuSDK.bundle/textures文件夹
-		 * 4,TuSDK在线管理功能请访问：http://tusdk.com/
+		 ************************* TuSDK 集成三部曲 *************************
+		 * 
+		 * 1. 在官网注册开发者账户
+		 * 
+		 * 2. 下载SDK和示例代码
+		 * 
+		 * 3. 创建应用，获取appkey，导出资源包
+		 * 
+		 ************************* TuSDK 集成三部曲 ************************* 
+		 * 
+		 * 关于TuSDK体积（SDK编译后仅为0.9MB）
+		 * 
 		 * 开发文档:http://tusdk.com/doc
 		 */
 
@@ -130,13 +144,13 @@ public class DemoEntryActivity extends TuFragmentActivity
 	/** 打开相机组件 */
 	private void showCameraComponent()
 	{
-		new CameraComponentSimple().showSimple(this);
+		new CameraComponentSample().showSample(this);
 	}
 
 	/** 打开多功能编辑组件 */
 	private void showEditorComponent()
 	{
-		new EditMultipleComponentSimple().showSimple(this);
+		new EditMultipleComponentSample().showSample(this);
 	}
 
 	/** 显示组件列表页面 */

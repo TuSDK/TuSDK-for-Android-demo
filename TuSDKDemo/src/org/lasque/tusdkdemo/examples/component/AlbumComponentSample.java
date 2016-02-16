@@ -7,7 +7,7 @@
  * @Copyright 	(c) 2015 tusdk.com. All rights reserved.
  * 
  */
-package org.lasque.tusdkdemo.simple;
+package org.lasque.tusdkdemo.examples.component;
 
 import org.lasque.tusdk.TuSdkGeeV1;
 import org.lasque.tusdk.core.TuSdkResult;
@@ -16,6 +16,8 @@ import org.lasque.tusdk.impl.activity.TuFragment;
 import org.lasque.tusdk.impl.components.TuAlbumComponent;
 import org.lasque.tusdk.modules.components.TuSdkComponent.TuSdkComponentDelegate;
 import org.lasque.tusdkdemo.R;
+import org.lasque.tusdkdemo.SampleBase;
+import org.lasque.tusdkdemo.SampleGroup.GroupType;
 
 import android.app.Activity;
 
@@ -24,17 +26,17 @@ import android.app.Activity;
  * 
  * @author Clear
  */
-public class AlbumComponentSimple extends SimpleBase
+public class AlbumComponentSample extends SampleBase
 {
 	/** 相册组件范例 */
-	public AlbumComponentSimple()
+	public AlbumComponentSample()
 	{
-		super(1, R.string.simple_AlbumComponent);
+		super(GroupType.ComponentSample, R.string.sample_AlbumComponent);
 	}
 
 	/** 显示范例 */
 	@Override
-	public void showSimple(Activity activity)
+	public void showSample(Activity activity)
 	{
 		if (activity == null) return;
 

@@ -72,29 +72,42 @@
 
     <LinearLayout
         android:id="@+id/lsq_stepwrap"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="49dp"
         android:layout_above="@+id/lsq_bar_bottomBar"
-        android:layout_centerHorizontal="true"
         android:orientation="horizontal" >
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+        <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
             android:id="@+id/lsq_step_prev"
-            android:layout_width="44dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:scaleType="centerInside"
-            android:src="@drawable/lsq_style_default_edit_step_prev" />
+            android:text="@string/lsq_edit_step_prev" 
+            android:drawableTop="@drawable/lsq_style_default_edit_step_prev"
+            android:paddingLeft="16dp" />
+        
+        <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+            android:id="@+id/lsq_step_next"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:text="@string/lsq_edit_step_next" 
+            android:drawableTop="@drawable/lsq_style_default_edit_step_next"
+            android:paddingLeft="32dp" />
         
         <View 
-            android:layout_width="28dp"
-            android:layout_height="match_parent"/>
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
-            android:id="@+id/lsq_step_next"
-            android:layout_width="44dp"
+        <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+            android:id="@+id/lsq_auto_adjust"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:scaleType="centerInside"
-            android:src="@drawable/lsq_style_default_edit_step_next" />
+            android:text="@string/lsq_edit_auto_adjust" 
+            android:drawableTop="@drawable/lsq_style_default_edit_auto_adjust"
+            android:paddingRight="16dp" />
     </LinearLayout>
 
 </RelativeLayout>

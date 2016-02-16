@@ -7,7 +7,7 @@
  * @Copyright 	(c) 2015 tusdk.com. All rights reserved.
  * 
  */
-package org.lasque.tusdkdemo.extend;
+package org.lasque.tusdkdemo.examples.ui;
 
 import org.lasque.tusdk.core.TuSdkResult;
 import org.lasque.tusdk.core.utils.TLog;
@@ -18,26 +18,42 @@ import org.lasque.tusdk.impl.components.edit.TuEditTurnAndCutFragment.TuEditTurn
 import org.lasque.tusdk.impl.components.edit.TuEditTurnAndCutOption;
 import org.lasque.tusdk.modules.components.TuSdkHelperComponent;
 import org.lasque.tusdkdemo.R;
-import org.lasque.tusdkdemo.simple.SimpleBase;
+import org.lasque.tusdkdemo.SampleBase;
+import org.lasque.tusdkdemo.SampleGroup.GroupType;
 
 import android.app.Activity;
 
 /**
- * 图片编辑组件范例
+ * 裁切组件自定义界面范例
  * 
  * @author Clear
  */
-public class ExtendEditComponentSimple extends SimpleBase implements TuEditTurnAndCutFragmentDelegate
+public class CustomizedEditComponentSample extends SampleBase implements TuEditTurnAndCutFragmentDelegate
 {
-	/** 图片编辑组件范例 */
-	public ExtendEditComponentSimple()
+	/** 裁切组件自定义界面范例 */
+	public CustomizedEditComponentSample()
 	{
-		super(3, R.string.extend_EditComponent);
+		super(GroupType.UISample, R.string.sample_ui_EditComponent);
 	}
 
-	/** 显示范例 */
+	/**
+	 * 裁切组件自定义界面范例说明
+	 * 
+	 * 在SDK中，每个界面组件对应一个Fragment对象，Fragment对象在运行期间加载layout文件， 每个Fragment对象的layout文件是可以修改的。
+	 * 
+	 * 示例代码：
+	 * 
+	 * TuEditTurnAndCutOption option = new TuEditTurnAndCutOption();
+	 * // 修改默认的Fragment类型
+	 * option.setComponentClazz(ExtendEditTurnAndCutFragment.class);
+	 * // 设置根视图布局资源ID
+	 * option.setRootViewLayoutId(R.layout.demo_extend_edit_and_cut_fragment);	
+	 * 
+	 * 依靠这两点，可以在layout文件中修改界面，然后在自定义的Fragment中处理界面交互，从而实现修改界面的目的，所有的组件都可以用类似的方法来修改界面。
+	 * 
+	 */
 	@Override
-	public void showSimple(Activity activity)
+	public void showSample(Activity activity)
 	{
 		if (activity == null) return;
 
@@ -45,7 +61,7 @@ public class ExtendEditComponentSimple extends SimpleBase implements TuEditTurnA
 		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/edit/TuEditTurnAndCutOption.html
 		TuEditTurnAndCutOption option = new TuEditTurnAndCutOption();
 		// 控制器类型
-		option.setComponentClazz(ExtendEditTurnAndCutFragment.class);
+		option.setComponentClazz(CustomizedEditTurnAndCutFragment.class);
 
 		// 设置根视图布局资源ID
 		option.setRootViewLayoutId(R.layout.demo_extend_edit_and_cut_fragment);

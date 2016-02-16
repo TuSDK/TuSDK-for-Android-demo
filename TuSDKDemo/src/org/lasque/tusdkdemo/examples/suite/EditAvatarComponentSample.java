@@ -7,7 +7,7 @@
  * @Copyright 	(c) 2015 tusdk.com. All rights reserved.
  * 
  */
-package org.lasque.tusdkdemo.simple;
+package org.lasque.tusdkdemo.examples.suite;
 
 import java.util.Arrays;
 
@@ -18,6 +18,8 @@ import org.lasque.tusdk.impl.activity.TuFragment;
 import org.lasque.tusdk.impl.components.TuAvatarComponent;
 import org.lasque.tusdk.modules.components.TuSdkComponent.TuSdkComponentDelegate;
 import org.lasque.tusdkdemo.R;
+import org.lasque.tusdkdemo.SampleBase;
+import org.lasque.tusdkdemo.SampleGroup.GroupType;
 
 import android.app.Activity;
 
@@ -26,17 +28,17 @@ import android.app.Activity;
  * 
  * @author Clear
  */
-public class EditAvatarComponentSimple extends SimpleBase
+public class EditAvatarComponentSample extends SampleBase
 {
 	/** 头像设置组件(编辑)范例 */
-	public EditAvatarComponentSimple()
+	public EditAvatarComponentSample()
 	{
-		super(2, R.string.simple_EditAvatarComponent);
+		super(GroupType.SuiteSample, R.string.sample_EditAvatarComponent);
 	}
 
 	/** 显示范例 */
 	@Override
-	public void showSimple(Activity activity)
+	public void showSample(Activity activity)
 	{
 		if (activity == null) return;
 

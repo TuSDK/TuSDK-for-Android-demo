@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+  
+    <item android:state_selected="true">
+        
+        <shape android:shape="oval">
+            <solid android:color="#ff6047"/>
+	
+			<!-- android:radius 弧形的半径 -->
+			<corners android:radius="22dp"/>
+        </shape>
+    </item>
+    
+    <item>
+        <shape android:shape="oval">
+            <stroke
+        		android:width="2dp"
+        		android:color="@color/lsq_color_white" />
+	
+			<!-- android:radius 弧形的半径 -->
+			<corners android:radius="22dp"/>
+        </shape>
+    </item>
+ </selector>

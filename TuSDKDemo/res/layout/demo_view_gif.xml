@@ -6,7 +6,7 @@
     android:background="@color/lsq_color_white">
     
     <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
-            android:id="@+id/lsq_backButton"
+            android:id="@+id/backButton"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:scaleType="centerInside"

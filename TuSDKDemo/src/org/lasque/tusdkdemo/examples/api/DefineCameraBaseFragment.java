@@ -7,7 +7,7 @@
  * @Copyright 	(c) 2014 tusdk.com. All rights reserved.
  * 
  */
-package org.lasque.tusdkdemo.define;
+package org.lasque.tusdkdemo.examples.api;
 
 import java.util.ArrayList;
 

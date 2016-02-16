@@ -11,7 +11,7 @@ package org.lasque.tusdkdemo.view;
 
 import org.lasque.tusdk.core.view.listview.TuSdkCellRelativeLayout;
 import org.lasque.tusdkdemo.R;
-import org.lasque.tusdkdemo.simple.SimpleGroup.GroupHeader;
+import org.lasque.tusdkdemo.SampleGroup.GroupHeader;
 
 import android.content.Context;
 import android.util.AttributeSet;

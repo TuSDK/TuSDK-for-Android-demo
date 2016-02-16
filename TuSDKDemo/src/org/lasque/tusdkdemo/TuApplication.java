@@ -25,16 +25,22 @@ public class TuApplication extends TuSdkApplication
 		super.onCreate();
 
 		/**
-		 * ！！！！！！！！！！！！！！！！！！！！！！！！！特别提示信息要长！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
-		 * 关于TuSDK体积（SDK编译后仅为0.9MB）：
-		 * 1,如果您不需要使用本地贴纸功能，或仅需要使用在线贴纸功能，请删除/app/assets/TuSDK.bundle/stickers文件夹
-		 * 2,如果您仅需要几款滤镜，您可以删除/app/assets/TuSDK.bundle/textures下的*.gsce文件
-		 * 3,如果您不需要使用滤镜功能，请删除/app/assets/TuSDK.bundle/textures文件夹
-		 * 4,TuSDK在线管理功能请访问：http://tusdk.com/
-		 * 开发文档:http://tusdk.com/docs/android/api/
+		 ************************* TuSDK 集成三部曲 *************************
+		 * 
+		 * 1. 在官网注册开发者账户
+		 * 
+		 * 2. 下载SDK和示例代码
+		 * 
+		 * 3. 创建应用，获取appkey，导出资源包
+		 * 
+		 ************************* TuSDK 集成三部曲 ************************* 
+		 * 
+		 * 关于TuSDK体积（SDK编译后仅为0.9MB）
+		 * 
+		 * 开发文档:http://tusdk.com/doc
 		 */
 
-		// 设置输出状态
+		// 设置输出状态，建议在接入阶段开启该选项，以便定位问题。
 		this.setEnableLog(true);
 		/**
 	     *  初始化SDK，应用密钥是您的应用在 TuSDK 的唯一标识符。每个应用的包名(Bundle Identifier)、密钥、资源包(滤镜、贴纸等)三者需要匹配，否则将会报错。

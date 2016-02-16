@@ -7,7 +7,7 @@
  * @Copyright 	(c) 2015 Lasque. All rights reserved.
  * 
  */
-package org.lasque.tusdkdemo.simple;
+package org.lasque.tusdkdemo.examples.component;
 
 import org.lasque.tusdk.TuSdkGeeV1;
 import org.lasque.tusdk.core.TuSdkResult;
@@ -16,22 +16,24 @@ import org.lasque.tusdk.impl.activity.TuFragment;
 import org.lasque.tusdk.impl.components.TuAlbumMultipleComponent;
 import org.lasque.tusdk.modules.components.TuSdkComponent.TuSdkComponentDelegate;
 import org.lasque.tusdkdemo.R;
+import org.lasque.tusdkdemo.SampleBase;
+import org.lasque.tusdkdemo.SampleGroup.GroupType;
 
 import android.app.Activity;
 
 /**
- * 相册组件范例
+ * 多选相册组件范例
  * 
  * @author Clear
  */
-public class AlbumMultipleComponentSimple extends SimpleBase
+public class AlbumMultipleComponentSample extends SampleBase
 {
 	/**
-	 * 相册组件范例
+	 * 多选相册组件范例
 	 */
-	public AlbumMultipleComponentSimple()
+	public AlbumMultipleComponentSample()
 	{
-		super(1, R.string.simple_AlbumMultipleComponent);
+		super(GroupType.ComponentSample, R.string.sample_AlbumMultipleComponent);
 	}
 
 	/**
@@ -40,10 +42,10 @@ public class AlbumMultipleComponentSimple extends SimpleBase
 	 * @param activity
 	 */
 	@Override
-	public void showSimple(Activity activity)
+	public void showSample(Activity activity)
 	{
 		if (activity == null) return;
-
+		
 		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/TuAlbumMultipleComponent.html
 		TuAlbumMultipleComponent comp = TuSdkGeeV1.albumMultipleCommponent(activity,
 				new TuSdkComponentDelegate()
@@ -57,7 +59,9 @@ public class AlbumMultipleComponentSimple extends SimpleBase
 						TLog.d("onAlbumCommponentReaded: %s | %s", result,
 								error);
 					}
-				});
+				},
+				// 设置最多选择三张照片
+				3);
 
 		// 组件选项配置
 		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/TuAlbumComponentOption.html

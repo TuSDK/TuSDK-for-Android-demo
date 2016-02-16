@@ -60,6 +60,8 @@
     <string name="lsq_album_total_format">%1$s 张照片</string>
     <string name="lsq_album_empty">还没有照片</string>
     <string name="lsq_album_broken_msg">该照片文件已经被损坏</string>
+    <string name="lsq_album_empty_selection_msg">请至少选择一张照片</string>
+    <string name="lsq_album_max_selection_msg">最多选择 %d 张照片</string>
 
     <!-- save -->
     <string name="lsq_save_saveToTemp">正在处理&#8230;</string>
@@ -78,6 +80,10 @@
     <string name="lsq_edit_filter_processing">正在处理&#8230;</string>
     <string name="lsq_edit_processing">正在处理&#8230;</string>
     <string name="lsq_edit_processed">处理完成</string>
+    <string name="lsq_edit_process_error">发生错误，请确认设备已联网</string>
+    <string name="lsq_edit_step_prev">撤销</string>
+    <string name="lsq_edit_step_next">重做</string>
+    <string name="lsq_edit_auto_adjust">自动校色</string>
     <string name="lsq_edit_entry_filter">滤镜</string>
     <string name="lsq_edit_entry_cuter">裁切</string>
     <string name="lsq_edit_entry_sticker">贴纸</string>

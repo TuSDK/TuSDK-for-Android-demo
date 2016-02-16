@@ -7,7 +7,7 @@
  * @Copyright 	(c) 2015 tusdk.com. All rights reserved.
  * 
  */
-package org.lasque.tusdkdemo.extend;
+package org.lasque.tusdkdemo.examples.ui;
 
 import org.lasque.tusdk.impl.components.camera.TuCameraFragment;
 import org.lasque.tusdk.impl.components.edit.TuNormalFilterView;
@@ -27,7 +27,7 @@ import android.view.ViewGroup;
  * 
  * @author Clear
  */
-public class ExtendCameraBaseFragment extends TuCameraFragment
+public class CustomizedCameraFragment extends TuCameraFragment
 {
 	/** 布局ID */
 	public static int getLayoutId()
@@ -36,7 +36,7 @@ public class ExtendCameraBaseFragment extends TuCameraFragment
 	}
 
 	/** 相机组件范例 - 修改界面控制器 */
-	public ExtendCameraBaseFragment()
+	public CustomizedCameraFragment()
 	{
 
 	}

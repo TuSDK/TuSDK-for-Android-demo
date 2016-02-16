@@ -7,57 +7,44 @@
  * @Copyright 	(c) 2015 tusdk.com. All rights reserved.
  * 
  */
-package org.lasque.tusdkdemo.view;
+package org.lasque.tusdkdemo.examples.component;
 
 import org.lasque.tusdk.core.utils.TLog;
-import org.lasque.tusdk.core.view.TuSdkViewHelper.OnSafeClickListener;
 import org.lasque.tusdk.core.view.widget.button.TuSdkImageButton;
-import org.lasque.tusdk.impl.activity.TuFragment;
 import org.lasque.tusdk.impl.view.widget.TuGifView;
 import org.lasque.tusdkdemo.R;
 
+import android.app.Activity;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.ViewGroup;
 
-/**
- * Gif组件示例视图
- * 
- * @author Yanlin
- */
-public class DemoGifFragment extends TuFragment implements TuGifView.TuGifViewDelegate
+public class GifImageViewActivity extends Activity implements TuGifView.TuGifViewDelegate
 {	
 	
 	private TuGifView gifView;
 	
-	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
-	{
-		this.setRootViewLayoutId(R.layout.demo_view_gif);
-
-		return super.onCreateView(inflater, container, savedInstanceState);
-	}
+	private TuSdkImageButton backButton;
 	
 	@Override
-	protected void loadView(ViewGroup view)
+	protected void onCreate(Bundle savedInstanceState)
 	{
-		if (gifView == null)
-		{
-			gifView = this.getViewById(R.id.gifView);
-			gifView.setDelegate(this);
-			gifView.setOnClickListener(mClickListener);
-		}
+	    super.onCreate(savedInstanceState); 
+	   
+	    this.setContentView(R.layout.demo_view_gif);
+	    
+	    initView();
+	}
+	
+	private void initView()
+	{
+		gifView = (TuGifView) this.findViewById(R.id.gifView);
+		gifView.setDelegate(this);
+		gifView.setOnClickListener(mClickListener);
 		
-		// 返回按钮
-		TuSdkImageButton backBtn = this.getViewById(R.id.lsq_backButton);
-		backBtn.setOnClickListener(mClickListener);
-	}
-	
-	@Override
-	protected void viewDidLoad(ViewGroup view) 
-	{
+		backButton = (TuSdkImageButton) this.findViewById(R.id.backButton);
+		backButton.setOnClickListener(mClickListener);
+		
 		// 通过代码创建Gif视图
 		
 		/*
@@ -89,28 +76,11 @@ public class DemoGifFragment extends TuFragment implements TuGifView.TuGifViewDe
 		*/
 	}
 	
-	@Override
-	public void onGifAnimationComplete(int loopNumber)
-	{
-		TLog.d("Gif 动画已播放次数：%d", loopNumber);
-	}
-	
-	@Override
-	public void onDestroyView()
-	{
-		super.onDestroyView();
-		
-		if (gifView != null)
-		{
-			gifView.dispose();
-		}
-	}
-	
 	/** 按钮点击事件 */
-	private OnClickListener mClickListener = new OnSafeClickListener()
+	private OnClickListener mClickListener = new View.OnClickListener()
 	{
 		@Override
-		public void onSafeClick(View v)
+		public void onClick(View v)
 		{
 			switch (v.getId())
 			{
@@ -119,8 +89,8 @@ public class DemoGifFragment extends TuFragment implements TuGifView.TuGifViewDe
 					
 					pauseOrStart();
 					break;
-				case R.id.lsq_backButton:
-					dismissActivityWithAnim();
+				case R.id.backButton:
+					onBackButton();
 					break;
 			}
 		}
@@ -140,4 +110,16 @@ public class DemoGifFragment extends TuFragment implements TuGifView.TuGifViewDe
 			gifView.start();
 		}
 	}
+	
+	private void onBackButton()
+	{
+		finish();
+	}
+
+	@Override
+	public void onGifAnimationComplete(int loopNumber)
+	{
+		TLog.d("Gif 动画已播放次数：%d", loopNumber);
+	}
+
 }

@@ -9,26 +9,34 @@
     <string name="component_editor">照片美化</string>
     <string name="component_list">開發套件</string>
 
-    <!-- simple group -->
-    <string name="simple_group_adv_comp">高級組件</string>
-    <string name="simple_group_comp">基礎組件</string>
-    <string name="simple_group_extend">擴展組件 - 修改界面</string>
-    <string name="simple_group_define">自定義組件 - 底層API</string>
+    <!-- sample group -->
+    <string name="sample_group_suite">功能套件</string>
+    <string name="sample_group_comp">常用組件</string>
+    <string name="sample_group_examples">組件用法示例</string>
+    <string name="sample_group_extend">自定義界面示例</string>
+    <string name="sample_group_define">API 使用示例</string>
 
-    <!-- simple -->
+    <!-- samples -->
+    <string name="sample_EditAndCutComponent">裁剪 + 滤镜组件</string>
+    <string name="sample_EditAvatarComponent">頭像設置組件</string>
+    <string name="sample_EditAdvancedComponent">裁切 ＋ 濾鏡 ＋ 貼紙組件</string>
+    <string name="sample_EditMultipleComponent">多功能編輯組件</string>
+    <string name="sample_AlbumComponent">相冊組件</string>
+    <string name="sample_AlbumMultipleComponent">多選相冊組件</string>
+    <string name="sample_CameraComponent">相機組件</string>
+    <string name="sample_GifComponent">GIF 組件</string>
     
-    <string name="simple_EditAndCutComponent">圖片編輯組件 (裁剪)</string>
-    <string name="simple_EditAvatarComponent">頭像設置組件(編輯)</string>
-    <string name="simple_EditAdvancedComponent">高級圖片編輯組件</string>
-    <string name="simple_EditMultipleComponent">多功能圖片編輯組件</string>
-    <string name="simple_AlbumComponent">相冊組件</string>
-    <string name="simple_AlbumMultipleComponent">相冊組件 (带相機)</string>
-    <string name="simple_CameraComponent">相機組件</string>
-    <string name="simple_GifComponent">Gif組件</string>
-    <string name="extend_EditComponent">圖片編輯組件</string>
-    <string name="extend_CameraBase">基礎相機界面修改</string>
-    <string name="define_CameraBase">基礎相機自定義</string>
-    <string name="define_Camera1Base">底層相機自定義 (Camera1)</string>
-    <string name="define_Camera2Base">底層相機自定義 (Camera2)</string>
+    <string name="sample_comp_CameraAndEditor">拍照 + 編輯例子</string>
+    <string name="sample_comp_SelfishCamera">美顏相機</string>
+    <string name="sample_comp_FilterComponent">濾鏡組件示例</string>
+    <string name="sample_comp_StickerComponent">貼紙組件示例</string>
+    <string name="sample_comp_BlurComponent">模糊組件示例</string>
+    
+    <string name="sample_ui_EditComponent">裁切組件自定義界面</string>
+    <string name="sample_ui_CameraBase">相機自定義界面</string>
+    
+    <string name="sample_api_CameraBase">個性化相機示例 (仅供参考)</string>
+    <string name="sample_api_Camera1Base">底層相機自定義 (camera)</string>
+    <string name="sample_api_Camera2Base">底層相機自定義 (camera2)</string>
 
 </resources>

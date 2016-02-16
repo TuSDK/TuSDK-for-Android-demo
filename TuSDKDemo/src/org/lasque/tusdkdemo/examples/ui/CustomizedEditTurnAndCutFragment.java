@@ -7,7 +7,7 @@
  * @Copyright 	(c) 2015 tusdk.com. All rights reserved.
  * 
  */
-package org.lasque.tusdkdemo.extend;
+package org.lasque.tusdkdemo.examples.ui;
 
 import org.lasque.tusdk.core.view.TuSdkViewHelper;
 import org.lasque.tusdk.core.view.TuSdkTouchImageViewInterface.LsqImageChangeType;
@@ -24,7 +24,7 @@ import android.widget.ImageView;
  * 
  * @author Yanlin
  */
-public class ExtendEditTurnAndCutFragment extends TuEditTurnAndCutFragment 
+public class CustomizedEditTurnAndCutFragment extends TuEditTurnAndCutFragment 
 {
 	/** 右旋转按钮 */
 	private TuSdkImageButton mTrunRightButton;

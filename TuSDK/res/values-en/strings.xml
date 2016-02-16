@@ -60,6 +60,8 @@
     <string name="lsq_album_total_format">%1$s photos</string>
     <string name="lsq_album_empty">No photos yet</string>
     <string name="lsq_album_broken_msg">This photo is broken</string>
+    <string name="lsq_album_empty_selection_msg">No photos selected</string>
+    <string name="lsq_album_max_selection_msg"> %d photos have been selected already</string>
 
     <!-- save -->
     <string name="lsq_save_saveToTemp">Processing&#8230;</string>
@@ -78,6 +80,10 @@
     <string name="lsq_edit_filter_processing">Processing&#8230;</string>
     <string name="lsq_edit_processing">Processing&#8230;</string>
     <string name="lsq_edit_processed">Process completed</string>
+    <string name="lsq_edit_process_error">Fail to process image</string>
+    <string name="lsq_edit_step_prev">Undo</string>
+    <string name="lsq_edit_step_next">Redo</string>
+    <string name="lsq_edit_auto_adjust">Auto</string>
     <string name="lsq_edit_entry_filter">Filters</string>
     <string name="lsq_edit_entry_cuter">Crop</string>
     <string name="lsq_edit_entry_sticker">Stickers</string>

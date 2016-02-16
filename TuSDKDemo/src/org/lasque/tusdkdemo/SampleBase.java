@@ -7,25 +7,26 @@
  * @Copyright 	(c) 2015 tusdk.com. All rights reserved.
  * 
  */
-package org.lasque.tusdkdemo.simple;
+package org.lasque.tusdkdemo;
 
 import org.lasque.tusdk.modules.components.TuSdkHelperComponent;
+import org.lasque.tusdkdemo.SampleGroup.GroupType;
 
 import android.app.Activity;
 
 /**
- * 范例基础类
+ * 范例接口，封装好的组件示例
  * 
  * @author Clear
  */
-public abstract class SimpleBase
+public abstract class SampleBase
 {
 	/** 分组ID */
-	public int groupId;
+	public GroupType groupId;
 
 	/** 标题资源ID */
 	public int titleResId;
-
+	
 	/** 组件帮助方法 */
 	// see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/base/TuSdkHelperComponent.html
 	public TuSdkHelperComponent componentHelper;
@@ -38,12 +39,12 @@ public abstract class SimpleBase
 	 * @param titleResId
 	 *            标题资源ID
 	 */
-	public SimpleBase(int groupId, int titleResId)
+	public SampleBase(GroupType groupId, int titleResId)
 	{
 		this.groupId = groupId;
 		this.titleResId = titleResId;
 	}
 
 	/** 显示范例 */
-	public abstract void showSimple(Activity activity);
+	public abstract void showSample(Activity activity);
 }
