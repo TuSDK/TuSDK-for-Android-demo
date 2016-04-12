@@ -27,14 +27,14 @@ import org.lasque.tusdkdemo.SampleGroup.GroupType;
 import android.app.Activity;
 
 /**
- * 相机组件范例 - 修改界面
+ * 相机界面自定义组件范例
  * 
  * @author Clear
  */
 public class CustomizedCameraComponentSample extends SampleBase implements TuCameraFragmentDelegate
 {
 
-	/** 相机组件范例 - 修改界面 */
+	/** 相机界面自定义组件范例 */
 	public CustomizedCameraComponentSample()
 	{
 		super(GroupType.UISample, R.string.sample_ui_CameraBase);

@@ -60,6 +60,9 @@ public class StickerEditorSample extends SampleBase implements TuEditStickerFrag
 	    // 设置贴纸单元格的间距
 	    option.setGridPadding(8);
 	    
+	    // 是否显示处理结果预览图 (默认：关闭，调试时可以开启)
+	    option.setShowResultPreview(true);
+	    
 	    TuEditStickerFragment fragment = option.fragment();
 
 		// 输入的图片对象 (处理优先级: Image > TempFilePath > ImageSqlInfo)

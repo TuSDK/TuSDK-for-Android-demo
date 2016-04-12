@@ -23,7 +23,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 /**
- * 相机组件范例 - 修改界面控制器
+ * 相机界面自定义组件控制器
  * 
  * @author Clear
  */
@@ -35,7 +35,7 @@ public class CustomizedCameraFragment extends TuCameraFragment
 		return R.layout.demo_extend_camera_base_fragment;
 	}
 
-	/** 相机组件范例 - 修改界面控制器 */
+	/** 相机界面自定义组件控制器 */
 	public CustomizedCameraFragment()
 	{
 

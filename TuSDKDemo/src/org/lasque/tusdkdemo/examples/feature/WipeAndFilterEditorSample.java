@@ -64,7 +64,7 @@ public class WipeAndFilterEditorSample extends SampleBase implements TuEditWipeA
 	    // option.setDefaultBrushSize(BrushSize.SizeType.MediumBrush);
 	    
 	    // 是否显示处理结果预览图 (默认：关闭，调试时可以开启)
-	    // option.setShowResultPreview(true);
+	    option.setShowResultPreview(true);
 	    
 	    // 显示放大镜 (默认: true)
 	    // option.setDisplayMagnifier(true);

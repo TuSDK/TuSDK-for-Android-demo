@@ -35,6 +35,7 @@
     <!-- button -->
     <string name="lsq_button_done">我知道了</string>
     <string name="lsq_button_close">關閉</string>
+    <string name="lsq_button_setting">設置</string>
     <string name="lsq_button_switch_camera">切換鏡頭</string>
     <string name="lsq_button_flash">閃光燈:</string>
     <string name="lsq_button_flash_model_off">禁用</string>
@@ -50,12 +51,14 @@
     <!-- camera -->
     <string name="lsq_carema_alert_title">無法開啓相機</string>
     <string name="lsq_carema_no_device">您的設備沒有相機功能！</string>
-    <string name="lsq_carema_no_access">無法訪問系統相機，請在\r\n設置&#045;&#062;應用程序&#045;&#062;應用程序許可&#045;&#062;%1$s&#034; \r\n選中 使用攝像頭</string>
+    <string name="lsq_carema_no_access">無法訪問系統相機，請在\r\n設置&#045;&#062;應用程序&#045;&#062;權限&#045;&#062;%1$s&#034; \r\n選中 相機</string>
     <string name="lsq_carema_image_process">正在處理&#8230;</string>
     <string name="lsq_carema_image_process_completed">處理完成</string>
     <string name="lsq_carema_unsupport_camera2">您當前的系統版本小於5.0或硬件設備不能完整支持Camera2 API，無法開啟Camera2</string>
     
     <!-- album -->
+    <string name="lsq_album_alert_title">無法訪問系統相冊</string>
+    <string name="lsq_album_no_access">無法訪問系統相冊，請在\r\n設置&#045;&#062;應用程序&#045;&#062;權限&#045;&#062;%1$s&#034; \r\n开启 存儲空間</string>
     <string name="lsq_album_title">相簿</string>
     <string name="lsq_album_total_format">%1$s 張照片</string>
     <string name="lsq_album_empty">還沒有照片</string>
@@ -75,6 +78,8 @@
     <string name="lsq_save_insufficient_storage_space">存儲空間不足</string>
 
     <!-- edit -->
+    <string name="lsq_edit_alert_title">沒有相關權限</string>
+    <string name="lsq_edit_no_access">沒有相關權限，請在\r\n設置&#045;&#062;應用程序&#045;&#062;權限&#045;&#062;%1$s&#034; \r\n開啟所需權限</string>
     <string name="lsq_edit_button_complete">完成</string>
     <string name="lsq_edit_loading">正在讀取&#8230;</string>
     <string name="lsq_edit_filter_processing">正在處理&#8230;</string>

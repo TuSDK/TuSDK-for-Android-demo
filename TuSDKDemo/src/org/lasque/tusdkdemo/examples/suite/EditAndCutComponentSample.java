@@ -26,13 +26,13 @@ import org.lasque.tusdkdemo.SampleGroup.GroupType;
 import android.app.Activity;
 
 /**
- * 图片编辑组件 (裁剪)范例
+ * 裁切+滤镜组件范例
  * 
  * @author Clear
  */
 public class EditAndCutComponentSample extends SampleBase implements TuEditTurnAndCutFragmentDelegate
 {
-	/** 图片编辑组件 (裁剪)范例 */
+	/** 裁切+滤镜组件范例 */
 	public EditAndCutComponentSample()
 	{
 		super(GroupType.SuiteSample, R.string.sample_EditAndCutComponent);
@@ -73,7 +73,7 @@ public class EditAndCutComponentSample extends SampleBase implements TuEditTurnA
 	}
 
 	/**
-	 * 开启图片编辑组件 (裁剪)
+	 * 开启裁切+滤镜组件
 	 * 
 	 * @param result
 	 *            返回结果
@@ -125,7 +125,7 @@ public class EditAndCutComponentSample extends SampleBase implements TuEditTurnA
 		}
 		else
 		{
-			// 开启图片编辑组件 (裁剪)
+			// 开启裁切+滤镜组件
 			lastFragment.pushFragment(fragment);
 		}
 	}

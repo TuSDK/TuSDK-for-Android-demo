@@ -63,7 +63,7 @@ public class FilterEditorSampleActivity extends FragmentActivity implements TuEd
 		// option.setRenderFilterThumb(true)
 		
 		// 是否显示处理结果预览图 (默认：关闭，调试时可以开启)
-		// option.setShowResultPreview(true);
+		option.setShowResultPreview(true);
 		
 		TuEditFilterFragment fragment = option.fragment();
 				

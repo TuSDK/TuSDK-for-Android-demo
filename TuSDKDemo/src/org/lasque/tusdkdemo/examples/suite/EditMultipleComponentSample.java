@@ -23,13 +23,13 @@ import org.lasque.tusdkdemo.SampleGroup.GroupType;
 import android.app.Activity;
 
 /**
- * 多功能图片编辑组件范例
+ * 照片美化组件范例
  * 
  * @author Clear
  */
 public class EditMultipleComponentSample extends SampleBase
 {
-	/** 多功能图片编辑组件范例 */
+	/** 照片美化组件范例 */
 	public EditMultipleComponentSample()
 	{
 		super(GroupType.SuiteSample, R.string.sample_EditMultipleComponent);
@@ -68,7 +68,7 @@ public class EditMultipleComponentSample extends SampleBase
 		}).showComponent();
 	}
 
-	/** 开启多功能图片编辑 */
+	/** 开启照片美化组件 */
 	private void openEditMultiple(TuSdkResult result, Error error, TuFragment lastFragment)
 	{
 		if (result == null || error != null) return;

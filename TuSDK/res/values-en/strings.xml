@@ -35,6 +35,7 @@
     <!-- button -->
     <string name="lsq_button_done">OK</string>
     <string name="lsq_button_close">Close</string>
+    <string name="lsq_button_setting">Setting</string>
     <string name="lsq_button_switch_camera">Switch</string>
     <string name="lsq_button_flash">Flash:</string>
     <string name="lsq_button_flash_model_off">Off</string>
@@ -56,6 +57,8 @@
     <string name="lsq_carema_unsupport_camera2">The version of system is lower then 5.0 or Camera2 API is not supported in this device 2, Camera2 couldnot be launched</string>
 
     <!-- album -->
+    <string name="lsq_album_alert_title">Can’t access album</string>
+    <string name="lsq_album_no_access">Can’t access album. Please turn the external storage permission on in Settings.</string>
     <string name="lsq_album_title">Albums</string>
     <string name="lsq_album_total_format">%1$s photos</string>
     <string name="lsq_album_empty">No photos yet</string>
@@ -75,6 +78,8 @@
     <string name="lsq_save_insufficient_storage_space">Insufficient storage space</string>
 
     <!-- edit -->
+    <string name="lsq_edit_alert_title">Can’t access album</string>
+    <string name="lsq_edit_no_access">Can’t access album. Please turn the external storage permission on in Settings.</string>
     <string name="lsq_edit_button_complete">Done</string>
     <string name="lsq_edit_loading">Loading&#8230;</string>
     <string name="lsq_edit_filter_processing">Processing&#8230;</string>

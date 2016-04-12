@@ -39,4 +39,6 @@
     <string name="sample_api_Camera1Base">API Camera Component (camera)</string>
     <string name="sample_api_Camera2Base">API Camera Component (camera2)</string>
 
+    <string name="sample_api_face_detection_image">Face Detection (Picture)</string>
+    <string name="sample_api_face_detection_camera">Face Detection (Video)</string>
 </resources>

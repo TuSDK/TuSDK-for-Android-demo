@@ -35,7 +35,13 @@ public class TuApplication extends TuSdkApplication
 		 * 
 		 ************************* TuSDK 集成三部曲 ************************* 
 		 * 
-		 * 关于TuSDK体积（SDK编译后仅为0.9MB）
+		 * 关于TuSDK体积 (约2M大小)
+		 * 
+		 * Android 编译知识：
+		 * APK文件包含了Java代码，JNI库和资源文件；
+		 * JNI库包含arm64-v8a,armeabi等不同CPU的编译结果的集合，这些都会编译进 APK 文件；
+		 * 在安装应用时，系统会自动选择最合适的JNI版本，其他版本不会占用空间；
+		 * 参考TuSDK Demo的APK 大小，除去资源和JNI库，SDK本身的大小约2M；
 		 * 
 		 * 开发文档:http://tusdk.com/doc
 		 */

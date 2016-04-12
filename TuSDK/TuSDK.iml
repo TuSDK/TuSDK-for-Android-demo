@@ -85,9 +85,9 @@
     <orderEntry type="jdk" jdkName="Android API 21 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="android-support-v7-recyclerview" level="project" />
-    <orderEntry type="library" exported="" name="android-support-v4" level="project" />
     <orderEntry type="library" exported="" name="TuSDKGee-1.9.0" level="project" />
-    <orderEntry type="library" exported="" name="TuSDKCore-2.4.0" level="project" />
+    <orderEntry type="library" exported="" name="android-support-v4-23.1.2" level="project" />
     <orderEntry type="library" exported="" name="universal-image-loader-1.9.4" level="project" />
+    <orderEntry type="library" exported="" name="TuSDKCore-2.4.5" level="project" />
   </component>
 </module>

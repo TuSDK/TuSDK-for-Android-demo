@@ -60,8 +60,8 @@ public class AlbumMultipleComponentSample extends SampleBase
 								error);
 					}
 				},
-				// 设置最多选择三张照片
-				3);
+				// 设置最多选择九张照片
+				9);
 
 		// 组件选项配置
 		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/TuAlbumComponentOption.html

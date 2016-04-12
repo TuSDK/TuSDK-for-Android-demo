@@ -130,6 +130,7 @@ public class CameraComponentSample extends SampleBase implements TuCameraFragmen
 		// option.setCameraViewRatio(0);
 
 		// 是否直接输出图片数据 (默认:false，输出已经处理好的图片Bitmap)
+		// 设置为true都需使用 TuSdkResult.imageData获取一个byte[]数组
 		// option.setOutputImageData(false);
 
 		// 禁用持续自动对焦 (默认：false)
