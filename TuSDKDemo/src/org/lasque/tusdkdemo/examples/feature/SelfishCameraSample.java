@@ -74,7 +74,7 @@ public class SelfishCameraSample extends SampleBase implements TuCameraFragmentD
 		option.setShowFilterDefault(true);
 
 		// 自定义滤镜列表，输入本地已有的滤镜编码即可
-	    // @see-http://tusdk.com/docs/ios/self-customize-filter
+	    // @see-http://tusdk.com/docs/android/customize-filter
 		String[] filters = {
 				"SkinNature", "SkinPink", "SkinJelly", "SkinNoir", "SkinRuddy", "SkinPowder", "SkinSugar" };
 		option.setFilterGroup(Arrays.asList(filters));

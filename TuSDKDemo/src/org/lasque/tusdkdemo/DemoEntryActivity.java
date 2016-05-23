@@ -42,8 +42,6 @@ public class DemoEntryActivity extends TuFragmentActivity
 		 * 
 		 ************************* TuSDK 集成三部曲 ************************* 
 		 * 
-		 * 关于TuSDK体积（SDK编译后仅为0.9MB）
-		 * 
 		 * 开发文档:http://tusdk.com/doc
 		 * 
 		 * 请参见TuApplication类中的SDK初始化代码。 
@@ -79,23 +77,7 @@ public class DemoEntryActivity extends TuFragmentActivity
 		super.initView();
 		// sdk统计代码，请不要加入您的应用
 		StatisticsManger.appendComponent(ComponentActType.sdkComponent);
-
-		/**
-		 ************************* TuSDK 集成三部曲 *************************
-		 * 
-		 * 1. 在官网注册开发者账户
-		 * 
-		 * 2. 下载SDK和示例代码
-		 * 
-		 * 3. 创建应用，获取appkey，导出资源包
-		 * 
-		 ************************* TuSDK 集成三部曲 ************************* 
-		 * 
-		 * 关于TuSDK体积（SDK编译后仅为0.9MB）
-		 * 
-		 * 开发文档:http://tusdk.com/doc
-		 */
-
+		
 		// 异步方式初始化滤镜管理器 (注意：如果需要一开启应用马上执行SDK组件，需要做该检测，否则可以忽略检测)
 		// 需要等待滤镜管理器初始化完成，才能使用所有功能
 		TuSdk.messageHub().setStatus(this, R.string.lsq_initing);

@@ -45,6 +45,13 @@ public class TuApplication extends TuSdkApplication
 		 * 
 		 * 开发文档:http://tusdk.com/doc
 		 */
+		
+		// 设置资源类，当 Application id 与 Package Name 不相同时，必须手动调用该方法, 且在 init 之前执行。
+		// TuSdk.setResourcePackageClazz(org.lasque.tusdkdemo.R.class);
+		
+		// 自定义 .so 文件路径，在 init 之前调用
+		// NativeLibraryHelper.shared().mapLibrary(NativeLibType.LIB_CORE, "libtusdk-library.so 文件路径");
+		// NativeLibraryHelper.shared().mapLibrary(NativeLibType.LIB_IMAGE, "libtusdk-image.so 文件路径");
 
 		// 设置输出状态，建议在接入阶段开启该选项，以便定位问题。
 		this.setEnableLog(true);
@@ -53,7 +60,7 @@ public class TuApplication extends TuSdkApplication
 	     *
 	     *  @param appkey 应用秘钥 (请前往 http://tusdk.com 申请秘钥)
 	     */
-		this.initPreLoader(this.getApplicationContext(), "12aa4847a3a9ce68-04-ewdjn1");
+		this.initPreLoader(this.getApplicationContext(), "5042d831a2116fbe-04-ewdjn1");
 		
 		/**
 	     *  指定开发模式,需要与lsq_tusdk_configs.json中masters.key匹配， 如果找不到devType将默认读取master字段

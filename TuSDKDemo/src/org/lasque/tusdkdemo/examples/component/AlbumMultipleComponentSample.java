@@ -56,6 +56,7 @@ public class AlbumMultipleComponentSample extends SampleBase
 					{
 						// if (lastFragment != null)
 						// lastFragment.dismissActivityWithAnim();
+						// 多选状态下使用 result.images 获取所选图片
 						TLog.d("onAlbumCommponentReaded: %s | %s", result,
 								error);
 					}

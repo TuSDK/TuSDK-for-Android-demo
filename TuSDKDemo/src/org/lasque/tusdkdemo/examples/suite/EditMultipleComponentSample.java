@@ -12,6 +12,10 @@ package org.lasque.tusdkdemo.examples.suite;
 import org.lasque.tusdk.TuSdkGeeV1;
 import org.lasque.tusdk.core.TuSdkResult;
 import org.lasque.tusdk.core.utils.TLog;
+import org.lasque.tusdk.core.utils.TuSdkWaterMarkOption;
+import org.lasque.tusdk.core.utils.TuSdkWaterMarkOption.TextPosition;
+import org.lasque.tusdk.core.utils.TuSdkWaterMarkOption.WaterMarkPosition;
+import org.lasque.tusdk.core.utils.image.BitmapHelper;
 import org.lasque.tusdk.impl.activity.TuFragment;
 import org.lasque.tusdk.impl.components.TuEditMultipleComponent;
 import org.lasque.tusdk.modules.components.TuSdkComponent.TuSdkComponentDelegate;
@@ -109,6 +113,9 @@ public class EditMultipleComponentSample extends SampleBase
 
 		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/edit/TuEditMultipleOption.html
 		// component.componentOption().editMultipleOption()
+		
+		// 设置水印选项 (默认为空，如果设置不为空，则输出的图片上将带有水印)
+		component.componentOption().editMultipleOption().setWaterMarkOption(getWaterMarkOption(this.componentHelper.activity()));
 
 		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/edit/TuEditCuterOption.html
 		// component.componentOption().editCuterOption()
@@ -150,5 +157,45 @@ public class EditMultipleComponentSample extends SampleBase
 				.setAutoDismissWhenCompleted(true)
 				// 开启组件
 				.showComponent();
+	}
+	
+	/**
+	 * 水印设置
+	 * 
+	 * @return
+	 */
+	private TuSdkWaterMarkOption getWaterMarkOption(Activity activity)
+	{
+		TuSdkWaterMarkOption option = new TuSdkWaterMarkOption();
+		
+		// 文字或者图片需要至少设置一个
+	    // 设置水印文字, 支持图文混排、图片或文字
+	    option.setMarkText("");
+	    
+	    // 设置文字颜色 (默认:#FFFFFF)
+	    option.setMarkTextColor("#FFFFFF");
+	    
+	    // 文字大小 (默认: 24 SP)
+	    option.setMarkTextSize(24);
+	    
+	    // 文字阴影颜色 (默认:#000000)
+	    option.setMarkTextShadowColor("#000000");
+	    
+	    // 设置水印图片, 支持图文混排、图片或文字
+	    option.setMarkImage(BitmapHelper.getRawBitmap(activity, R.raw.sample_watermark));
+	    
+	    // 文字和图片顺序 (仅当图片和文字都非空时生效，默认: 文字在右)
+	    option.setMarkTextPosition(TextPosition.Right);
+
+	    // 设置水印位置 (默认: WaterMarkPosition.BottomRight)
+	    option.setMarkPosition(WaterMarkPosition.BottomRight);
+	    
+	    // 设置水印距离图片边距 (默认: 6dp)
+	    option.setMarkMargin(6);
+	    
+	    // 文字和图片间距 (默认: 2dp)
+	    option.setMarkTextPadding(5);
+	    
+	    return option;
 	}
 }

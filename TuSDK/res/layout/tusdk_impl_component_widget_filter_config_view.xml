@@ -24,12 +24,13 @@
         android:layout_alignLeft="@+id/lsq_stateButton"
         android:background="@drawable/tusdk_view_widget_seekbar_state_bg" />
 
-    <org.lasque.tusdk.core.view.widget.button.TuSdkButton
+    <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
         android:id="@+id/lsq_stateButton"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_alignParentRight="true"
-        android:background="@drawable/lsq_style_default_filter_config" />
+        android:scaleType="center"
+        android:src="@drawable/lsq_style_default_filter_config" />
 
     <LinearLayout
         android:id="@+id/lsq_configWrap"

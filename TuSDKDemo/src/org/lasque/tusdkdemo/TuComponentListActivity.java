@@ -9,10 +9,6 @@
  */
 package org.lasque.tusdkdemo;
 
-import android.content.Intent;
-import android.view.GestureDetector;
-import android.view.MotionEvent;
-
 import org.lasque.tusdk.core.TuSdk;
 import org.lasque.tusdk.core.TuSdkContext;
 import org.lasque.tusdk.core.secret.StatisticsManger;
@@ -43,6 +39,10 @@ import org.lasque.tusdkdemo.examples.ui.CustomizedEditComponentSample;
 import org.lasque.tusdkdemo.view.DemoListView;
 import org.lasque.tusdkdemo.view.DemoListView.DemoListItemAction;
 import org.lasque.tusdkdemo.view.DemoListView.DemoListViewDelegate;
+
+import android.content.Intent;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
 
 /**
  * @author Clear
@@ -116,14 +116,14 @@ public class TuComponentListActivity extends TuFragmentActivity implements TuSdk
 		group.appendSample(new EditAvatarComponentSample());
 		// 裁切 + 滤镜 + 贴纸 编辑组件范例
 		group.appendSample(new EditAdvancedComponentSample());
-		
+
 		// 相册组件范例
 		group.appendSample(new AlbumComponentSample());
 		// 多选相册组件范例
 		group.appendSample(new AlbumMultipleComponentSample());
 		// Gif组件范例
-		group.appendSample(GroupType.ComponentSample, R.string.sample_GifComponent,GifImageViewActivity.class);
-		
+		group.appendSample(GroupType.ComponentSample, R.string.sample_GifComponent, GifImageViewActivity.class);
+
 		// 拍照并编辑示例
 		group.appendSample(new CameraAndEditorSample());
 		// 自拍相机示例
@@ -190,7 +190,7 @@ public class TuComponentListActivity extends TuFragmentActivity implements TuSdk
 				// 直接启动 指定Activity
 				if (sample.getClass() == SampleActivityBase.class)
 				{
-					Intent intent = new Intent(this, ((SampleActivityBase)sample).activityClazz);
+					Intent intent = new Intent(this, ((SampleActivityBase) sample).activityClazz);
 					this.startActivity(intent);
 				}
 				else
