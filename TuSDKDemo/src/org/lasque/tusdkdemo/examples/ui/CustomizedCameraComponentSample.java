@@ -70,9 +70,8 @@ public class CustomizedCameraComponentSample extends SampleBase implements TuCam
 		// 照片输出压缩率 (默认:90，0-100 如果设置为0 将保存为PNG格式)
 		// option.setOutputCompress(90);
 
-		// 相机方向 (默认:CameraInfo.CAMERA_FACING_BACK){@link
-		// android.hardware.Camera.CameraInfo}
-		// option.setAvPostion(CameraInfo.CAMERA_FACING_BACK);
+		// 相机方向 (默认:CameraFacing.Back)
+		// option.setAvPostion(CameraFacing.Front);
 
 		// 照片输出图片长宽 (默认：全屏)
 		// option.setOutputSize(new TuSdkSize(1440, 1920));

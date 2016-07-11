@@ -39,6 +39,8 @@
     <string name="sample_api_Camera1Base">底層相機自定義 (camera)</string>
     <string name="sample_api_Camera2Base">底層相機自定義 (camera2)</string>
 
+    <!-- face detection -->
+    <string name="lsq_face_detection_title">人臉檢測</string>
     <string name="sample_api_face_detection_image">人臉識別 (圖片)</string>
     <string name="sample_api_face_detection_camera">人臉識別 (視頻)</string>
 </resources>

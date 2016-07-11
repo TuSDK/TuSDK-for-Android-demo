@@ -70,9 +70,8 @@ public class CameraComponentSample extends SampleBase implements TuCameraFragmen
 		// 照片输出压缩率 (默认:90，0-100 如果设置为0 将保存为PNG格式)
 		// option.setOutputCompress(90);
 
-		// 相机方向 (默认:CameraInfo.CAMERA_FACING_BACK){@link
-		// android.hardware.Camera.CameraInfo}
-		// option.setAvPostion(CameraInfo.CAMERA_FACING_BACK);
+		// 相机方向 (默认:CameraFacing.Back)
+		// option.setAvPostion(CameraFacing.Front);
 
 		// 照片输出图片长宽 (默认：全屏)
 		// option.setOutputSize(new TuSdkSize(1440, 1920));
@@ -146,6 +145,8 @@ public class CameraComponentSample extends SampleBase implements TuCameraFragmen
 		// 自定义拍照声音RAW ID，默认关闭系统发声
 		// option.setCaptureSoundRawId(R.raw.lsq_camera_focus_beep);
 
+		// 是否开启音量键拍照功能，默认关闭
+		option.setEnableCaptureWithVolumeKeys(true);
 		// 自动释放相机在拍摄后 (节省手机内存, 需要手动再次启动)
 		// option.setAutoReleaseAfterCaptured(false);
 
@@ -172,7 +173,7 @@ public class CameraComponentSample extends SampleBase implements TuCameraFragmen
 		option.enableFaceDetection = true;
 		
 		// 设置水印选项 (默认为空，如果设置不为空，则输出的图片上将带有水印)
-		option.setWaterMarkOption(getWaterMarkOption(activity));
+		// option.setWaterMarkOption(getWaterMarkOption(activity));
 
 		TuCameraFragment fragment = option.fragment();
 		fragment.setDelegate(this);
@@ -188,7 +189,7 @@ public class CameraComponentSample extends SampleBase implements TuCameraFragmen
 	 * 
 	 * @return
 	 */
-	private TuSdkWaterMarkOption getWaterMarkOption(Activity activity)
+	public TuSdkWaterMarkOption getWaterMarkOption(Activity activity)
 	{
 		TuSdkWaterMarkOption option = new TuSdkWaterMarkOption();
 		
