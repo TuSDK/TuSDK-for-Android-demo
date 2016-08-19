@@ -86,6 +86,9 @@
     <string name="lsq_edit_processing">Processing&#8230;</string>
     <string name="lsq_edit_processed">Process completed</string>
     <string name="lsq_edit_process_error">Fail to process image</string>
+	<string name="lsq_edit_process_error_no_face">No faces found in the photo</string>
+	<string name="lsq_edit_process_error_multi_face">Multi faces found in the photo</string>
+	<string name="lsq_edit_process_error_no_face_access">Face detection failed</string>
     <string name="lsq_edit_step_prev">Undo</string>
     <string name="lsq_edit_step_next">Redo</string>
     <string name="lsq_edit_auto_adjust">Auto</string>
@@ -209,6 +212,9 @@
     <string name="lsq_filter_set_blurSize">Blur Size</string>
     <string name="lsq_filter_set_blurWeight">Blur Weight</string>
     <string name="lsq_filter_set_skinColorThreshold">Skin Color</string>
+    <string name="lsq_filter_set_eyeSize">EyeSize</string>
+    <string name="lsq_filter_set_chinSize">ChinSize</string>
+    <string name="lsq_filter_set_retouchSize">Retouch</string>
     <string name="lsq_filter_set_skinColorThresholdQuadraticMixture">Skin Color Mixture</string>
     <string name="lsq_filter_set_distanceNormalizationFactor">Edge</string>
     <string name="lsq_filter_set_blurSigma">Blur Sigma</string>

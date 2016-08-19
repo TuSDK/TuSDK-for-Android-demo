@@ -85,6 +85,9 @@
     <string name="lsq_edit_filter_processing">正在處理&#8230;</string>
     <string name="lsq_edit_processing">正在處理&#8230;</string>
     <string name="lsq_edit_process_error">發生錯誤，請確認設備已聯網</string>
+    <string name="lsq_edit_process_error_no_face">未檢測到人臉</string>
+    <string name="lsq_edit_process_error_multi_face">檢測到多張人臉</string>
+    <string name="lsq_edit_process_error_no_face_access">人臉檢測請求失敗</string>
     <string name="lsq_edit_step_prev">撤銷</string>
     <string name="lsq_edit_step_next">重做</string>
     <string name="lsq_edit_auto_adjust">自動校色</string>
@@ -209,6 +212,9 @@
     <string name="lsq_filter_set_blurSize">強度</string>
     <string name="lsq_filter_set_blurWeight">權重</string>
     <string name="lsq_filter_set_skinColorThreshold">膚色</string>
+	<string name="lsq_filter_set_eyeSize">大眼</string>
+    <string name="lsq_filter_set_chinSize">瘦臉</string>
+    <string name="lsq_filter_set_retouchSize">一鍵美顏</string>
     <string name="lsq_filter_set_skinColorThresholdQuadraticMixture">矩陣</string>
     <string name="lsq_filter_set_distanceNormalizationFactor">邊緣</string>
     <string name="lsq_filter_set_blurSigma">西格瑪</string>
