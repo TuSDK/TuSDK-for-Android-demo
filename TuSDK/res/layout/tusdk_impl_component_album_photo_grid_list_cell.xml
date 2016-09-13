@@ -29,5 +29,12 @@
             android:textSize="12sp"
             android:textStyle="bold"
             android:background="@drawable/tusdk_component_photo_grid_cell_background"/>
+    
+    <org.lasque.tusdk.core.view.widget.button.TuSdkButton
+            android:id="@+id/lsq_item_selected_wrap"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/lsq_color_transparent"/>
 
 </org.lasque.tusdk.impl.components.album.TuPhotoGridListViewCell>

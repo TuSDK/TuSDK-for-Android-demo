@@ -8,7 +8,7 @@
         android:id="@+id/lsq_imageWrapView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/lsq_optionBar"
+        android:layout_above="@+id/lsq_option_wrap"
         android:background="@color/lsq_background_editor"
         android:clipChildren="false"
         android:clipToPadding="false" >
@@ -18,13 +18,19 @@
         android:id="@+id/lsq_cutRegionView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/lsq_optionBar" />
+        android:layout_above="@+id/lsq_option_wrap" />
 
-    <LinearLayout
-        android:id="@+id/lsq_optionBar"
+    <HorizontalScrollView
+        android:id="@+id/lsq_option_wrap"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_above="@+id/lsq_bottomBar"
+        android:background="@color/lsq_background_option_bar" >
+    
+    	<LinearLayout
+        android:id="@+id/lsq_optionBar"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
         android:gravity="center"
         android:background="@color/lsq_background_option_bar"
         android:orientation="horizontal" >
@@ -58,8 +64,9 @@
             style="@style/lsq_edit_entryOptionButton"
             android:drawableTop="@drawable/lsq_style_default_ratio_9_16"
             android:text="@string/lsq_edit_cuter_ratio_9_16" />
-    </LinearLayout>
-
+    	</LinearLayout>
+    </HorizontalScrollView>
+    	
     <LinearLayout
         android:id="@+id/lsq_bottomBar"
         android:layout_width="match_parent"

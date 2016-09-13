@@ -65,6 +65,8 @@
     <string name="lsq_album_broken_msg">該照片文件已經被損壞</string>
     <string name="lsq_album_empty_selection_msg">請至少選擇一張照片</string>
     <string name="lsq_album_max_selection_msg">最多選擇 %d 張照片</string>
+    <string name="lsq_album_multi_preview_select">選擇</string>
+	<string name="lsq_album_multi_preview_done">完成</string>
 
     <!-- save -->
     <string name="lsq_save_saveToTemp">正在處理&#8230;</string>
@@ -96,12 +98,15 @@
     <string name="lsq_edit_entry_cuter">裁切</string>
     <string name="lsq_edit_entry_sticker">貼紙</string>
     <string name="lsq_edit_entry_smudge">涂抹</string>
-     <string name="lsq_edit_entry_smudge_filter">模糊</string>
+    <string name="lsq_edit_entry_smudge_filter">模糊</string>
     <string name="lsq_edit_cuter_ratio_orgin">原始</string>
     <string name="lsq_edit_cuter_ratio_1_1">1:1</string>
     <string name="lsq_edit_cuter_ratio_2_3">2:3</string>
     <string name="lsq_edit_cuter_ratio_3_4">3:4</string>
     <string name="lsq_edit_cuter_ratio_9_16">9:16</string>
+    <string name="lsq_edit_cuter_ratio_3_2">3:2</string>
+    <string name="lsq_edit_cuter_ratio_4_3">4:3</string>
+    <string name="lsq_edit_cuter_ratio_16_9">16:9</string>
     <string name="lsq_edit_title">編輯</string>
     <string name="lsq_edit_multiple_title">編輯</string>
     <string name="lsq_edit_skin_title">美顏</string>

@@ -65,6 +65,8 @@
     <string name="lsq_album_broken_msg">This photo is broken</string>
     <string name="lsq_album_empty_selection_msg">No photos selected</string>
     <string name="lsq_album_max_selection_msg"> %d photos have been selected already</string>
+	<string name="lsq_album_multi_preview_select">Selected</string>
+	<string name="lsq_album_multi_preview_done">Done</string>
 
     <!-- save -->
     <string name="lsq_save_saveToTemp">Processing&#8230;</string>
@@ -102,6 +104,9 @@
     <string name="lsq_edit_cuter_ratio_2_3">2:3</string>
     <string name="lsq_edit_cuter_ratio_3_4">3:4</string>
     <string name="lsq_edit_cuter_ratio_9_16">9:16</string>
+    <string name="lsq_edit_cuter_ratio_3_2">3:2</string>
+    <string name="lsq_edit_cuter_ratio_4_3">4:3</string>
+    <string name="lsq_edit_cuter_ratio_16_9">16:9</string>
     <string name="lsq_edit_title">Edit</string>
     <string name="lsq_edit_multiple_title">Edit</string>
     <string name="lsq_edit_skin_title">Beautify</string>

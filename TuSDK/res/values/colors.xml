@@ -60,6 +60,7 @@
 
     <!-- text -->
     <color name="lsq_text_group_header">#9fa0a4</color>
+	<color name="lsq_text_multi_album_preview_select">#FF6047</color>
 
     <!-- seekbar -->
     <color name="lsq_seekbar_drag_color">#ffffff</color>

@@ -65,6 +65,8 @@
     <string name="lsq_album_broken_msg">该照片文件已经被损坏</string>
     <string name="lsq_album_empty_selection_msg">请至少选择一张照片</string>
     <string name="lsq_album_max_selection_msg">最多选择 %d 张照片</string>
+    <string name="lsq_album_multi_preview_select">选择</string>
+    <string name="lsq_album_multi_preview_done">完成</string>
 
     <!-- save -->
     <string name="lsq_save_saveToTemp">正在处理&#8230;</string>
@@ -102,6 +104,9 @@
     <string name="lsq_edit_cuter_ratio_2_3">2:3</string>
     <string name="lsq_edit_cuter_ratio_3_4">3:4</string>
     <string name="lsq_edit_cuter_ratio_9_16">9:16</string>
+    <string name="lsq_edit_cuter_ratio_3_2">3:2</string>
+    <string name="lsq_edit_cuter_ratio_4_3">4:3</string>
+    <string name="lsq_edit_cuter_ratio_16_9">16:9</string>
     <string name="lsq_edit_title">编辑</string>
     <string name="lsq_edit_multiple_title">编辑</string>
     <string name="lsq_edit_skin_title">美颜</string>
