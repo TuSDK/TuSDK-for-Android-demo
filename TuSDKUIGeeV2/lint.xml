@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="AllowBackup">
+        <ignore path="AndroidManifest.xml" />
+    </issue>
+    <issue id="ContentDescription">
+        <ignore path="res/layout/tusdk_impl_component_edit_multiple_fragment.xml" />
+        <ignore path="res/layout/tusdk_impl_component_edit_wipe_and_filter_fragment.xml" />
+        <ignore path="res/layout/tusdk_impl_component_widget_brush_bar_item_cell.xml" />
+    </issue>
+    <issue id="RtlHardcoded">
+        <ignore path="res/layout/tusdk_impl_component_edit_multiple_fragment.xml" />
+        <ignore path="res/layout/tusdk_impl_component_edit_wipe_and_filter_fragment.xml" />
+        <ignore path="res/layout/tusdk_impl_component_widget_filter_config_seekbar.xml" />
+        <ignore path="res/layout/tusdk_impl_component_widget_filter_config_view.xml" />
+        <ignore path="res/layout/tusdk_impl_component_widget_group_filter_group_view.xml" />
+        <ignore path="res/layout/tusdk_impl_component_widget_parameter_config_view.xml" />
+    </issue>
+    <issue id="RtlSymmetry">
+        <ignore path="res/layout/tusdk_impl_component_edit_multiple_fragment.xml" />
+        <ignore path="res/layout/tusdk_impl_component_widget_filter_config_view.xml" />
+    </issue>
+    <issue id="SmallSp">
+        <ignore path="res/layout/tusdk_impl_component_album_photo_list_header.xml" />
+        <ignore path="res/layout/tusdk_impl_component_widget_brush_bar_item_cell.xml" />
+        <ignore path="res/layout/tusdk_impl_component_widget_brush_bar_view.xml" />
+        <ignore path="res/layout/tusdk_impl_component_widget_filter_cell_view.xml" />
+    </issue>
+    <issue id="UselessLeaf">
+        <ignore path="res/layout/tusdk_impl_component_edit_multiple_fragment.xml" />
+    </issue>
+    <issue id="UselessParent">
+        <ignore path="res/layout/tusdk_impl_component_widget_filter_config_seekbar.xml" />
+    </issue>
+</lint>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@color/lsq_geev2_background_default" >
+
+    <org.lasque.tusdk.geev2.impl.components.widget.sticker.StickerListView
+        android:id="@+id/lsq_listView"
+        style="@style/lsq_listView"
+        android:background="@color/lsq_geev2_background_default" >
+    </org.lasque.tusdk.geev2.impl.components.widget.sticker.StickerListView>
+
+</RelativeLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lsq_geev2_background_editor" >
+
+    <RelativeLayout
+        android:id="@+id/lsq_imageWrapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lsq_optionBar"
+        android:background="@color/lsq_geev2_background_editor"
+        android:clipChildren="false"
+        android:clipToPadding="false" >
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/lsq_param_config_view"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_above="@+id/lsq_optionBar"
+        layout="@layout/tusdk_geev2_impl_component_widget_parameter_config_view"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/lsq_optionBar"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_vertical"
+        android:background="@color/lsq_geev2_background_option_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp" >
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+            android:id="@+id/lsq_closeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="6dp"
+            android:drawableTop="@drawable/lsq_geev2_style_default_edit_icon_aperture_close"
+            android:gravity="center"
+            android:text="@string/lsq_button_close"
+            android:textColor="@color/lsq_background_editor_bottom_bar"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+            android:id="@+id/lsq_radialButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="6dp"
+            android:drawableTop="@drawable/lsq_geev2_style_default_edit_icon_aperture_radial"
+            android:gravity="center"
+            android:text="@string/lsq_filter_set_radial"
+            android:textColor="@color/lsq_background_editor_bottom_bar"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+            android:id="@+id/lsq_linearButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="6dp"
+            android:drawableTop="@drawable/lsq_geev2_style_default_edit_icon_aperture_linear"
+            android:gravity="center"
+            android:text="@string/lsq_filter_set_linear"
+            android:textColor="@color/lsq_background_editor_bottom_bar"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!--
+    <RelativeLayout
+        android:id="@+id/lsq_bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lsq_background_editor_bottom_bar" >
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+            android:id="@+id/lsq_cancelButton"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:scaleType="center"
+            android:src="@drawable/lsq_style_default_edit_button_cancel" />
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+            android:id="@+id/lsq_completeButton"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:scaleType="center"
+            android:src="@drawable/lsq_style_default_edit_button_completed" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lsq_config_bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lsq_background_editor_bottom_bar" >
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+            android:id="@+id/lsq_configCancelButton"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:scaleType="center"
+            android:src="@drawable/lsq_style_default_edit_button_cancel" />
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+            android:id="@+id/lsq_configCompleteButton"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:scaleType="center"
+            android:src="@drawable/lsq_style_default_edit_button_completed" />
+    </RelativeLayout>
+    -->
+
+</RelativeLayout>

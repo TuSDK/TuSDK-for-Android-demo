@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <org.lasque.tusdk.geev2.impl.components.widget.sticker.StickerListCell xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/lsq_geev2_background_default"
+    android:paddingTop="22dp"
+    android:paddingLeft="35dp"
+    android:paddingRight="35dp" >
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/tusdk_geev2_impl_component_widget_sticker_list_grid" />
+    
+    <View
+        android:id="@+id/lsq_sticker_cell_grid_margin_view"
+         android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/tusdk_geev2_impl_component_widget_sticker_list_grid" />
+    
+    <View android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/tusdk_geev2_impl_component_widget_sticker_list_grid" />
+    
+    <View android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+	<include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/tusdk_geev2_impl_component_widget_sticker_list_grid" />
+	
+
+</org.lasque.tusdk.geev2.impl.components.widget.sticker.StickerListCell> 

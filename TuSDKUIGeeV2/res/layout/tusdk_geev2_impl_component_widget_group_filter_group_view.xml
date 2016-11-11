@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.lasque.tusdk.geev2.impl.components.widget.filter.StackFilterGroupView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="84dp" >
+
+    <FrameLayout
+        android:id="@+id/lsq_item_wrap"
+        android:layout_width="65dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="6dp" >
+
+        <org.lasque.tusdk.core.view.TuSdkRelativeLayout
+            android:id="@+id/lsq_filter_item_wrap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <org.lasque.tusdk.core.view.TuSdkImageView
+                android:id="@+id/lsq_item_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <View
+                android:id="@+id/lsq_item_image_mask"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/lsq_geev2_filter_group_cell_selected_drawable" />
+
+            <org.lasque.tusdk.core.view.TuSdkRelativeLayout
+                android:id="@+id/lsq_item_selected"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/lsq_geev2_filter_group_cell_selected_drawable" >
+                <ImageView
+                    android:id="@+id/lsq_item_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:src="@drawable/lsq_style_default_filter_capture" />
+            </org.lasque.tusdk.core.view.TuSdkRelativeLayout>
+
+            <TextView
+                android:id="@+id/lsq_item_title"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/lsq_geev2_filter_bar_item_title_bg_drawable"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:text="@string/lsq_text"
+                android:textColor="@color/lsq_color_white"
+                android:textSize="12sp" />
+        </org.lasque.tusdk.core.view.TuSdkRelativeLayout>
+
+        <org.lasque.tusdk.core.view.TuSdkRelativeLayout
+            android:id="@+id/lsq_item_filter_history_wrap"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/lsq_item_filter_history_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/lsq_geev2_oval_shadow_drawable"
+                android:src="@drawable/lsq_geev2_style_default_filter_history" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:lines="1"
+                android:text="@string/lsq_geev2_filter_collection"
+                android:textColor="@color/lsq_color_blue"
+                android:textSize="12sp" />
+        </org.lasque.tusdk.core.view.TuSdkRelativeLayout>
+
+        <org.lasque.tusdk.core.view.TuSdkRelativeLayout
+            android:id="@+id/lsq_filter_online_item_wrap"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/lsq_geev2_filter_group_cell_online_bg_color"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/lsq_item_filter_onlie_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:src="@drawable/lsq_geev2_style_default_filter_online" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:layout_below="@+id/lsq_item_filter_onlie_imageview"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:lines="1"
+                android:text="@string/lsq_geev2_filter_download"
+                android:textColor="@color/lsq_color_white"
+                android:textSize="12sp" />
+        </org.lasque.tusdk.core.view.TuSdkRelativeLayout>
+    </FrameLayout>
+
+    <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+        android:id="@+id/lsq_item_remove_button"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignRight="@+id/lsq_item_wrap"
+        android:layout_marginRight="-1dp"
+        android:layout_marginTop="-2dp"
+        android:background="@drawable/lsq_geev2_oval_shadow_drawable"
+        android:scaleType="center"
+        android:src="@drawable/lsq_geev2_style_default_table_section_header_removel" />
+
+    <LinearLayout
+        android:id="@+id/lsq_filters_wrap"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/lsq_item_wrap"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</org.lasque.tusdk.geev2.impl.components.widget.filter.StackFilterGroupView>

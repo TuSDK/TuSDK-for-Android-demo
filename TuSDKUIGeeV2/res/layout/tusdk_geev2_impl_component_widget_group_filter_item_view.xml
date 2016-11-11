@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.lasque.tusdk.geev2.impl.components.widget.filter.StackFilterItemView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <org.lasque.tusdk.core.view.TuSdkRelativeLayout
+        android:id="@+id/lsq_item_wrap"
+        android:layout_width="65dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="8dp"
+        android:layout_alignParentBottom="true">
+
+        <org.lasque.tusdk.core.view.TuSdkImageView
+            android:id="@+id/lsq_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/lsq_item_flag"
+            android:scaleType="centerCrop" />
+
+        <org.lasque.tusdk.core.view.TuSdkRelativeLayout
+            android:id="@+id/lsq_item_selected"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/lsq_geev2_filter_item_cell_selected_drawable" >
+
+            <ImageView
+                android:id="@+id/lsq_item_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@drawable/lsq_style_default_filter_capture" />
+        </org.lasque.tusdk.core.view.TuSdkRelativeLayout>
+
+        <TextView
+            android:id="@+id/lsq_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/lsq_geev2_filter_bar_item_title_bg_drawable"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@string/lsq_text"
+            android:textColor="@color/lsq_color_white"
+            android:textSize="12sp" />
+
+    </org.lasque.tusdk.core.view.TuSdkRelativeLayout>
+
+</org.lasque.tusdk.geev2.impl.components.widget.filter.StackFilterItemView>

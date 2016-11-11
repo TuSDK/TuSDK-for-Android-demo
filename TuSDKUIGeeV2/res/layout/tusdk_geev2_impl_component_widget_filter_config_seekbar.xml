@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.lasque.tusdk.impl.components.widget.FilterConfigSeekbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/lsq_seekView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_toLeftOf="@+id/lsq_titleWrapView"
+        layout="@layout/tusdk_geev2_view_widget_seekbar" />
+
+    <RelativeLayout
+        android:id="@+id/lsq_titleWrapView"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/lsq_titleView"
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:text="@string/lsq_text"
+                android:textColor="@color/lsq_seekbar_drag_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/lsq_numberView"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:text="@string/lsq_text"
+                android:textColor="@color/lsq_seekbar_drag_color"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</org.lasque.tusdk.impl.components.widget.FilterConfigSeekbar>

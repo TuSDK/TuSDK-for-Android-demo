@@ -1,5 +1,5 @@
 /** 
- * TuSdkDemo
+  * TuSdkDemo
  * DemoEntryActivity.java
  *
  * @author 		Clear
@@ -9,6 +9,9 @@
  */
 package org.lasque.tusdkdemo;
 
+import android.content.Intent;
+import android.view.View;
+
 import org.lasque.tusdk.core.TuSdk;
 import org.lasque.tusdk.core.secret.StatisticsManger;
 import org.lasque.tusdk.core.seles.tusdk.FilterManager;
@@ -17,9 +20,6 @@ import org.lasque.tusdk.impl.activity.TuFragmentActivity;
 import org.lasque.tusdk.modules.components.ComponentActType;
 import org.lasque.tusdkdemo.examples.suite.CameraComponentSample;
 import org.lasque.tusdkdemo.examples.suite.EditMultipleComponentSample;
-
-import android.content.Intent;
-import android.view.View;
 
 /**
  * @author Clear

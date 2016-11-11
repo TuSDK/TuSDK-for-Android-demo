@@ -1,22 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <resources>
-
     <string name="app_name">TuSDK</string>
     <string name="filter_toggle_title">Filters</string>
-    
     <!-- Nav label -->
     <string name="component_camera">Effect Camera</string>
     <string name="component_editor">Photo Editor</string>
     <string name="component_list">Component Kit</string>
-
     <!-- sample group -->
+    <string name="sample_gee_theme">GeeV2 Components</string>
     <string name="sample_group_suite">Composite Components</string>
     <string name="sample_group_comp">Common Components</string>
     <string name="sample_group_examples">Feature Examples</string>
     <string name="sample_group_extend">Customization UI Examples</string>
     <string name="sample_group_define">API Usage Examples</string>
-
     <!-- samples -->
+    <string name="sample_GeeV2Theme">GeeV2 Theme</string>
     <string name="sample_EditAndCutComponent">Cut + Filter Component</string>
     <string name="sample_EditAvatarComponent">Avatar Component</string>
     <string name="sample_EditAdvancedComponent">Cut + Filter + Sticker Component</string>
@@ -25,20 +23,16 @@
     <string name="sample_AlbumMultipleComponent">Multi-Select Album Component</string>
     <string name="sample_CameraComponent">Camera Component</string>
     <string name="sample_GifComponent">GIF Component</string>
-    
     <string name="sample_comp_CameraAndEditor">Camera And Editor</string>
     <string name="sample_comp_SelfishCamera">Selfish Camera</string>
     <string name="sample_comp_FilterComponent">Filter Editor Example</string>
     <string name="sample_comp_StickerComponent">Sticker Editor Example</string>
     <string name="sample_comp_BlurComponent">Blur Editor Example</string>
-    
     <string name="sample_ui_EditComponent">Customization UI for Cut + Filter Component</string>
     <string name="sample_ui_CameraBase">Customization UI for Camera Component</string>
-    
     <string name="sample_api_CameraBase">Create Camera with API (For test only)</string>
     <string name="sample_api_Camera1Base">API Camera Component (camera)</string>
     <string name="sample_api_Camera2Base">API Camera Component (camera2)</string>
-
     <!-- face detection -->
     <string name="lsq_face_detection_title">Face Detection</string>
     <string name="sample_api_face_detection_image">Face Detection (Picture)</string>

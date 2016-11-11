@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.lasque.tusdk.geev2.impl.components.widget.sticker.StickerBarView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lsq_geev2_background_editor_bottom_bar"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/lsq_list_wrap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <org.lasque.tusdk.geev2.impl.components.widget.sticker.StickerBarTableView
+            android:id="@+id/lsq_sticker_table_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </org.lasque.tusdk.geev2.impl.components.widget.sticker.StickerBarTableView>
+
+        
+    </RelativeLayout>
+
+</org.lasque.tusdk.geev2.impl.components.widget.sticker.StickerBarView>

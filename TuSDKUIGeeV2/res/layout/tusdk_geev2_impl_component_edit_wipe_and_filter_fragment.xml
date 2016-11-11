@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lsq_geev2_background_editor" >
+
+    <org.lasque.tusdk.impl.components.widget.smudge.FilterSmudgeView
+        android:id="@+id/lsq_smudgeView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lsq_bar_configBar"
+        android:background="@color/lsq_geev2_background_editor" />
+
+    <ImageView
+        android:id="@+id/lsq_zoomInView"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:padding="2dp" />
+
+    <LinearLayout
+        android:id="@+id/lsq_stepwrap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lsq_bar_configBar"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal" >
+
+        <!-- 撤销 -->
+
+        <org.lasque.tusdk.core.view.TuSdkImageView
+            android:id="@+id/lsq_bar_undoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="23dp"
+            android:background="@drawable/lsq_geev2_oval_shadow_drawable"
+            android:src="@drawable/lsq_geev2_style_default_edit_undo" />
+
+        <!-- 重做 -->
+        <org.lasque.tusdk.core.view.TuSdkImageView
+            android:id="@+id/lsq_bar_redoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="32dp"
+            android:background="@drawable/lsq_geev2_oval_shadow_drawable"
+            android:scaleType="centerInside"
+            android:src="@drawable/lsq_geev2_style_default_edit_redo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lsq_bar_configBar"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lsq_geev2_background_option_bar"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp" >
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+            android:id="@+id/lsq_small_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="6dp"
+            android:drawableTop="@drawable/lsq_geev2_style_default_edit_pen_small"
+            android:gravity="center"
+            android:text="@string/lsq_edit_pen_small"
+            android:textColor="@color/lsq_background_editor_bottom_bar"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+            android:id="@+id/lsq_medium_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="6dp"
+            android:drawableTop="@drawable/lsq_geev2_style_default_edit_pen_medium"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            android:text="@string/lsq_edit_pen_medium"
+            android:textColor="@color/lsq_background_editor_bottom_bar"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+            android:id="@+id/lsq_large_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="6dp"
+            android:drawableTop="@drawable/lsq_geev2_style_default_edit_pen_large"
+            android:gravity="center"
+            android:text="@string/lsq_edit_pen_large"
+            android:textColor="@color/lsq_background_editor_bottom_bar"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

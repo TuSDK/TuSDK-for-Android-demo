@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.lasque.tusdk.geev2.impl.components.album.TuPhotoGridListViewCell xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lsq_background_photo_cell"
+		android:layout_margin="4dp">
+
+        <ImageView
+            android:id="@+id/lsq_posterView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/lsq_cameraView"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/lsq_geev2_style_default_album_camera"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <org.lasque.tusdk.core.view.widget.button.TuSdkButton
+        android:id="@+id/lsq_item_selected"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/tusdk_geev2_component_photo_grid_cell_background"
+        android:clickable="false"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <org.lasque.tusdk.core.view.widget.button.TuSdkButton
+        android:id="@+id/lsq_item_selected_wrap"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_alignParentRight="true"
+        android:background="@color/lsq_color_transparent" />
+
+</org.lasque.tusdk.geev2.impl.components.album.TuPhotoGridListViewCell>

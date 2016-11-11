@@ -1,21 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <resources>
-
     <string name="app_name">TuSDK 塗圖</string>
     <string name="filter_toggle_title">濾鏡</string>
-    
     <!-- Nav label -->
     <string name="component_camera">特效相機</string>
     <string name="component_editor">照片美化</string>
     <string name="component_list">開發套件</string>
-
+    <!-- sample group -->
+    <string name="sample_gee_theme">官方推薦</string>
     <!-- sample group -->
     <string name="sample_group_suite">功能套件</string>
     <string name="sample_group_comp">常用組件</string>
     <string name="sample_group_examples">組件用法示例</string>
     <string name="sample_group_extend">自定義界面示例</string>
     <string name="sample_group_define">API 使用示例</string>
-
+    <!-- samples -->
+    <string name="sample_GeeV2Theme">GeeV2主題套件</string>
     <!-- samples -->
     <string name="sample_EditAndCutComponent">裁剪 + 滤镜组件</string>
     <string name="sample_EditAvatarComponent">頭像設置組件</string>
@@ -25,20 +25,16 @@
     <string name="sample_AlbumMultipleComponent">多選相冊組件</string>
     <string name="sample_CameraComponent">相機組件</string>
     <string name="sample_GifComponent">GIF 組件</string>
-    
     <string name="sample_comp_CameraAndEditor">拍照 + 編輯例子</string>
     <string name="sample_comp_SelfishCamera">美顏相機</string>
     <string name="sample_comp_FilterComponent">濾鏡組件示例</string>
     <string name="sample_comp_StickerComponent">貼紙組件示例</string>
     <string name="sample_comp_BlurComponent">模糊組件示例</string>
-    
     <string name="sample_ui_EditComponent">裁切組件自定義界面</string>
     <string name="sample_ui_CameraBase">相機自定義界面</string>
-    
     <string name="sample_api_CameraBase">個性化相機示例 (仅供参考)</string>
     <string name="sample_api_Camera1Base">底層相機自定義 (camera)</string>
     <string name="sample_api_Camera2Base">底層相機自定義 (camera2)</string>
-
     <!-- face detection -->
     <string name="lsq_face_detection_title">人臉檢測</string>
     <string name="sample_api_face_detection_image">人臉識別 (圖片)</string>

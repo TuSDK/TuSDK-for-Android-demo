@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.lasque.tusdk.geev2.impl.components.widget.smudge.BrushBarView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <org.lasque.tusdk.geev2.impl.components.widget.smudge.BrushBarTableView
+        android:id="@+id/lsq_brush_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/lsq_configWrap"
+        android:layout_toRightOf="@+id/lsq_configWrap"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" />
+
+</org.lasque.tusdk.geev2.impl.components.widget.smudge.BrushBarView>

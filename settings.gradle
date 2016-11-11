@@ -1,2 +1,3 @@
 include ':TuSDKDemo'
-include ':TuSDK'
+include ':TuSDKUIDefault'
+include ':TuSDKUIGeeV2'

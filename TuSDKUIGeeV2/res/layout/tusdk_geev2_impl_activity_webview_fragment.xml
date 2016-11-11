@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/lsq_navigatorBar"
+        layout="@layout/tusdk_view_widget_navigator" />
+
+    <org.lasque.tusdk.core.view.TuSdkWebView
+        android:id="@+id/lsq_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lsq_navigatorBar"
+        android:background="@color/lsq_color_white" />
+
+    <org.lasque.tusdk.core.view.TuSdkProgressBar
+        android:id="@+id/lsq_progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignTop="@+id/lsq_webview"
+        android:progressDrawable="@drawable/tusdk_core_view_progress_bar" />
+
+</RelativeLayout>

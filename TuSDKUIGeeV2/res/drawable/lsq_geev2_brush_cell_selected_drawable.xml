@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <solid android:color="@color/lsq_geev2_brush_cell_selected_color"/>
+    <corners
+        android:bottomLeftRadius="6px"
+        android:bottomRightRadius="6px"
+        android:topLeftRadius="6px"
+        android:topRightRadius="6px" />
+
+</shape>

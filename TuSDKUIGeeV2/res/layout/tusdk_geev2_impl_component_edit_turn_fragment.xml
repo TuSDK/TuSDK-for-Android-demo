@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/lsq_imageWrapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lsq_bottomBar"
+        android:background="@color/lsq_geev2_background_editor"
+        android:clipChildren="false"
+        android:clipToPadding="false" >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lsq_bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lsq_geev2_background_option_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+            android:id="@+id/lsq_trunLeftButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="6dp"
+            android:drawableTop="@drawable/lsq_geev2_style_default_edit_button_trun_left"
+            android:gravity="center"
+            android:scaleType="center"
+            android:text="@string/lsq_edit_trun_left"
+            android:textColor="@color/lsq_background_editor_bottom_bar"
+            android:textSize="12sp" />
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+            android:id="@+id/lsq_trunRightButton"
+            android:drawableTop="@drawable/lsq_geev2_style_default_edit_button_turn_right"
+            android:text="@string/lsq_edit_trun_right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="6dp"
+            android:gravity="center"
+            android:textColor="@color/lsq_background_editor_bottom_bar"
+            android:textSize="12sp" />
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+            android:id="@+id/lsq_horizontalMirrorButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="6dp"
+            android:drawableTop="@drawable/lsq_geev2_style_default_edit_button_horizontal_mirror"
+            android:gravity="center"
+            android:text="@string/lsq_edit_horizontal"
+            android:textColor="@color/lsq_background_editor_bottom_bar"
+            android:textSize="12sp" />
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+            android:id="@+id/lsq_verticalMirrorButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="6dp"
+            android:drawableTop="@drawable/lsq_geev2_style_default_edit_button_vertical_mirror"
+            android:gravity="center"
+            android:text="@string/lsq_edit_vertical"
+            android:textColor="@color/lsq_background_editor_bottom_bar"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

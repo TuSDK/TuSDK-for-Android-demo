@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lsq_color_transparent" >
+
+    <include
+        android:id="@+id/lsq_navigatorBar"
+        layout="@layout/tusdk_geev2_view_widget_navigator" />
+
+    <org.lasque.tusdk.geev2.impl.components.album.TuAlbumListView
+        android:id="@+id/lsq_listView"
+        style="@style/lsq_listSplitView"
+        android:layout_below="@+id/lsq_navigatorBar"
+        android:background="@color/lsq_background_album"
+        android:divider="@color/lsq_split_cell" >
+
+    </org.lasque.tusdk.geev2.impl.components.album.TuAlbumListView>
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+      android:background="@color/lsq_geev2_background_editor" >
+
+    <RelativeLayout
+        android:id="@+id/lsq_topBar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_vertical"
+        android:background="@color/lsq_geev2_navigator_bg" >
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+            android:id="@+id/lsq_backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+             android:layout_marginLeft="30dp"
+    		 android:background="@drawable/lsq_geev2_style_default_btn_back_normal"
+            android:textColor="@color/lsq_color_white"
+            android:textSize="15sp" />
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+            android:id="@+id/lsq_selectImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:scaleType="center"
+            android:src="@drawable/lsq_style_default_multi_album_preview_unselected_button" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/lsq_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lsq_bottomBar"
+        android:layout_below="@+id/lsq_topBar"
+      android:background="@color/lsq_geev2_background_editor"  >
+    </android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:id="@+id/lsq_bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_vertical"
+        android:background="@color/lsq_geev2_background_editor_bottom_bar" >
+
+        <LinearLayout
+            android:id="@+id/lsq_selectImageWrap"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true">
+
+            <org.lasque.tusdk.core.view.widget.button.TuSdkButton
+                android:id="@+id/lsq_albumTotalCountButton"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/tusdk_geev2_component_photo_grid_cell_background"
+                android:clickable="false"
+                android:text="0"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+                android:id="@+id/lsq_completeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="8dp"
+                android:background="@color/lsq_color_transparent"
+                android:scaleType="center"
+                android:text="@string/lsq_edit_button_complete"
+                android:textColor="@color/lsq_geev2_navigator_title"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

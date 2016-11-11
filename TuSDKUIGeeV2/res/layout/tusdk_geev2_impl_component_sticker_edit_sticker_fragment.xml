@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lsq_geev2_background_editor" >
+
+    <RelativeLayout
+        android:id="@+id/lsq_bar_bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/lsq_geev2_background_editor_bottom_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+            android:id="@+id/lsq_bar_cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:scaleType="center"
+            android:src="@drawable/lsq_geev2_style_default_edit_button_cancel" />
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+            android:id="@+id/lsq_bar_completeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="22dp"
+            android:scaleType="center"
+            android:src="@drawable/lsq_geev2_style_default_edit_button_completed" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/lsq_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lsq_sticker_bar_container"
+        android:layout_below="@+id/lsq_bar_bottomBar"
+        android:background="@color/lsq_geev2_background_editor"
+        android:scaleType="fitCenter" />
+
+    <org.lasque.tusdk.impl.components.widget.sticker.StickerView
+        android:id="@+id/lsq_stickerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lsq_sticker_bar_container"
+        android:layout_below="@+id/lsq_bar_bottomBar" >
+    </org.lasque.tusdk.impl.components.widget.sticker.StickerView>
+
+    <org.lasque.tusdk.core.view.widget.TuMaskRegionView
+        android:id="@+id/lsq_cutRegionView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lsq_sticker_bar_container"
+        android:layout_below="@+id/lsq_bar_bottomBar" />
+
+    <RelativeLayout
+        android:id="@+id/lsq_sticker_bar_container"
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lsq_geev2_background_editor_bottom_bar"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="15dp" >
+
+        <TextView
+            android:layout_marginLeft="14dp"
+            android:id="@+id/lsq_sticker_bar_group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lsq_geev2_sticker_title_color" />
+
+        <include
+            android:id="@+id/lsq_sticker_bar"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_above="@+id/lsq_sticker_bar_group_name"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="15dp"
+            layout="@layout/tusdk_geev2_impl_component_widget_sticker_bar_view" />
+    </RelativeLayout>
+
+</RelativeLayout>

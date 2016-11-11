@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.lasque.tusdk.geev2.impl.components.widget.filter.StackFilterBar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lsq_background_option_bar" >
+
+    <!-- 滤镜分组ListView -->
+    <org.lasque.tusdk.geev2.impl.components.widget.filter.StackFilterGroupTableView
+        android:id="@+id/lsq_group_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</org.lasque.tusdk.geev2.impl.components.widget.filter.StackFilterBar>

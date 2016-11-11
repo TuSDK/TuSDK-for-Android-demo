@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lsq_geev2_background_editor" >
+
+    <org.lasque.tusdk.impl.view.widget.TuNavigatorBar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/lsq_navigatorBar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/lsq_geev2_background_editor_bottom_bar"
+        android:clipChildren="false" >
+
+        <TextView
+            android:id="@+id/lsq_titleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textAllCaps="false"
+            android:textColor="@color/lsq_geev2_navigator_title"
+            android:textSize="@dimen/lsq_font_size_36" />
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkNavigatorBackButton
+            android:id="@+id/lsq_leftButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:drawableLeft="@drawable/lsq_geev2_style_default_btn_back_normal"
+            android:background="@android:color/transparent"
+            android:maxLines="1"
+            android:scaleType="center" />
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+            android:id="@+id/lsq_rightButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/lsq_color_transparent"
+            android:maxLines="1"
+            android:text="@string/lsq_album_continue"
+            android:textColor="@color/lsq_geev2_navigator_title"
+            android:textSize="18sp" />
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkButton
+            android:id="@+id/lsq_albumTotalCountButton"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/lsq_rightButton"
+            android:background="@drawable/tusdk_geev2_component_photo_grid_cell_background"
+            android:clickable="false"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </org.lasque.tusdk.impl.view.widget.TuNavigatorBar>
+
+    <org.lasque.tusdk.geev2.impl.components.album.TuPhotoGridListView
+        android:id="@+id/lsq_photoListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lsq_navigatorBar"
+        android:background="@color/lsq_geev2_background_editor"
+        android:padding="4dp"
+        android:scrollbars="vertical" >
+    </org.lasque.tusdk.geev2.impl.components.album.TuPhotoGridListView>
+
+    <RelativeLayout
+        android:id="@+id/lsq_albumGroupArea"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lsq_navigatorBar" >
+    </RelativeLayout>
+
+    <org.lasque.tusdk.geev2.impl.components.album.TuAlbumPopList
+        android:id="@+id/lsq_albumListView"
+        style="@style/lsq_listSplitView"
+        android:layout_below="@+id/lsq_navigatorBar"
+        android:background="@color/lsq_geev2_background_editor"
+        android:divider="@color/lsq_geev2_split_cell" >
+    </org.lasque.tusdk.geev2.impl.components.album.TuAlbumPopList>
+
+</RelativeLayout>

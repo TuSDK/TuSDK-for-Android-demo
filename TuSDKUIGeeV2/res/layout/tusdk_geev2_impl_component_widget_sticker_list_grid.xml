@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.lasque.tusdk.geev2.impl.components.widget.sticker.StickerListGrid xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:id="@+id/lsq_posterWrap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <org.lasque.tusdk.core.view.TuSdkImageView
+            android:id="@+id/lsq_posterView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+    </RelativeLayout>
+
+</org.lasque.tusdk.geev2.impl.components.widget.sticker.StickerListGrid>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.lasque.tusdk.geev2.impl.components.widget.sticker.StickerListEmptyView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lsq_geev2_background_default" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/lsq_style_default_sticker_empty"
+            android:gravity="center_horizontal"
+            android:text="@string/lsq_sticker_empty"
+            android:textColor="#3e3a39"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lsq_sticker_click"
+                android:textColor="#9fa0a0"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="“"
+                android:layout_marginLeft="6dp"
+                android:textColor="#3e3a39"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/lsq_empty_more_button"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/lsq_geev2_style_default_edit_button_sticker_online" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="”"
+                    android:layout_marginRight="6dp"
+                android:textColor="#3e3a39"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/lsq_sticker_download_more"
+                android:textColor="#9fa0a0"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</org.lasque.tusdk.geev2.impl.components.widget.sticker.StickerListEmptyView>

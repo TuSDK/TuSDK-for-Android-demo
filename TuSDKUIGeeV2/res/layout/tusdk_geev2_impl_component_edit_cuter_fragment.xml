@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lsq_geev2_background_editor" >
+
+    <RelativeLayout
+        android:id="@+id/lsq_imageWrapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lsq_optionBar"
+        android:background="@color/lsq_geev2_background_editor"
+        android:clipChildren="false"
+        android:clipToPadding="false" >
+    </RelativeLayout>
+
+    <org.lasque.tusdk.core.view.widget.TuMaskRegionView
+        android:id="@+id/lsq_cutRegionView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lsq_optionBar" />
+
+    <LinearLayout
+        android:id="@+id/lsq_optionBar"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+         android:gravity="center"
+        android:layout_alignParentBottom="true"
+         android:orientation="horizontal"
+        android:background="@color/lsq_geev2_background_option_bar" >
+    
+ 
+    	</LinearLayout>
+    	
+</RelativeLayout>

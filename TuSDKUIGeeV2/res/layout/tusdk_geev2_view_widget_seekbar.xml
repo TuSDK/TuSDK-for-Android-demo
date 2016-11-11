@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.lasque.tusdk.impl.view.widget.TuSeekBar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <View
+        android:id="@+id/lsq_seekBottomView"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/tusdk_view_widget_seekbar_bottom_bg" />
+
+    <View
+        android:id="@+id/lsq_seekTopView"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_centerVertical="true" />
+
+    <View
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/tusdk_geev2_view_widget_seekbar_placeholder_drag" />
+    
+    <View
+        android:id="@+id/lsq_seekDrag"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/tusdk_geev2_view_widget_seekbar_drag" />
+    
+        
+    
+    <!-- tusdk_view_widget_seekbar_drag -->
+
+</org.lasque.tusdk.impl.view.widget.TuSeekBar>

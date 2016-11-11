@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.lasque.tusdk.geev2.impl.components.widget.filter.ParameterConfigView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lsq_geev2_edit_filter_parameter_configView_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="8dp"
+        android:paddingRight="5dp" >
+
+
+        <include
+            android:id="@+id/lsq_seek_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@+id/lsq_number_view"
+            layout="@layout/tusdk_geev2_view_widget_seekbar" />
+
+        <TextView
+            android:id="@+id/lsq_number_view"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:text="0"
+            android:textColor="@color/lsq_text_bottombar_color"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</org.lasque.tusdk.geev2.impl.components.widget.filter.ParameterConfigView>

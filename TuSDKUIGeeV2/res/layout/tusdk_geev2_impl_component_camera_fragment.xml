@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lsq_geev2_background_camera" >
+
+    <RelativeLayout
+        android:id="@+id/lsq_cameraView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lsq_geev2_background_camera" >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lsq_configBar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:layout_marginTop="7dp" >
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+            android:id="@+id/lsq_closeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@drawable/lsq_geev2_style_camera_default_btn_back_normal" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+            android:id="@+id/lsq_flashButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+            android:id="@+id/lsq_guideLineButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@drawable/lsq_geev2_style_default_camera_guideline" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+            android:id="@+id/lsq_switchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@drawable/lsq_geev2_style_default_camera_button_switch" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lsq_bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <LinearLayout
+            android:id="@+id/lsq_ratioWrapBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp" >
+
+            <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+                android:id="@+id/lsq_ratioButton"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:scaleType="center"
+                android:src="@drawable/lsq_geev2_style_default_camera_ratio_orgin" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+                android:id="@+id/lsq_ratio11Button"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:scaleType="center"
+                android:src="@drawable/lsq_geev2_style_default_camera_ratio_1_1" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+                android:id="@+id/lsq_ratio23Button"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:scaleType="center"
+                android:src="@drawable/lsq_geev2_style_default_camera_ratio_2_3" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+                android:id="@+id/lsq_ratio34Button"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:scaleType="center"
+                android:src="@drawable/lsq_geev2_style_default_camera_ratio_3_4" />
+
+            <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+                android:id="@+id/lsq_ratio916Button"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:scaleType="center"
+                android:src="@drawable/lsq_geev2_style_default_camera_ratio_9_16" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/lsq_bottomCameraBar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/lsq_ratioWrapBar"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp" >
+
+            <org.lasque.tusdk.core.view.TuSdkImageView
+                android:id="@+id/lsq_albumPosterView"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="22dp"/>
+
+            <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+                android:id="@+id/lsq_captureButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/lsq_geev2_style_default_camera_button_capture"
+                android:scaleType="center" />
+
+            <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+                android:id="@+id/lsq_filterButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="23dp"
+                android:scaleType="center"
+                android:src="@drawable/lsq_geev2_style_default_camera_bg_filter" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lsq_flashView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="80dp" >
+
+        <LinearLayout
+            android:id="@+id/lsq_flashWrapView"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="63dp"
+            android:background="@drawable/lsq_geev2_style_default_camera_bg_pop"
+            android:orientation="vertical"
+            android:paddingTop="2dp" >
+            
+            <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+                android:id="@+id/lsq_flash_model_open"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:drawableLeft="@drawable/lsq_geev2_style_default_camera_flash_on"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:text="@string/lsq_geev2_button_flash_model_open"
+                android:textColor="@color/lsq_color_white"
+                android:textSize="14sp" />
+            
+            <View
+                style="@style/lsq_split"
+                android:background="@color/lsq_geev2_split_cell" />
+            
+                 <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+                android:id="@+id/lsq_flash_model_auto"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:drawableLeft="@drawable/lsq_geev2_style_default_camera_flash_auto"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:text="@string/lsq_geev2_button_flash_model_auto"
+                android:textColor="@color/lsq_color_white"
+                android:textSize="14sp" />
+
+            <View
+                style="@style/lsq_split"
+                android:background="@color/lsq_geev2_split_cell" />
+
+            <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+                android:id="@+id/lsq_flash_model_off"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:drawableLeft="@drawable/lsq_geev2_style_default_camera_flash_off"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:text="@string/lsq_geev2_button_flash_model_off"
+                android:textColor="@color/lsq_color_white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/lsq_group_filter_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/tusdk_geev2_impl_component_camera_filter_view" />
+
+    <ImageView
+        android:id="@+id/lsq_startingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="center"
+        android:src="@drawable/lsq_style_default_camera_bg_init" />
+
+</RelativeLayout>

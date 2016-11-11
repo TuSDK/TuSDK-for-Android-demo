@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="lsq_sdk_name">TuSDK</string>
+    <string name="lsq_exit_info">Tap back again to exit</string>
+    <string name="lsq_text">TuSDK</string>
+    <string name="lsq_reset">Reset</string>
+    <string name="lsq_initing">Initializing</string>
+    <string name="lsq_inited">Initialized</string>
+
+    <!-- refreshListView -->
+    <string name="lsq_refresh_list_view_state_visible">Pull to refresh</string>
+    <string name="lsq_refresh_list_view_state_hidden">Load complete</string>
+    <string name="lsq_refresh_list_view_state_triggered">Release to refresh</string>
+    <string name="lsq_refresh_list_view_state_loading">Loding&#8230;</string>
+    <string name="lsq_refresh_list_view_state_lasttime">Last updated: </string>
+    <string name="lsq_refresh_list_view_state_load_more">Loding more</string>
+
+    <!-- Date -->
+    <string name="lsq_date_seconds_ago">seconds ago</string>
+    <string name="lsq_date_minutes_ago">minutes ago</string>
+    <string name="lsq_date_hours_ago">hours ago</string>
+    <string name="lsq_date_month">Month</string>
+    <string name="lsq_date_year">Year</string>
+    <string name="lsq_date_today">Today</string>
+    <string name="lsq_date_formater">M/d/yyyy</string>
+
+    <!-- nav -->
+    <string name="lsq_nav_cancel">Cancel</string>
+    <string name="lsq_nav_back">Back</string>
+    <string name="lsq_nav_more">More</string>
+    <string name="lsq_nav_remove">Remove</string>
+    <string name="lsq_nav_complete">Done</string>
+
+    <!-- button -->
+    <string name="lsq_button_done">OK</string>
+    <string name="lsq_button_close">Close</string>
+    <string name="lsq_button_setting">Setting</string>
+    <string name="lsq_button_switch_camera">Switch</string>
+    <string name="lsq_button_flash">Flash:</string>
+    <string name="lsq_button_flash_model_off">Off</string>
+    <string name="lsq_button_flash_model_auto">Auto</string>
+    <string name="lsq_button_flash_model_open">On</string>
+
+    <!-- avatar -->
+    <string name="lsq_avatar_actionsheet_title">Set Avatar</string>
+    <string name="lsq_avatar_actionsheet_cancel">Cancel</string>
+    <string name="lsq_avatar_actionsheet_camera">Take Photo</string>
+    <string name="lsq_avatar_actionsheet_album">Choose from Albums</string>
+
+    <!-- camera -->
+    <string name="lsq_carema_alert_title">Can’t access camera</string>
+    <string name="lsq_carema_no_device">Your device has no camera!</string>
+    <string name="lsq_carema_no_access">Can’t access camera. Please turn the camera permission on in Settings.</string>
+    <string name="lsq_carema_image_process">Processing&#8230;</string>
+    <string name="lsq_carema_image_process_completed">Process completed</string>
+    <string name="lsq_carema_unsupport_camera2">The version of system is lower then 5.0 or Camera2 API is not supported in this device 2, Camera2 couldnot be launched</string>
+
+    <!-- album -->
+    <string name="lsq_album_alert_title">Can’t access album</string>
+    <string name="lsq_album_no_access">Can’t access album. Please turn the external storage permission on in Settings.</string>
+    <string name="lsq_album_title">Albums</string>
+    <string name="lsq_album_total_format">%1$s photos</string>
+    <string name="lsq_album_empty">No photos yet</string>
+    <string name="lsq_album_broken_msg">This photo is broken</string>
+    <string name="lsq_album_empty_selection_msg">No photos selected</string>
+    <string name="lsq_album_max_selection_msg"> %d photos have been selected already</string>
+	<string name="lsq_album_multi_preview_select">Selected</string>
+	<string name="lsq_album_multi_preview_done">Done</string>
+
+    <!-- save -->
+    <string name="lsq_save_saveToTemp">Processing&#8230;</string>
+    <string name="lsq_save_saveToTemp_completed">Process completed</string>
+    <string name="lsq_save_saveToTemp_failed">Failed to process</string>
+    <string name="lsq_save_saveToAlbum">Saving to albums&#8230;</string>
+    <string name="lsq_save_saveToAlbum_succeed">Saved successfully</string>
+    <string name="lsq_save_saveToAlbum_failed">Failed to save</string>
+    <string name="lsq_save_unsupport_storage_title">Can’t save file to storage</string>
+    <string name="lsq_save_not_found_sdcard">SD Card not found</string>
+    <string name="lsq_save_insufficient_storage_space">Insufficient storage space</string>
+
+    <!-- edit -->
+    <string name="lsq_edit_alert_title">Can’t access album</string>
+    <string name="lsq_edit_no_access">Can’t access album. Please turn the external storage permission on in Settings.</string>
+    <string name="lsq_edit_button_complete">Done</string>
+    <string name="lsq_edit_loading">Loading&#8230;</string>
+    <string name="lsq_edit_filter_processing">Processing&#8230;</string>
+    <string name="lsq_edit_processing">Processing&#8230;</string>
+    <string name="lsq_edit_processed">Process completed</string>
+    <string name="lsq_edit_process_error">Fail to process image</string>
+    <string name="lsq_edit_process_adjust_color_error">Fail to process image</string>
+    <string name="lsq_edit_process_skin_error">Fail to process image</string>
+	<string name="lsq_edit_process_error_no_face">No faces found in the photo</string>
+	<string name="lsq_edit_process_error_multi_face">Multi faces found in the photo</string>
+	<string name="lsq_edit_process_error_no_face_access">Face detection failed</string>
+    <string name="lsq_edit_step_prev">Undo</string>
+    <string name="lsq_edit_step_next">Redo</string>
+    <string name="lsq_edit_auto_adjust">Auto</string>
+    <string name="lsq_edit_entry_filter">Filters</string>
+    <string name="lsq_edit_entry_cuter">Crop</string>
+    <string name="lsq_edit_entry_sticker">Stickers</string>
+    <string name="lsq_edit_entry_smudge">Smudge</string>
+     <string name="lsq_edit_entry_smudge_filter">Blur</string>
+    <string name="lsq_edit_cuter_ratio_orgin">Original</string>
+    <string name="lsq_edit_cuter_ratio_1_1">1:1</string>
+    <string name="lsq_edit_cuter_ratio_2_3">2:3</string>
+    <string name="lsq_edit_cuter_ratio_3_4">3:4</string>
+    <string name="lsq_edit_cuter_ratio_9_16">9:16</string>
+    <string name="lsq_edit_cuter_ratio_3_2">3:2</string>
+    <string name="lsq_edit_cuter_ratio_4_3">4:3</string>
+    <string name="lsq_edit_cuter_ratio_16_9">16:9</string>
+    <string name="lsq_edit_title">Edit</string>
+    <string name="lsq_edit_multiple_title">Edit</string>
+    <string name="lsq_edit_skin_title">Beautify</string>
+    <string name="lsq_edit_holy_light">Holy Light</string>
+
+    <!-- sticker -->
+    <string name="lsq_sticker_title">Stickers</string>
+    <string name="lsq_sticker_cate_default">Stickers</string>
+    <string name="lsq_sticker_cate_watermark">Watermarks</string>
+    <string name="lsq_sticker_cate_mood">Moods</string>
+    <string name="lsq_sticker_cate_frame">Frames</string>
+    <string name="lsq_sticker_loading">Loading stickers&#8230;</string>
+    <string name="lsq_sticker_load_unexsit">Stickers doesn’t exists, please try another.</string>
+    <string name="lsq_sticker_over_limit">Oops, Can’t use more than %s stickers</string>
+    <string name="lsq_sticker_total_format">%1$s stickers</string>
+    <string name="lsq_sticker_empty">No stickers yet</string>
+    <string name="lsq_sticker_empty_msg">Go get some in the Stickers Shop</string>
+    <string name="lsq_sticker_1_1">Monsters 4</string>
+    <string name="lsq_sticker_online_title">Online Stickers</string>
+    <string name="lsq_sticker_remove_title">Remove Sticker</string>
+    <string name="lsq_sticker_remove_msg">Are you sure to remove the sticker %s?</string>
+    <string name="lsq_sticker_cate_all">All</string>
+    <string name="lsq_sticker_cate_history">History</string>
+
+    <!-- format -->
+    <string name="las_date_format">M/d/yyyy</string>
+
+    <!-- Week -->
+    <string name="las_week_Sun">Sun</string>
+    <string name="las_week_Mon">Mon</string>
+    <string name="las_week_Tue">Tue</string>
+    <string name="las_week_Wed">Wed</string>
+    <string name="las_week_Thu">Thu</string>
+    <string name="las_week_Fri">Fri</string>
+    <string name="las_week_Sat">Sat</string>
+
+    <!-- FilterGroup -->
+    <string name="lsq_filter_group_Leica">Leica</string>
+    <string name="lsq_filter_group_Lomo">LOMO</string>
+    <string name="lsq_filter_group_Food">Food</string>
+    <string name="lsq_filter_group_Enhance">Enhance</string>
+    <string name="lsq_filter_group_Glare">Lights</string>
+    <string name="lsq_filter_group_Beauty">Portrait</string>
+    <string name="lsq_filter_group_Magic">Magic</string>
+    <!-- Filters -->
+    <string name="lsq_filter_online_title">Online Filters</string>
+    <string name="lsq_filter_remove_title">Remove Filter</string>
+    <string name="lsq_filter_remove_msg">Are you sure to remove the filter %s?</string>
+    <string name="lsq_filter_Normal">Normal</string>
+    <string name="lsq_filter_Lomo">LOMO</string>
+    <string name="lsq_filter_Abao">Abao</string>
+    <string name="lsq_filter_Nostalgic">Nostalgic</string>
+    <string name="lsq_filter_Artistic">Artistic</string>
+    <string name="lsq_filter_Brilliant">Brilliant</string>
+    <string name="lsq_filter_Cheerful">Cheerful</string>
+    <string name="lsq_filter_Clear">Clear</string>
+    <string name="lsq_filter_Fade">Fade</string>
+    <string name="lsq_filter_Forest">Forest</string>
+    <string name="lsq_filter_Gloss">Gloss</string>
+    <string name="lsq_filter_Harmony">Harmony</string>
+    <string name="lsq_filter_Instant">Instant</string>
+    <string name="lsq_filter_Lightup">Lightup</string>
+    <string name="lsq_filter_Morning">Morning</string>
+    <string name="lsq_filter_Newborn">Newborn</string>
+    <string name="lsq_filter_Noir">Noir</string>
+    <string name="lsq_filter_Relaxed">Relaxed</string>
+    <string name="lsq_filter_Rough">Rough</string>
+    <string name="lsq_filter_Thick">Thick</string>
+    <string name="lsq_filter_Vintage">Vintage</string>
+    <string name="lsq_filter_Leica">Leica</string>
+
+    <!-- Beauty -->
+    <string name="lsq_filter_SkinNature">Nature</string>
+    <string name="lsq_filter_SkinPink">Pink</string>
+    <string name="lsq_filter_SkinJelly">Jelly</string>
+    <string name="lsq_filter_SkinNoir">Noir</string>
+    <string name="lsq_filter_SkinRuddy">Ruddy</string>
+    <string name="lsq_filter_SkinPowder">Pink</string>
+    <string name="lsq_filter_SkinSugar">Sugar</string>
+
+    <!-- Magic -->
+    <string name="lsq_filter_MagicRed">Red</string>
+    <string name="lsq_filter_MagicYellow">Yellow</string>
+    <string name="lsq_filter_MagicBlue">Blue</string>
+    <string name="lsq_filter_MagicGreen">Green</string>
+    <string name="lsq_filter_MagicPurple">Purple</string>
+
+    <!-- Filters Definition -->
+    <string name="lsq_filter_SkinWhitening">Whiten</string>
+    <string name="lsq_filter_SkinTwiceMixed">Twice Mixed</string>
+    <string name="lsq_filter_SkinTwiceMixedSigma">Twice Mixed Sigma</string>
+    <string name="lsq_filter_SkinWhiteMixed">Whiten Mixed</string>
+    <string name="lsq_filter_SkinRGBSpace">RGB Space</string>
+    <string name="lsq_filter_SkinColorMixed">Color Mixed</string>
+    <string name="lsq_filter_BokehBlur">Blur</string>
+    <string name="lsq_filter_SenseOfAutumn">Autumn</string>
+    <string name="lsq_filter_Coloration">Coloration</string>
+    <string name="lsq_filter_Fluorescent">Fluorescent</string>
+    <string name="lsq_filter_Freshmorning">Morning</string>
+    <string name="lsq_filter_Holidaysunshine">Holiday</string>
+    <string name="lsq_filter_Purplemoon">Purple</string>
+    <string name="lsq_filter_Summersunshine">Summer</string>
+    <string name="lsq_filter_Wintersunshine">Winter</string>
+
+    <!-- Filters Definition skin -->
+    <string name="lsq_filter_set_smoothing">Smoothing</string>
+    <string name="lsq_filter_set_whitening">Whitening</string>
+    <string name="lsq_filter_set_blurSize">Blur Size</string>
+    <string name="lsq_filter_set_blurWeight">Blur Weight</string>
+    <string name="lsq_filter_set_skinColorThreshold">Skin Color</string>
+    <string name="lsq_filter_set_eyeSize">EyeSize</string>
+    <string name="lsq_filter_set_chinSize">ChinSize</string>
+    <string name="lsq_filter_set_retouchSize">Retouch</string>
+    <string name="lsq_filter_set_skinColorThresholdQuadraticMixture">Skin Color Mixture</string>
+    <string name="lsq_filter_set_distanceNormalizationFactor">Edge</string>
+    <string name="lsq_filter_set_blurSigma">Blur Sigma</string>
+    <string name="lsq_filter_set_mixied">Mixed</string>
+    <string name="lsq_filter_set_saturation">Saturation</string>
+    <string name="lsq_filter_set_contrast">Contrast</string>
+    <string name="lsq_filter_set_sharpness">Sharpness</string>
+    <string name="lsq_filter_set_highlights">Highlights</string>
+    <string name="lsq_filter_set_shadows">Shadows</string>
+    <string name="lsq_filter_set_temperature">Tone</string>
+    <string name="lsq_filter_set_skinColor">Skin</string>
+    <string name="lsq_filter_set_autumnColorThreshold">Autumn</string>
+    <string name="lsq_filter_set_hue">Hue</string>
+    <string name="lsq_filter_set_hueSpace">Hue Space</string>
+    <string name="lsq_filter_set_brightness">Brightness</string>
+    <string name="lsq_filter_set_exposure">Exposure</string>
+    <string name="lsq_filter_set_vignette">Vignette</string>
+    <string name="lsq_filter_set_aperture">Aperture</string>
+    <string name="lsq_filter_set_adjustment">Adjust</string>
+    <string name="lsq_filter_set_selective">Selective</string>
+    <string name="lsq_filter_set_linear">Linear</string>
+    <string name="lsq_filter_set_radial">Radial</string>
+
+    <!-- Filters Definition Bokeh -->
+    <string name="lsq_filter_set_radius">Radius</string>
+    <string name="lsq_filter_set_centerX">Center X</string>
+    <string name="lsq_filter_set_centerY">Center Y</string>
+    <string name="lsq_filter_set_excessive">Edge</string>
+    <string name="lsq_filter_set_maskAlpha">Mask</string>
+    <string name="lsq_filter_set_degree">Degree</string>
+    
+    <!-- Brush Definition -->
+    <string name="lsq_brush_Eraser">Eraser</string>
+    <string name="lsq_brush_Mosaic">Mosaic</string>
+    <string name="lsq_brush_OilPaint">OilPaint</string>
+    <string name="lsq_brush_Gouache">Gouache</string>
+    <string name="lsq_brush_WaterColor">WaterColor</string>
+    <string name="lsq_brush_ColorLead">ColorPen</string>
+    <string name="lsq_brush_MapleLeaf">Leaf</string>
+    
+    <string name="lsq_brush_remove_title">Remove Brush</string>
+    <string name="lsq_brush_remove_msg">Are you sure to remove the brush「%s」？</string>
+    
+    <!-- Brush Size Definition -->
+    <string name="lsq_brush_size_small">Small</string>
+    <string name="lsq_brush_size_medium">Medium</string>
+    <string name="lsq_brush_size_large">Large</string>
+    <string name="lsq_brush_size_label">%s</string>
+
+    <!-- network -->
+    <string name="lsq_network_request_error">Network request error</string>
+    <string name="lsq_network_request_return_error">Server response error</string>
+    <string name="lsq_network_connection_without">No network</string>
+    <string name="lsq_network_connection_interruption">Connection was interrupted, please check your settings</string>
+    <string name="lsq_network_connection_failed">Failed to connect to network</string>
+    <string name="lsq_network_connection_timeout">Network request timeout</string>
+    <string name="lsq_network_paser_data_failed">Failed to process data</string>
+
+</resources>

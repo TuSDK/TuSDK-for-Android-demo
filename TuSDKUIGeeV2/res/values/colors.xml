@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- color -->
+    <color name="lsq_color_white">#ffffff</color>
+    <color name="lsq_color_black">#000000</color>
+    <color name="lsq_color_red">#ff0000</color>
+    <color name="lsq_color_gray">#707070</color>
+    <color name="lsq_color_orange">#ff6633</color>
+    <color name="lsq_color_blue">#7297ff</color>
+    <color name="lsq_color_darkGray">#3e3a39</color>
+    <color name="lsq_color_transparent">#00000000</color>
+    
+    
+
+    <!-- alpha -->
+    <color name="lsq_alpha_black_66">#66000000</color>
+    <color name="lsq_alpha_black_B4">#B4000000</color>
+    <color name="lsq_alpha_black_CO">#C0000000</color>
+
+    <!-- split -->
+    <color name="lsq_split_alpha">#66000000</color>
+    <color name="lsq_split_bg">#d7d8dc</color>
+    <color name="lsq_split_cell">#FF3e3c41</color>
+    <color name="lsq_geev2_split_cell">#ffffff</color>
+
+    <!-- navigatorBar -->
+     <color name="lsq_geev2_navigator_bg">#ffffff</color>
+     <color name="lsq_navigator_bg">#25252b</color>
+    
+    <color name="lsq_navigator_title">#ffffff</color>
+    <color name="lsq_geev2_navigator_title">#323a39</color>
+    <color name="lsq_navigator_button_title">#ffffff</color>
+    <color name="lsq_navigator_button_right_title">#ff6633</color>
+    <color name="lsq_navigator_split">#66000000</color>
+
+    <!-- text -->
+    <color name="lsq_link_action">#287dfa</color>
+
+    <!-- actionsheet -->
+    <color name="lsq_actionsheet_mask_bg">#66000000</color>
+    <color name="lsq_actionsheet_title_color">#666666</color>
+    <color name="lsq_actionsheet_boutton_bg">#ddffffff</color>
+    <color name="lsq_actionsheet_boutton_bg_selected">#ddcccccc</color>
+    <color name="lsq_actionsheet_text_color">#ff287dfa</color>
+    <color name="lsq_actionsheet_text_stress">#fff6393f</color>
+
+    <!-- focus -->
+    <color name="lsq_focus_normal">#fff</color>
+    <color name="lsq_focus_succeed">#0bff45</color>
+    <color name="lsq_focus_failed">#0b72ff</color>
+    <color name="lsq_focus_face">#ffc000</color>
+
+    <!-- backgroud -->
+    <color name="lsq_geev2_background_default">#ededed</color>
+    <color name="lsq_geev2_background_default_cell">#ededed</color>
+    <color name="lsq_background_default_header">#B4262625</color>
+    <color name="lsq_background_album">#1e1c1f</color>
+    <color name="lsq_geev2_background_multi_album">#000000</color>
+    <color name="lsq_background_album_cell">#353338</color>
+    <color name="lsq_background_photo_cell">#2e2c30</color>
+    <color name="lsq_background_option_bar">#dddddd</color>
+    <color name="lsq_geev2_background_option_bar">#dddddd</color>
+    <color name="lsq_background_camera">#403e43</color>
+    <color name="lsq_geev2_background_camera">#ffffff</color>
+    <color name="lsq_background_camera_bar_alpha">#59403e43</color>
+    <color name="lsq_geev2_background_editor">#ededed</color>
+    <color name="lsq_background_editor_bottom_bar">#403e43</color>
+    <color name="lsq_geev2_background_editor_bottom_bar">#ffffff</color>
+	<color name="lsq_geev2_background_photo_camera_cell">#7297ff</color>
+	
+    <!-- text -->
+    <color name="lsq_text_group_header">#9fa0a4</color>
+	<color name="lsq_text_multi_album_preview_select">#FF6047</color>
+
+    <!-- seekbar -->
+    <color name="lsq_seekbar_drag_color">#3e3a39</color>
+    <color name="lsq_seekbar_view_color">#3e3a39</color>
+
+    <!-- sticker -->
+    <color name="lsq_geev2_sticker_title_color">#3e3a39</color>
+    <color name="lsq_geev2_sticker_title_selected_color">#7297ff</color>
+    <color name="lsq_geev2_sticker_title_selected_cursor_color">#7279ff</color>
+    <color name="lsq_geev2_choolse_sticker_background_cell">#d9d9d9</color>
+    
+    <!-- filter -->
+    <color name="lsq_geev2_filter_group_cell_selected_color">#807297ff</color>
+    <color name="lsq_geev2_filter_group_cell_online_bg_color">#cc717171</color>
+    <color name="lsq_geev2_filter_cell_selected_color">#807297ff</color>
+     <color name="lsq_geev2_filter_cell_title_bg_color">#7297ff</color>
+     <color name="lsq_geev2_filter_normal_cell_title_bg_color">#dddddd</color>
+    <color name="lsq_filter_group_remove_bg">#CCff6633</color>
+    <color name="lsq_filter_config_highlight">#ff6633</color>
+    <!-- geev2 -->
+    <color name="lsq_geev2_edit_filter_bar_color">#ffffff</color>
+    <color name="lsq_geev2_edit_filter_parameter_configView_color">#ccdddddd</color>
+        
+    
+    <!--  brush -->
+    <color name="lsq_geev2_brush_cell_selected_color">#807297ff</color>
+    <color name="lsq_geev2_brush__edit_bar_brush_thumb_color">#80000000</color>
+    <color name="lsq_geev2_brush_cell_title_bg_color">#7297ff</color>
+    
+    <!-- botoom bar text -->
+    <color name="lsq_text_bottombar_color">#3e3a39</color>
+    
+    <!-- edit -->
+    <color name="lsq_geev2_draftimage_cover_color">#CC7297ff</color>
+    
+</resources>

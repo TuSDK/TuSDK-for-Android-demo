@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.lasque.tusdk.geev2.impl.components.filter.TuEditFilterBarView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/lsq_filter_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        layout="@layout/tusdk_geev2_impl_component_widget_filter_title_view" />
+
+    <include
+        android:id="@+id/lsq_param_config_view"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_above="@+id/lsq_group_filter_bar_container"
+        layout="@layout/tusdk_geev2_impl_component_widget_parameter_config_view" />
+
+    <RelativeLayout
+           android:id="@+id/lsq_group_filter_bar_container"
+        android:layout_width="fill_parent"
+        android:layout_height="124dp" 
+        android:paddingRight="8dp"
+        android:background="@color/lsq_geev2_edit_filter_bar_color"
+        android:layout_alignParentBottom="true">
+        <include
+            android:id="@+id/lsq_group_filter_bar"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+        	android:layout_centerVertical="true"
+            layout="@layout/tusdk_geev2_impl_component_widget_filter_bar"
+            android:layout_marginBottom="22dp"/>
+    </RelativeLayout>
+
+</org.lasque.tusdk.geev2.impl.components.filter.TuEditFilterBarView>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.lasque.tusdk.geev2.impl.components.widget.sticker.StickerListHeader xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/lsq_geev2_background_default" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp" >
+
+        <TextView
+            android:id="@+id/lsq_titleLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="11dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:text="@string/lsq_text"
+            android:textColor="@color/lsq_geev2_sticker_title_color"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/lsq_rightLineView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/lsq_removebutton"
+            android:layout_toRightOf="@+id/lsq_titleLabel"
+            android:background="#ffffff" />
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+            android:id="@+id/lsq_removebutton"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/lsq_geev2_style_default_table_section_header_removel" />
+
+    </RelativeLayout>
+
+</org.lasque.tusdk.geev2.impl.components.widget.sticker.StickerListHeader>

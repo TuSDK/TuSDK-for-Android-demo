@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="lsq_sdk_name">TuSDK 塗圖</string>
+    <string name="lsq_exit_info">再按一次將退出應用</string>
+    <string name="lsq_text">TuSDK 塗圖</string>
+    <string name="lsq_reset">重置</string>
+    <string name="lsq_initing">正在初始化</string>
+    <string name="lsq_inited">初始化完成</string>
+
+    <!-- refreshListView -->
+    <string name="lsq_refresh_list_view_state_visible">下拉刷新</string>
+    <string name="lsq_refresh_list_view_state_hidden">加載完成</string>
+    <string name="lsq_refresh_list_view_state_triggered">釋放開始刷新</string>
+    <string name="lsq_refresh_list_view_state_loading">正在加載&#8230;</string>
+    <string name="lsq_refresh_list_view_state_lasttime">上次刷新時間：</string>
+    <string name="lsq_refresh_list_view_state_load_more">正在加載更多&#8230;</string>
+
+    <!-- Date -->
+    <string name="lsq_date_seconds_ago">秒前</string>
+    <string name="lsq_date_minutes_ago">分鐘前</string>
+    <string name="lsq_date_hours_ago">小時前</string>
+    <string name="lsq_date_month">月</string>
+    <string name="lsq_date_year">年</string>
+    <string name="lsq_date_today">今天</string>
+    <string name="lsq_date_formater">yyyy年M月d日</string>
+
+    <!-- nav -->
+    <string name="lsq_nav_cancel">取消</string>
+    <string name="lsq_nav_back">返回</string>
+    <string name="lsq_nav_more">更多</string>
+    <string name="lsq_nav_remove">刪除</string>
+    <string name="lsq_nav_complete">完成</string>
+
+    <!-- button -->
+    <string name="lsq_button_done">我知道了</string>
+    <string name="lsq_button_close">關閉</string>
+    <string name="lsq_button_setting">設置</string>
+    <string name="lsq_button_switch_camera">切換鏡頭</string>
+    <string name="lsq_button_flash">閃光燈:</string>
+    <string name="lsq_geev2_button_flash_model_off">關閉</string>
+    <string name="lsq_geev2_button_flash_model_auto">自動</string>
+    <string name="lsq_geev2_button_flash_model_open">開啓</string>
+
+    <!-- avatar -->
+    <string name="lsq_avatar_actionsheet_title">設置頭像</string>
+    <string name="lsq_avatar_actionsheet_cancel">取消</string>
+    <string name="lsq_avatar_actionsheet_camera">拍照</string>
+    <string name="lsq_avatar_actionsheet_album">從相冊選擇</string>
+
+    <!-- camera -->
+    <string name="lsq_carema_alert_title">無法開啓相機</string>
+    <string name="lsq_carema_no_device">您的設備沒有相機功能！</string>
+    <string name="lsq_carema_no_access">無法訪問系統相機，請在\r\n設置&#045;&#062;應用程序&#045;&#062;權限&#045;&#062;%1$s&#034; \r\n選中 相機</string>
+    <string name="lsq_carema_image_process">正在處理&#8230;</string>
+    <string name="lsq_carema_image_process_completed">處理完成</string>
+    <string name="lsq_carema_unsupport_camera2">您當前的系統版本小於5.0或硬件設備不能完整支持Camera2 API，無法開啟Camera2</string>
+      <!-- Geev2 2 -->
+    <string name="lsq_geev2_carema_reCapture">重拍</string>
+    <string name="lsq_geev2_carema_goedit">去美化</string>
+    
+    <!-- album -->
+    <string name="lsq_album_alert_title">無法訪問系統相冊</string>
+    <string name="lsq_album_no_access">無法訪問系統相冊，請在\r\n設置&#045;&#062;應用程序&#045;&#062;權限&#045;&#062;%1$s&#034; \r\n开启 存儲空間</string>
+    <string name="lsq_album_title">相簿</string>
+    <string name="lsq_album_total_format">%1$s 張照片</string>
+    <string name="lsq_album_empty">還沒有照片</string>
+    <string name="lsq_album_broken_msg">該照片文件已經被損壞</string>
+    <string name="lsq_album_empty_selection_msg">請至少選擇一張照片</string>
+    <string name="lsq_album_max_selection_msg">最多選擇 %d 張照片</string>
+    <string name="lsq_album_multi_preview_select">選擇</string>
+	<string name="lsq_album_multi_preview_done">完成</string>
+	  <!-- geev2 -->
+    <string name="lsq_album_continue">继续</string>
+    
+    
+    <!-- save -->
+    <string name="lsq_save_saveToTemp">正在處理&#8230;</string>
+    <string name="lsq_save_saveToTemp_completed">處理完成</string>
+    <string name="lsq_save_saveToTemp_failed">處理失敗</string>
+    <string name="lsq_save_saveToAlbum">正在保存到相冊&#8230;</string>
+    <string name="lsq_save_saveToAlbum_succeed">保存成功</string>
+    <string name="lsq_save_saveToAlbum_failed">保存到相冊失敗</string>
+    <string name="lsq_save_unsupport_storage_title">無法存儲文件</string>
+    <string name="lsq_save_not_found_sdcard">請插入SD Card</string>
+    <string name="lsq_save_insufficient_storage_space">存儲空間不足</string>
+
+    <!-- edit -->
+    <string name="lsq_edit_alert_title">沒有相關權限</string>
+    <string name="lsq_edit_no_access">沒有相關權限，請在\r\n設置&#045;&#062;應用程序&#045;&#062;權限&#045;&#062;%1$s&#034; \r\n開啟所需權限</string>
+    <string name="lsq_edit_button_complete">完成</string>
+    <string name="lsq_edit_loading">正在讀取&#8230;</string>
+    <string name="lsq_edit_filter_processing">正在處理&#8230;</string>
+    <string name="lsq_edit_processing">正在處理&#8230;</string>
+    <string name="lsq_edit_process_error">發生錯誤，請確認設備已聯網</string>
+    <string name="lsq_edit_process_adjust_color_error">設備未聯網，無法使用自動校色功能</string>
+    <string name="lsq_edit_process_skin_error">設備未聯網，無法使用一鍵美顏所有功能</string>
+    <string name="lsq_edit_process_error_no_face">未檢測到人臉</string>
+    <string name="lsq_edit_process_error_multi_face">檢測到多張人臉</string>
+    <string name="lsq_edit_process_error_no_face_access">人臉檢測請求失敗</string>
+    <string name="lsq_edit_step_prev">撤銷</string>
+    <string name="lsq_edit_step_next">重做</string>
+    <string name="lsq_edit_auto_adjust">自動校色</string>
+    <string name="lsq_edit_processed">處理完成</string>
+    <string name="lsq_edit_entry_filter">濾鏡</string>
+    <string name="lsq_edit_entry_cuter">裁切</string>
+    <string name="lsq_edit_entry_sticker">貼紙</string>
+    <string name="lsq_edit_entry_smudge">涂抹</string>
+    <string name="lsq_edit_entry_smudge_filter">模糊</string>
+    <string name="lsq_edit_cuter_ratio_orgin">原始</string>
+    <string name="lsq_edit_cuter_ratio_1_1">1:1</string>
+    <string name="lsq_edit_cuter_ratio_2_3">2:3</string>
+    <string name="lsq_edit_cuter_ratio_3_4">3:4</string>
+    <string name="lsq_edit_cuter_ratio_9_16">9:16</string>
+    <string name="lsq_edit_cuter_ratio_3_2">3:2</string>
+    <string name="lsq_edit_cuter_ratio_4_3">4:3</string>
+    <string name="lsq_edit_cuter_ratio_16_9">16:9</string>
+    <string name="lsq_edit_title">編輯</string>
+    <string name="lsq_edit_multiple_title">編輯</string>
+    <string name="lsq_edit_skin_title">美顏</string>
+    <string name="lsq_edit_holy_light">聖光</string>
+    
+        <!-- geev2 -->
+    <string name="lsq_edit_max_count_msg">一次最多編輯%d張圖片</string>
+    <string name="lsq_edit_trun">旋轉</string>
+    <string name="lsq_edit_trun_left">左轉</string>
+    <string name="lsq_edit_trun_right">右轉</string>
+    <string name="lsq_edit_horizontal">水平</string>
+    <string name="lsq_edit_vertical">垂直</string>
+    <string name="lsq_edit_pen_small">小號</string>
+    <string name="lsq_edit_pen_medium">中號</string>
+    <string name="lsq_edit_pen_large">大號</string>
+    <string name="lsq_edit_step_redo">重做</string>
+	<string name="lsq_edit_processing_index">正在處理第%1$d/%2$d張</string>
+    
+    <!-- sticker -->
+    <string name="lsq_sticker_title">貼紙</string>
+    <string name="lsq_geev2_sticker_cate_default">貼紙</string>
+    <string name="lsq_geev2_sticker_cate_watermark">水印</string>
+    <string name="lsq_geev2_sticker_cate_mood">心情</string>
+    <string name="lsq_sticker_cate_frame">相框</string>
+    <string name="lsq_sticker_loading">正在加載貼紙&#8230;</string>
+    <string name="lsq_sticker_load_unexsit">貼紙不存在，請換一個試試</string>
+    <string name="lsq_sticker_over_limit">OMG, 同時僅允許使用 %s 張貼紙</string>
+    <string name="lsq_sticker_total_format">%1$s 張貼紙</string>
+    <string name="lsq_sticker_empty">還沒有貼紙</string>
+    <string name="lsq_sticker_empty_msg">快去貼紙商店挑選海量貼紙</string>
+    <string name="lsq_sticker_1_1">怪咖營地4</string>
+    <string name="lsq_sticker_online_title">貼紙商店</string>
+    <string name="lsq_sticker_remove_title">刪除貼紙</string>
+    <string name="lsq_sticker_remove_msg">您是否需要刪除貼紙「%s」？</string>
+    <string name="lsq_sticker_cate_all">全部</string>
+    <string name="lsq_sticker_cate_history">常用</string>
+     <!-- geev2 -->
+     <string name="lsq_sticker_latest">最新下載</string>
+    <string name="lsq_sticker_click">點擊</string>
+    <string name="lsq_sticker_download_more">下載更多貼紙</string>
+    <string name="lsq_sticker_add">添加</string>
+    
+    <!-- format -->
+    <string name="las_date_format">yyyy年M月d日</string>
+
+    <!-- Week -->
+    <string name="las_week_Sun">週日</string>
+    <string name="las_week_Mon">週一</string>
+    <string name="las_week_Tue">週二</string>
+    <string name="las_week_Wed">週三</string>
+    <string name="las_week_Thu">週四</string>
+    <string name="las_week_Fri">週五</string>
+    <string name="las_week_Sat">週六</string>
+
+    <!-- FilterGroup -->
+    <string name="lsq_filter_group_Leica">萊卡</string>
+    <string name="lsq_filter_group_Lomo">LOMO</string>
+    <string name="lsq_filter_group_Food">美食</string>
+    <string name="lsq_filter_group_Enhance">增強</string>
+    <string name="lsq_filter_group_Glare">光效</string>
+    <string name="lsq_filter_group_Beauty">人像</string>
+    <string name="lsq_filter_group_Magic">魔法色</string>
+    <!-- Filters -->
+    <string name="lsq_filter_online_title">在線濾鏡</string>
+    <string name="lsq_filter_remove_title">刪除濾鏡</string>
+    <string name="lsq_filter_remove_msg">您是否需要刪除濾鏡「%s」？</string>
+    <string name="lsq_filter_Normal">無效果</string>
+    <string name="lsq_filter_Lomo">LOMO</string>
+    <string name="lsq_filter_Abao">阿寶</string>
+    <string name="lsq_filter_Nostalgic">懷舊</string>
+    <string name="lsq_filter_Artistic">藝術</string>
+    <string name="lsq_filter_Brilliant">燦爛</string>
+    <string name="lsq_filter_Cheerful">愉悅</string>
+    <string name="lsq_filter_Clear">清澈</string>
+    <string name="lsq_filter_Fade">褪色</string>
+    <string name="lsq_filter_Forest">森林</string>
+    <string name="lsq_filter_Gloss">光澤</string>
+    <string name="lsq_filter_Harmony">和諧</string>
+    <string name="lsq_filter_Instant">鮮豔</string>
+    <string name="lsq_filter_Lightup">明亮</string>
+    <string name="lsq_filter_Morning">清晨</string>
+    <string name="lsq_filter_Newborn">新生</string>
+    <string name="lsq_filter_Noir">黑白</string>
+    <string name="lsq_filter_Relaxed">輕鬆</string>
+    <string name="lsq_filter_Rough">粗獷</string>
+    <string name="lsq_filter_Thick">濃郁</string>
+    <string name="lsq_filter_Vintage">復古</string>
+    <string name="lsq_filter_Leica">萊卡</string>
+    <!-- GeeV2 2 -->
+    <string name="lsq_geev2_filter_collection">收藏</string>
+    <string name="lsq_geev2_filter_download">下載</string>
+    
+    
+    <!-- Beauty -->
+    <string name="lsq_filter_SkinNature">自然</string>
+    <string name="lsq_filter_SkinPink">粉嫩</string>
+    <string name="lsq_filter_SkinJelly">果凍</string>
+    <string name="lsq_filter_SkinNoir">黑白</string>
+    <string name="lsq_filter_SkinRuddy">紅潤</string>
+    <string name="lsq_filter_SkinPowder">蜜粉</string>
+    <string name="lsq_filter_SkinSugar">糖水色</string>
+
+    <!-- Magic -->
+    <string name="lsq_filter_MagicRed">妃紅</string>
+    <string name="lsq_filter_MagicYellow">檸檬</string>
+    <string name="lsq_filter_MagicBlue">深竹月</string>
+    <string name="lsq_filter_MagicGreen">沙綠</string>
+    <string name="lsq_filter_MagicPurple">雪紫</string>
+
+    <!-- Filters Definition -->
+    <string name="lsq_filter_SkinWhitening">美白</string>
+    <string name="lsq_filter_SkinTwiceMixed">雙混美膚</string>
+    <string name="lsq_filter_SkinTwiceMixedSigma">雙混加強</string>
+    <string name="lsq_filter_SkinWhiteMixed">雙混美白</string>
+    <string name="lsq_filter_SkinRGBSpace">空間美膚</string>
+    <string name="lsq_filter_SkinColorMixed">色混美膚</string>
+    <string name="lsq_filter_BokehBlur">模糊</string>
+    <string name="lsq_filter_SenseOfAutumn">秋意濃</string>
+    <string name="lsq_filter_Coloration">着色</string>
+    <string name="lsq_filter_Fluorescent">熒光</string>
+    <string name="lsq_filter_Freshmorning">清晨</string>
+    <string name="lsq_filter_Holidaysunshine">假日</string>
+    <string name="lsq_filter_Purplemoon">紫月亮</string>
+    <string name="lsq_filter_Summersunshine">夏日</string>
+    <string name="lsq_filter_Wintersunshine">冬日</string>
+
+    <!-- Filters Definition skin -->
+    <string name="lsq_filter_set_smoothing">潤滑</string>
+    <string name="lsq_filter_set_whitening">白皙</string>
+    <string name="lsq_filter_set_blurSize">強度</string>
+    <string name="lsq_filter_set_blurWeight">權重</string>
+    <string name="lsq_filter_set_skinColorThreshold">膚色</string>
+	<string name="lsq_filter_set_eyeSize">大眼</string>
+    <string name="lsq_filter_set_chinSize">瘦臉</string>
+    <string name="lsq_filter_set_retouchSize">一鍵美顏</string>
+    <string name="lsq_filter_set_skinColorThresholdQuadraticMixture">矩陣</string>
+    <string name="lsq_filter_set_distanceNormalizationFactor">邊緣</string>
+    <string name="lsq_filter_set_blurSigma">西格瑪</string>
+    <string name="lsq_filter_set_mixied">效果</string>
+    <string name="lsq_filter_set_saturation">飽和度</string>
+    <string name="lsq_filter_set_contrast">對比度</string>
+    <string name="lsq_filter_set_sharpness">銳化</string>
+    <string name="lsq_filter_set_highlights">高光</string>
+    <string name="lsq_filter_set_shadows">陰影</string>
+    <string name="lsq_filter_set_temperature">色溫</string>
+    <string name="lsq_filter_set_skinColor">膚色</string>
+    <string name="lsq_filter_set_autumnColorThreshold">秋意</string>
+    <string name="lsq_filter_set_hue">色相</string>
+    <string name="lsq_filter_set_hueSpace">範圍</string>
+    <string name="lsq_filter_set_brightness">亮度</string>
+    <string name="lsq_filter_set_exposure">曝光度</string>
+    <string name="lsq_filter_set_vignette">暗角</string>
+    <string name="lsq_filter_set_aperture">光圈</string>
+    <string name="lsq_filter_set_adjustment">調整</string>
+    <string name="lsq_filter_set_selective">選區</string>
+    <string name="lsq_filter_set_linear">線性</string>
+    <string name="lsq_filter_set_radial">徑向</string>
+        <!-- geev2 -->
+    <string name="lsq_filter_set_holy_light">聖光</string>
+    
+    
+
+    <!-- Filters Definition Bokeh -->
+    <string name="lsq_filter_set_radius">內半徑</string>
+    <string name="lsq_filter_set_centerX">中心X</string>
+    <string name="lsq_filter_set_centerY">中心Y</string>
+    <string name="lsq_filter_set_excessive">邊緣</string>
+    <string name="lsq_filter_set_maskAlpha">強調</string>
+    <string name="lsq_filter_set_degree">角度</string>
+    
+    <!-- Brush Definition -->
+    <string name="lsq_brush_Eraser">橡皮擦</string>
+    <string name="lsq_brush_Mosaic">馬賽克</string>
+    <string name="lsq_brush_OilPaint">油畫</string>
+    <string name="lsq_brush_Gouache">水粉</string>
+    <string name="lsq_brush_WaterColor">水彩</string>
+    <string name="lsq_brush_ColorLead">彩鉛</string>
+    <string name="lsq_brush_MapleLeaf">葉子</string>
+     <!-- geev2 -->
+    <string name="lsq_brush_Strokes">筆觸</string>
+    
+    
+    <string name="lsq_brush_remove_title">刪除筆刷</string>
+    <string name="lsq_brush_remove_msg">您是否需要刪除筆刷「%s」？</string>
+    
+    <!-- Brush Size Definition -->
+    <string name="lsq_brush_size_small">细</string>
+    <string name="lsq_brush_size_medium">中</string>
+    <string name="lsq_brush_size_large">粗</string>
+    <string name="lsq_brush_size_label">笔尖：%s</string>
+
+    <!-- network -->
+    <string name="lsq_network_request_error">服務器請求錯誤</string>
+    <string name="lsq_network_request_return_error">服務器返回錯誤</string>
+    <string name="lsq_network_connection_without">設備無網絡</string>
+    <string name="lsq_network_connection_interruption">網絡連接中斷，請檢查網絡設置</string>
+    <string name="lsq_network_connection_failed">網絡連接失敗</string>
+    <string name="lsq_network_connection_timeout">服務器連接超時</string>
+    <string name="lsq_network_paser_data_failed">數據處理失敗</string>
+
+</resources>

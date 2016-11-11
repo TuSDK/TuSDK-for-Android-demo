@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.lasque.tusdk.geev2.impl.components.widget.filter.FilterTitleView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/lsq_filter_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:text="@string/lsq_text"
+        android:textColor="@color/lsq_color_white"
+        android:textSize="42sp" />
+
+    <TextView
+        android:id="@+id/lsq_filter_group_title"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:text="@string/lsq_text"
+        android:textColor="@color/lsq_color_white"
+        android:textSize="14sp" />
+
+</org.lasque.tusdk.geev2.impl.components.widget.filter.FilterTitleView>

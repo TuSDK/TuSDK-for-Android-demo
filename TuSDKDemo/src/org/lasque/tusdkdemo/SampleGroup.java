@@ -22,6 +22,11 @@ public class SampleGroup
 	public enum GroupType
 	{
 		/**
+		 * Gee主题
+		 */
+		GeeTheme,
+		
+		/**
 		 * 套件
 		 */
 		SuiteSample,
@@ -78,7 +83,9 @@ public class SampleGroup
 		// 范例分组头部信息列表
 		headers = new ArrayList<GroupHeader>();
 		
-		
+		// Gee主题
+		headers.add(new GroupHeader(GroupType.GeeTheme, R.string.sample_gee_theme));
+			
 		// 套件
 		headers.add(new GroupHeader(GroupType.SuiteSample, R.string.sample_group_suite));
 				

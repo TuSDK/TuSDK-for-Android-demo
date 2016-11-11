@@ -9,6 +9,10 @@
  */
 package org.lasque.tusdkdemo;
 
+import android.content.Intent;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
+
 import org.lasque.tusdk.core.TuSdk;
 import org.lasque.tusdk.core.TuSdkContext;
 import org.lasque.tusdk.core.secret.StatisticsManger;
@@ -36,13 +40,10 @@ import org.lasque.tusdkdemo.examples.suite.EditAvatarComponentSample;
 import org.lasque.tusdkdemo.examples.suite.EditMultipleComponentSample;
 import org.lasque.tusdkdemo.examples.ui.CustomizedCameraComponentSample;
 import org.lasque.tusdkdemo.examples.ui.CustomizedEditComponentSample;
+import org.lasque.tusdkdemo.theme.geev2.RichEditComponentSample;
 import org.lasque.tusdkdemo.view.DemoListView;
 import org.lasque.tusdkdemo.view.DemoListView.DemoListItemAction;
 import org.lasque.tusdkdemo.view.DemoListView.DemoListViewDelegate;
-
-import android.content.Intent;
-import android.view.GestureDetector;
-import android.view.MotionEvent;
 
 /**
  * @author Clear
@@ -106,6 +107,10 @@ public class TuComponentListActivity extends TuFragmentActivity implements TuSdk
 
 		// 范例分组
 		SampleGroup group = new SampleGroup();
+		
+		// Gee主题范例
+		group.appendSample(new RichEditComponentSample());
+		
 		// 相机组件范例
 		group.appendSample(new CameraComponentSample());
 		// 多功能图片编辑组件范例

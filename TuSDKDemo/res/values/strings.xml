@@ -1,22 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <resources>
-
     <string name="app_name">TuSDK 涂图</string>
     <string name="filter_toggle_title">滤镜</string>
-    
     <!-- Nav label -->
     <string name="component_camera">特效相机</string>
     <string name="component_editor">照片美化</string>
     <string name="component_list">开发套件</string>
-
     <!-- sample group -->
+    <string name="sample_gee_theme">官方推荐</string>
     <string name="sample_group_suite">功能套件</string>
     <string name="sample_group_comp">常用组件</string>
     <string name="sample_group_examples">组件用法示例</string>
     <string name="sample_group_extend">自定义界面示例</string>
     <string name="sample_group_define">API 使用示例</string>
-
     <!-- samples -->
+    <string name="sample_GeeV2Theme">GeeV2主题套件</string>
     <string name="sample_EditAndCutComponent">裁切 + 滤镜组件</string>
     <string name="sample_EditAvatarComponent">头像设置组件</string>
     <string name="sample_EditAdvancedComponent">裁切 + 滤镜 + 贴纸组件</string>
@@ -25,23 +23,18 @@
     <string name="sample_AlbumMultipleComponent">多选相册组件</string>
     <string name="sample_CameraComponent">相机组件</string>
     <string name="sample_GifComponent">GIF 组件</string>
-    
     <string name="sample_comp_CameraAndEditor">拍照 + 编辑示例</string>
     <string name="sample_comp_SelfishCamera">美颜相机</string>
     <string name="sample_comp_FilterComponent">滤镜组件示例</string>
     <string name="sample_comp_StickerComponent">贴纸组件示例</string>
     <string name="sample_comp_BlurComponent">模糊组件示例</string>
-    
     <string name="sample_ui_EditComponent">裁切组件自定义界面</string>
     <string name="sample_ui_CameraBase">相机界面自定义</string>
-    
     <string name="sample_api_CameraBase">个性化相机示例 (仅供参考)</string>
     <string name="sample_api_Camera1Base">底层相机自定义 (camera)</string>
     <string name="sample_api_Camera2Base">底层相机自定义 (camera2)</string>
-    
     <!-- face detection -->
     <string name="lsq_face_detection_title">人脸检测</string>
     <string name="sample_api_face_detection_image">人脸检测 (图片)</string>
     <string name="sample_api_face_detection_camera">人脸检测 (视频)</string>
-
 </resources>

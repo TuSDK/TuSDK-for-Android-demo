@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lsq_geev2_background_editor" >
+
+    <RelativeLayout
+        android:id="@+id/lsq_bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/lsq_geev2_background_editor_bottom_bar" >
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+            android:id="@+id/lsq_bar_cancelButton"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:scaleType="center"
+            android:src="@drawable/lsq_geev2_style_default_edit_button_cancel" />
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+            android:id="@+id/lsq_bar_completeButton"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:scaleType="center"
+            android:src="@drawable/lsq_geev2_style_default_edit_button_completed" />
+    </RelativeLayout>
+
+    <org.lasque.tusdk.impl.components.widget.smudge.SmudgeView
+        android:id="@+id/lsq_smudgeView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lsq_bar_bottomBar_container"
+        android:layout_below="@+id/lsq_bottomBar"
+        android:background="@color/lsq_geev2_background_editor" />
+
+    <org.lasque.tusdk.impl.components.widget.smudge.TuBrushSizeAnimView
+        android:id="@+id/lsq_size_anim_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lsq_bar_bottomBar_container" />
+
+
+    <LinearLayout
+        android:id="@+id/lsq_stepwrap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lsq_bar_bottomBar_container"
+        android:layout_marginBottom="13dp"
+        android:orientation="horizontal" >
+
+        <!-- 撤销 -->
+
+        <org.lasque.tusdk.core.view.TuSdkImageView
+            android:id="@+id/lsq_bar_undoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp"
+            android:background="@drawable/lsq_geev2_oval_shadow_drawable"
+            android:scaleType="center"
+            android:src="@drawable/lsq_geev2_style_default_edit_undo" />
+
+        <!-- 重做 -->
+
+        <org.lasque.tusdk.core.view.TuSdkImageView
+            android:id="@+id/lsq_bar_redoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:background="@drawable/lsq_geev2_oval_shadow_drawable"
+            android:src="@drawable/lsq_geev2_style_default_edit_redo" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lsq_bar_bottomBar_container"
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lsq_geev2_background_editor_bottom_bar" >
+
+        <LinearLayout
+            android:id="@+id/lsq_brush_bar_size_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <org.lasque.tusdk.core.view.TuSdkImageView
+                android:id="@+id/lsq_small_brush_size_btn"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:padding="3dp"
+                android:src="@drawable/lsq_geev2_brush_size_bg"/>
+
+            <org.lasque.tusdk.core.view.TuSdkImageView
+                android:id="@+id/lsq_medium_brush_size_btn"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="32dp"
+                android:background="@drawable/lsq_geev2_brush_size_bg" />
+
+            <org.lasque.tusdk.core.view.TuSdkImageView
+                android:id="@+id/lsq_large_brush_size_btn"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="32dp"
+                android:src="@drawable/lsq_geev2_brush_size_bg" />
+
+            <org.lasque.tusdk.core.view.TuSdkImageView
+                android:id="@+id/lsq_super_large_brush_size_btn"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="32dp"
+                android:src="@drawable/lsq_geev2_brush_size_bg" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/lsq_brush_bar"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            layout="@layout/tusdk_geev2_impl_component_widget_brush_bar_view" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lsq_bar_bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lsq_geev2_background_editor_bottom_bar"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:visibility="gone" >
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawablePadding="4dp"
+            android:drawableTop="@drawable/lsq_geev2_style_default_edit_undo"
+            android:text="@string/lsq_edit_step_prev"
+            android:textColor="@color/lsq_text_bottombar_color"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawablePadding="4dp"
+            android:drawableTop="@drawable/lsq_geev2_style_default_edit_redo"
+            android:text="@string/lsq_edit_step_redo"
+            android:textColor="@color/lsq_text_bottombar_color"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/lsq_brush_brushWrapView"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <org.lasque.tusdk.core.view.TuSdkImageView
+                android:id="@+id/lsq_brushThumbImageView"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+                android:id="@+id/lsq_brush_brushButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:text="@string/lsq_brush_Strokes"
+                android:textColor="@color/lsq_text_bottombar_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+            android:id="@+id/lsq_brush_eraserButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawablePadding="4dp"
+            android:drawableTop="@drawable/lsq_geev2_style_default_brush_eraser"
+            android:text="@string/lsq_brush_Eraser"
+            android:textColor="@color/lsq_text_bottombar_color"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

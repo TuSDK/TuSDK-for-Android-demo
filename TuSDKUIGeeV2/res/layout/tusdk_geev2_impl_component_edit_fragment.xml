@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lsq_geev2_background_editor"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/lsq_config_bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/lsq_geev2_background_editor_bottom_bar"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp" >
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+            android:id="@+id/lsq_editFragmentCancelButton"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:scaleType="center"
+            android:src="@drawable/lsq_geev2_style_default_edit_button_cancel" />
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+            android:id="@+id/lsq_editFragmentCompleteButton"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:scaleType="center"
+            android:src="@drawable/lsq_geev2_style_default_edit_button_completed" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lsq_editFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <!-- 底部图片处理功能列表 -->
+
+    <LinearLayout
+        android:id="@+id/lsq_actions_wrapview"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="@color/lsq_geev2_background_editor_bottom_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp" />
+
+</LinearLayout>

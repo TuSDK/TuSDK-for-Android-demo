@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lsq_geev2_background_editor" >
+
+    <!-- 底部图片处理功能列表 -->
+
+    <HorizontalScrollView
+        android:id="@+id/lsq_bar_bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lsq_geev2_background_editor_bottom_bar"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/lsq_actions_wrapview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="34dp"
+            android:paddingTop="40dp" >
+                   <!-- android:paddingLeft="30dp"
+            android:paddingRight="30dp" -->
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- 当前图片 -->
+
+    <LinearLayout
+        android:id="@+id/lsq_imageViewWrap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lsq_bar_bottomBar"
+        android:layout_below="@+id/lsq_topBar"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/lsq_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+
+    <!-- 底部导航栏 -->
+
+    <LinearLayout
+        android:id="@+id/lsq_topBar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/lsq_geev2_background_editor_bottom_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp" >
+        <!-- 取消按钮 -->
+        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+            android:id="@+id/lsq_cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@drawable/lsq_geev2_style_default_btn_back_normal" />
+        <!-- 图片列表 -->
+        <HorizontalScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scrollbars="none" >
+            <LinearLayout
+                android:id="@+id/lsq_images_wrapView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"/>
+        </HorizontalScrollView>
+
+        <!-- 确认按钮 -->
+        <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+            android:id="@+id/lsq_doneButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lsq_nav_complete"
+            android:textColor="@color/lsq_color_darkGray"
+            android:layout_marginLeft="19dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lsq_stepwrap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lsq_bar_bottomBar"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal" >
+
+        <!-- 撤销 -->
+        <org.lasque.tusdk.core.view.TuSdkImageView
+            android:id="@+id/lsq_step_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="21dp"
+            android:scaleType="center"
+            android:background="@drawable/lsq_geev2_oval_shadow_drawable"
+            android:src="@drawable/lsq_geev2_style_default_edit_undo" />
+
+        <!-- 重做 -->
+        <org.lasque.tusdk.core.view.TuSdkImageView
+            android:id="@+id/lsq_step_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="28dp"
+            android:background="@drawable/lsq_geev2_oval_shadow_drawable"
+            android:src="@drawable/lsq_geev2_style_default_edit_redo" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <!-- 自动校色 -->
+        <org.lasque.tusdk.core.view.TuSdkImageView
+            android:id="@+id/lsq_auto_adjust"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="21dp"
+            android:background="@drawable/lsq_geev2_oval_shadow_drawable"
+            android:src="@drawable/lsq_geev2_style_default_edit_auto_adjust" />
+    </LinearLayout>
+
+</RelativeLayout>
