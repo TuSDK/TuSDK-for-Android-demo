@@ -9,9 +9,6 @@
  */
 package org.lasque.tusdkdemo;
 
-import android.content.Intent;
-import android.view.View;
-
 import org.lasque.tusdk.core.TuSdk;
 import org.lasque.tusdk.core.secret.StatisticsManger;
 import org.lasque.tusdk.core.seles.tusdk.FilterManager;
@@ -19,7 +16,10 @@ import org.lasque.tusdk.core.seles.tusdk.FilterManager.FilterManagerDelegate;
 import org.lasque.tusdk.impl.activity.TuFragmentActivity;
 import org.lasque.tusdk.modules.components.ComponentActType;
 import org.lasque.tusdkdemo.examples.suite.CameraComponentSample;
-import org.lasque.tusdkdemo.examples.suite.EditMultipleComponentSample;
+import org.lasque.tusdkdemo.theme.geev2.RichEditComponentSample;
+
+import android.content.Intent;
+import android.view.View;
 
 /**
  * @author Clear
@@ -132,7 +132,7 @@ public class DemoEntryActivity extends TuFragmentActivity
 	/** 打开多功能编辑组件 */
 	private void showEditorComponent()
 	{
-		new EditMultipleComponentSample().showSample(this);
+		new RichEditComponentSample().showSample(this);
 	}
 
 	/** 显示组件列表页面 */

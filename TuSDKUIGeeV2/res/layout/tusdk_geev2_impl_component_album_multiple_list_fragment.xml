@@ -61,6 +61,7 @@
             android:clickable="false"
             android:text="0"
             android:textColor="#ffffff"
+            android:visibility="gone"
             android:textSize="12sp"
             android:textStyle="bold" />
     </org.lasque.tusdk.impl.view.widget.TuNavigatorBar>

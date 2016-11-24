@@ -62,7 +62,6 @@ public class RichEditComponentSample extends SampleBase implements TuSdkComponen
 		// 设置编辑时是否支持追加图片 默认 true
 		// comp.componentOption().editMultipleComponentOption().setEnableAppendImage(true);
 
-
 		// 操作完成后是否自动关闭页面
 		comp.setAutoDismissWhenCompleted(true)
 		// 显示组件
@@ -77,13 +76,14 @@ public class RichEditComponentSample extends SampleBase implements TuSdkComponen
 	{
 		TLog.d("PackageComponentSample onComponentFinished: %s | %s", result.images, error);
 		
-//		for (ImageSqlInfo info : result.images)
-//		{
-//			// 1.通过ImageSqlInfo生成Bitmap
-//			Bitmap mImage = BitmapHelper.getBitmap(info, true, new TuSdkSize(100, 100)); 
-//
-//			// 2.通过文件获取Bitmap
-//			File file = new File(info.path);
-//		}
+		// for (ImageSqlInfo info : result.images)
+		// {
+		// 	   // 1. 将编辑结果通过 ImageSqlInfo 生成 Bitmap
+		// 	   Bitmap mImage = BitmapHelper.getBitmap(info, true, new TuSdkSize(100, 100)); 
+		//
+		// 	   // 2. 将编辑结果通过 File 生成  Bitmap
+		// 	   File file = new File(info.path);
+		//     Bitmap mImage = BitmapHelper.getBitmap(file, true);
+		// }
 	}
 }

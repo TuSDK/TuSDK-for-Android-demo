@@ -29,21 +29,14 @@
     </HorizontalScrollView>
 
     <!-- 当前图片 -->
-
-    <LinearLayout
-        android:id="@+id/lsq_imageViewWrap"
+    <org.lasque.tusdk.geev2.impl.components.widget.view.TuViewPager
+        android:id="@+id/lsq_viewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/lsq_bar_bottomBar"
         android:layout_below="@+id/lsq_topBar"
-        android:orientation="vertical" >
-
-        <ImageView
-            android:id="@+id/lsq_imageView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="fitCenter" />
-    </LinearLayout>
+      android:background="@color/lsq_geev2_background_editor"  >
+    </org.lasque.tusdk.geev2.impl.components.widget.view.TuViewPager>
 
     <!-- 底部导航栏 -->
 
