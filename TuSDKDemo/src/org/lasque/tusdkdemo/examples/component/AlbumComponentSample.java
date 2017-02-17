@@ -11,6 +11,7 @@ package org.lasque.tusdkdemo.examples.component;
 
 import org.lasque.tusdk.TuSdkGeeV1;
 import org.lasque.tusdk.core.TuSdkResult;
+import org.lasque.tusdk.core.struct.TuSdkSize;
 import org.lasque.tusdk.core.utils.TLog;
 import org.lasque.tusdk.impl.activity.TuFragment;
 import org.lasque.tusdk.impl.components.TuAlbumComponent;
@@ -62,6 +63,9 @@ public class AlbumComponentSample extends SampleBase
 		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/album/TuPhotoListOption.html
 		// comp.componentOption().photoListOption()
 
+		// 设置选择照片的尺寸限制 默认：CGSize(8000,8000)
+//		comp.componentOption().photoListOption().setMaxSelectionImageSize(new TuSdkSize(8000,8000));
+		
 		// 在组件执行完成后自动关闭组件
 		comp.setAutoDismissWhenCompleted(true)
 		// 显示组件

@@ -14,6 +14,7 @@ import org.lasque.tusdk.core.TuSdkResult;
 import org.lasque.tusdk.core.struct.TuSdkSize;
 import org.lasque.tusdk.core.utils.TLog;
 import org.lasque.tusdk.impl.activity.TuFragment;
+import org.lasque.tusdk.impl.components.TuAlbumComponent;
 import org.lasque.tusdk.impl.components.edit.TuEditTurnAndCutFragment;
 import org.lasque.tusdk.impl.components.edit.TuEditTurnAndCutFragment.TuEditTurnAndCutFragmentDelegate;
 import org.lasque.tusdk.impl.components.edit.TuEditTurnAndCutOption;
@@ -62,14 +63,20 @@ public class EditAndCutComponentSample extends SampleBase implements TuEditTurnA
 		this.componentHelper = new TuSdkHelperComponent(activity);
 
 		// 开启相册选择照片
-		TuSdkGeeV1.albumCommponent(activity, new TuSdkComponentDelegate()
+		TuAlbumComponent component = TuSdkGeeV1.albumCommponent(activity, new TuSdkComponentDelegate()
 		{
 			@Override
 			public void onComponentFinished(TuSdkResult result, Error error, TuFragment lastFragment)
 			{
 				openTuEditTurnAndCut(result, error, lastFragment);
 			}
-		}).showComponent();
+		});
+		
+		
+		// 设置最大支持的图片尺寸 默认：8000 * 8000
+//		 component.componentOption().photoListOption().setMaxSelectionImageSize(new TuSdkSize(8000, 8000));
+		
+		 component.showComponent();
 	}
 
 	/**

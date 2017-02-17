@@ -104,11 +104,11 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="TuSDKUIGeeV2" exported="" />
     <orderEntry type="module" module-name="TuSDKUIDefault" exported="" />
-    <orderEntry type="library" exported="" name="TuSDKUIGeeV2-1.1.1" level="project" />
+    <orderEntry type="library" exported="" name="TuSDKUIGeeV2-1.1.2" level="project" />
     <orderEntry type="library" exported="" name="android-support-v7-recyclerview" level="project" />
+    <orderEntry type="library" exported="" name="TuSDKGee-2.0.2" level="project" />
     <orderEntry type="library" exported="" name="android-support-v4-23.1.2" level="project" />
-    <orderEntry type="library" exported="" name="TuSDKGee-2.0.1" level="project" />
+    <orderEntry type="library" exported="" name="TuSDKCore-2.6.3" level="project" />
     <orderEntry type="library" exported="" name="universal-image-loader-1.9.4" level="project" />
-    <orderEntry type="library" exported="" name="TuSDKCore-2.6.2" level="project" />
   </component>
 </module>

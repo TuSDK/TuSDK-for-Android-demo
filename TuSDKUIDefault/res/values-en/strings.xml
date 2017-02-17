@@ -67,7 +67,9 @@
     <string name="lsq_album_max_selection_msg"> %d photos have been selected already</string>
 	<string name="lsq_album_multi_preview_select">Selected</string>
 	<string name="lsq_album_multi_preview_done">Done</string>
-
+	<string name="lsq_album_image_size_limited">More than %1$d*%2$d pictures are not supported</string>
+    
+	
     <!-- save -->
     <string name="lsq_save_saveToTemp">Processing&#8230;</string>
     <string name="lsq_save_saveToTemp_completed">Process completed</string>

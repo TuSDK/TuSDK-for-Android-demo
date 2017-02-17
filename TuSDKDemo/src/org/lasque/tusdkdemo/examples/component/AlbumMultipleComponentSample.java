@@ -11,6 +11,7 @@ package org.lasque.tusdkdemo.examples.component;
 
 import org.lasque.tusdk.TuSdkGeeV1;
 import org.lasque.tusdk.core.TuSdkResult;
+import org.lasque.tusdk.core.struct.TuSdkSize;
 import org.lasque.tusdk.core.utils.TLog;
 import org.lasque.tusdk.impl.activity.TuFragment;
 import org.lasque.tusdk.impl.components.TuAlbumMultipleComponent;
@@ -73,7 +74,14 @@ public class AlbumMultipleComponentSample extends SampleBase
 
 		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/camera/TuCameraOption.html
 		// comp.componentOption().cameraOption()
+		
+		// 设置相册照片排序方式
+		//comp.componentOption().albumListOption().setPhotosSortDescriptor(PhotoSortDescriptor.Date_Modified);
+		
+		// 设置最大支持的图片尺寸 默认：8000 * 8000
+//		 comp.componentOption().albumListOption().setMaxSelectionImageSize(new TuSdkSize(8000, 8000));
 
+		
 		// 在组件执行完成后自动关闭组件
 		comp.setAutoDismissWhenCompleted(true)
 		// 显示组件

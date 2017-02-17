@@ -10,6 +10,7 @@
 package org.lasque.tusdkdemo.theme.geev2;
 
 import org.lasque.tusdk.core.TuSdkResult;
+import org.lasque.tusdk.core.struct.TuSdkSize;
 import org.lasque.tusdk.core.utils.TLog;
 import org.lasque.tusdk.geev2.TuSdkGeeV2;
 import org.lasque.tusdk.geev2.impl.components.TuRichEditComponent;
@@ -61,6 +62,12 @@ public class RichEditComponentSample extends SampleBase implements TuSdkComponen
 		
 		// 设置编辑时是否支持追加图片 默认 true
 		// comp.componentOption().editMultipleComponentOption().setEnableAppendImage(true);
+		
+		// 设置照片排序方式
+		// comp.componentOption().albumMultipleComponentOption().albumListOption().setPhotosSortDescriptor(PhotoSortDescriptor.Date_Added);
+		
+		// 设置最大支持的图片尺寸 默认：8000 * 8000
+//		 comp.componentOption().albumMultipleComponentOption().albumListOption().setMaxSelectionImageSize(new TuSdkSize(8000, 8000));
 
 		// 操作完成后是否自动关闭页面
 		comp.setAutoDismissWhenCompleted(true)

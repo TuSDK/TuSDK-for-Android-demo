@@ -11,8 +11,10 @@ package org.lasque.tusdkdemo.examples.suite;
 
 import org.lasque.tusdk.TuSdkGeeV1;
 import org.lasque.tusdk.core.TuSdkResult;
+import org.lasque.tusdk.core.struct.TuSdkSize;
 import org.lasque.tusdk.core.utils.TLog;
 import org.lasque.tusdk.impl.activity.TuFragment;
+import org.lasque.tusdk.impl.components.TuAlbumMultipleComponent;
 import org.lasque.tusdk.impl.components.TuEditComponent;
 import org.lasque.tusdk.modules.components.TuSdkComponent.TuSdkComponentDelegate;
 import org.lasque.tusdk.modules.components.TuSdkHelperComponent;
@@ -58,14 +60,21 @@ public class EditAdvancedComponentSample extends SampleBase
 		// see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/base/TuSdkHelperComponent.html
 		this.componentHelper = new TuSdkHelperComponent(activity);
 
-		TuSdkGeeV1.albumMultipleCommponent(activity, new TuSdkComponentDelegate()
+		TuAlbumMultipleComponent component = TuSdkGeeV1.albumMultipleCommponent(activity, new TuSdkComponentDelegate()
 		{
 			@Override
 			public void onComponentFinished(TuSdkResult result, Error error, TuFragment lastFragment)
 			{
 				openEditAdvanced(result, error, lastFragment);
 			}
-		}).showComponent();
+		});
+		
+		// 设置相册照片排序方式
+		// component.componentOption().albumListOption().setPhotosSortDescriptor(PhotoSortDescriptor.Date_Modified);
+		// 设置最大支持的图片尺寸 默认：8000 * 8000
+		// component.componentOption().albumListOption().setMaxSelectionImageSize(new TuSdkSize(8000, 8000));
+		
+		component.showComponent();
 	}
 
 	/** 开启裁切+滤镜+贴纸组件 */

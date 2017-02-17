@@ -67,7 +67,8 @@
     <string name="lsq_album_max_selection_msg">最多选择 %d 张照片</string>
     <string name="lsq_album_multi_preview_select">选择</string>
     <string name="lsq_album_multi_preview_done">完成</string>
-
+    <string name="lsq_album_image_size_limited">暂不支持大于 %1$d*%2$d 的图片</string>
+    
     <!-- save -->
     <string name="lsq_save_saveToTemp">正在处理&#8230;</string>
     <string name="lsq_save_saveToTemp_completed">处理完成</string>

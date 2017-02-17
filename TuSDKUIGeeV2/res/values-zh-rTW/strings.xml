@@ -70,6 +70,9 @@
     <string name="lsq_album_max_selection_msg">最多選擇 %d 張照片</string>
     <string name="lsq_album_multi_preview_select">選擇</string>
 	<string name="lsq_album_multi_preview_done">完成</string>
+	<string name="lsq_album_image_size_limited">暫不支持大於 %1$d*%2$d 的圖片</string>
+    
+	
 	  <!-- geev2 -->
     <string name="lsq_album_continue">继续</string>
     
