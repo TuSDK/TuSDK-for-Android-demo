@@ -264,6 +264,7 @@
     <string name="lsq_filter_set_distanceNormalizationFactor">边缘</string>
     <string name="lsq_filter_set_blurSigma">西格玛</string>
     <string name="lsq_filter_set_mixied">效果</string>
+    <string name="lsq_filter_set_texture">纹理</string>
     <string name="lsq_filter_set_saturation">饱和度</string>
     <string name="lsq_filter_set_contrast">对比度</string>
     <string name="lsq_filter_set_sharpness">锐化</string>

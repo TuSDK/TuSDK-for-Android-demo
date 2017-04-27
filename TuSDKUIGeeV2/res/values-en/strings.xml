@@ -256,6 +256,7 @@
     <string name="lsq_filter_set_distanceNormalizationFactor">Edge</string>
     <string name="lsq_filter_set_blurSigma">Blur Sigma</string>
     <string name="lsq_filter_set_mixied">Mixed</string>
+    <string name="lsq_filter_set_texture">Texture</string>
     <string name="lsq_filter_set_saturation">Saturation</string>
     <string name="lsq_filter_set_contrast">Contrast</string>
     <string name="lsq_filter_set_sharpness">Sharpness</string>

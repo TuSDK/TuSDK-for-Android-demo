@@ -10,7 +10,6 @@
 package org.lasque.tusdkdemo.theme.geev2;
 
 import org.lasque.tusdk.core.TuSdkResult;
-import org.lasque.tusdk.core.struct.TuSdkSize;
 import org.lasque.tusdk.core.utils.TLog;
 import org.lasque.tusdk.geev2.TuSdkGeeV2;
 import org.lasque.tusdk.geev2.impl.components.TuRichEditComponent;
@@ -48,14 +47,25 @@ public class RichEditComponentSample extends SampleBase implements TuSdkComponen
 		// 相机组件配置
 		// 设置拍照后是否预览图片 默认 true
 		// comp.componentOption().cameraOption().setEnablePreview(true);
-
+       
 		// 多选相册组件配置
 		// 设置相册最大选择数量
 		comp.componentOption().albumMultipleComponentOption().albumListOption().setMaxSelection(9);
 		
+		// 设置水印选项 (默认为空，如果设置不为空，则输出的图片上将带有水印)
+		// Bitmap bitmap = BitmapHelper.getBitmapFormRaw(activity, R.raw.sample_watermark); 
+        // TuSdkWaterMarkOption option = new TuSdkWaterMarkOption();
+        // option.setMarkImage(bitmap);
+        // comp.componentOption().editMultipleComponentOption().editMultipleOption().setWaterMarkOption(option);
+        
 		// 多功能编辑组件配置项
 		// 设置最大编辑数量
 		comp.componentOption().editMultipleComponentOption().setMaxEditImageCount(9);
+		
+		// 设置焦距初始值(默认：0, 0-getMaxZoom())
+		// comp.componentOption().cameraOption().setFocalDistanceScale(0);
+		// 开启调节焦距 (默认：true)
+		// comp.componentOption().cameraOption().setEnableFocalDistance(false);
 		
 		// 设置没有改变的图片是否保存(默认 false)
 		// comp.componentOption().editMultipleComponentOption().setEnableAlwaysSaveEditResult(false);
@@ -67,7 +77,7 @@ public class RichEditComponentSample extends SampleBase implements TuSdkComponen
 		// comp.componentOption().albumMultipleComponentOption().albumListOption().setPhotosSortDescriptor(PhotoSortDescriptor.Date_Added);
 		
 		// 设置最大支持的图片尺寸 默认：8000 * 8000
-//		 comp.componentOption().albumMultipleComponentOption().albumListOption().setMaxSelectionImageSize(new TuSdkSize(8000, 8000));
+		// comp.componentOption().albumMultipleComponentOption().albumListOption().setMaxSelectionImageSize(new TuSdkSize(8000, 8000));
 
 		// 操作完成后是否自动关闭页面
 		comp.setAutoDismissWhenCompleted(true)
@@ -81,7 +91,7 @@ public class RichEditComponentSample extends SampleBase implements TuSdkComponen
 	@Override
 	public void onComponentFinished(TuSdkResult result, Error error,TuFragment lastFragment) 
 	{
-		TLog.d("PackageComponentSample onComponentFinished: %s | %s", result.images, error);
+		TLog.d("PackageComponentSample onComponentFinished: %s | %s", result, error);
 		
 		// for (ImageSqlInfo info : result.images)
 		// {

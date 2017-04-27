@@ -11,7 +11,6 @@ package org.lasque.tusdkdemo.examples.suite;
 
 import org.lasque.tusdk.TuSdkGeeV1;
 import org.lasque.tusdk.core.TuSdkResult;
-import org.lasque.tusdk.core.struct.TuSdkSize;
 import org.lasque.tusdk.core.utils.TLog;
 import org.lasque.tusdk.core.utils.TuSdkWaterMarkOption;
 import org.lasque.tusdk.core.utils.TuSdkWaterMarkOption.TextPosition;
@@ -154,18 +153,19 @@ public class EditMultipleComponentSample extends SampleBase
 		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/filter/TuEditWipeAndFilterOption.html
 		// component.componentOption().editWipeAndFilterOption()
 		
-		
+		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/filter/TuEditHDROption.html
+				// component.componentOption().editHDROption()
 
 		// 设置图片
 		component.setImage(result.image)
-		// 设置系统照片
-				.setImageSqlInfo(result.imageSqlInfo)
-				// 设置临时文件
-				.setTempFilePath(result.imageFile)
-				// 在组件执行完成后自动关闭组件
-				.setAutoDismissWhenCompleted(true)
-				// 开启组件
-				.showComponent();
+			// 设置系统照片
+			.setImageSqlInfo(result.imageSqlInfo)
+			// 设置临时文件
+			.setTempFilePath(result.imageFile)
+			// 在组件执行完成后自动关闭组件
+			.setAutoDismissWhenCompleted(true)
+			// 开启组件
+			.showComponent();
 	}
 	
 	/**

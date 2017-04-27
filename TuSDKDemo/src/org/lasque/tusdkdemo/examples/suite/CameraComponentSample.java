@@ -76,7 +76,7 @@ public class CameraComponentSample extends SampleBase implements TuCameraFragmen
 		// 照片输出图片长宽 (默认：全屏)
 		// option.setOutputSize(new TuSdkSize(1440, 1920));
 		// 闪关灯模式
-		// option.setDefaultFlashMode(Camera.Parameters.FLASH_MODE_OFF);
+		// option.setDefaultFlashMode(CameraFlash.Off);
 
 		// 是否开启滤镜支持 (默认: 关闭)
 		option.setEnableFilters(true);
@@ -153,6 +153,11 @@ public class CameraComponentSample extends SampleBase implements TuCameraFragmen
 		// 开启长按拍摄 (默认：false)
 		option.setEnableLongTouchCapture(true);
 
+		// 开启调节焦距 (默认：true)
+		// option.setEnableFocalDistance(false);
+		// 设置焦距初始值(默认：0, 0-getMaxZoom())
+		// option.setFocalDistanceScale(0);
+		
 		// 禁用聚焦声音 (默认:false)
 		// option.setDisableFocusBeep(true);
 

@@ -115,6 +115,7 @@
     <string name="lsq_edit_multiple_title">Edit</string>
     <string name="lsq_edit_skin_title">Beautify</string>
     <string name="lsq_edit_holy_light">Holy Light</string>
+    <string name="lsq_edit_entry_hdr">HDR</string>
 
     <!-- sticker -->
     <string name="lsq_sticker_title">Stickers</string>
@@ -228,6 +229,7 @@
     <string name="lsq_filter_set_distanceNormalizationFactor">Edge</string>
     <string name="lsq_filter_set_blurSigma">Blur Sigma</string>
     <string name="lsq_filter_set_mixied">Mixed</string>
+    <string name="lsq_filter_set_texture">Texture</string>
     <string name="lsq_filter_set_saturation">Saturation</string>
     <string name="lsq_filter_set_contrast">Contrast</string>
     <string name="lsq_filter_set_sharpness">Sharpness</string>

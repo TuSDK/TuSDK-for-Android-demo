@@ -77,7 +77,7 @@ public class CustomizedCameraComponentSample extends SampleBase implements TuCam
 		// option.setOutputSize(new TuSdkSize(1440, 1920));
 
 		// 闪关灯模式
-		// option.setDefaultFlashMode(Camera.Parameters.FLASH_MODE_OFF);
+		// option.setDefaultFlashMode(CameraFlash.Off);
 
 		// 是否开启滤镜支持 (默认: 关闭)
 		option.setEnableFilters(true);

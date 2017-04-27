@@ -114,6 +114,7 @@
     <string name="lsq_edit_multiple_title">编辑</string>
     <string name="lsq_edit_skin_title">美颜</string>
     <string name="lsq_edit_holy_light">圣光</string>
+    <string name="lsq_edit_entry_hdr">HDR</string>
 
     <!-- sticker -->
     <string name="lsq_sticker_title">贴纸</string>
@@ -227,6 +228,7 @@
     <string name="lsq_filter_set_distanceNormalizationFactor">边缘</string>
     <string name="lsq_filter_set_blurSigma">西格玛</string>
     <string name="lsq_filter_set_mixied">效果</string>
+    <string name="lsq_filter_set_texture">纹理</string>
     <string name="lsq_filter_set_saturation">饱和度</string>
     <string name="lsq_filter_set_contrast">对比度</string>
     <string name="lsq_filter_set_sharpness">锐化</string>

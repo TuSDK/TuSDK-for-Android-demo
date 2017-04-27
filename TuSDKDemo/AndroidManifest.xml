@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.lasque.tusdkdemo"
-    android:versionCode="20170217"
-    android:versionName="2.6.3" xmlns:tools="http://schemas.android.com/tools">
+    android:versionCode="20170427"
+    android:versionName="2.7.0" xmlns:tools="http://schemas.android.com/tools">
 
     <uses-sdk
         android:minSdkVersion="11"
