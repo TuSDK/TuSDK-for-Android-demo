@@ -1,71 +1,127 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lsq_demo_entry_bg"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
-
-    <RelativeLayout 
+    android:layout_height="wrap_content"
+    android:background="@drawable/lsq_homepage_bg" >
+    <LinearLayout 
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@drawable/top_background">
-        
-        <ImageView 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:src="@drawable/top_logo"/>
-    </RelativeLayout>
-    
-    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+      <!-- 特效相机  -->
+	<RelativeLayout 
         android:id="@+id/lsq_entry_camera"
-        android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:background="@drawable/demo_entry_camera_background">
-        
-        <Button   
-            android:clickable="false"
-            android:layout_width="wrap_content"
-        	android:layout_height="match_parent"
-        	android:layout_centerInParent="true"
-        	style="@style/demo_component_entry_button"
-        	android:text="@string/component_camera"
-        	android:drawableLeft="@drawable/icon_camera"/>
-        
-    </RelativeLayout>
-    
-    <RelativeLayout 
-        android:id="@+id/lsq_entry_editor"
-        android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:background="@drawable/demo_entry_editor_background">
-        
-        <Button
-            android:clickable="false"
-            android:layout_width="wrap_content"
-        	android:layout_height="match_parent"
-        	android:layout_centerInParent="true"
-        	style="@style/demo_component_entry_button"
-        	android:text="@string/component_editor"
-        	android:drawableLeft="@drawable/icon_editor"/>
-        
-    </RelativeLayout>
-    
-    <RelativeLayout 
-        android:id="@+id/lsq_entry_list"
-        android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:background="@drawable/demo_entry_list_background">
-        
-        <Button
-            android:clickable="false"
-            android:layout_width="wrap_content"
-        	android:layout_height="match_parent"
-        	android:layout_centerInParent="true"
-        	style="@style/demo_component_entry_button"
-        	android:text="@string/component_list"
-        	android:drawableLeft="@drawable/icon_component_list"/>
-        
-    </RelativeLayout>
+	    android:layout_width="match_parent"
+	    android:layout_height="69dp"
+	    android:gravity="center_vertical"
+	    android:layout_marginLeft="15dp"
+	    android:layout_marginRight="15dp"
+	    android:background="@drawable/lsq_homepage_button_normal">
 
+	    <ImageView 
+	        android:id="@+id/lsq_homepage_camera"
+	        android:layout_width="22dp"
+	        android:layout_height="22dp"
+	        android:background="@drawable/lsq_homepage_icon_camera"
+	       	android:layout_centerVertical="true"
+	        android:layout_marginLeft="25dp"
+	        android:scaleType="centerInside"/>
+	    <TextView 
+	       android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/lsq_homepage_camera"
+	        android:layout_marginLeft="19sp"
+	        android:text="@string/component_camera"
+	        android:textSize="19sp"
+	        android:textColor="#552613"
+	        android:layout_centerVertical="true"
+	        />
+	    <ImageView 
+	        android:layout_width="22dp"
+	        android:layout_height="22dp"
+	        android:background="@drawable/lsq_homepage_icon_next"
+	        android:scaleType="centerInside"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="9dp"/>
+	</RelativeLayout>
+	 <!-- 照片美化  -->
+	<RelativeLayout 
+        android:id="@+id/lsq_entry_editor"
+	    android:layout_width="match_parent"
+	    android:layout_height="69dp"
+	    android:gravity="center_vertical"
+	    android:layout_marginLeft="15dp"
+	    android:layout_marginRight="15dp"
+	    android:layout_marginTop="9dp"
+	    android:background="@drawable/lsq_homepage_button_normal">
+
+	    <ImageView 
+	        android:id="@+id/lsq_homepage_beauty"
+	        android:layout_width="22dp"
+	        android:layout_height="22dp"
+	        android:background="@drawable/lsq_homepage_icon_beauty"
+	       	android:layout_centerVertical="true"
+	        android:layout_marginLeft="25dp"
+	        android:scaleType="centerInside"/>
+	    <TextView 
+	       android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/lsq_homepage_beauty"
+	        android:layout_marginLeft="19sp"
+	        android:text="@string/component_editor"
+	        android:textSize="19sp"
+	        android:textColor="#552613"
+	        android:layout_centerVertical="true"
+	        />
+	    <ImageView 
+	        android:layout_width="22dp"
+	        android:layout_height="22dp"
+	        android:background="@drawable/lsq_homepage_icon_next"
+	        android:scaleType="centerInside"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="9dp"/>
+	</RelativeLayout>
+	 <!-- 开发套件 -->
+   	<RelativeLayout 
+        android:id="@+id/lsq_entry_list"
+	    android:layout_width="match_parent"
+	    android:layout_height="69dp"
+	    android:gravity="center_vertical"
+	    android:layout_marginLeft="15dp"
+	    android:layout_marginRight="15dp"
+	    android:layout_marginTop="9dp"
+	     android:layout_marginBottom="31dp"
+	    android:background="@drawable/lsq_homepage_button_normal">
+
+	    <ImageView 
+	        android:id="@+id/lsq_homepage_tools"
+	        android:layout_width="22dp"
+	        android:layout_height="22dp"
+	        android:background="@drawable/lsq_homepage_icon_tools"
+	       	android:layout_centerVertical="true"
+	        android:layout_marginLeft="25dp"
+	        android:scaleType="centerInside"/>
+	    <TextView 
+	       android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/lsq_homepage_tools"
+	        android:layout_marginLeft="16dp"
+	        android:text="@string/component_list"
+	        android:textSize="19sp"
+	        android:textColor="#552613"
+	        android:layout_centerVertical="true"
+	        />
+	    <ImageView 
+	        android:layout_width="22dp"
+	        android:layout_height="22dp"
+	        android:background="@drawable/lsq_homepage_icon_next"
+	        android:scaleType="centerInside"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="9dp"/>
+	</RelativeLayout>
 </LinearLayout>
+</RelativeLayout>

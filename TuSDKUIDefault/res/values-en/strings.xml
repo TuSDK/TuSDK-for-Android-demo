@@ -150,8 +150,8 @@
 
     <!-- FilterGroup -->
     <string name="lsq_filter_group_Leica">Leica</string>
-    <string name="lsq_filter_group_Lomo">LOMO</string>
-    <string name="lsq_filter_group_Food">Food</string>
+    <string name="lsq_filter_group_GailyColoured">GailyColoured</string>
+    <string name="lsq_filter_group_Oldtimes">Oldtimes</string>
     <string name="lsq_filter_group_Enhance">Enhance</string>
     <string name="lsq_filter_group_Glare">Lights</string>
     <string name="lsq_filter_group_Beauty">Portrait</string>
@@ -161,7 +161,7 @@
     <string name="lsq_filter_remove_title">Remove Filter</string>
     <string name="lsq_filter_remove_msg">Are you sure to remove the filter %s?</string>
     <string name="lsq_filter_Normal">Normal</string>
-    <string name="lsq_filter_Lomo">LOMO</string>
+    <string name="lsq_filter_Brightly">Brightly</string>
     <string name="lsq_filter_Abao">Abao</string>
     <string name="lsq_filter_Nostalgic">Nostalgic</string>
     <string name="lsq_filter_Artistic">Artistic</string>

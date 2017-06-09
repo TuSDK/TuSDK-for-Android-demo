@@ -100,8 +100,8 @@ public class CameraComponentSample extends SampleBase implements TuCameraFragmen
 		// GroupFilterItemView)
 		// option.setFilterTableCellLayoutId(GroupFilterItemView.getLayoutId());
 
-		// 开启滤镜配置选项
-		option.setEnableFilterConfig(false);
+		// 开启滤镜配置选项(默认：true)
+		// option.setEnableFilterConfig(false);
 
 		// 需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜)
 		// 滤镜名称参考 TuSDK.bundle/others/lsq_tusdk_configs.json

@@ -47,7 +47,10 @@ public class RichEditComponentSample extends SampleBase implements TuSdkComponen
 		// 相机组件配置
 		// 设置拍照后是否预览图片 默认 true
 		// comp.componentOption().cameraOption().setEnablePreview(true);
-       
+		
+        // 开启滤镜配置选项(默认：true)
+		// comp.componentOption().cameraOption().setEnableFilterConfig(false);
+		
 		// 多选相册组件配置
 		// 设置相册最大选择数量
 		comp.componentOption().albumMultipleComponentOption().albumListOption().setMaxSelection(9);

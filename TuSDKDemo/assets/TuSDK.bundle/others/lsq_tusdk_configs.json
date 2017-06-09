@@ -45,13 +45,13 @@
             ]
         },
         {
-            "file":"lsq_filter_Lomo_2.gfilter",
-            "name":"lsq_filter_group_Lomo",
+            "file":"lsq_filter_GailyColoured_2.gfilter",
+            "name":"lsq_filter_group_GailyColoured",
             "default_filter_id":24,
             "filters":[
                 {
                     "id":21,
-                    "name":"lsq_filter_Lomo",
+                    "name":"lsq_filter_Brightly",
                     "color":"#0091FF",
                     "args":{
                         "mixied":0.6
@@ -92,8 +92,8 @@
             ]
         },
         {
-            "file":"lsq_filter_Food_3.gfilter",
-            "name":"lsq_filter_group_Food",
+            "file":"lsq_filter_Oldtimes_3.gfilter",
+            "name":"lsq_filter_group_Oldtimes",
             "default_filter_id":32,
             "filters":[
                 {
@@ -258,7 +258,8 @@
                     "name":"lsq_filter_SkinNature",
                     "color":"#E9807E",
                     "args":{
-                        "smoothing":0.3
+                        "smoothing":0.6,
+                        "mixied":0.8
                     }
                 },
                 {
@@ -266,8 +267,8 @@
                     "name":"lsq_filter_SkinPink",
                     "color":"#E9807E",
                     "args":{
-                        "smoothing":0.5,
-                        "mixied":0.3
+                        "smoothing":0.6,
+                        "mixied":0.8
                     }
                 },
                 {
@@ -276,7 +277,7 @@
                     "color":"#E9807E",
                     "args":{
                         "smoothing":0.6,
-                        "mixied":0.4
+                        "mixied":0.8
                     }
                 },
                 {
@@ -284,8 +285,8 @@
                     "name":"lsq_filter_SkinNoir",
                     "color":"#E9807E",
                     "args":{
-                        "smoothing":0.5,
-                        "mixied":1
+                        "smoothing":0.6,
+                        "mixied":0.8
                     }
                 },
                 {
@@ -293,8 +294,8 @@
                     "name":"lsq_filter_SkinRuddy",
                     "color":"#E9807E",
                     "args":{
-                        "smoothing":0.45,
-                        "mixied":0.25
+                        "smoothing":0.6,
+                        "mixied":0.8
                     }
                 },
                 {
@@ -303,7 +304,7 @@
                     "color":"#E9807E",
                     "args":{
                         "smoothing":0.6,
-                        "mixied":0.3
+                        "mixied":0.8
                     }
                 },
                 {
@@ -311,8 +312,8 @@
                     "name":"lsq_filter_SkinPowder",
                     "color":"#E9807E",
                     "args":{
-                        "smoothing":0.45,
-                        "mixied":0.4
+                        "smoothing":0.6,
+                        "mixied":0.8
                     }
                 }
             ]
@@ -489,114 +490,6 @@
                     "id":5645
                 }
             ]
-        },
-        {
-            "file":"lsq_sticker_0_1407.gsce",
-            "name":"\u60c5\u4eba\u8282",
-            "stickers":[
-                {
-                    "id":10266
-                },
-                {
-                    "id":10267
-                }
-            ]
-        },
-        {
-            "file":"lsq_sticker_0_1414.gsce",
-            "name":"\u6d82\u56fe\u62db\u624b",
-            "stickers":[
-                {
-                    "id":10312
-                }
-            ]
-        },
-        {
-            "file":"lsq_sticker_0_1415.gsce",
-            "name":"\u6d82\u56fe\u53d1\u5361",
-            "stickers":[
-                {
-                    "id":10316
-                },
-                {
-                    "id":10317
-                },
-                {
-                    "id":10318
-                }
-            ]
-        },
-        {
-            "file":"lsq_sticker_0_1416.gsce",
-            "name":"\u53e4\u98ce",
-            "stickers":[
-                {
-                    "id":10328
-                },
-                {
-                    "id":10336
-                },
-                {
-                    "id":10338
-                },
-                {
-                    "id":10339
-                }
-            ]
-        },
-        {
-            "file":"lsq_sticker_0_1417.gsce",
-            "name":"\u732b\u5973\u4ec6",
-            "stickers":[
-                {
-                    "id":10324
-                },
-                {
-                    "id":10325
-                },
-                {
-                    "id":10326
-                }
-            ]
-        },
-        {
-            "file":"lsq_sticker_0_1418.gsce",
-            "name":"\u6d82\u56feDJ",
-            "stickers":[
-                {
-                    "id":10329
-                },
-                {
-                    "id":10330
-                },
-                {
-                    "id":10331
-                }
-            ]
-        },
-        {
-            "file":"lsq_sticker_0_1419.gsce",
-            "name":"\u7c73\u59ae",
-            "stickers":[
-                {
-                    "id":10332
-                },
-                {
-                    "id":10333
-                }
-            ]
-        },
-        {
-            "file":"lsq_sticker_0_1420.gsce",
-            "name":"\u5c0f\u732b\u73a9\u7403",
-            "stickers":[
-                {
-                    "id":10334
-                },
-                {
-                    "id":10335
-                }
-            ]
         }
     ],
     "brushGroups":[
@@ -631,5 +524,5 @@
             ]
         }
     ],
-    "master":"QSnvJjBjAT9hehpR62OZZIDZ5Ej5Bxn6Qhmmg36LLQsoiLvmFEDh+kTum\/V96Dqv\/QpMsMYVDOPqM3d+jTRbiwjjSXKh2lh4WXPvv9XHCfUD1ii8RW2iBR7Ewj+d0yeXcHaVqiNoCaipXDOI57gg83OxIrn2yGq4xDqwCCv+4dnMmEgN\/N5FQwjyBxMUBnM8IcqdbSPAM2pZ2chj1qBBOiXf0d+mHG4m7W4AdW7L8MAl4pvf\/ZHr0CwfxaBJkEibjsQmWkzhByvdbe6kPOcgIALkSvDzbAnpfvtZGzH9KmpffUO2O558DBOAz2FimcZlojpAMLLIW1eXusez53sgvBmTFaFBDf3Qom2Mha3lkNvVQsg4fzmrdSKo\/ClDK+rC21In5mDLQWs7am58T5uXcHMR28mycCY3mZWNqHSIeaFg+P8806JnCo8cFJErMILq4AiyDAhPredT4St2IyvTe3NnnFN\/u9ygr0Jn\/MJVUNLxOU6x2mjFfEhUZpRWZUQZBMT7PGxdZ5vHKII4MLdY9ulqta7GNor0tcOfQAsPokJ5ouqLRaUqO6gzwSTNqi0NMEtGm1OjEiJAu74Jh7wAGyTxvN1Pjzn0oaJPP0OeJTsvPfpKZ55F\/iVvSIEviC\/O\/a9jvuUYOtW46izT+UXMYGO8IN22REYvbuMq2h2Tw\/+nQjBT6bqGp2XielXY+pg0r02jg+55ldJUOXJ1g0QDEOXHCUgKirYcZpCCpi5JvKMnXFIGfNGNh2w9Veg7x\/yXm6LWyospt2WTy5EXeMSx4N0fWtdbKcsNEjVQTc5YDDf6KGZllDmScnJG2AMnMgqWt8MLumq5foMXj4+EaVUqb8N4U4NWrNQAC7tpaSYmd7ONSlEOV\/3gowsMjIYu4UdhvHpdxSsBsOULuh8cNkD2VwX36tS1NUG325lHC6xXKWhoMiy64DmNW4baD3vR3QFGNgEEM9WM+lB7rxgWFTbvJ\/7d4y3ANtnLq6rBtGS4FsSrZGkjOd3GDAMGWW6peKtAwpIdzH85Js6JjFnX4aH4Q98VG1QxfHNKaqJ+elnBJ5RxPRONJJ50YJUor4ePag1fjjT5ZAqO5ngioFrRLt29ixPrlw8xQm9tYOL0RYClPJqnqRHRcvkR8l5nbm8ym6puptGNwZm4rNHuJo1kcOZ1uRlXUmWcYufGrXlgkwXoiab02d09FhG4Va6IVfh\/d\/cDCI\/M94ukBfM6V+683cJsO0EdQuHfeV4nylij6m\/lyvWMg7xOsy7wKUCVJnS\/wI+H3YOyGqOhNw1qCW8ZA8\/QeznI8n4VDjGuxybWEs85uP1ChmJRbkN6Lx+lzB6akJ+XOfAMpCxL5EG9fYtmboclqvXOyS5liHn2slSQEd10uEILkJYTIJsYKpq7j7C8RTwoWH\/eLB5Tl5W69LQOaxTCgXZg0mD8HK3+zWCDnQRItPVhWTcCVNR84JIQ8L5tZa+OPMjNdX3aO0mxNZBUkypG6fu8rzGfX+KZrgpSbC04OTJFjzmB7TnwcHgVPR6sJlO+\/zQC\/1c8mrZx3x0gT\/3FJL\/8OG+PybGiPlherNj+IFV2kF5y02C9edY+v+x5xOTkOQySKM4KGGaCuPLH6tasdfgRVOWWiOer\/y4mMHpSBznaIWfwqLhJseKdz\/NczyHhv0zkBN5\/kp8lWIgi0mpEQw==40D51FBE21"
+    "master":"l+YvYJl7bKKN+bSpPInvBBwqEHAYiLwJvVPnCFwaL944ItQn5Bw9iXHxoRg9zwE\/hOPYb3jsiKXgwvl9cL+elYOc4kQuBYTIBmQ7EWL7s0hcfuJ\/0M91Jt6dQFtIZIvvoPUE3uWo9vbGO3OwxTIE92oZihpeXqIFaONYeJnAjvT\/Is5jqcBsoMi86\/mjipDuXc+bXaYuRy2kVkiYFqKyjLNNzH6GbFQFHHN6r\/llmksUY9oLlCBp8faQNCtOe7HEHE9T94C1aPYZ1lExSeizUJHz\/hWAzvbGbL+c9YO\/XndHbzrdBTnxrVWIAqUUHQmLct3Vp0lIJyU7qpwnAnnD9UB18+b\/Yl4zbt4P34sIyx9PpsGlONJVEWwPI3u5QtZU2bqDRTbC94wTCmwiGuvruKxZ27hF3plxiGnBNdOcoUf9kgMMvdUK0imxV2eF8co+OmyCZk5Hzswk3GhElUu2IIiHyat+EswVgu81+bjNWHPuDdlm27DS7Bo5+S9YAVIBR1ycmd7Faa4g0s288X72csB0nkJheW\/ow00ylut9Z6LZ9lcR\/M1e87tHA3DJ5kg\/47oW9MabtioJ6i7cQZtP7HkaLlwQPHD8BQN2mpUlWw\/iTTB6hd3\/OuIp7smEHPXCZIa0CZ96V0I1QWFrE\/WvxICpUj6FrqIxgj3wYVnBi0XIxoUv8jkKhylukEWhQ1XjkcR6Yz95R9TwSfi2sFnvHzwzIcyGaW42GXq7g5epw5vBIzyIp1nH00oDUHBbKovK2Ve5\/zUYeFHjwy+cWHOhewTRrykREIeiBl1IZDfPM0S3takaHyl7RzqnWgi\/O5PCgnxbGpuWYBuyA1gOWnzzmOcmMvdbg2kZmjGfYTQ74GGSye1eTZJjcvAV3MrAYM4RSjL2e74dsA+GpvXImP2LZDYwVDoGGXbirVzk7\/Z6byd0qn1LoiT9crvu8e\/L0rRoLfKKeVh6QBjosebje02xycnQUYHwNgcFimCBfO71tz3d9cTgcD56oVku3zAhBUszWUihAyUS2cBT0xFBZjkF\/QIrGr6b\/EikGbHWnJFh8aqZ9Ep85bO9TDT4h3K6ylOs6LNxus4zJAbV0BEbH+AqYnfkBIrGPOZCuvpdKwjy0bkJmcwlGVlyLu8TF6LVVYdTwYro\/L5gGu1RWM3putkjcmNITpvERhKi20YVPnCHlmf0oY00I87z9ouAE3ZjDk+\/MuVktEZQ7cLvUnWLDaUHSw==FF9E098926"
 }

@@ -181,8 +181,8 @@
 
     <!-- FilterGroup -->
     <string name="lsq_filter_group_Leica">莱卡</string>
-    <string name="lsq_filter_group_Lomo">LOMO</string>
-    <string name="lsq_filter_group_Food">美食</string>
+    <string name="lsq_filter_group_GailyColoured">鲜艳</string>
+    <string name="lsq_filter_group_Oldtimes">叙旧</string>
     <string name="lsq_filter_group_Enhance">增强</string>
     <string name="lsq_filter_group_Glare">光效</string>
     <string name="lsq_filter_group_Beauty">人像</string>
@@ -192,7 +192,7 @@
     <string name="lsq_filter_remove_title">删除滤镜</string>
     <string name="lsq_filter_remove_msg">您是否需要删除滤镜「%s」？</string>
     <string name="lsq_filter_Normal">无效果</string>
-    <string name="lsq_filter_Lomo">LOMO</string>
+    <string name="lsq_filter_Brightly">斑斓</string>
     <string name="lsq_filter_Abao">阿宝</string>
     <string name="lsq_filter_Nostalgic">怀旧</string>
     <string name="lsq_filter_Artistic">艺术</string>
@@ -245,11 +245,11 @@
     <string name="lsq_filter_SenseOfAutumn">秋意浓</string>
     <string name="lsq_filter_Coloration">着色</string>
     <string name="lsq_filter_Fluorescent">荧光</string>
-    <string name="lsq_filter_Freshmorning">清晨</string>
+    <string name="lsq_filter_Freshmorning">晨曦</string>
     <string name="lsq_filter_Holidaysunshine">假日</string>
     <string name="lsq_filter_Purplemoon">紫月亮</string>
-    <string name="lsq_filter_Summersunshine">夏日</string>
-    <string name="lsq_filter_Wintersunshine">冬日</string>
+    <string name="lsq_filter_Summersunshine">阳曦</string>
+    <string name="lsq_filter_Wintersunshine">曦微</string>
 
     <!-- Filters Definition skin -->
     <string name="lsq_filter_set_smoothing">润滑</string>
