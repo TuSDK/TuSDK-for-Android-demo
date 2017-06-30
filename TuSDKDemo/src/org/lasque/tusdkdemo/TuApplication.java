@@ -9,6 +9,8 @@
  */
 package org.lasque.tusdkdemo;
 
+import com.tencent.bugly.crashreport.CrashReport;
+
 import org.lasque.tusdk.core.TuSdkApplication;
 
 /**
@@ -46,6 +48,9 @@ public class TuApplication extends TuSdkApplication
 		 * 开发文档:http://tusdk.com/doc
 		 */
 		
+		// 初始化 Bugly SDK
+		CrashReport.initCrashReport(getApplicationContext(), "a0f34b9a81", true); 
+
 		// 设置资源类，当 Application id 与 Package Name 不相同时，必须手动调用该方法, 且在 init 之前执行。
 		// TuSdk.setResourcePackageClazz(org.lasque.tusdkdemo.R.class);
 		

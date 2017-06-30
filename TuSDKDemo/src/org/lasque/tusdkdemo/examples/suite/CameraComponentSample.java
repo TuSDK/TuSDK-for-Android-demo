@@ -101,7 +101,7 @@ public class CameraComponentSample extends SampleBase implements TuCameraFragmen
 		// option.setFilterTableCellLayoutId(GroupFilterItemView.getLayoutId());
 
 		// 开启滤镜配置选项(默认：true)
-		// option.setEnableFilterConfig(false);
+		option.setEnableFilterConfig(true);
 
 		// 需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜)
 		// 滤镜名称参考 TuSDK.bundle/others/lsq_tusdk_configs.json
@@ -212,7 +212,7 @@ public class CameraComponentSample extends SampleBase implements TuCameraFragmen
 	    option.setMarkTextShadowColor("#000000");
 	    
 	    // 设置水印图片, 支持图文混排、图片或文字
-	    option.setMarkImage(BitmapHelper.getRawBitmap(activity, R.raw.sample_watermark));
+	    option.setMarkImage(BitmapHelper.getBitmapFormRaw(activity, R.raw.sample_watermark));
 	    
 	    // 文字和图片顺序 (仅当图片和文字都非空时生效，默认: 文字在右)
 	    option.setMarkTextPosition(TextPosition.Right);

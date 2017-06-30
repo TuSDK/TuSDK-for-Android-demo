@@ -73,7 +73,6 @@
     <string name="lsq_album_multi_preview_done">完成</string>
     <string name="lsq_album_image_size_limited">暂不支持大于 %1$d*%2$d 的图片</string>
         
-
     <!-- geev2 -->
     <string name="lsq_album_continue">继续</string>
 
@@ -122,9 +121,6 @@
     <string name="lsq_edit_multiple_title">编辑</string>
     <string name="lsq_edit_skin_title">美颜</string>
 	<string name="lsq_edit_holy_light">圣光</string>
-
-
-	
 	
     <!-- geev2 -->
     <string name="lsq_edit_max_count_msg">一次最多编辑%d张图片</string>
@@ -138,8 +134,6 @@
     <string name="lsq_edit_pen_large">大号</string>
     <string name="lsq_edit_step_redo">重做</string>
     <string name="lsq_edit_processing_index">正在处理第%1$d/%2$d张</string> 
-    
-    
     
     <!-- sticker -->
     <string name="lsq_sticker_title">贴纸</string>
@@ -251,6 +245,27 @@
     <string name="lsq_filter_Summersunshine">阳曦</string>
     <string name="lsq_filter_Wintersunshine">曦微</string>
 
+    <string name="lsq_filter_group_SnapSeed">斑驳</string>
+	<string name="lsq_filter_Time">流年</string>
+	<string name="lsq_filter_Recall">追忆</string>
+	<string name="lsq_filter_Yellowing">泛黄</string>
+	<string name="lsq_filter_Years">经年</string>
+	<string name="lsq_filter_Age">岁月</string>
+	<string name="lsq_filter_group_Lip001">唇魅</string>
+	<string name="lsq_filter_Missing">想你色</string>
+	<string name="lsq_filter_Grapefruit">西柚色</string>
+	<string name="lsq_filter_RoseCarmine">玫红色</string>
+	<string name="lsq_filter_Nude">裸色</string>
+	<string name="lsq_filter_Orange">橘色</string>
+	<string name="lsq_filter_BabyPink">粉色</string>
+	<string name="lsq_filter_Sweet002">甜蜜</string>
+	<string name="lsq_filter_Coffee">咖啡</string>
+	<string name="lsq_filter_Gold">金黄</string>
+	<string name="lsq_filter_Rum">朗姆</string>
+	<string name="lsq_filter_group_Food">美食</string>
+	<string name="lsq_filter_group_Mottle">斑驳</string>
+	<string name="lsq_filter_group_LipGloss">唇魅</string>
+    
     <!-- Filters Definition skin -->
     <string name="lsq_filter_set_smoothing">润滑</string>
     <string name="lsq_filter_set_whitening">白皙</string>

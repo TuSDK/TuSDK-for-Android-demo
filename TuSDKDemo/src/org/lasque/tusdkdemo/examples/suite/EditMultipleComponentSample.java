@@ -191,7 +191,7 @@ public class EditMultipleComponentSample extends SampleBase
 	    option.setMarkTextShadowColor("#000000");
 	    
 	    // 设置水印图片, 支持图文混排、图片或文字
-	    option.setMarkImage(BitmapHelper.getRawBitmap(activity, R.raw.sample_watermark));
+	    option.setMarkImage(BitmapHelper.getBitmapFormRaw(activity, R.raw.sample_watermark));
 	    
 	    // 文字和图片顺序 (仅当图片和文字都非空时生效，默认: 文字在右)
 	    option.setMarkTextPosition(TextPosition.Right);

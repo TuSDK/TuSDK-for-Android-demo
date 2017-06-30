@@ -215,6 +215,27 @@
     <string name="lsq_filter_Summersunshine">陽曦</string>
     <string name="lsq_filter_Wintersunshine">曦微</string>
 
+	<string name="lsq_filter_group_SnapSeed">斑駁</string>
+	<string name="lsq_filter_Time">流年</string>
+	<string name="lsq_filter_Recall">追憶</string>
+	<string name="lsq_filter_Yellowing">泛黃</string>
+	<string name="lsq_filter_Years">經年</string>
+	<string name="lsq_filter_Age">歲月</string>
+	<string name="lsq_filter_group_Lip001">唇魅</string>
+	<string name="lsq_filter_Missing">想你色</string>
+	<string name="lsq_filter_Grapefruit">西柚色</string>
+	<string name="lsq_filter_RoseCarmine">玫紅色</string>
+	<string name="lsq_filter_Nude">裸色</string>
+	<string name="lsq_filter_Orange">橘色</string>
+	<string name="lsq_filter_BabyPink">粉色</string>
+	<string name="lsq_filter_Sweet002">甜蜜</string>
+	<string name="lsq_filter_Coffee">咖啡</string>
+	<string name="lsq_filter_Gold">金黃</string>
+	<string name="lsq_filter_Rum">朗姆</string>
+	<string name="lsq_filter_group_Food">美食</string>
+	<string name="lsq_filter_group_Mottle">斑駁</string>
+	<string name="lsq_filter_group_LipGloss">唇魅</string>
+    
     <!-- Filters Definition skin -->
     <string name="lsq_filter_set_smoothing">潤滑</string>
     <string name="lsq_filter_set_whitening">白皙</string>

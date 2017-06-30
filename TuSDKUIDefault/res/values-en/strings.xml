@@ -216,6 +216,27 @@
     <string name="lsq_filter_Summersunshine">Summer</string>
     <string name="lsq_filter_Wintersunshine">Winter</string>
 
+    <string name="lsq_filter_group_SnapSeed">Mottled</string>
+	<string name="lsq_filter_Time">Time</string>
+	<string name="lsq_filter_Recall">Recall</string>
+	<string name="lsq_filter_Yellowing">Yellowing</string>
+	<string name="lsq_filter_Years">Years</string>
+	<string name="lsq_filter_Age">Age</string>
+	<string name="lsq_filter_group_Lip001">Lips</string>
+	<string name="lsq_filter_Missing">Missing</string>
+	<string name="lsq_filter_Grapefruit">Grapefruit</string>
+	<string name="lsq_filter_RoseCarmine">RoseCarmine</string>
+	<string name="lsq_filter_Nude">Nude</string>
+	<string name="lsq_filter_Orange">Orange</string>
+	<string name="lsq_filter_BabyPink">BabyPink</string>
+	<string name="lsq_filter_Sweet002">Sweet</string>
+	<string name="lsq_filter_Coffee">Coffee</string>
+	<string name="lsq_filter_Gold">Gold</string>
+	<string name="lsq_filter_Rum">Rum</string>
+	<string name="lsq_filter_group_Food">Rum</string>
+	<string name="lsq_filter_group_Mottle">Mottle</string>
+	<string name="lsq_filter_group_LipGloss">Lips</string>
+    
     <!-- Filters Definition skin -->
     <string name="lsq_filter_set_smoothing">Smoothing</string>
     <string name="lsq_filter_set_whitening">Whitening</string>
