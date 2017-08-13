@@ -15,8 +15,7 @@
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:scaleType="center"
-        android:src="@drawable/lsq_style_default_edit_drag_cancel"
-        android:background="@drawable/tusdk_button_edit_sticker_remove" />
+        android:src="@drawable/lsq_style_default_edit_icon_text_drag_cancel" />
 
     <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
         android:id="@+id/lsq_sticker_turnButton"
@@ -25,7 +24,6 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:scaleType="center"
-        android:src="@drawable/lsq_style_default_edit_drag_rotate_scale"
-        android:background="@drawable/tusdk_button_edit_sticker_rotate" />
+        android:src="@drawable/lsq_style_default_edit_icon_text_drag_rotate_scale"  />
 
 </org.lasque.tusdk.impl.components.widget.sticker.StickerImageItemView>

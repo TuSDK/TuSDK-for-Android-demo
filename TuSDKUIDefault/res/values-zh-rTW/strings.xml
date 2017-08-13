@@ -135,6 +135,21 @@
     <string name="lsq_sticker_cate_all">全部</string>
     <string name="lsq_sticker_cate_history">常用</string>
 
+	<string name="lsq_edit_text_title">文字</string>
+    <string name="lsq_style_default_edit_icon_text_add">添加</string>
+    <string name="lsq_style_default_edit_icon_text_color">顏色</string>
+    <string name="lsq_style_default_edit_icon_text_font">樣式</string>
+    <string name="lsq_edit_text_sticker_default_text">點擊輸入內容</string>
+    <string name="lsq_text_sticker_font_color">字體顏色</string>
+    <string name="lsq_text_sticker_background_color">背景顏色</string>
+    <string name="lsq_text_sticker_stroke_color">線條顏色</string>
+    <string name="lsq_text_style_right_to_left">從右到左</string>
+    <string name="lsq_text_style_left_to_right">從左到右</string>
+    <string name="lsq_text_style_underline">下劃線</string>
+    <string name="lsq_text_style_alignleft">左對齊</string>
+    <string name="lsq_text_style_alignright">右對齊</string>
+    <string name="lsq_text_style_aligncenter">居中</string>
+    
     <!-- format -->
     <string name="las_date_format">yyyy年M月d日</string>
 

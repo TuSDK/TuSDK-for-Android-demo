@@ -136,6 +136,21 @@
     <string name="lsq_sticker_cate_all">All</string>
     <string name="lsq_sticker_cate_history">History</string>
 
+    <string name="lsq_edit_text_title">Text</string>
+    <string name="lsq_style_default_edit_icon_text_add">Add</string>
+    <string name="lsq_style_default_edit_icon_text_color">Color</string>
+    <string name="lsq_style_default_edit_icon_text_font">Style</string>
+    <string name="lsq_edit_text_sticker_default_text">Click to edit</string>
+    <string name="lsq_text_sticker_font_color">Text Color</string>
+    <string name="lsq_text_sticker_background_color">Background Color</string>
+    <string name="lsq_text_sticker_stroke_color">Stroke Color</string>
+    <string name="lsq_text_style_right_to_left">RightToLeft</string>
+    <string name="lsq_text_style_left_to_right">LeftToRight</string>
+    <string name="lsq_text_style_underline">Underline</string>
+    <string name="lsq_text_style_alignleft">AlignmentLeft</string>
+    <string name="lsq_text_style_alignright">AlignmentRight</string>
+    <string name="lsq_text_style_aligncenter">AlignmentCenter</string>
+    
     <!-- format -->
     <string name="las_date_format">M/d/yyyy</string>
 

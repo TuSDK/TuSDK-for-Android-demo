@@ -1,9 +1,13 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/lsq_demo_entry_bg"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/lsq_homepage_bg" >
+    android:layout_height="wrap_content">
+    <ImageView 
+        android:id="@+id/lsq_demo_entry_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/lsq_homepage_bg"/>
     <LinearLayout 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -134,7 +134,24 @@
     <string name="lsq_sticker_remove_msg">您是否需要删除贴纸「%s」？</string>
     <string name="lsq_sticker_cate_all">全部</string>
     <string name="lsq_sticker_cate_history">常用</string>
-
+    
+    <string name="lsq_edit_text_title">文字</string>
+    <string name="lsq_style_default_edit_icon_text_add">添加</string>
+    <string name="lsq_style_default_edit_icon_text_color">颜色</string>
+    <string name="lsq_style_default_edit_icon_text_font">样式</string>
+    <string name="lsq_edit_text_sticker_default_text">点击输入内容</string>
+    <string name="lsq_text_sticker_font_color">字体颜色</string>
+    <string name="lsq_text_sticker_background_color">背景颜色</string>
+    <string name="lsq_text_sticker_stroke_color">线条颜色</string>
+    <string name="lsq_text_sticker_text_color">#FFFFFF</string>
+    <string name="lsq_text_sticker_text_shadow_color">#000000</string>
+    <string name="lsq_text_style_right_to_left">从右到左</string>
+    <string name="lsq_text_style_left_to_right">从左到右</string>
+    <string name="lsq_text_style_underline">下划线</string>
+    <string name="lsq_text_style_alignleft">左对齐</string>
+    <string name="lsq_text_style_alignright">右对齐</string>
+    <string name="lsq_text_style_aligncenter">居中</string>
+    
     <!-- format -->
     <string name="las_date_format">yyyy年M月d日</string>
 

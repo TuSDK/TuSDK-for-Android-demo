@@ -122,7 +122,10 @@ public class EditMultipleComponentSample extends SampleBase
 		
 		// 设置水印选项 (默认为空，如果设置不为空，则输出的图片上将带有水印)
 		// component.componentOption().editMultipleOption().setWaterMarkOption(getWaterMarkOption(this.componentHelper.activity()));
-
+		
+		// 设置文字贴纸选项
+		// component.componentOption().editTextOption();
+		 
 		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/edit/TuEditCuterOption.html
 		// component.componentOption().editCuterOption()
 
