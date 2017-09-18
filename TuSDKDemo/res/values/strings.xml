@@ -14,11 +14,11 @@
     <string name="sample_group_extend">自定义界面示例</string>
     <string name="sample_group_define">API 使用示例</string>
     <!-- samples -->
-    <string name="sample_GeeV2Theme">GeeV2主题套件</string>
+    <string name="sample_GeeV2Theme">GeeV2主题套件(多图编辑)</string>
     <string name="sample_EditAndCutComponent">裁切 + 滤镜组件</string>
     <string name="sample_EditAvatarComponent">头像设置组件</string>
     <string name="sample_EditAdvancedComponent">裁切 + 滤镜 + 贴纸组件</string>
-    <string name="sample_EditMultipleComponent">照片美化</string>
+    <string name="sample_EditMultipleComponent">照片美化(新增文字模块)</string>
     <string name="sample_AlbumComponent">相册组件</string>
     <string name="sample_AlbumMultipleComponent">多选相册组件</string>
     <string name="sample_CameraComponent">相机组件</string>

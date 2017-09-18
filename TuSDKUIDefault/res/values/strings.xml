@@ -56,6 +56,20 @@
     <string name="lsq_carema_image_process_completed">处理完成</string>
     <string name="lsq_carema_unsupport_camera2">您当前的系统版本小于5.0或硬件设备对Camera2 API为有限支持，无法开启Camera2</string>
 
+    <!-- ratioType -->
+    <string name="lsq_camera_ratioType_title_9_16">9:16</string>
+    <string name="lsq_camera_ratioType_title_3_4">3:4</string>
+    <string name="lsq_camera_ratioType_title_2_3">2:3</string>
+    <string name="lsq_camera_ratioType_title_1_1">1:1</string>
+    <string name="lsq_camera_ratioType_title_3_2">3:2</string>
+    <string name="lsq_camera_ratioType_title_4_3">4:3</string>
+    <string name="lsq_camera_ratioType_title_16_9">16:9</string>
+    <string name="lsq_camera_ratioType_title_orgin">全屏</string>
+
+    <!-- guideLine -->
+    <string name="lsq_camera_guideLine_title_open">网格开</string>
+    <string name="lsq_camera_guideLine_title_off">网格关</string>
+
     <!-- album -->
     <string name="lsq_album_alert_title">无法访问系统相册</string>
     <string name="lsq_album_no_access">无法访问系统相册，请在\r\n设置&#045;&#062;应用程序&#045;&#062;权限&#045;&#062;%1$s&#034; \r\n开启 存储空间</string>
@@ -170,8 +184,11 @@
     <string name="lsq_filter_group_Oldtimes">叙旧</string>
     <string name="lsq_filter_group_Enhance">增强</string>
     <string name="lsq_filter_group_Glare">光效</string>
-    <string name="lsq_filter_group_Beauty">人像</string>
+    <string name="lsq_filter_group_Beauty">自然美颜</string>
     <string name="lsq_filter_group_Magic">魔法色</string>
+    <string name="lsq_filter_group_MeituBeauty">柔光美颜</string>
+	<string name="lsq_filter_group_EdgeEffects">热力图</string>
+	<string name="lsq_filter_group_EdgeEffects001">边缘特效</string>
     <!-- Filters -->
     <string name="lsq_filter_online_title">在线滤镜</string>
     <string name="lsq_filter_remove_title">删除滤镜</string>
@@ -198,7 +215,32 @@
     <string name="lsq_filter_Thick">浓郁</string>
     <string name="lsq_filter_Vintage">复古</string>
     <string name="lsq_filter_Leica">莱卡</string>
-
+	
+    <!-- MeituBeauty -->
+   	<string name="lsq_filter_Nature">柔和</string>
+	<string name="lsq_filter_Blusher">粉色</string>
+	<string name="lsq_filter_Jelly">果酱</string>
+	<string name="lsq_filter_Jam">黑白</string>
+	<string name="lsq_filter_Ruddy">日出</string>
+	<string name="lsq_filter_Sugar">甜蜜</string>
+	<string name="lsq_filter_Powder">暮光</string>
+	<string name="lsq_filter_Whitening">唯美</string>
+	
+	 <!-- EdgeEffects001 -->
+	<string name="lsq_filter_Multicolor">多彩</string>
+	<string name="lsq_filter_Azure">科幻蓝</string>
+	<string name="lsq_filter_Infrared">红外线</string>
+	<string name="lsq_filter_Fluorescence">荧光绿</string>
+	<string name="lsq_filter_Starshine">星尘</string>
+	
+	<!-- EdgeEffects -->
+	<string name="lsq_filter_Flame">红外</string>
+	<string name="lsq_filter_Polychrome">热力</string>
+	<string name="lsq_filter_Angulation">科幻</string>
+	<string name="lsq_filter_Hallucination">迷幻</string>
+	<string name="lsq_filter_Nighttime">夜视</string>
+	<string name="lsq_filter_Splendid">多普勒</string>
+	    
     <!-- Beauty -->
     <string name="lsq_filter_SkinNature">自然</string>
     <string name="lsq_filter_SkinPink">粉嫩</string>
@@ -286,6 +328,14 @@
     <string name="lsq_filter_set_linear">线性</string>
     <string name="lsq_filter_set_radial">径向</string>
 
+    
+    <!-- 边缘滤镜 -->
+    <string name="lsq_filter_set_edgeStrength">强度</string>
+    <string name="lsq_filter_set_thresholdLevel">位置</string>
+    <string name="lsq_filter_set_speed">速度</string>
+    <string name="lsq_filter_set_showType">模式</string>
+    
+    
     <!-- Filters Definition Bokeh -->
     <string name="lsq_filter_set_radius">内半径</string>
     <string name="lsq_filter_set_centerX">中心X</string>

@@ -14,11 +14,11 @@
     <string name="sample_group_extend">Customization UI Examples</string>
     <string name="sample_group_define">API Usage Examples</string>
     <!-- samples -->
-    <string name="sample_GeeV2Theme">GeeV2 Theme</string>
+    <string name="sample_GeeV2Theme">GeeV2 Theme(Multiple picture editor)</string>
     <string name="sample_EditAndCutComponent">Cut + Filter Component</string>
     <string name="sample_EditAvatarComponent">Avatar Component</string>
     <string name="sample_EditAdvancedComponent">Cut + Filter + Sticker Component</string>
-    <string name="sample_EditMultipleComponent">Photo Editor</string>
+    <string name="sample_EditMultipleComponent">Photo Editor(Newly add text module)</string>
     <string name="sample_AlbumComponent">Album Component</string>
     <string name="sample_AlbumMultipleComponent">Multi-Select Album Component</string>
     <string name="sample_CameraComponent">Camera Component</string>

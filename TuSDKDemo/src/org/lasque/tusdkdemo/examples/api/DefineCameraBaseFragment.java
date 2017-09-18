@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import org.lasque.tusdk.core.TuSdk;
 import org.lasque.tusdk.core.TuSdkResult;
 import org.lasque.tusdk.core.secret.StatisticsManger;
+import org.lasque.tusdk.core.seles.sources.SelesOutInput;
 import org.lasque.tusdk.core.seles.tusdk.FilterLocalPackage;
 import org.lasque.tusdk.core.seles.tusdk.FilterOption;
 import org.lasque.tusdk.core.utils.hardware.CameraConfigs.CameraFacing;
@@ -240,10 +241,22 @@ public class DefineCameraBaseFragment extends TuFragment
 			return true;
 		}
 
+		/**
+		 *  滤镜栏状态已改变通知
+		 */
 		@Override
 		public void onGroupFilterShowStateChanged(TuCameraFilterView view, boolean isShow)
 		{
 
+		}
+
+		/**
+		 * 滤镜栏状态将要改变通知
+		 */
+		@Override
+		public void onGroupFilterShowStateWillChanged(TuCameraFilterView view,boolean isShow)
+		{
+			
 		}
 	};
 
@@ -408,6 +421,12 @@ public class DefineCameraBaseFragment extends TuFragment
 					test(result);
 				}
 			});
+		}
+
+		@Override
+		public void onFilterChanged(SelesOutInput selesOutInput) {
+			// TODO Auto-generated method stub
+			
 		}
 	};
 

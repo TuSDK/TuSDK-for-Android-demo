@@ -16,7 +16,7 @@ import org.lasque.tusdk.core.seles.tusdk.FilterManager.FilterManagerDelegate;
 import org.lasque.tusdk.impl.activity.TuFragmentActivity;
 import org.lasque.tusdk.modules.components.ComponentActType;
 import org.lasque.tusdkdemo.examples.suite.CameraComponentSample;
-import org.lasque.tusdkdemo.theme.geev2.RichEditComponentSample;
+import org.lasque.tusdkdemo.examples.suite.EditMultipleComponentSample;
 
 import android.content.Intent;
 import android.view.View;
@@ -132,7 +132,7 @@ public class DemoEntryActivity extends TuFragmentActivity
 	/** 打开多功能编辑组件 */
 	private void showEditorComponent()
 	{
-		new RichEditComponentSample().showSample(this);
+		new EditMultipleComponentSample().showSample(this);
 	}
 
 	/** 显示组件列表页面 */

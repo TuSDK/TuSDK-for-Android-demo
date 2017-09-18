@@ -118,7 +118,7 @@ public class CameraComponentSample extends SampleBase implements TuCameraFragmen
 		option.setAutoSelectGroupDefaultFilter(true);
 
 		// 开启用户滤镜历史记录
-		option.setEnableFiltersHistory(true);
+		option.setEnableFiltersHistory(false);
 
 		// 开启在线滤镜
 		option.setEnableOnlineFilter(true);
@@ -180,6 +180,9 @@ public class CameraComponentSample extends SampleBase implements TuCameraFragmen
 		// 设置水印选项 (默认为空，如果设置不为空，则输出的图片上将带有水印)
 		// option.setWaterMarkOption(getWaterMarkOption(activity));
 
+		// 设置拍照完成后是否开启预览功能 (默认：false)
+		option.setEnablePreview(true);
+		
 		TuCameraFragment fragment = option.fragment();
 		fragment.setDelegate(this);
 
