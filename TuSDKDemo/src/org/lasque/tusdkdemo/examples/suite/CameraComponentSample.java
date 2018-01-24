@@ -9,6 +9,8 @@
  */
 package org.lasque.tusdkdemo.examples.suite;
 
+import android.app.Activity;
+
 import org.lasque.tusdk.core.TuSdkResult;
 import org.lasque.tusdk.core.utils.TLog;
 import org.lasque.tusdk.core.utils.TuSdkWaterMarkOption;
@@ -24,8 +26,6 @@ import org.lasque.tusdk.modules.components.TuSdkHelperComponent;
 import org.lasque.tusdkdemo.R;
 import org.lasque.tusdkdemo.SampleBase;
 import org.lasque.tusdkdemo.SampleGroup.GroupType;
-
-import android.app.Activity;
 
 /**
  * 相机组件范例

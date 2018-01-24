@@ -367,5 +367,6 @@
     <string name="lsq_network_connection_failed">Failed to connect to network</string>
     <string name="lsq_network_connection_timeout">Network request timeout</string>
     <string name="lsq_network_paser_data_failed">Failed to process data</string>
+    <string name="lsq_loading_picture_failed">Load picture failed</string>
 
 </resources>

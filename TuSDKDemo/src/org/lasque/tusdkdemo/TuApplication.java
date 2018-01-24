@@ -9,9 +9,9 @@
  */
 package org.lasque.tusdkdemo;
 
-import com.tencent.bugly.crashreport.CrashReport;
-
 import org.lasque.tusdk.core.TuSdkApplication;
+
+import com.tencent.bugly.crashreport.CrashReport;
 
 /**
  * 应用对象

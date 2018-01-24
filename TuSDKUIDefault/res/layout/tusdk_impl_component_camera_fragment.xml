@@ -81,11 +81,11 @@
 
         <org.lasque.tusdk.core.view.TuSdkImageView
             android:id="@+id/lsq_albumPosterView"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="40dp"
             android:scaleType="centerCrop" />
 
         <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
@@ -98,18 +98,25 @@
 
         <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
             android:id="@+id/lsq_filterButton"
-            android:layout_width="50dp"
+            android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="20dp"
+            android:layout_marginRight="40dp"
             android:drawablePadding="8dp"
-            android:gravity="center"
             android:drawableTop="@drawable/lsq_style_default_camera_bg_filter"
             android:scaleType="center"
             android:text="@string/lsq_edit_entry_filter"
             android:textColor="@android:color/white"
             android:textSize="12sp" />
+    </RelativeLayout>
+
+    <!-- 相机设置view -->
+
+    <RelativeLayout
+        android:id="@+id/lsq_settingsTouchView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
     </RelativeLayout>
 
     <include

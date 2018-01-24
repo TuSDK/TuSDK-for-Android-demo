@@ -370,5 +370,6 @@
     <string name="lsq_network_connection_failed">网络连接失败</string>
     <string name="lsq_network_connection_timeout">服务器连接超时</string>
     <string name="lsq_network_paser_data_failed">数据处理失败</string>
+    <string name="lsq_loading_picture_failed">图片加载失败</string>
 
 </resources>

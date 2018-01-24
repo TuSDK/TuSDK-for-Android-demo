@@ -80,7 +80,7 @@ public class DemoEntryActivity extends TuFragmentActivity
 		
 		// 异步方式初始化滤镜管理器 (注意：如果需要一开启应用马上执行SDK组件，需要做该检测，否则可以忽略检测)
 		// 需要等待滤镜管理器初始化完成，才能使用所有功能
-		TuSdk.messageHub().setStatus(this, R.string.lsq_initing);
+//		TuSdk.messageHub().setStatus(this, R.string.lsq_initing);
 		TuSdk.checkFilterManager(mFilterManagerDelegate);
 
 		mCameraButtonView = this.getViewById(R.id.lsq_entry_camera);
