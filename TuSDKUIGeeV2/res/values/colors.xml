@@ -59,7 +59,7 @@
     <color name="lsq_geev2_background_multi_album">#000000</color>
     <color name="lsq_background_album_cell">#353338</color>
     <color name="lsq_background_photo_cell">#2e2c30</color>
-    <color name="lsq_background_option_bar">#dddddd</color>
+    <!--<color name="lsq_background_option_bar">#dddddd</color>-->
     <color name="lsq_geev2_background_option_bar">#dddddd</color>
     <color name="lsq_background_camera">#403e43</color>
     <color name="lsq_geev2_background_camera">#ffffff</color>

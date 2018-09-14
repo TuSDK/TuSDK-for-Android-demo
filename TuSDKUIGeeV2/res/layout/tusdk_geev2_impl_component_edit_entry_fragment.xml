@@ -37,7 +37,7 @@
         android:layout_height="80dp"
         android:layout_above="@+id/lsq_bottomBar"
         android:orientation="horizontal"
-        android:background="@color/lsq_background_option_bar" >
+        android:background="@color/lsq_geev2_background_option_bar" >
 
         <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
             android:id="@+id/lsq_cutButton"
