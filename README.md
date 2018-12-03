@@ -227,7 +227,8 @@
 * 博客 [blog.tusdk.com](https://blog.tusdk.com/)
 * 微博 [@TuSDK](https://weibo.com/tusdk)
 * 微信 [TuSDK-HQ](https://tutucloud.com/img/tusdk-wechat-qrcode.png)
-* Twitter [@tutucloud](https://twitter.com/tutucloud)
-* Telegram [@tutucloud](https://telegram.me/tutucloud)
+* 客服电话：177-6716-7529
+* 客服邮箱： [sales@tusdk.com](mailto:sales@tusdk.com)
+* 客服 QQ： 2969573855
 
-更多信息请访问 [tutucloud.com](https://tutucloud.com/)，欢迎通过 [support@tusdk.com](mailto:support@tusdk.com) 与我们联系。
+更多信息请访问 [tutucloud.com](https://tutucloud.com/)，欢迎与我们联系~
