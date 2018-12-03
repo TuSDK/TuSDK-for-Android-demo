@@ -40,7 +40,7 @@ public class AlbumComponentSample extends SampleBase
 	{
 		if (activity == null) return;
 
-		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/TuAlbumComponent.html
+		// @see-http://tusdk.com/docs/android/image/api/org/lasque/tusdk/impl/components/TuAlbumComponent.html
 		TuAlbumComponent comp = TuSdkGeeV1.albumCommponent(activity, new TuSdkComponentDelegate()
 		{
 			@Override
@@ -53,13 +53,13 @@ public class AlbumComponentSample extends SampleBase
 		});
 
 		// 组件选项配置
-		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/TuAlbumComponentOption.html
+		// @see-http://tusdk.com/docs/android/image/api/org/lasque/tusdk/impl/components/TuAlbumComponentOption.html
 		// comp.componentOption()
 
-		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/album/TuAlbumListOption.html
+		// @see-http://tusdk.com/docs/android/image/api/org/lasque/tusdk/impl/components/album/TuAlbumListOption.html
 		// comp.componentOption().albumListOption()
 
-		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/album/TuPhotoListOption.html
+		// @see-http://tusdk.com/docs/android/image/api/org/lasque/tusdk/impl/components/album/TuPhotoListOption.html
 		// comp.componentOption().photoListOption()
 
 		// 设置选择照片的尺寸限制 默认：CGSize(8000,8000)

@@ -47,11 +47,11 @@ public class WipeAndFilterEditorSample extends SampleBase implements TuEditWipeA
 	public void showSample(Activity activity)
 	{
 	    if (activity == null) return;
-	    // see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/base/TuSdkHelperComponent.html
+	    // see-http://tusdk.com/docs/android/image/api/org/lasque/tusdk/impl/components/base/TuSdkHelperComponent.html
 	    this.componentHelper = new TuSdkHelperComponent(activity);
 	    
 	    // 组件选项配置
-	    // @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/filter/TuEditWipeAndFilterOption.html
+	    // @see-http://tusdk.com/docs/android/image/api/org/lasque/tusdk/impl/components/filter/TuEditWipeAndFilterOption.html
 	    TuEditWipeAndFilterOption option = new TuEditWipeAndFilterOption();
 	    
 	    // 是否在控制器结束后自动删除临时文件

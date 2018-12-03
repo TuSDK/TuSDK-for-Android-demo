@@ -341,4 +341,14 @@
     <string name="lsq_network_paser_data_failed">數據處理失敗</string>
     <string name="lsq_loading_picture_failed">圖片加載失敗</string>
 
+
+    <!-- 动漫滤镜 -->
+    <string name="lsq_filter_group_Cartoon_image">漫畫</string>
+    <string name="lsq_filter_CHComics_Image">國漫</string>
+    <string name="lsq_filter_JPComics_Image">日漫</string>
+    <string name="lsq_filter_Monochrome_Image">單色</string>
+    <string name="lsq_filter_Ink_Image">墨水</string>
+    <string name="lsq_filter_USComics_Image">美漫</string>
+    <string name="lsq_filter_Lightcolor_Image">淡彩</string>
+
 </resources>

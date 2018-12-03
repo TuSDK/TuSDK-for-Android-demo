@@ -46,7 +46,7 @@ public class AlbumMultipleComponentSample extends SampleBase
 	{
 		if (activity == null) return;
 		
-		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/TuAlbumMultipleComponent.html
+		// @see-http://tusdk.com/docs/android/image/api/org/lasque/tusdk/impl/components/TuAlbumMultipleComponent.html
 		TuAlbumMultipleComponent comp = TuSdkGeeV1.albumMultipleCommponent(activity,
 				new TuSdkComponentDelegate()
 				{
@@ -65,13 +65,13 @@ public class AlbumMultipleComponentSample extends SampleBase
 				9);
 
 		// 组件选项配置
-		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/TuAlbumComponentOption.html
+		// @see-http://tusdk.com/docs/android/image/api/org/lasque/tusdk/impl/components/TuAlbumComponentOption.html
 		// comp.componentOption()
 
-		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/album/TuAlbumListOption.html
+		// @see-http://tusdk.com/docs/android/image/api/org/lasque/tusdk/impl/components/album/TuAlbumListOption.html
 		// comp.componentOption().albumListOption()
 
-		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/camera/TuCameraOption.html
+		// @see-http://tusdk.com/docs/android/image/api/org/lasque/tusdk/impl/components/camera/TuCameraOption.html
 		// comp.componentOption().cameraOption()
 		
 		// 设置相册照片排序方式

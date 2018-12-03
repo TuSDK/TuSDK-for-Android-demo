@@ -369,4 +369,13 @@
     <string name="lsq_network_paser_data_failed">Failed to process data</string>
     <string name="lsq_loading_picture_failed">Load picture failed</string>
 
+    <!-- 动漫滤镜 -->
+    <string name="lsq_filter_group_Cartoon_image">Cartoon</string>
+    <string name="lsq_filter_CHComics_Image">CHComics</string>
+    <string name="lsq_filter_JPComics_Image">JPComics</string>
+    <string name="lsq_filter_Monochrome_Image">Monochrome</string>
+    <string name="lsq_filter_Ink_Image">Ink</string>
+    <string name="lsq_filter_USComics_Image">USComics</string>
+    <string name="lsq_filter_Lightcolor_Image">Lightcolor</string>
+
 </resources>

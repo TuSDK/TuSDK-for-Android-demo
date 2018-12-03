@@ -60,7 +60,7 @@ public class EditMultipleComponentSample extends SampleBase
 	public void showSample(Activity activity)
 	{
 		if (activity == null) return;
-		// see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/base/TuSdkHelperComponent.html
+		// see-http://tusdk.com/docs/android/image/api/org/lasque/tusdk/modules/components/TuSdkHelperComponent.html
 		this.componentHelper = new TuSdkHelperComponent(activity);
 
 		TuAlbumComponent component = TuSdkGeeV1.albumCommponent(activity, new TuSdkComponentDelegate()
@@ -102,7 +102,7 @@ public class EditMultipleComponentSample extends SampleBase
 		};
 
 		// 组件选项配置
-		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/TuEditMultipleComponent.html
+		// @see-http://tusdk.com/docs/android/image/api/org/lasque/tusdk/impl/components/TuEditMultipleComponent.html
 		TuEditMultipleComponent component = null;
 
 		if (lastFragment == null)
@@ -114,10 +114,10 @@ public class EditMultipleComponentSample extends SampleBase
 			component = TuSdkGeeV1.editMultipleCommponent(lastFragment, delegate);
 		}
 
-		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/TuEditMultipleComponentOption.html
+		// @see-http://tusdk.com/docs/android/image/api/org/lasque/tusdk/impl/components/TuEditMultipleComponentOption.html
 		// component.componentOption()
 
-		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/edit/TuEditMultipleOption.html
+		// @see-http://tusdk.com/docs/android/image/api/org/lasque/tusdk/impl/components/edit/TuEditMultipleOption.html
 		// component.componentOption().editMultipleOption()
 		
 		// 设置水印选项 (默认为空，如果设置不为空，则输出的图片上将带有水印)
@@ -126,37 +126,37 @@ public class EditMultipleComponentSample extends SampleBase
 		// 设置文字贴纸选项
 		// component.componentOption().editTextOption();
 		 
-		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/edit/TuEditCuterOption.html
+		// @see-http://tusdk.com/docs/android/image/api/org/lasque/tusdk/impl/components/edit/TuEditCuterOption.html
 		// component.componentOption().editCuterOption()
 
-		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/filter/TuEditFilterOption.html
+		// @see-http://tusdk.com/docs/android/image/api/org/lasque/tusdk/impl/components/filter/TuEditFilterOption.html
 		// component.componentOption().editFilterOption()
 
-		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/filter/TuEditSkinOption.html
+		// @see-http://tusdk.com/docs/android/image/api/org/lasque/tusdk/impl/components/filter/TuEditSkinOption.html
 		// component.componentOption().editSkinOption()
 
-		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/sticker/TuEditStickerOption.html
+		// @see-http://tusdk.com/docs/android/image/api/org/lasque/tusdk/impl/components/sticker/TuEditStickerOption.html
 		// component.componentOption().editStickerOption()
 
-		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/filter/TuEditAdjustOption.html
+		// @see-http://tusdk.com/docs/android/image/api/org/lasque/tusdk/impl/components/filter/TuEditAdjustOption.html
 		// component.componentOption().editAdjustOption()
 
-		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/filter/TuEditSharpnessOption.html
+		// @see-http://tusdk.com/docs/android/image/api/org/lasque/tusdk/impl/components/filter/TuEditSharpnessOption.html
 		// component.componentOption().editSharpnessOption()
 
-		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/filter/TuEditApertureOption.html
+		// @see-http://tusdk.com/docs/android/image/api/org/lasque/tusdk/impl/components/filter/TuEditApertureOption.html
 		// component.componentOption().editApertureOption()
 
-		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/filter/TuEditVignetteOption.html
+		// @see-http://tusdk.com/docs/android/image/api/org/lasque/tusdk/impl/components/filter/TuEditVignetteOption.html
 		// component.componentOption().editVignetteOption()
 		
-		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/smudge/TuEditSmudgeOption.html
+		// @see-http://tusdk.com/docs/android/image/api/org/lasque/tusdk/impl/components/smudge/TuEditSmudgeOption.html
 		// component.componentOption().editSmudgeOption()
 		
-		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/filter/TuEditWipeAndFilterOption.html
+		// @see-http://tusdk.com/docs/android/image/api/org/lasque/tusdk/impl/components/filter/TuEditWipeAndFilterOption.html
 		// component.componentOption().editWipeAndFilterOption()
 		
-		// @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/filter/TuEditHDROption.html
+		// @see-http://tusdk.com/docs/android/image/api/org/lasque/tusdk/impl/components/filter/TuEditHDROption.html
 				// component.componentOption().editHDROption()
 
 		// 设置图片

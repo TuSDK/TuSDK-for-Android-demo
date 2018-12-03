@@ -381,6 +381,44 @@
                     }
                 }
             ]
+        },
+        {
+            "file":"lsq_filter_Cartoon_image_253.gfilter",
+            "name":"lsq_filter_group_Cartoon_image",
+            "default_filter_id":1257,
+            "type":3,
+            "filters":[
+                {
+                    "id":1257,
+                    "name":"lsq_filter_CHComics_Image",
+                    "color":"#FFFFFF"
+                },
+                {
+                    "id":1258,
+                    "name":"lsq_filter_USComics_Image",
+                    "color":"#FFFFFF"
+                },
+                {
+                    "id":1259,
+                    "name":"lsq_filter_JPComics_Image",
+                    "color":"#FFFFFF"
+                },
+                {
+                    "id":1260,
+                    "name":"lsq_filter_Lightcolor_Image",
+                    "color":"#FFFFFF"
+                },
+                {
+                    "id":1261,
+                    "name":"lsq_filter_Ink_Image",
+                    "color":"#FFFFFF"
+                },
+                {
+                    "id":1262,
+                    "name":"lsq_filter_Monochrome_Image",
+                    "color":"#FFFFFF"
+                }
+            ]
         }
     ],
     "stickerCategories":[
@@ -455,36 +493,6 @@
                 },
                 {
                     "id":10348
-                }
-            ]
-        },
-        {
-            "file":"lsq_sticker_1_1168.gsce",
-            "name":"\u840c\u5ba02",
-            "stickers":[
-                {
-                    "id":9010
-                },
-                {
-                    "id":9011
-                },
-                {
-                    "id":9012
-                },
-                {
-                    "id":9013
-                },
-                {
-                    "id":9014
-                },
-                {
-                    "id":9015
-                },
-                {
-                    "id":9016
-                },
-                {
-                    "id":9017
                 }
             ]
         },
@@ -589,6 +597,36 @@
                     "id":8486
                 }
             ]
+        },
+        {
+            "file":"lsq_sticker_2_978.gsce",
+            "name":"\u653e\u5b66\u522b\u8d70",
+            "stickers":[
+                {
+                    "id":7200
+                },
+                {
+                    "id":7201
+                },
+                {
+                    "id":7202
+                },
+                {
+                    "id":7203
+                },
+                {
+                    "id":7204
+                },
+                {
+                    "id":7205
+                },
+                {
+                    "id":7206
+                },
+                {
+                    "id":7207
+                }
+            ]
         }
     ],
     "brushGroups":[
@@ -623,5 +661,5 @@
             ]
         }
     ],
-    "master":"oH8LRn6JUoa2QdYkfmTIz\/mk2siMxi9vWs0HY8YCjXApYnp3y74bw6bPb\/eyTZkMVjNXIVZMbVnj4v+keMvPhfGHaXRg4pCw1Oz7sg4cW2g8F9BS3pystaIZVEaB0y5mEozNJrmB1hk5\/Znkjc1GPX7vwccrjXAVosDsEwwJfQ0ARhIHsWrNg8Cc1YdvbTS46+2T3nvJItCxL5HwOreE+fRrtUKQWNFYtxbxRlEqPcibkR2eEWrxpwWQjbdcZWBCV5tg1U6cn9wn9+YV0sl5xqc7hPLnpRQp4A2qHyLo7siGAkn9UAiQ2hjUD254eMrJFHwTSoIcusUUNkrRsJaPOYpEQaCO+xPPnbUs5fsrsfqxJzH\/xQOp21U44gwwA9Fkn87utu2p\/eijVBfHcLfXL50Fn5gloYDiUKbzG\/y1LbSwIIfULCx01+Ie+EhbJiXhU9CFcaBvbToK+CGDhfXc4SoD\/2pilEiTfG\/fsYN0y8L0Jjd9d9DOwR1wd0ppV66Tfz6gaDi6FzKjW3EV2JOB\/fU+9Os1tlrLpFfYddgRgaWD7pIRAO4+RGIlm3RjKUswt1LCMfVJh0wB9LzwrRTxnf3INVMnQvzK3PX7aZpImjxesStASenRiqAAC37HH6+zAdg8wBRVc5OQe2wWOCcb9l22WEmdQCrMTI\/9Nf3eqNSFvoGfW0+RQY5Lkbql\/8FZhuL8sFC6AFYSEagSKxNG39N8ap2qJhEFvMYRgV2e4Or8DQsIaDJZdxohvJeguuRBa0eVkglFatnXWHnQxk52z0vAH\/q5gBVYvO5gqs2jUyjL\/XbNkab2hg8LYh+S3sjLaFW6exTPs2A8znY1s9N6V10xdUb5b+ni7qwT1Mvb5tSs6b9n0rNZnyqYWOJIqeOsFSPTqm\/tyT+Iphzg0Iy9TQHPBKTfe5rrfLPO2MNhE3WaPQQsogR0V6xYcnXM0p7ZqaduN33vF7dJ3\/w\/7IGEsxtPP6yqVVw9G11p+dlShjvg0aBqm+hgzNb48+Xb4dz0XRxAdwOpQG5SRCv8lEZgeoUBg1MkXUSVH2Eigosp1gI7NDuebMPsSYs2kUMmJeW+lza3IaKc2IKKsxQfYJ0JoHVxAcqq\/PaBADIcH\/JzDyyRYCusV7R7VTgYoXLT1hw9g2yaUrP8na+PBQOhaHC87ujSo\/Q\/lOAZoMswiXIgZmCIhOBfIqe2PnrRQA\/3Up8SSEXqAjqHVe6X3xYxwpgcKQO6lytid1ncsYpFhHKltE1Dk\/bZzELV6Ryro+MNN8EENMGoE0y6a7H1SyMqLPakY3826iPPkiBiw9uWl5omA5eeWTdsjuleIp9whRaTs0QI4TjUhBlLi10+HAsfK4gQJw6ym5ni5OpHxri\/HwkxITAMQ3yDLSSggRp6EP6gF9JZa6qSxpN14gIWZt0JGHKIVzX17A9RBmD6cXV\/JaqaFEH2uVynaFtbW6Ms5UONUw9hvu3Y5Ime4wWVjiprKh+Ln6vETuSpDWkQUJGT7YsAxMQp+oXDH\/EIDqxnY+mL7YQhugggwjRI2Y6APLYibXFxvgvADrnKNIDrnVD3M\/OR6w6Xz+8EQERejO2x4+LOWi2yq44i8wLm1RuLKGysEMe8dzxGZN7bW\/LeKdZ0kJ8DGHNud8lgj4Qk22usO7K9dxtvMPf\/\/JZ7f2hdRr43AYa5sBQcCYfgyAbzI17hvRsau9rZVn4Gk1E+yFAXFldSerH878lt301yP7\/pFvhv1hw0IUlYqu0IgqRUOXr21AEO64VTOt+aDM16ftcB03y+WVpL6QnKfRcK3qVpXedzAvKwd3fbvTTQoAchku4UaroHe1k03c20nuUzYOorWRPeMcVN48C0442B0E"
+    "master":"QSd2kV6UZpa7kCVnytFE0gmhmtIa2SjUcBmNhlAEDUj7f\/vBllkb3Le9G+lPDa7kl4ZgDSSqygm+wVrkV7\/ssJleB7t7iW41gIleIfs8rqD\/RZ+vhQuIeAXk8smrun0uS3HLNGhbjD5e3Hy4v+Lu5HU9SEio3o67xAsdhNV7T2mW46rQum6eMdsYpkVCu\/EwTsibztuZGSj5wzbm+Zu\/lGFNnkFhI8gOgvQKhHaWiCM3M5nKPujUyUpVfbK3C6LZT7nU4nlv7yOJxtLqWrq27cYPCpIKhtKV8WthptIfUxAKM3n6BuP2DoVM4P3YD4IvrfH7TxcXRD9B+ch128e5LXedROFn1A3mzIZPrU5+lZ3+jiXaLlTjX+jObVsg7IZzeBB6NU\/Zo2jcGF\/MVCDOcqYcVQlK4K1tqVvC8SbztGu4pD6fHT410r6DNxqvJ43Y47Yfzrc5s6aPIarbY9z1lQkFU5LVS6SfquMwaXYItlRJXtETXamY7\/HRKHLa7v0igqy6WkjbcOe1tDC8Ipjvg7oi5v\/IZl8m0Cj5EG\/Hu8bsTZTSxNLcDpDYmQ0IsIQ91xywKBrRKTNvLBlqOoQQea6GGbzwBVQd9wr69LVB5\/5s88S3GHR8RqXHgFHt8+oOk04rcsYGAu5Q4SMFWDTD8pwKqGxkX\/qivyecRdhBVWJJ1RL9fjpq+IQgMCtiXt7ltuKj1+tbY1vTnQt1McyrjYmjy3VHPfOYkkyEVECqNkbi321Wjx8wVM8jbtb1MMZLdocNftMYP+EmH5LMc3xaNWgWe46UcvZD9Qd17w2ef9koau013Ywe4oI6r6j86h5z80y3yBZvsbMHNVSEz4lVxhutlomVLaZCm2iEovQRDKrboPfIcyC42g5TToui5pWuYdunY+WixV2YMjSqnlT1DQjYj3MQQ+F67I+fTUcKDw2Cm\/SsFpE2bjKkbDwd2F3OhUANfXBBfTpH1ejdrck69GBy27tptJabkFwAczl7AK0+MOLCKyq1bQD9MUarZLau+FtiFmM6Lmom\/kUntPfe5y9G74hhvmMPe04BF3V4iNGxmn6GmFeKOBYIqo1t30YwjnBHbpmrVyzSYdj0VcefWhX1D3GpFnUKx6+Z1\/2Wnkr7FZ\/dLpbrDhfb3evE30cumgfpnfYycbC3yrNQTc\/emW8NBJDH8ob86swuJnnmoN\/CAh5EwEWRNdEJ+F0X4A4cZgYtvyWQAUuqCyg6EVC8NLAhrnJQbPcRW7Ex3+GPNFLk3f1VwqZaNSp0+SCy7DzfZ8Ej4WWF2PsWryGnY0WGzUSorzcox9xLcmklrRawCvdSqs+DdzOMwslAnEOdmvrH+nIuAq6WQ0Al0cuqUx17hc050J\/31i3orFnp722tKAOOXNoh5kJAXtP\/G1uVYvwsvLFqECViUa6PFqNN+fv7eQUK7hfJs8VmVrr37\/A3ZWr1QdJC7go6TCZ0zojE3nGO9RCxh2tytfiC9IQMO5LbpBSmw9tR0Onu6FX2W72M6mjhObaRvSTplpFkDlt88iHp5mjlvXcVcSUOk2yQWSsHs7JYz3KDw3KJkVIP40UA95U4P9ltubWt8eTWmKLUm9gqO2lddDmHs1NLjFyIU0e8lzdZXKQSRQwBErOKnWkSh56PoqjqkhxKy9ayJe2Bnjg5Xkx+IrD\/cGRJBHOC3s8rAxwoFDjy0cqOv3+dxBg7LxFzP6MnW2ot9SYMOvsP4Z7D0LuxN1AaBXAxHiOqoSjDqvgwixKsKhQ0K2u8emzQUfiAMCwJEHY+v8j7zxy2Nx4WzRifs+yPfL22+V4mLfHaw8iTvn6KgU9pZ4Cg4sI3BG2wYpr15l46emdYsWvsOceCqOi4kjYaQFhSPwztoTNHImxEsU9LybNZE4Y7UTnsg7d\/I0Gfy1g+3afw70alK1aboiz5aIKN\/XIVFkIY+0C3L2h6SgNOJfgLhfaQN2zZR5eDeYlhGRWAOdn\/uAGYXLXXmYfsYmKKpojEJQcoxO1TNS4rkBPmA0ud0pBc0xotl8WhEc2D6ZqeG83cAQFnmei7x70ys1JLSWhBPxvZ8oA8r5MxUW2lJz2VIVVGlBN5V5Y=BC7E212332"
 }

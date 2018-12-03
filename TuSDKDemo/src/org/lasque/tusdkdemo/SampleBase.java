@@ -28,7 +28,7 @@ public abstract class SampleBase
 	public int titleResId;
 	
 	/** 组件帮助方法 */
-	// see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/base/TuSdkHelperComponent.html
+	// see-http://tusdk.com/docs/android/image/api/org/lasque/tusdk/modules/components/TuSdkHelperComponent.html
 	public TuSdkHelperComponent componentHelper;
 
 	/**

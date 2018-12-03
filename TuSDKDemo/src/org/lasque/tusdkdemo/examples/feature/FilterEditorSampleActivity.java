@@ -38,7 +38,7 @@ public class FilterEditorSampleActivity extends FragmentActivity implements TuEd
         setContentView(R.layout.demo_filter_editor);
 
 	    // 组件选项配置
-	    // @see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/filter/TuEditFilterOption.html
+	    // @see-http://tusdk.com/docs/android/image/api/org/lasque/tusdk/impl/components/filter/TuEditFilterOption.html
 		TuEditFilterOption option = new TuEditFilterOption();
 		
 		// 控制器类型，这里指定为扩展类 ExtendFilterFragment

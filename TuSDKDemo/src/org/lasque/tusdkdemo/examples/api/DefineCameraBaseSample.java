@@ -45,7 +45,7 @@ public class DefineCameraBaseSample extends SampleBase
 		// 如果不支持摄像头显示警告信息
 		if (CameraHelper.showAlertIfNotSupportCamera(activity)) return;
 
-		// see-http://tusdk.com/docs/android/api/org/lasque/tusdk/impl/components/base/TuSdkHelperComponent.html
+		// see-http://tusdk.com/docs/android/image/api/org/lasque/tusdk/modules/components/TuSdkHelperComponent.html
 		this.componentHelper = new TuSdkHelperComponent(activity);
 
 		this.componentHelper.presentModalNavigationActivity(

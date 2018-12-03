@@ -173,7 +173,7 @@ public class DefineCameraBaseFragment extends TuFragment
 		// 可选，设置相机手动聚焦
 		mCamera.adapter().setFocusTouchView(TuFocusTouchView.getLayoutId());
 		// 是否开启脸部追踪 (需要相机人脸追踪权限，请访问tusdk.com 控制台开启权限)
-		mCamera.setEnableFaceDetection(true);
+		mCamera.setEnableFaceTrace(true);
 		// 禁用前置摄像头自动水平镜像 (默认: false，前置摄像头拍摄结果自动进行水平镜像)
 		// mCamera.setDisableMirrorFrontFacing(true);
 		// 启动相机
