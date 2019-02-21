@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.lasque.tusdkdemo"
-    android:versionCode="20181203"
-    android:versionName="3.0.2"
+    android:versionCode="20190221"
+    android:versionName="3.0.7"
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-sdk
@@ -65,8 +65,8 @@
             android:name="org.lasque.tusdk.impl.activity.TuFragmentActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustResize" />
-        
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" />
+
         <!-- 示例 -->
         <activity
             android:name="org.lasque.tusdkdemo.examples.component.GifImageViewActivity"
