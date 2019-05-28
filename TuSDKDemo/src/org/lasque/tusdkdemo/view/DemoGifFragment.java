@@ -10,6 +10,7 @@
 package org.lasque.tusdkdemo.view;
 
 import org.lasque.tusdk.core.utils.TLog;
+import org.lasque.tusdk.core.view.TuSdkViewHelper;
 import org.lasque.tusdk.core.view.TuSdkViewHelper.OnSafeClickListener;
 import org.lasque.tusdk.core.view.widget.button.TuSdkImageButton;
 import org.lasque.tusdk.impl.activity.TuFragment;

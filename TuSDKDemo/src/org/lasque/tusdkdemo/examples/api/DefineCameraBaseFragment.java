@@ -23,6 +23,7 @@ import org.lasque.tusdk.core.utils.hardware.CameraHelper;
 import org.lasque.tusdk.core.utils.hardware.TuSdkStillCameraAdapter.CameraState;
 import org.lasque.tusdk.core.utils.hardware.TuSdkStillCameraInterface;
 import org.lasque.tusdk.core.utils.hardware.TuSdkStillCameraInterface.TuSdkStillCameraListener;
+import org.lasque.tusdk.core.view.TuSdkViewHelper;
 import org.lasque.tusdk.core.view.TuSdkViewHelper.OnSafeClickListener;
 import org.lasque.tusdk.impl.activity.TuFragment;
 import org.lasque.tusdk.impl.components.camera.TuCameraFilterView;

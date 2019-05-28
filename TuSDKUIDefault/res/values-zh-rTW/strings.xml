@@ -116,6 +116,7 @@
     <string name="lsq_edit_entry_cuter">裁切</string>
     <string name="lsq_edit_entry_sticker">貼紙</string>
     <string name="lsq_edit_entry_smudge">涂抹</string>
+    <string name="lsq_edit_entry_paint">塗鴉</string>
     <string name="lsq_edit_entry_smudge_filter">模糊</string>
     <string name="lsq_edit_cuter_ratio_orgin">原始</string>
     <string name="lsq_edit_cuter_ratio_1_1">1:1</string>

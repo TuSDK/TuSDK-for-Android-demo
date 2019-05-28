@@ -9,10 +9,6 @@
  */
 package org.lasque.tusdkdemo;
 
-import android.content.Intent;
-import android.view.GestureDetector;
-import android.view.MotionEvent;
-
 import org.lasque.tusdk.core.TuSdk;
 import org.lasque.tusdk.core.TuSdkContext;
 import org.lasque.tusdk.core.secret.StatisticsManger;
@@ -24,12 +20,17 @@ import org.lasque.tusdk.impl.activity.TuFragmentActivity;
 import org.lasque.tusdk.impl.view.widget.TuNavigatorBar;
 import org.lasque.tusdk.modules.components.ComponentActType;
 import org.lasque.tusdkdemo.SampleGroup.GroupType;
+import org.lasque.tusdkdemo.examples.api.DefineCamera1BaseSample;
+import org.lasque.tusdkdemo.examples.api.DefineCamera2BaseSample;
 import org.lasque.tusdkdemo.examples.api.DefineCameraBaseSample;
 import org.lasque.tusdkdemo.examples.component.AlbumComponentSample;
 import org.lasque.tusdkdemo.examples.component.AlbumMultipleComponentSample;
 import org.lasque.tusdkdemo.examples.component.GifImageViewActivity;
+import org.lasque.tusdkdemo.examples.face.FaceDetectionImageSample;
+import org.lasque.tusdkdemo.examples.face.FaceDetectionVideoSample;
 import org.lasque.tusdkdemo.examples.feature.CameraAndEditorSample;
 import org.lasque.tusdkdemo.examples.feature.FilterEditorSampleActivity;
+import org.lasque.tusdkdemo.examples.feature.PaintEditorSample;
 import org.lasque.tusdkdemo.examples.feature.SelfishCameraSample;
 import org.lasque.tusdkdemo.examples.feature.StickerEditorSample;
 import org.lasque.tusdkdemo.examples.feature.WipeAndFilterEditorSample;
@@ -44,6 +45,10 @@ import org.lasque.tusdkdemo.theme.geev2.RichEditComponentSample;
 import org.lasque.tusdkdemo.view.DemoListView;
 import org.lasque.tusdkdemo.view.DemoListView.DemoListItemAction;
 import org.lasque.tusdkdemo.view.DemoListView.DemoListViewDelegate;
+
+import android.content.Intent;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
 
 /**
  * @author Clear
@@ -139,6 +144,8 @@ public class TuComponentListActivity extends TuFragmentActivity implements TuSdk
 		group.appendSample(new StickerEditorSample());
 		// 涂抹编辑器示例
 		group.appendSample(new WipeAndFilterEditorSample());
+		// 涂鸦编辑器示例
+		group.appendSample(new PaintEditorSample());
 
 		// 裁切组件自定义界面范例
 		group.appendSample(new CustomizedEditComponentSample());
@@ -147,6 +154,15 @@ public class TuComponentListActivity extends TuFragmentActivity implements TuSdk
 
 		// 个性化相机范例
 		group.appendSample(new DefineCameraBaseSample());
+		// 底层相机范例 (camera)
+		group.appendSample(new DefineCamera1BaseSample());
+		// 底层相机范例 (camera2)
+		group.appendSample(new DefineCamera2BaseSample());
+
+		// 人脸识别图片范例
+		group.appendSample(new FaceDetectionImageSample());
+		// 人脸识别视频范例
+		group.appendSample(new FaceDetectionVideoSample());
 
 		// 加载范例列表
 		mListView.loadSimples(group);

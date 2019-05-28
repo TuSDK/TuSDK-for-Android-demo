@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/tusdk-for-android-demo.iml" filepath="$PROJECT_DIR$/tusdk-for-android-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TuSDKDemo.iml" filepath="$PROJECT_DIR$/TuSDKDemo.iml" />
     </modules>
   </component>
 </project>

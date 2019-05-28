@@ -116,6 +116,7 @@
     <string name="lsq_edit_entry_cuter">Crop</string>
     <string name="lsq_edit_entry_sticker">Stickers</string>
     <string name="lsq_edit_entry_smudge">Smudge</string>
+    <string name="lsq_edit_entry_paint">Paint</string>
      <string name="lsq_edit_entry_smudge_filter">Blur</string>
     <string name="lsq_edit_cuter_ratio_orgin">Original</string>
     <string name="lsq_edit_cuter_ratio_1_1">1:1</string>

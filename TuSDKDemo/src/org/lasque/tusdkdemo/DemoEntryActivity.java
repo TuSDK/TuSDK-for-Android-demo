@@ -98,6 +98,7 @@ public class DemoEntryActivity extends TuFragmentActivity
 		@Override
 		public void onFilterManagerInited(FilterManager manager)
 		{
+			//使用TuProgressHub或者TuSdk.messageHub()需要tusdk_view_widget_progress_hud_view布局
 			TuSdk.messageHub().showSuccess(DemoEntryActivity.this, R.string.lsq_inited);
 		}
 	};

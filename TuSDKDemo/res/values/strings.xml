@@ -37,4 +37,5 @@
     <string name="lsq_face_detection_title">人脸检测</string>
     <string name="sample_api_face_detection_image">人脸检测 (图片)</string>
     <string name="sample_api_face_detection_camera">人脸检测 (视频)</string>
+    <string name="sample_comp_PaintComponent">涂鸦组件示例</string>
 </resources>

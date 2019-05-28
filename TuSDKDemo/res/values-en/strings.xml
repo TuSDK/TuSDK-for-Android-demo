@@ -37,4 +37,5 @@
     <string name="lsq_face_detection_title">Face Detection</string>
     <string name="sample_api_face_detection_image">Face Detection (Picture)</string>
     <string name="sample_api_face_detection_camera">Face Detection (Video)</string>
+    <string name="sample_comp_PaintComponent">Paint Editor Example</string>
 </resources>
