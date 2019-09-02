@@ -26,8 +26,6 @@ import org.lasque.tusdkdemo.examples.api.DefineCameraBaseSample;
 import org.lasque.tusdkdemo.examples.component.AlbumComponentSample;
 import org.lasque.tusdkdemo.examples.component.AlbumMultipleComponentSample;
 import org.lasque.tusdkdemo.examples.component.GifImageViewActivity;
-import org.lasque.tusdkdemo.examples.face.FaceDetectionImageSample;
-import org.lasque.tusdkdemo.examples.face.FaceDetectionVideoSample;
 import org.lasque.tusdkdemo.examples.feature.CameraAndEditorSample;
 import org.lasque.tusdkdemo.examples.feature.FilterEditorSampleActivity;
 import org.lasque.tusdkdemo.examples.feature.PaintEditorSample;
@@ -158,11 +156,6 @@ public class TuComponentListActivity extends TuFragmentActivity implements TuSdk
 		group.appendSample(new DefineCamera1BaseSample());
 		// 底层相机范例 (camera2)
 		group.appendSample(new DefineCamera2BaseSample());
-
-		// 人脸识别图片范例
-		group.appendSample(new FaceDetectionImageSample());
-		// 人脸识别视频范例
-		group.appendSample(new FaceDetectionVideoSample());
 
 		// 加载范例列表
 		mListView.loadSimples(group);

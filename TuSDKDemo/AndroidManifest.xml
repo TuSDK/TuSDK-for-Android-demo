@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.lasque.tusdkdemo"
-    android:versionCode="20190221"
-    android:versionName="3.0.7"
+    android:versionCode="20190902"
+    android:versionName="3.1.1"
     xmlns:tools="http://schemas.android.com/tools">
-
-    <uses-sdk
-        android:minSdkVersion="15"
-        android:targetSdkVersion="22"/>
 
     <!-- 访问网络 -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -66,7 +62,7 @@
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustUnspecified" />
-
+        
         <!-- 示例 -->
         <activity
             android:name="org.lasque.tusdkdemo.examples.component.GifImageViewActivity"

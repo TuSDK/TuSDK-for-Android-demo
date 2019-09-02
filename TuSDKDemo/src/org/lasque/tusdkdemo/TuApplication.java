@@ -52,7 +52,7 @@ public class TuApplication extends TuSdkApplication
 		CrashReport.initCrashReport(getApplicationContext(), "393d990901", true);
 
 		// 设置资源类，当 Application id 与 Package Name 不相同时，必须手动调用该方法, 且在 init 之前执行。
-		// TuSdk.setResourcePackageClazz(org.lasque.tusdkdemo.R.class);
+//		 TuSdk.setResourcePackageClazz(org.lasque.tusdkdemo.R.class);
 		
 		// 自定义 .so 文件路径，在 init 之前调用
 		// NativeLibraryHelper.shared().mapLibrary(NativeLibType.LIB_CORE, "libtusdk-library.so 文件路径");
