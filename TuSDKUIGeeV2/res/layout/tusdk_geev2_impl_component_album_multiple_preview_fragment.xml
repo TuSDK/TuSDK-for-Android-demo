@@ -34,14 +34,14 @@
             android:src="@drawable/lsq_style_default_multi_album_preview_unselected_button" />
     </RelativeLayout>
 
-    <android.support.v4.view.ViewPager
+    <androidx.viewpager.widget.ViewPager
         android:id="@+id/lsq_viewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/lsq_bottomBar"
         android:layout_below="@+id/lsq_topBar"
       android:background="@color/lsq_geev2_background_editor"  >
-    </android.support.v4.view.ViewPager>
+    </androidx.viewpager.widget.ViewPager>
 
     <RelativeLayout
         android:id="@+id/lsq_bottomBar"
