@@ -9,6 +9,7 @@
  */
 package org.lasque.tusdkdemo;
 
+import org.lasque.tusdk.core.TuSdk;
 import org.lasque.tusdk.core.TuSdkApplication;
 
 import com.tencent.bugly.crashreport.CrashReport;
@@ -52,7 +53,7 @@ public class TuApplication extends TuSdkApplication
 		CrashReport.initCrashReport(getApplicationContext(), "393d990901", true);
 
 		// 设置资源类，当 Application id 与 Package Name 不相同时，必须手动调用该方法, 且在 init 之前执行。
-//		 TuSdk.setResourcePackageClazz(org.lasque.tusdkdemo.R.class);
+		 TuSdk.setResourcePackageClazz(org.lasque.tusdkdemo.R.class);
 		
 		// 自定义 .so 文件路径，在 init 之前调用
 		// NativeLibraryHelper.shared().mapLibrary(NativeLibType.LIB_CORE, "libtusdk-library.so 文件路径");
@@ -65,7 +66,7 @@ public class TuApplication extends TuSdkApplication
 	     *
 	     *  @param appkey 应用秘钥 (请前往 http://tusdk.com 申请秘钥)
 	     */
-		this.initPreLoader(this.getApplicationContext(), "7dfde11ef91d0c22-04-ewdjn1");
+		this.initPreLoader(this.getApplicationContext(), "60b0e73b850b25b3-04-ewdjn1");
 		
 		/**
 	     *  指定开发模式,需要与lsq_tusdk_configs.json中masters.key匹配， 如果找不到devType将默认读取master字段
