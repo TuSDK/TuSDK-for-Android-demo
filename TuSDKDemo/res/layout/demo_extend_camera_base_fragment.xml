@@ -8,6 +8,15 @@
         android:id="@+id/lsq_cameraView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
+        <com.tusdk.pulse.filter.FilterDisplayView
+            android:id="@+id/lsq_surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <include
+            android:id="@+id/lsq_focus_touch_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/tusdk_impl_component_camera_focus_touch_view" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -23,7 +32,7 @@
             android:layout_marginLeft="10dp"
             android:orientation="vertical" >
 
-            <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+            <org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton
                 android:id="@+id/lsq_flashButton"
                 android:layout_width="44dp"
                 android:layout_height="44dp"
@@ -40,7 +49,7 @@
                 android:textSize="12sp" />
         </LinearLayout>
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton
             android:id="@+id/lsq_switchButton"
             android:layout_width="44dp"
             android:layout_height="44dp"
@@ -65,7 +74,7 @@
         android:layout_alignParentBottom="true"
         android:background="#A000" >
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton
             android:id="@+id/lsq_closeButton"
             android:layout_width="60dp"
             android:layout_height="match_parent"
@@ -75,7 +84,7 @@
             android:scaleType="center"
             android:src="@drawable/lsq_style_default_camera_button_close" />
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton
             android:id="@+id/lsq_captureButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -83,7 +92,7 @@
             android:background="@drawable/lsq_style_default_camera_button_capture"
             android:scaleType="matrix" />
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkTextButton
             android:id="@+id/lsq_filterButton"
             android:layout_width="wrap_content"
             android:layout_height="50dp"

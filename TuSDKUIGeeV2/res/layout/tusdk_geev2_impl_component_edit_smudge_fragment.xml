@@ -10,7 +10,7 @@
         android:layout_height="44dp"
         android:background="@color/lsq_geev2_background_editor_bottom_bar" >
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton
             android:id="@+id/lsq_bar_cancelButton"
             android:layout_width="44dp"
             android:layout_height="match_parent"
@@ -21,7 +21,7 @@
             android:scaleType="center"
             android:src="@drawable/lsq_geev2_style_default_edit_button_cancel" />
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton
             android:id="@+id/lsq_bar_completeButton"
             android:layout_width="44dp"
             android:layout_height="match_parent"
@@ -33,7 +33,7 @@
             android:src="@drawable/lsq_geev2_style_default_edit_button_completed" />
     </RelativeLayout>
 
-    <org.lasque.tusdk.impl.components.widget.smudge.SmudgeView
+    <org.lasque.tusdkpulse.impl.components.widget.smudge.SmudgeView
         android:id="@+id/lsq_smudgeView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -41,7 +41,7 @@
         android:layout_below="@+id/lsq_bottomBar"
         android:background="@color/lsq_geev2_background_editor" />
 
-    <org.lasque.tusdk.impl.components.widget.smudge.TuBrushSizeAnimView
+    <org.lasque.tusdkpulse.impl.components.widget.smudge.TuBrushSizeAnimView
         android:id="@+id/lsq_size_anim_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -58,7 +58,7 @@
 
         <!-- 撤销 -->
 
-        <org.lasque.tusdk.core.view.TuSdkImageView
+        <org.lasque.tusdkpulse.core.view.TuSdkImageView
             android:id="@+id/lsq_bar_undoButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -69,7 +69,7 @@
 
         <!-- 重做 -->
 
-        <org.lasque.tusdk.core.view.TuSdkImageView
+        <org.lasque.tusdkpulse.core.view.TuSdkImageView
             android:id="@+id/lsq_bar_redoButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -94,28 +94,28 @@
             android:gravity="center_vertical"
             android:orientation="horizontal" >
 
-            <org.lasque.tusdk.core.view.TuSdkImageView
+            <org.lasque.tusdkpulse.core.view.TuSdkImageView
                 android:id="@+id/lsq_small_brush_size_btn"
                 android:layout_width="15dp"
                 android:layout_height="15dp"
                 android:padding="3dp"
                 android:src="@drawable/lsq_geev2_brush_size_bg"/>
 
-            <org.lasque.tusdk.core.view.TuSdkImageView
+            <org.lasque.tusdkpulse.core.view.TuSdkImageView
                 android:id="@+id/lsq_medium_brush_size_btn"
                 android:layout_width="12dp"
                 android:layout_height="12dp"
                 android:layout_marginLeft="32dp"
                 android:background="@drawable/lsq_geev2_brush_size_bg" />
 
-            <org.lasque.tusdk.core.view.TuSdkImageView
+            <org.lasque.tusdkpulse.core.view.TuSdkImageView
                 android:id="@+id/lsq_large_brush_size_btn"
                 android:layout_width="15dp"
                 android:layout_height="15dp"
                 android:layout_marginLeft="32dp"
                 android:src="@drawable/lsq_geev2_brush_size_bg" />
 
-            <org.lasque.tusdk.core.view.TuSdkImageView
+            <org.lasque.tusdkpulse.core.view.TuSdkImageView
                 android:id="@+id/lsq_super_large_brush_size_btn"
                 android:layout_width="18dp"
                 android:layout_height="18dp"
@@ -143,7 +143,7 @@
         android:paddingRight="16dp"
         android:visibility="gone" >
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkTextButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -158,7 +158,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1" />
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkTextButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -180,12 +180,12 @@
             android:gravity="center"
             android:orientation="vertical" >
 
-            <org.lasque.tusdk.core.view.TuSdkImageView
+            <org.lasque.tusdkpulse.core.view.TuSdkImageView
                 android:id="@+id/lsq_brushThumbImageView"
                 android:layout_width="20dp"
                 android:layout_height="20dp" />
 
-            <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+            <org.lasque.tusdkpulse.core.view.widget.button.TuSdkTextButton
                 android:id="@+id/lsq_brush_brushButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -201,7 +201,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1" />
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkTextButton
             android:id="@+id/lsq_brush_eraserButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

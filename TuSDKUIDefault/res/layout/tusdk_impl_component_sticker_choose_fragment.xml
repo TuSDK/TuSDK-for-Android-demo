@@ -20,7 +20,7 @@
             android:layout_height="match_parent"
             android:orientation="horizontal" >
 
-            <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+            <org.lasque.tusdkpulse.core.view.widget.button.TuSdkTextButton
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -29,7 +29,7 @@
                 android:textColor="@color/lsq_sticker_title_color"
                 android:textSize="16sp" />
 
-            <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+            <org.lasque.tusdkpulse.core.view.widget.button.TuSdkTextButton
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -38,7 +38,7 @@
                 android:textColor="@color/lsq_sticker_title_color"
                 android:textSize="16sp" />
 
-            <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+            <org.lasque.tusdkpulse.core.view.widget.button.TuSdkTextButton
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -64,11 +64,11 @@
             android:background="@color/lsq_sticker_title_selected_color" />
     </RelativeLayout>
 
-    <org.lasque.tusdk.core.view.widget.TuSdkViewPager
+    <org.lasque.tusdkpulse.core.view.widget.TuSdkViewPager
         android:id="@+id/lsq_viewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/lsq_categoryWrap" >
-    </org.lasque.tusdk.core.view.widget.TuSdkViewPager>
+    </org.lasque.tusdkpulse.core.view.widget.TuSdkViewPager>
 
 </RelativeLayout>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<org.lasque.tusdk.impl.components.widget.sticker.StickerListGrid xmlns:android="http://schemas.android.com/apk/res/android"
+<org.lasque.tusdkpulse.impl.components.widget.sticker.StickerListGrid xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
@@ -9,11 +9,11 @@
         android:layout_height="match_parent"
         android:layout_margin="10dp" >
 
-        <org.lasque.tusdk.core.view.TuSdkImageView
+        <org.lasque.tusdkpulse.core.view.TuSdkImageView
             android:id="@+id/lsq_posterView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop" />
     </RelativeLayout>
 
-</org.lasque.tusdk.impl.components.widget.sticker.StickerListGrid>
+</org.lasque.tusdkpulse.impl.components.widget.sticker.StickerListGrid>

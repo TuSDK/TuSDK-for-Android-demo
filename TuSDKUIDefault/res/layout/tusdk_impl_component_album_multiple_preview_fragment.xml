@@ -14,7 +14,7 @@
         android:background="@color/lsq_navigator_bg"
          >
 
-		<org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+		<org.lasque.tusdkpulse.core.view.widget.button.TuSdkTextButton
 		    android:id="@+id/lsq_backButton"
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
@@ -24,7 +24,7 @@
 		    android:textColor="@color/lsq_color_white" 
 		    android:textSize="15sp" />
 
-		<org.lasque.tusdk.core.view.widget.button.TuSdkButton
+		<org.lasque.tusdkpulse.core.view.widget.button.TuSdkButton
 		    android:id="@+id/lsq_completeButton"
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
@@ -62,7 +62,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginRight="7dp" >
        
-			<org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+			<org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton
 	       	    android:id="@+id/lsq_selectImageButton"
 	       	    android:layout_width="wrap_content"
 	       	    android:layout_height="wrap_content"
@@ -71,7 +71,7 @@
 	       	    android:scaleType="center"
 	       	    android:src="@drawable/lsq_style_default_multi_album_preview_unselected_button" />
        
-	       	<org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+	       	<org.lasque.tusdkpulse.core.view.widget.button.TuSdkTextButton
 	       	    android:id="@+id/lsq_select_tb"
 	       	    android:layout_width="wrap_content"
 	       	    android:layout_height="wrap_content"

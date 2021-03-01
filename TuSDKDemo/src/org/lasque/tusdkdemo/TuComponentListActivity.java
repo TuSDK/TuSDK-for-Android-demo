@@ -9,23 +9,22 @@
  */
 package org.lasque.tusdkdemo;
 
-import org.lasque.tusdk.core.TuSdk;
-import org.lasque.tusdk.core.TuSdkContext;
-import org.lasque.tusdk.core.secret.StatisticsManger;
-import org.lasque.tusdk.core.utils.ContextUtils;
-import org.lasque.tusdk.core.view.widget.TuSdkNavigatorBar.NavigatorBarButtonInterface;
-import org.lasque.tusdk.core.view.widget.TuSdkNavigatorBar.NavigatorBarButtonType;
-import org.lasque.tusdk.core.view.widget.TuSdkNavigatorBar.TuSdkNavigatorBarDelegate;
-import org.lasque.tusdk.impl.activity.TuFragmentActivity;
-import org.lasque.tusdk.impl.view.widget.TuNavigatorBar;
-import org.lasque.tusdk.modules.components.ComponentActType;
+import org.lasque.tusdkdemo.examples.feature.BubbleSample;
+import org.lasque.tusdkpulse.core.TuSdk;
+import org.lasque.tusdkpulse.core.TuSdkContext;
+import org.lasque.tusdkpulse.core.secret.StatisticsManger;
+import org.lasque.tusdkpulse.core.utils.ContextUtils;
+import org.lasque.tusdkpulse.core.view.widget.TuSdkNavigatorBar.NavigatorBarButtonInterface;
+import org.lasque.tusdkpulse.core.view.widget.TuSdkNavigatorBar.NavigatorBarButtonType;
+import org.lasque.tusdkpulse.core.view.widget.TuSdkNavigatorBar.TuSdkNavigatorBarDelegate;
+import org.lasque.tusdkpulse.impl.activity.TuFragmentActivity;
+import org.lasque.tusdkpulse.impl.view.widget.TuNavigatorBar;
+import org.lasque.tusdkpulse.modules.components.ComponentActType;
 import org.lasque.tusdkdemo.SampleGroup.GroupType;
 import org.lasque.tusdkdemo.examples.api.DefineCamera1BaseSample;
 import org.lasque.tusdkdemo.examples.api.DefineCamera2BaseSample;
-import org.lasque.tusdkdemo.examples.api.DefineCameraBaseSample;
 import org.lasque.tusdkdemo.examples.component.AlbumComponentSample;
 import org.lasque.tusdkdemo.examples.component.AlbumMultipleComponentSample;
-import org.lasque.tusdkdemo.examples.component.GifImageViewActivity;
 import org.lasque.tusdkdemo.examples.feature.CameraAndEditorSample;
 import org.lasque.tusdkdemo.examples.feature.FilterEditorSampleActivity;
 import org.lasque.tusdkdemo.examples.feature.PaintEditorSample;
@@ -104,8 +103,7 @@ public class TuComponentListActivity extends TuFragmentActivity implements TuSdk
 
 		/**
 		 * ！！！！！！！！！！！！！！！！！！！！！！！！！特别提示信息要长！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
-		 * 您可以通过查看 group.appendSimple 的具体类showSimple(Activity
-		 * activity)方法，学习使用范例。
+		 * 您可以通过查看 group.appendSimple 的具体类showSimple(Activity activity)方法，学习使用范例。
 		 */
 
 		// 范例分组
@@ -129,8 +127,6 @@ public class TuComponentListActivity extends TuFragmentActivity implements TuSdk
 		group.appendSample(new AlbumComponentSample());
 		// 多选相册组件范例
 		group.appendSample(new AlbumMultipleComponentSample());
-		// Gif组件范例
-		group.appendSample(GroupType.ComponentSample, R.string.sample_GifComponent, GifImageViewActivity.class);
 
 		// 拍照并编辑示例
 		group.appendSample(new CameraAndEditorSample());
@@ -140,6 +136,9 @@ public class TuComponentListActivity extends TuFragmentActivity implements TuSdk
 		group.appendSample(GroupType.FeatureSample, R.string.sample_comp_FilterComponent, FilterEditorSampleActivity.class);
 		// 添置编辑器示例
 		group.appendSample(new StickerEditorSample());
+
+		group.appendSample(new BubbleSample());
+
 		// 涂抹编辑器示例
 		group.appendSample(new WipeAndFilterEditorSample());
 		// 涂鸦编辑器示例
@@ -149,13 +148,11 @@ public class TuComponentListActivity extends TuFragmentActivity implements TuSdk
 		group.appendSample(new CustomizedEditComponentSample());
 		// 相机界面自定义
 		group.appendSample(new CustomizedCameraComponentSample());
-
-		// 个性化相机范例
-		group.appendSample(new DefineCameraBaseSample());
 		// 底层相机范例 (camera)
 		group.appendSample(new DefineCamera1BaseSample());
 		// 底层相机范例 (camera2)
 		group.appendSample(new DefineCamera2BaseSample());
+
 
 		// 加载范例列表
 		mListView.loadSimples(group);

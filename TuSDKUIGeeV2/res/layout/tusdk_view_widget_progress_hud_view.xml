@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<org.lasque.tusdk.impl.view.widget.TuProgressHubView xmlns:android="http://schemas.android.com/apk/res/android"
+<org.lasque.tusdkpulse.impl.view.widget.TuProgressHubView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0000"
@@ -40,4 +40,4 @@
             android:textSize="15sp" />
     </LinearLayout>
 
-</org.lasque.tusdk.impl.view.widget.TuProgressHubView>
+</org.lasque.tusdkpulse.impl.view.widget.TuProgressHubView>

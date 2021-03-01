@@ -9,10 +9,10 @@
  */
 package org.lasque.tusdkdemo.examples.ui;
 
-import org.lasque.tusdk.core.view.TuSdkTouchImageViewInterface.LsqImageChangeType;
-import org.lasque.tusdk.core.view.TuSdkViewHelper;
-import org.lasque.tusdk.core.view.widget.button.TuSdkImageButton;
-import org.lasque.tusdk.impl.components.edit.TuEditTurnAndCutFragment;
+import org.lasque.tusdkpulse.core.view.TuSdkTouchImageViewInterface.LsqImageChangeType;
+import org.lasque.tusdkpulse.core.view.TuSdkViewHelper;
+import org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton;
+import org.lasque.tusdkpulse.impl.components.edit.TuEditTurnAndCutFragment;
 
 import android.view.View;
 import android.view.View.OnClickListener;

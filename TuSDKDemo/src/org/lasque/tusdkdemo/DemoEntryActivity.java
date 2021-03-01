@@ -9,18 +9,26 @@
  */
 package org.lasque.tusdkdemo;
 
-import org.lasque.tusdk.core.TuSdk;
-import org.lasque.tusdk.core.secret.StatisticsManger;
-import org.lasque.tusdk.core.seles.tusdk.FilterManager;
-import org.lasque.tusdk.core.seles.tusdk.FilterManager.FilterManagerDelegate;
-import org.lasque.tusdk.impl.activity.TuFragmentActivity;
-import org.lasque.tusdk.modules.components.ComponentActType;
+import org.lasque.tusdkdemo.utils.Constants;
+import org.lasque.tusdkpulse.core.TuSdk;
+import org.lasque.tusdkpulse.core.TuSdkContext;
+import org.lasque.tusdkpulse.core.secret.StatisticsManger;
+import org.lasque.tusdkpulse.core.utils.ThreadHelper;
+import org.lasque.tusdkpulse.impl.activity.TuFragmentActivity;
+import org.lasque.tusdkpulse.modules.components.ComponentActType;
 import org.lasque.tusdkdemo.examples.suite.CameraComponentSample;
 import org.lasque.tusdkdemo.examples.suite.EditMultipleComponentSample;
+import org.lasque.tusdkdemo.utils.PermissionUtils;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.view.View;
 
+import com.tusdk.pulse.Engine;
+import com.tusdk.pulse.utils.AssetsMapper;
+
+import static org.lasque.tusdkdemo.utils.PermissionUtils.getRequiredPermissions;
 /**
  * @author Clear
  */
@@ -52,11 +60,21 @@ public class DemoEntryActivity extends TuFragmentActivity
 	@Override
 	protected void initActivity()
 	{
+		Engine mEngine = Engine.getInstance();
+		mEngine.init(null);
 		super.initActivity();
 		this.setRootView(layoutId, 0);
 
 		// 设置应用退出信息ID 一旦设置将触发连续点击两次退出应用事件
 		this.setAppExitInfoId(R.string.lsq_exit_info);
+
+		SharedPreferences sp = TuSdkContext.context().getSharedPreferences("TU-TTF", Context.MODE_PRIVATE);
+		if (!sp.contains(Constants.TTF_KEY)){
+			AssetsMapper assetsMapper = new AssetsMapper(TuSdkContext.context());
+			String path = assetsMapper.mapAsset("SourceHanSansSC-Normal.ttf");
+			sp.edit().putString(Constants.TTF_KEY,path).commit();
+		}
+
 	}
 
 	/** 相机按钮容器 */
@@ -81,7 +99,22 @@ public class DemoEntryActivity extends TuFragmentActivity
 		// 异步方式初始化滤镜管理器 (注意：如果需要一开启应用马上执行SDK组件，需要做该检测，否则可以忽略检测)
 		// 需要等待滤镜管理器初始化完成，才能使用所有功能
 //		TuSdk.messageHub().setStatus(this, R.string.lsq_initing);
-		TuSdk.checkFilterManager(mFilterManagerDelegate);
+
+		ThreadHelper.runThread(new Runnable() {
+			@Override
+			public void run() {
+				while (!TuSdk.checkResourceLoaded()){}
+				ThreadHelper.post(new Runnable() {
+					@Override
+					public void run() {
+						// 回到主线程
+						TuSdk.messageHub().showSuccess(DemoEntryActivity.this, R.string.lsq_inited);
+						/** 发布后清注释下面行 */
+						//TuSdk.logAuthors();
+					}
+				});
+			}
+		});
 
 		mCameraButtonView = this.getViewById(R.id.lsq_entry_camera);
 		mEditorButtonView = this.getViewById(R.id.lsq_entry_editor);
@@ -91,17 +124,6 @@ public class DemoEntryActivity extends TuFragmentActivity
 		mEditorButtonView.setOnClickListener(mButtonClickListener);
 		mComponentListButtonView.setOnClickListener(mButtonClickListener);
 	}
-
-	/** 滤镜管理器委托 */
-	private FilterManagerDelegate mFilterManagerDelegate = new FilterManagerDelegate()
-	{
-		@Override
-		public void onFilterManagerInited(FilterManager manager)
-		{
-			//使用TuProgressHub或者TuSdk.messageHub()需要tusdk_view_widget_progress_hud_view布局
-			TuSdk.messageHub().showSuccess(DemoEntryActivity.this, R.string.lsq_inited);
-		}
-	};
 
 	/** 按钮点击事件处理 */
 	private View.OnClickListener mButtonClickListener = new View.OnClickListener()
@@ -139,7 +161,17 @@ public class DemoEntryActivity extends TuFragmentActivity
 	/** 显示组件列表页面 */
 	private void showComponentList()
 	{
-		Intent intent = new Intent(this, TuComponentListActivity.class);
-		startActivity(intent);
+		if (PermissionUtils.hasRequiredPermissions(this,getRequiredPermissions())){
+			Intent intent = new Intent(this, TuComponentListActivity.class);
+			startActivity(intent);
+		} else {
+			PermissionUtils.requestRequiredPermissions(this, getRequiredPermissions());
+		}
+	}
+
+	@Override
+	protected void onDestroy() {
+		super.onDestroy();
+		Engine.getInstance().release();
 	}
 }

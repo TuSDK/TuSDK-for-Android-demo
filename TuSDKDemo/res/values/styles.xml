@@ -22,4 +22,35 @@
         <item name="android:background">#00000000</item>
         <item name="android:drawablePadding">16dp</item>
     </style>
-</resources>
+
+    <!-- 全屏 断点续拍 -->
+    <style name="lsq_record_progress_full_screen">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/tusdk_record_progress_full_screen</item><!-- progress_horizontal -->
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:minHeight">20dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+
+    <!-- camera controll Option for full screen -->
+    <style name="lsq_camera_OptionButton_full_screen">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <declare-styleable name="TabPagerIndicator">
+        <attr name="default_display_counts" format="integer"></attr>
+        <attr name="normal_text_color" format="color"/>
+        <attr name="high_light_text_color" format="color"/>
+        <attr name="text_size" format="integer"/>
+        <attr name="line_color" format="color"/>
+        <attr name="line_size" format="integer"/>
+        <attr name="line_width" format="dimension"></attr>
+    </declare-styleable>
+    <declare-styleable name="HorizontalProgressBar">
+        <attr name="backgroundColor" format="color"/>
+        <attr name="progressColor" format="color"/>
+        <attr name="defaultHeight" format="dimension"/>
+    </declare-styleable>
+</resources>

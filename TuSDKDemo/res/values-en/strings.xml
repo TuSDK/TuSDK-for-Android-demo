@@ -33,6 +33,7 @@
     <string name="sample_api_CameraBase">Create Camera with API (For test only)</string>
     <string name="sample_api_Camera1Base">API Camera Component (camera)</string>
     <string name="sample_api_Camera2Base">API Camera Component (camera2)</string>
+    <string name="sample_api_EffectEngineCamera">Effect Camera with API (For test only)</string>
     <!-- face detection -->
     <string name="lsq_face_detection_title">Face Detection</string>
     <string name="sample_api_face_detection_image">Face Detection (Picture)</string>

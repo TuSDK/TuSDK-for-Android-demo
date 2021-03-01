@@ -14,17 +14,21 @@
         android:layout_above="@+id/lsq_optionBar"
         android:layout_below="@+id/lsq_navigatorBar"
         android:background="@color/lsq_geev2_background_editor">
+        <com.tusdk.pulse.filter.FilterDisplayView
+            android:id="@+id/lsq_surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     </RelativeLayout>
 
-    <org.lasque.tusdk.impl.components.widget.sticker.StickerView
+    <org.lasque.tusdkpulse.impl.components.widget.sticker.StickerView
         android:id="@+id/lsq_stickerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/lsq_optionBar" 
         android:layout_below="@+id/lsq_navigatorBar">
-    </org.lasque.tusdk.impl.components.widget.sticker.StickerView>
+    </org.lasque.tusdkpulse.impl.components.widget.sticker.StickerView>
 
-    <org.lasque.tusdk.core.view.widget.TuMaskRegionView
+    <org.lasque.tusdkpulse.core.view.widget.TuMaskRegionView
         android:id="@+id/lsq_cutRegionView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -39,19 +43,19 @@
         android:orientation="horizontal"
         android:background="@color/lsq_geev2_background_option_bar" >
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkTextButton
             android:id="@+id/lsq_cutButton"
             style="@style/lsq_edit_entryOptionButton"
             android:drawableTop="@drawable/lsq_geev2_lsq_style_default_edit_icon_edit"
             android:text="@string/lsq_edit_entry_cuter" />
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkTextButton
             android:id="@+id/lsq_filterButton"
             style="@style/lsq_edit_entryOptionButton"
             android:drawableTop="@drawable/lsq_geev2_style_default_edit_icon_filter"
             android:text="@string/lsq_edit_entry_filter" />
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkTextButton
             android:id="@+id/lsq_stickerButton"
             style="@style/lsq_edit_entryOptionButton"
             android:drawableTop="@drawable/lsq_style_default_edit_icon_sticker"
@@ -66,7 +70,7 @@
         android:background="@color/lsq_background_editor_bottom_bar"
         android:orientation="horizontal" >
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton
             android:id="@+id/lsq_cancalButton"
             android:layout_width="44dp"
             android:layout_height="match_parent"
@@ -78,7 +82,7 @@
             android:src="@drawable/lsq_style_default_edit_button_back" />
 
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton
             android:id="@+id/lsq_completeButton"
             android:layout_width="44dp"
             android:layout_height="match_parent"

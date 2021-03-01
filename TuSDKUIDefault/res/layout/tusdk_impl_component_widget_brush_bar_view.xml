@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<org.lasque.tusdk.impl.components.widget.smudge.BrushBarView xmlns:android="http://schemas.android.com/apk/res/android"
+<org.lasque.tusdkpulse.impl.components.widget.smudge.BrushBarView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/lsq_background_option_bar" >
@@ -11,7 +11,7 @@
         android:layout_marginTop="4dp"
         android:layout_marginBottom="4dp">
        
-        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton
 	        android:id="@+id/lsq_size_image"
 	        android:layout_width="44dp"
 	        android:layout_height="44dp"
@@ -35,7 +35,7 @@
         
     </RelativeLayout>
     
-    <org.lasque.tusdk.impl.components.widget.smudge.BrushBarTableView
+    <org.lasque.tusdkpulse.impl.components.widget.smudge.BrushBarTableView
         android:id="@+id/lsq_brush_list_view"
         android:layout_toRightOf="@+id/lsq_configWrap"
         android:layout_toEndOf="@+id/lsq_configWrap"
@@ -43,4 +43,4 @@
         android:layout_height="match_parent" />
 
 
-</org.lasque.tusdk.impl.components.widget.smudge.BrushBarView>
+</org.lasque.tusdkpulse.impl.components.widget.smudge.BrushBarView>

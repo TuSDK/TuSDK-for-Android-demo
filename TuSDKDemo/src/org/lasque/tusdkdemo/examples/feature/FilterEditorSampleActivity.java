@@ -9,13 +9,13 @@
  */
 package org.lasque.tusdkdemo.examples.feature;
 
-import org.lasque.tusdk.core.TuSdkResult;
-import org.lasque.tusdk.core.utils.TLog;
-import org.lasque.tusdk.core.utils.image.BitmapHelper;
-import org.lasque.tusdk.impl.activity.TuFragment;
-import org.lasque.tusdk.impl.components.filter.TuEditFilterFragment;
-import org.lasque.tusdk.impl.components.filter.TuEditFilterFragment.TuEditFilterFragmentDelegate;
-import org.lasque.tusdk.impl.components.filter.TuEditFilterOption;
+import org.lasque.tusdkpulse.core.TuSdkResult;
+import org.lasque.tusdkpulse.core.utils.TLog;
+import org.lasque.tusdkpulse.core.utils.image.BitmapHelper;
+import org.lasque.tusdkpulse.impl.activity.TuFragment;
+import org.lasque.tusdkpulse.impl.components.filter.TuEditFilterFragment;
+import org.lasque.tusdkpulse.impl.components.filter.TuEditFilterFragment.TuEditFilterFragmentDelegate;
+import org.lasque.tusdkpulse.impl.components.filter.TuEditFilterOption;
 import org.lasque.tusdkdemo.R;
 
 import android.os.Bundle;

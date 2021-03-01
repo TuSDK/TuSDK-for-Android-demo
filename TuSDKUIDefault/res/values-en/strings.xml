@@ -315,7 +315,7 @@
     <string name="lsq_filter_set_highlights">Highlights</string>
     <string name="lsq_filter_set_shadows">Shadows</string>
     <string name="lsq_filter_set_temperature">Tone</string>
-    <string name="lsq_filter_set_skinColor">Skin</string>
+    <string name="lsq_filter_set_ruddy">Ruddy</string>
     <string name="lsq_filter_set_autumnColorThreshold">Autumn</string>
     <string name="lsq_filter_set_hue">Hue</string>
     <string name="lsq_filter_set_hueSpace">Hue Space</string>

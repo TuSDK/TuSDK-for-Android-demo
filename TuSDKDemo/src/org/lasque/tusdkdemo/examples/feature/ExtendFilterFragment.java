@@ -9,7 +9,7 @@
  */
 package org.lasque.tusdkdemo.examples.feature;
 
-import org.lasque.tusdk.impl.components.filter.TuEditFilterFragment;
+import org.lasque.tusdkpulse.impl.components.filter.TuEditFilterFragment;
 
 /**
  * 扩展滤镜 Fragment

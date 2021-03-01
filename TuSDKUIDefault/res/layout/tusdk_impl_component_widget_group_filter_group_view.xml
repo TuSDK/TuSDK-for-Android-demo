@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<org.lasque.tusdk.impl.components.widget.filter.GroupFilterGroupView xmlns:android="http://schemas.android.com/apk/res/android"
+<org.lasque.tusdkpulse.impl.components.widget.filter.GroupFilterGroupView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="60dp"
     android:layout_height="match_parent" >
 
-    <org.lasque.tusdk.core.view.TuSdkRelativeLayout
+    <org.lasque.tusdkpulse.core.view.TuSdkRelativeLayout
         android:id="@+id/lsq_item_wrap"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -22,7 +22,7 @@
             android:layout_height="match_parent"
             android:background="@color/lsq_filter_group_cell_selected_color"/>
 
-        <org.lasque.tusdk.core.view.TuSdkRelativeLayout
+        <org.lasque.tusdkpulse.core.view.TuSdkRelativeLayout
             android:id="@+id/lsq_item_selected"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -34,7 +34,7 @@
                 android:layout_height="match_parent"
                 android:scaleType="center"
                 android:src="@drawable/lsq_style_default_filter_capture" />
-        </org.lasque.tusdk.core.view.TuSdkRelativeLayout>
+        </org.lasque.tusdkpulse.core.view.TuSdkRelativeLayout>
 
         <TextView
             android:id="@+id/lsq_item_title"
@@ -47,9 +47,9 @@
             android:text="@string/lsq_text"
             android:textColor="@color/lsq_color_white"
             android:textSize="10sp" />
-    </org.lasque.tusdk.core.view.TuSdkRelativeLayout>
+    </org.lasque.tusdkpulse.core.view.TuSdkRelativeLayout>
 
-    <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+    <org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton
         android:id="@+id/lsq_item_remove_button"
         android:layout_width="25dp"
         android:layout_height="25dp"
@@ -59,4 +59,4 @@
         android:src="@drawable/lsq_style_default_edit_remove"
         android:background="@color/lsq_filter_group_remove_bg" />
 
-</org.lasque.tusdk.impl.components.widget.filter.GroupFilterGroupView>
+</org.lasque.tusdkpulse.impl.components.widget.filter.GroupFilterGroupView>

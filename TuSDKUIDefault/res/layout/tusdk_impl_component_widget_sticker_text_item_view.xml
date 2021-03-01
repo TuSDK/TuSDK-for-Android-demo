@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<org.lasque.tusdk.impl.components.widget.sticker.StickerTextItemView xmlns:android="http://schemas.android.com/apk/res/android"
+<org.lasque.tusdkpulse.impl.components.widget.sticker.StickerTextItemView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -8,7 +8,7 @@
         android:layout_height="match_parent"
         android:layout_above="@+id/lsq_sticker_turnButton" >
 
-        <org.lasque.tusdk.core.view.TuSdkTextView
+        <org.lasque.tusdkpulse.core.view.TuSdkTextView
             android:id="@+id/lsq_sticker_textView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -20,14 +20,14 @@
             android:layout_margin="12dp"
             android:gravity="center"/>
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton
             android:id="@+id/lsq_sticker_cancelButton"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:scaleType="center"
             android:src="@drawable/lsq_style_default_edit_icon_text_drag_cancel" />
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton
             android:id="@+id/lsq_sticker_turnButton"
             android:layout_width="32dp"
             android:layout_height="32dp"
@@ -43,7 +43,7 @@
         android:layout_height="match_parent"
         android:layout_centerHorizontal="true" />
 
-    <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+    <org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton
         android:id="@+id/lsq_sticker_resizeButton"
         android:layout_width="32dp"
         android:layout_height="32dp"
@@ -54,4 +54,4 @@
         android:visibility="gone"
 />
     
-</org.lasque.tusdk.impl.components.widget.sticker.StickerTextItemView>
+</org.lasque.tusdkpulse.impl.components.widget.sticker.StickerTextItemView>

@@ -286,7 +286,7 @@
     <string name="lsq_filter_set_highlights">高光</string>
     <string name="lsq_filter_set_shadows">阴影</string>
     <string name="lsq_filter_set_temperature">色温</string>
-    <string name="lsq_filter_set_skinColor">肤色</string>
+    <string name="lsq_filter_set_ruddy">红润</string>
     <string name="lsq_filter_set_autumnColorThreshold">秋意</string>
     <string name="lsq_filter_set_hue">色相</string>
     <string name="lsq_filter_set_hueSpace">范围</string>

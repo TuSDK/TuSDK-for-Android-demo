@@ -3,7 +3,7 @@
     android:layout_height="match_parent"
     android:background="@color/lsq_background_editor" >
 
-    
+
     <ImageView
         android:id="@+id/lsq_imageView"
         android:layout_width="match_parent"
@@ -12,14 +12,14 @@
         android:background="@color/lsq_background_editor"
         android:scaleType="fitCenter" />
 
-    <org.lasque.tusdk.impl.components.widget.sticker.StickerView
+    <org.lasque.tusdkpulse.impl.components.widget.sticker.StickerView
         android:id="@+id/lsq_stickerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/lsq_sticker_bar" >
-    </org.lasque.tusdk.impl.components.widget.sticker.StickerView>
+    </org.lasque.tusdkpulse.impl.components.widget.sticker.StickerView>
 
-    <org.lasque.tusdk.core.view.widget.TuMaskRegionView
+    <org.lasque.tusdkpulse.core.view.widget.TuMaskRegionView
         android:id="@+id/lsq_cutRegionView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -40,7 +40,7 @@
         android:background="@color/lsq_background_editor_bottom_bar"
         android:orientation="horizontal" >
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton
             android:id="@+id/lsq_bar_cancelButton"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -48,7 +48,7 @@
             android:scaleType="center"
             android:src="@drawable/lsq_style_default_edit_button_cancel" />
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton
             android:id="@+id/lsq_bar_listButton"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -56,7 +56,7 @@
             android:scaleType="center"
             android:src="@drawable/lsq_style_default_edit_button_sticker_list" />
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton
             android:id="@+id/lsq_bar_onlineButton"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -64,7 +64,7 @@
             android:scaleType="center"
             android:src="@drawable/lsq_style_default_edit_button_sticker_online" />
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton
             android:id="@+id/lsq_bar_completeButton"
             android:layout_width="0dp"
             android:layout_height="match_parent"

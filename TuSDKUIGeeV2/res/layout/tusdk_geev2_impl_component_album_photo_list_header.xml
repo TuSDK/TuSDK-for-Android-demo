@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<org.lasque.tusdk.geev2.impl.components.album.TuPhotoListHeader xmlns:android="http://schemas.android.com/apk/res/android"
+<org.lasque.tusdkpulse.geev2.impl.components.album.TuPhotoListHeader xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="44dp"
     android:background="@color/lsq_background_default_header"
@@ -27,4 +27,4 @@
         android:textColor="@color/lsq_text_group_header"
         android:textSize="11sp" />
 
-</org.lasque.tusdk.geev2.impl.components.album.TuPhotoListHeader>
+</org.lasque.tusdkpulse.geev2.impl.components.album.TuPhotoListHeader>

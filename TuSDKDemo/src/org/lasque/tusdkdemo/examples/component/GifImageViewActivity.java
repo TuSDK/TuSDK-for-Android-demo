@@ -9,9 +9,9 @@
  */
 package org.lasque.tusdkdemo.examples.component;
 
-import org.lasque.tusdk.core.utils.TLog;
-import org.lasque.tusdk.core.view.widget.button.TuSdkImageButton;
-import org.lasque.tusdk.impl.view.widget.TuGifView;
+import org.lasque.tusdkpulse.core.utils.TLog;
+import org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton;
+import org.lasque.tusdkpulse.impl.view.widget.TuGifView;
 import org.lasque.tusdkdemo.R;
 
 import android.app.Activity;

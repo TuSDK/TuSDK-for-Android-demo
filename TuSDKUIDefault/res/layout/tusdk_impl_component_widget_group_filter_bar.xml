@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<org.lasque.tusdk.impl.components.widget.filter.GroupFilterBar xmlns:android="http://schemas.android.com/apk/res/android"
+<org.lasque.tusdkpulse.impl.components.widget.filter.GroupFilterBar xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content" >
 
-    <org.lasque.tusdk.modules.view.widget.filter.GroupFilterTableView
+    <org.lasque.tusdkpulse.modules.view.widget.filter.GroupFilterTableView
         android:id="@+id/lsq_group_list_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <org.lasque.tusdk.modules.view.widget.filter.GroupFilterTableView
+    <org.lasque.tusdkpulse.modules.view.widget.filter.GroupFilterTableView
         android:id="@+id/lsq_filter_list_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+    <org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton
         android:id="@+id/lsq_filter_back_button"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -24,4 +24,4 @@
         android:scaleType="center"
         android:src="@drawable/lsq_style_default_filter_back" />
 
-</org.lasque.tusdk.impl.components.widget.filter.GroupFilterBar>
+</org.lasque.tusdkpulse.impl.components.widget.filter.GroupFilterBar>

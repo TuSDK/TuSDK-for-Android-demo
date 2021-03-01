@@ -3,10 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <org.lasque.tusdk.impl.components.widget.sticker.StickerListView
+    <org.lasque.tusdkpulse.impl.components.widget.sticker.StickerListView
         android:id="@+id/lsq_listView"
         style="@style/lsq_listView"
         android:background="@color/lsq_background_default" >
-    </org.lasque.tusdk.impl.components.widget.sticker.StickerListView>
+    </org.lasque.tusdkpulse.impl.components.widget.sticker.StickerListView>
 
 </RelativeLayout>

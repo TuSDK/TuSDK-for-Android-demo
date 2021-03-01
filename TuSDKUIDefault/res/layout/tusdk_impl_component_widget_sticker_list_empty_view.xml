@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<org.lasque.tusdk.impl.components.widget.sticker.StickerListEmptyView xmlns:android="http://schemas.android.com/apk/res/android"
+<org.lasque.tusdkpulse.impl.components.widget.sticker.StickerListEmptyView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/lsq_background_default" >
@@ -28,7 +28,7 @@
             android:textColor="#545454"
             android:textSize="12sp" />
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkTextButton
             android:id="@+id/lsq_empty_more_button"
             android:layout_width="120dp"
             android:layout_height="40dp"
@@ -40,4 +40,4 @@
             android:textSize="16sp" />
     </LinearLayout>
 
-</org.lasque.tusdk.impl.components.widget.sticker.StickerListEmptyView>
+</org.lasque.tusdkpulse.impl.components.widget.sticker.StickerListEmptyView>

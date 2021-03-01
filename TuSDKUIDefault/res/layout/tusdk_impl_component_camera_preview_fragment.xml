@@ -7,7 +7,7 @@
 
     <!-- 显示的图片视图 -->
 
-    <org.lasque.tusdk.core.view.TuSdkImageView
+    <org.lasque.tusdkpulse.core.view.TuSdkImageView
         android:id="@+id/lsq_cameraPreviewImageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -22,7 +22,7 @@
         android:layout_marginRight="76dp" 
         android:layout_marginBottom="30dp">
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkTextButton
             android:id="@+id/lsq_backButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
             android:textColor="#3e3a39"
             android:textSize="12sp" />
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkTextButton
             android:id="@+id/lsq_saveButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7a7a7a" >
+
+    <RelativeLayout
+        android:id="@+id/cameraView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <com.tusdk.pulse.filter.FilterDisplayView
+            android:id="@+id/surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/configBar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/cancelButton"
+            style="@style/demo_camera_configbar_text_button"
+            android:layout_weight="1"
+            android:text="@string/lsq_button_close" />
+
+        <LinearLayout
+            android:id="@+id/flashBar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/flashTitle"
+                style="@style/demo_camera_configbar_text_button"
+                android:layout_weight="1"
+                android:text="@string/lsq_button_flash" />
+
+            <TextView
+                android:id="@+id/flashOffButton"
+                style="@style/demo_camera_configbar_text_button"
+                android:layout_weight="1"
+                android:text="@string/lsq_button_flash_model_off" />
+
+            <TextView
+                android:id="@+id/flashAutoButton"
+                style="@style/demo_camera_configbar_text_button"
+                android:layout_weight="1"
+                android:text="@string/lsq_button_flash_model_auto" />
+
+            <TextView
+                android:id="@+id/flashOpenButton"
+                style="@style/demo_camera_configbar_text_button"
+                android:layout_weight="1"
+                android:text="@string/lsq_button_flash_model_open" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/switchCameraButton"
+            style="@style/demo_camera_configbar_text_button"
+            android:layout_weight="1"
+            android:text="@string/lsq_button_switch_camera" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true" >
+
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkButton
+            android:id="@+id/captureButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/demo_simple_camera_button_capture"
+            android:text="" />
+
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkTextButton
+            android:id="@+id/effectButton"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/lsq_edit_entry_effect"
+            android:textColor="@color/demo_flash_normal"
+            android:textSize="18sp" />
+
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkTextButton
+            android:id="@+id/filterButton"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/filter_toggle_title"
+            android:textColor="@color/demo_flash_normal"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/configBar">
+
+        <include
+            android:id="@+id/lsq_group_filter_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            layout="@layout/tusdk_impl_component_camera_filter_view" />
+
+        <!-- 滤镜参数调节栏 -->
+
+        <include
+            android:id="@+id/lsq_filter_parameter_config_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="166dp"
+            layout="@layout/tusdk_impl_component_widget_filter_parameter_config_view" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lsq_effect_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/configBar">
+
+        <include
+            android:id="@+id/lsq_effect_params_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="166dp"
+            layout="@layout/tusdk_impl_component_widget_filter_parameter_config_view" />
+
+        <LinearLayout
+            android:id="@+id/lsq_effect_bar"
+            android:layout_width="match_parent"
+            android:layout_height="166dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/lsq_background_camera_filter_view_bar_alpha"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lsq_skin_disable_btn"
+                    style="@style/demo_camera_configbar_text_button"
+                    android:layout_weight="1"
+                    android:text="@string/lsq_close" />
+
+                <TextView
+                    android:id="@+id/lsq_skin_sleek_btn"
+                    style="@style/demo_camera_configbar_text_button"
+                    android:layout_weight="1"
+                    android:text="@string/lsq_beauty_skin_extreme" />
+
+                <TextView
+                    android:id="@+id/lsq_skin_vein_btn"
+                    style="@style/demo_camera_configbar_text_button"
+                    android:layout_weight="1"
+                    android:text="@string/lsq_beauty_skin_precision" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lsq_monster_disable_btn"
+                    style="@style/demo_camera_configbar_text_button"
+                    android:layout_weight="1"
+                    android:text="@string/lsq_close" />
+
+                <TextView
+                    android:id="@+id/lsq_monster_bigNose_btn"
+                    style="@style/demo_camera_configbar_text_button"
+                    android:layout_weight="1"
+                    android:text="大鼻子" />
+
+                <TextView
+                    android:id="@+id/lsq_monster_PieFace_btn"
+                    style="@style/demo_camera_configbar_text_button"
+                    android:layout_weight="1"
+                    android:text="大饼脸" />
+
+                <TextView
+                    android:id="@+id/lsq_monster_SquareFace_btn"
+                    style="@style/demo_camera_configbar_text_button"
+                    android:layout_weight="1"
+                    android:text="国字脸" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lsq_monster_ThickLips_btn"
+                    style="@style/demo_camera_configbar_text_button"
+                    android:layout_weight="1"
+                    android:text="厚嘴唇" />
+
+                <TextView
+                    android:id="@+id/lsq_monster_SmallEyes_btn"
+                    style="@style/demo_camera_configbar_text_button"
+                    android:layout_weight="1"
+                    android:text="眯眯眼" />
+
+                <TextView
+                    android:id="@+id/lsq_monster_PapayaFace_btn"
+                    style="@style/demo_camera_configbar_text_button"
+                    android:layout_weight="1"
+                    android:text="木瓜脸" />
+
+                <TextView
+                    android:id="@+id/lsq_monster_SnakeFace_btn"
+                    style="@style/demo_camera_configbar_text_button"
+                    android:layout_weight="1"
+                    android:text="蛇精脸" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/lsq_plastic_btn"
+                style="@style/demo_camera_configbar_text_button"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="人脸塑性" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

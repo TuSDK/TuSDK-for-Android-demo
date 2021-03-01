@@ -12,6 +12,10 @@
         android:background="@color/lsq_geev2_background_editor"
         android:clipChildren="false"
         android:clipToPadding="false" >
+        <com.tusdk.pulse.filter.FilterDisplayView
+            android:id="@+id/lsq_surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     </RelativeLayout>
 
     <include
@@ -34,7 +38,7 @@
         android:paddingLeft="30dp"
         android:paddingRight="30dp" >
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkTextButton
             android:id="@+id/lsq_closeButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -50,7 +54,7 @@
             android:layout_height="0dp"
             android:layout_weight="1" />
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkTextButton
             android:id="@+id/lsq_radialButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -66,7 +70,7 @@
             android:layout_height="0dp"
             android:layout_weight="1" />
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkTextButton
             android:id="@+id/lsq_linearButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -86,7 +90,7 @@
         android:layout_alignParentBottom="true"
         android:background="@color/lsq_background_editor_bottom_bar" >
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton
             android:id="@+id/lsq_cancelButton"
             android:layout_width="44dp"
             android:layout_height="match_parent"
@@ -97,7 +101,7 @@
             android:scaleType="center"
             android:src="@drawable/lsq_style_default_edit_button_cancel" />
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton
             android:id="@+id/lsq_completeButton"
             android:layout_width="44dp"
             android:layout_height="match_parent"
@@ -116,7 +120,7 @@
         android:layout_alignParentBottom="true"
         android:background="@color/lsq_background_editor_bottom_bar" >
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton
             android:id="@+id/lsq_configCancelButton"
             android:layout_width="44dp"
             android:layout_height="match_parent"
@@ -127,7 +131,7 @@
             android:scaleType="center"
             android:src="@drawable/lsq_style_default_edit_button_cancel" />
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton
             android:id="@+id/lsq_configCompleteButton"
             android:layout_width="44dp"
             android:layout_height="match_parent"

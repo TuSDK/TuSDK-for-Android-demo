@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<org.lasque.tusdk.impl.components.camera.TuCameraFilterView xmlns:android="http://schemas.android.com/apk/res/android"
+<org.lasque.tusdkpulse.impl.components.camera.TuCameraFilterView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <org.lasque.tusdk.core.view.TuSdkLinearLayout
+    <org.lasque.tusdkpulse.core.view.TuSdkLinearLayout
         android:id="@+id/lsq_group_bottom_view"
         android:layout_width="match_parent"
         android:layout_height="166dp"
@@ -18,7 +18,7 @@
             android:background="@color/lsq_background_camera_filter_view_bar_alpha" 
             layout="@layout/tusdk_impl_component_widget_group_filter_bar" />
         
-    </org.lasque.tusdk.core.view.TuSdkLinearLayout>
+    </org.lasque.tusdkpulse.core.view.TuSdkLinearLayout>
 
     <include
         android:id="@+id/lsq_filter_title_view"
@@ -27,4 +27,4 @@
         android:layout_centerVertical="true"
         layout="@layout/tusdk_impl_component_widget_filter_title_view" />
 
-</org.lasque.tusdk.impl.components.camera.TuCameraFilterView>
+</org.lasque.tusdkpulse.impl.components.camera.TuCameraFilterView>

@@ -27,15 +27,187 @@
     <string name="sample_comp_SelfishCamera">美颜相机</string>
     <string name="sample_comp_FilterComponent">滤镜组件示例</string>
     <string name="sample_comp_StickerComponent">贴纸组件示例</string>
+    <string name="sample_comp_BubbleComponent">气泡文字组件示例</string>
     <string name="sample_comp_BlurComponent">模糊组件示例</string>
     <string name="sample_ui_EditComponent">裁切组件自定义界面</string>
     <string name="sample_ui_CameraBase">相机界面自定义</string>
     <string name="sample_api_CameraBase">个性化相机示例 (仅供参考)</string>
     <string name="sample_api_Camera1Base">底层相机自定义 (camera)</string>
     <string name="sample_api_Camera2Base">底层相机自定义 (camera2)</string>
+    <string name="sample_api_EffectEngineCamera">特效相机示例 (仅供参考)</string>
     <!-- face detection -->
     <string name="lsq_face_detection_title">人脸检测</string>
     <string name="sample_api_face_detection_image">人脸检测 (图片)</string>
     <string name="sample_api_face_detection_camera">人脸检测 (视频)</string>
     <string name="sample_comp_PaintComponent">涂鸦组件示例</string>
+
+
+    <!-- 4.0.0 -->
+    <string name="lsq_edit_entry_effect">特效</string>
+    <string name="lsq_more">更多</string>
+    <string name="lsq_close">关闭</string>
+    <string name="lsq_open">开启</string>
+    <string name="lsq_lighting">闪光灯</string>
+    <string name="lsq_auto_focus">自动对焦</string>
+    <string name="lsq_radio_type">比例</string>
+
+
+    <string name="lsq_beauty_reset">重置</string>
+    <string name="lsq_beauty_eyesize">大眼</string>
+    <string name="lsq_beauty_jawsize">下巴</string>
+    <string name="lsq_beauty_eyedis">眼距</string>
+    <string name="lsq_beauty_archeyebrow">细眉</string>
+    <string name="lsq_beauty_browposition">眉高</string>
+    <string name="lsq_beauty_eyeangle">眼角</string>
+    <string name="lsq_beauty_chinsize">瘦脸</string>
+    <string name="lsq_beauty_mouthwidth">嘴型</string>
+    <string name="lsq_beauty_nosesize">瘦鼻</string>
+    <string name="lsq_beauty_lips">唇厚</string>
+    <string name="lsq_beauty_forehead">发际线</string>
+    <string name="lsq_beauty_skin_extreme">极致美颜</string>
+    <string name="lsq_beauty_skin_precision">精准美颜</string>
+    <string name="lsq_beauty_whitening">美白</string>
+    <string name="lsq_beauty_smoothing">磨皮</string>
+    <string name="lsq_beauty_ruddy">红润</string>
+
+
+
+    <string name="lsq_filter_set_reset">重置</string>
+    <string name="lsq_filter_set_eyesize">大眼</string>
+    <string name="lsq_filter_set_jawsize">下巴</string>
+    <string name="lsq_filter_set_eyedis">眼距</string>
+    <string name="lsq_filter_set_archeyebrow">细眉</string>
+    <string name="lsq_filter_set_browposition">眉高</string>
+    <string name="lsq_filter_set_eyeangle">眼角</string>
+    <string name="lsq_filter_set_chinsize">瘦脸</string>
+    <string name="lsq_filter_set_mouthwidth">嘴型</string>
+    <string name="lsq_filter_set_nosesize">瘦鼻</string>
+    <string name="lsq_filter_set_lips">唇厚</string>
+    <string name="lsq_filter_set_forehead">发际线</string>
+    <string name="lsq_filter_set_skin_extreme">极致美颜</string>
+    <string name="lsq_filter_set_skin_precision">精准美颜</string>
+    <string name="lsq_filter_set_whitening">美白</string>
+    <string name="lsq_filter_set_smoothing">磨皮</string>
+    <string name="lsq_filter_set_ruddy">红润</string>
+
+
+    <string name="lsq_capture">拍照</string>
+    <string name="lsq_click_shoot">点击拍摄</string>
+    <string name="lsq_long_click_shoot">长按拍摄</string>
+
+    <string name="beauty_on">美颜已开启</string>
+    <string name="beauty_off">美颜已关闭</string>
+
+    <!-- 滤镜 -->
+    <string name="lsq_filter_None">无效果</string>
+
+
+    <!-- 美颜 -->
+    <string name="lsq_dermabrasion">磨皮</string>
+    <string name="lsq_big_eyes">大眼</string>
+    <string name="lsq_thin_face">瘦脸</string>
+
+
+    <string name="lsq_filter_text">滤镜</string>
+    <string name="lsq_text_beauty">美肤</string>
+
+
+    <string name="lsq_text_beauty_type">微整形</string>
+    <string name="lsq_remove_sticker_title">确认删除本地文件?</string>
+    <string name="lsq_remove_sticker_confirm">确认</string>
+    <string name="lsq_remove_sticker_cancel">取消</string>
+    <string name="lsq_clear_beauty_plastic_hit">将所有参数恢复默认吗?</string>
+    <string name="lsq_clear_beauty_plastic_hit_confirm">确认</string>
+    <string name="lsq_clear_beauty_plastic_hit_cancel">取消</string>
+
+    <string name="lsq_text_comics">漫画</string>
+
+    <string name="lsq_filter_group_Portrait_Image">人像</string>
+    <string name="lsq_filter_group_Food_Image">美食</string>
+    <string name="lsq_filter_group_Scenery_Image">风景</string>
+    <string name="lsq_filter_group_Sharp_Image">锐利</string>
+
+    <string name="lsq_filter_Sharp_Orange">橙</string>
+    <string name="lsq_filter_Sharp_Black">黑</string>
+    <string name="lsq_filter_Sharp_History">历史</string>
+    <string name="lsq_filter_Sharp_Red">红</string>
+    <string name="lsq_filter_Sharp_Neon">霓虹</string>
+    <string name="lsq_filter_Sharp_Ash">茶灰</string>
+    <string name="lsq_filter_Sharp_Pink">粉</string>
+    <string name="lsq_filter_Sharp_Past">往事</string>
+    <string name="lsq_filter_Sharp_Otimes">旧时代</string>
+    <string name="lsq_filter_Sharp_Quiet">幽静</string>
+    <string name="lsq_filter_Sharp_Mottled">斑驳</string>
+    <string name="lsq_filter_Sharp_Messy">杂乱</string>
+    <string name="lsq_filter_Sharp_Imprint">印记</string>
+    <string name="lsq_filter_Sharp_Nostalgia">怀旧</string>
+    <string name="lsq_filter_Sharp_Dream">梦幻</string>
+    <string name="lsq_filter_Sharp_Contrast">反差</string>
+    <string name="lsq_filter_Sharp_Dark">暗夜</string>
+
+
+
+    <string name="lsq_filter_Scenery_SNight">静夜</string>
+    <string name="lsq_filter_Scenery_Flower">花海</string>
+    <string name="lsq_filter_Scenery_Rain">冷雨</string>
+    <string name="lsq_filter_Scenery_Fresh">清新</string>
+    <string name="lsq_filter_Scenery_Izu">伊豆</string>
+    <string name="lsq_filter_Scenery_Innocence">童真</string>
+    <string name="lsq_filter_Scenery_Tale">童话</string>
+    <string name="lsq_filter_Scenery_Picnic">野餐</string>
+    <string name="lsq_filter_Scenery_Blue">净蓝</string>
+    <string name="lsq_filter_Scenery_Birch">白桦</string>
+    <string name="lsq_filter_Scenery_Afternoon">午后</string>
+    <string name="lsq_filter_Scenery_City">城市</string>
+    <string name="lsq_filter_Scenery_Film">电影</string>
+    <string name="lsq_filter_Scenery_Silent">寂静</string>
+    <string name="lsq_filter_Scenery_Lautumn">晚秋</string>
+    <string name="lsq_filter_Scenery_Sunrise">日光</string>
+    <string name="lsq_filter_Scenery_Sunset">晚霞</string>
+    <string name="lsq_filter_Scenery_Grace">优雅</string>
+    <string name="lsq_filter_Scenery_Withered">凋零</string>
+
+
+
+    <string name="lsq_filter_Food_Delicious">美味</string>
+    <string name="lsq_filter_Food_Lemon">柠檬</string>
+    <string name="lsq_filter_Food_Light">淡酒</string>
+    <string name="lsq_filter_Food_Whisky">威士忌</string>
+    <string name="lsq_filter_Food_Caramel">焦糖</string>
+    <string name="lsq_filter_Food_Peach">蜜桃</string>
+    <string name="lsq_filter_Food_Honey">蜜糖</string>
+    <string name="lsq_filter_Food_Mangosteen">山竹</string>
+    <string name="lsq_filter_Food_Lime">青柠</string>
+
+
+    <string name="lsq_filter_Portrait_Natural">自然</string>
+    <string name="lsq_filter_Portrait_Pale">白皙</string>
+    <string name="lsq_filter_Portrait_Clear">清澈</string>
+    <string name="lsq_filter_Portrait_Moisten">水润</string>
+    <string name="lsq_filter_Portrait_Spring">春天</string>
+    <string name="lsq_filter_Portrait_Bellflower">桔梗</string>
+    <string name="lsq_filter_Portrait_Cherry">樱桃</string>
+    <string name="lsq_filter_Portrait_First">初见</string>
+    <string name="lsq_filter_Portrait_Pure">清纯</string>
+    <string name="lsq_filter_Portrait_Bright">光洁</string>
+    <string name="lsq_filter_Portrait_Retro">复古</string>
+    <string name="lsq_filter_Portrait_Soda">苏打</string>
+    <string name="lsq_filter_Portrait_Indifference">冷淡</string>
+    <string name="lsq_filter_Portrait_Rosy">粉嫩</string>
+    <string name="lsq_filter_Portrait_Icream">冰淇淋</string>
+    <string name="lsq_filter_Portrait_Ruddy">红润</string>
+    <string name="lsq_filter_Portrait_Dusk">黄昏</string>
+    <string name="lsq_filter_Portrait_Cream">奶油</string>
+    <string name="lsq_filter_Portrait_Texture">质感</string>
+    <string name="lsq_filter_Portrait_Dawn">晨光</string>
+    <string name="lsq_filter_Portrait_Milk">牛奶</string>
+    <string name="lsq_filter_Portrait_Candy">糖果</string>
+    <string name="lsq_filter_Portrait_Warm">温暖</string>
+    <string name="lsq_filter_Portrait_Sweet">甜系</string>
+    <string name="lsq_filter_Portrait_Fog">水雾</string>
+    <string name="lsq_filter_Portrait_Desserts">甜点</string>
+
+
+    <!-- 哈哈镜 -->
+    <string name="lsq_face_monster">哈哈镜</string>
 </resources>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<org.lasque.tusdk.geev2.impl.components.album.TuPhotoListGrid xmlns:android="http://schemas.android.com/apk/res/android"
+<org.lasque.tusdkpulse.geev2.impl.components.album.TuPhotoListGrid xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
@@ -18,4 +18,4 @@
 
     </RelativeLayout>
 
-</org.lasque.tusdk.geev2.impl.components.album.TuPhotoListGrid>
+</org.lasque.tusdkpulse.geev2.impl.components.album.TuPhotoListGrid>

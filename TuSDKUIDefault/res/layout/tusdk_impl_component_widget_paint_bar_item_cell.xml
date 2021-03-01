@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<org.lasque.tusdk.impl.components.widget.paintdraw.PaintDrawBarItemCell xmlns:android="http://schemas.android.com/apk/res/android"
+<org.lasque.tusdkpulse.impl.components.widget.paintdraw.PaintDrawBarItemCell xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="60dp"
     android:layout_height="match_parent">
 
-    <org.lasque.tusdk.core.view.TuSdkRelativeLayout
+    <org.lasque.tusdkpulse.core.view.TuSdkRelativeLayout
         android:id="@+id/lsq_item_wrap"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -14,13 +14,13 @@
         android:layout_marginRight="0dp"
         android:layout_marginBottom="4dp">
 
-        <org.lasque.tusdk.core.view.TuSdkImageView
+        <org.lasque.tusdkpulse.core.view.TuSdkImageView
             android:id="@+id/lsq_item_color"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
             android:scaleType="center" />
-    </org.lasque.tusdk.core.view.TuSdkRelativeLayout>
+    </org.lasque.tusdkpulse.core.view.TuSdkRelativeLayout>
 
-</org.lasque.tusdk.impl.components.widget.paintdraw.PaintDrawBarItemCell>
+</org.lasque.tusdkpulse.impl.components.widget.paintdraw.PaintDrawBarItemCell>

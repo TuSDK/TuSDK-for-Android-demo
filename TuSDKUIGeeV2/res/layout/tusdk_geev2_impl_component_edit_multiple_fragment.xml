@@ -29,14 +29,14 @@
     </HorizontalScrollView>
 
     <!-- 当前图片 -->
-    <org.lasque.tusdk.geev2.impl.components.widget.view.TuViewPager
+    <org.lasque.tusdkpulse.geev2.impl.components.widget.view.TuViewPager
         android:id="@+id/lsq_viewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/lsq_bar_bottomBar"
         android:layout_below="@+id/lsq_topBar"
       android:background="@color/lsq_geev2_background_editor"  >
-    </org.lasque.tusdk.geev2.impl.components.widget.view.TuViewPager>
+    </org.lasque.tusdkpulse.geev2.impl.components.widget.view.TuViewPager>
 
     <!-- 底部导航栏 -->
 
@@ -50,7 +50,7 @@
         android:paddingLeft="30dp"
         android:paddingRight="30dp" >
         <!-- 取消按钮 -->
-        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton
             android:id="@+id/lsq_cancelButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -71,7 +71,7 @@
         </HorizontalScrollView>
 
         <!-- 确认按钮 -->
-        <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkTextButton
             android:id="@+id/lsq_doneButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -90,7 +90,7 @@
         android:orientation="horizontal" >
 
         <!-- 撤销 -->
-        <org.lasque.tusdk.core.view.TuSdkImageView
+        <org.lasque.tusdkpulse.core.view.TuSdkImageView
             android:id="@+id/lsq_step_prev"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -101,7 +101,7 @@
             android:src="@drawable/lsq_geev2_style_default_edit_undo" />
 
         <!-- 重做 -->
-        <org.lasque.tusdk.core.view.TuSdkImageView
+        <org.lasque.tusdkpulse.core.view.TuSdkImageView
             android:id="@+id/lsq_step_next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -116,7 +116,7 @@
             android:layout_weight="1" />
 
         <!-- 自动校色 -->
-        <org.lasque.tusdk.core.view.TuSdkImageView
+        <org.lasque.tusdkpulse.core.view.TuSdkImageView
             android:id="@+id/lsq_auto_adjust"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

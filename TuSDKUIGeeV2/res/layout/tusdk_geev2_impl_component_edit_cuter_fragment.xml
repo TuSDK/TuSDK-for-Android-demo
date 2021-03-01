@@ -14,7 +14,7 @@
         android:clipToPadding="false" >
     </RelativeLayout>
 
-    <org.lasque.tusdk.core.view.widget.TuMaskRegionView
+    <org.lasque.tusdkpulse.core.view.widget.TuMaskRegionView
         android:id="@+id/lsq_cutRegionView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

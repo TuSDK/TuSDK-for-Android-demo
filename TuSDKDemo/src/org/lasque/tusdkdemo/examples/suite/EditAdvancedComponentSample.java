@@ -9,14 +9,14 @@
  */
 package org.lasque.tusdkdemo.examples.suite;
 
-import org.lasque.tusdk.TuSdkGeeV1;
-import org.lasque.tusdk.core.TuSdkResult;
-import org.lasque.tusdk.core.utils.TLog;
-import org.lasque.tusdk.impl.activity.TuFragment;
-import org.lasque.tusdk.impl.components.TuAlbumMultipleComponent;
-import org.lasque.tusdk.impl.components.TuEditComponent;
-import org.lasque.tusdk.modules.components.TuSdkComponent.TuSdkComponentDelegate;
-import org.lasque.tusdk.modules.components.TuSdkHelperComponent;
+import org.lasque.tusdkpulse.TuSdkGeeV1;
+import org.lasque.tusdkpulse.core.TuSdkResult;
+import org.lasque.tusdkpulse.core.utils.TLog;
+import org.lasque.tusdkpulse.impl.activity.TuFragment;
+import org.lasque.tusdkpulse.impl.components.TuAlbumMultipleComponent;
+import org.lasque.tusdkpulse.impl.components.TuEditComponent;
+import org.lasque.tusdkpulse.modules.components.TuSdkComponent.TuSdkComponentDelegate;
+import org.lasque.tusdkpulse.modules.components.TuSdkHelperComponent;
 import org.lasque.tusdkdemo.R;
 import org.lasque.tusdkdemo.SampleBase;
 import org.lasque.tusdkdemo.SampleGroup.GroupType;

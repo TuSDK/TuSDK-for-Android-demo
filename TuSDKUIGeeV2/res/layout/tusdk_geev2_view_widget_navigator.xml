@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<org.lasque.tusdk.impl.view.widget.TuNavigatorBar xmlns:android="http://schemas.android.com/apk/res/android"
+<org.lasque.tusdkpulse.impl.view.widget.TuNavigatorBar xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/lsq_navigatorBar"
     android:layout_width="match_parent"
     android:layout_height="44dp"
@@ -18,7 +18,7 @@
         android:textColor="@color/lsq_navigator_title"
         android:textSize="@dimen/lsq_font_size_36" />
 
-    <org.lasque.tusdk.core.view.widget.button.TuSdkNavigatorBackButton
+    <org.lasque.tusdkpulse.core.view.widget.button.TuSdkNavigatorBackButton
         android:id="@+id/lsq_backButton"
         android:layout_width="45dp"
         android:layout_height="32dp"
@@ -28,4 +28,4 @@
         android:maxLines="1"
         android:paddingLeft="5dp" />
 
-</org.lasque.tusdk.impl.view.widget.TuNavigatorBar>
+</org.lasque.tusdkpulse.impl.view.widget.TuNavigatorBar>

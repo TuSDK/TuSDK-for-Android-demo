@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="@color/lsq_geev2_background_editor" >
 
-    <org.lasque.tusdk.impl.view.widget.TuNavigatorBar
+    <org.lasque.tusdkpulse.impl.view.widget.TuNavigatorBar
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/lsq_navigatorBar"
         android:layout_width="match_parent"
@@ -25,7 +25,7 @@
             android:textColor="@color/lsq_geev2_navigator_title"
             android:textSize="@dimen/lsq_font_size_36" />
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkNavigatorBackButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkNavigatorBackButton
             android:id="@+id/lsq_leftButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -37,7 +37,7 @@
             android:maxLines="1"
             android:scaleType="center" />
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkTextButton
             android:id="@+id/lsq_rightButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -51,7 +51,7 @@
             android:textColor="@color/lsq_geev2_navigator_title"
             android:textSize="18sp" />
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkButton
             android:id="@+id/lsq_albumTotalCountButton"
             android:layout_width="22dp"
             android:layout_height="22dp"
@@ -64,9 +64,9 @@
             android:visibility="gone"
             android:textSize="12sp"
             android:textStyle="bold" />
-    </org.lasque.tusdk.impl.view.widget.TuNavigatorBar>
+    </org.lasque.tusdkpulse.impl.view.widget.TuNavigatorBar>
 
-    <org.lasque.tusdk.geev2.impl.components.album.TuPhotoGridListView
+    <org.lasque.tusdkpulse.geev2.impl.components.album.TuPhotoGridListView
         android:id="@+id/lsq_photoListView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -74,7 +74,7 @@
         android:background="@color/lsq_geev2_background_editor"
         android:padding="4dp"
         android:scrollbars="vertical" >
-    </org.lasque.tusdk.geev2.impl.components.album.TuPhotoGridListView>
+    </org.lasque.tusdkpulse.geev2.impl.components.album.TuPhotoGridListView>
 
     <RelativeLayout
         android:id="@+id/lsq_albumGroupArea"
@@ -83,12 +83,12 @@
         android:layout_below="@+id/lsq_navigatorBar" >
     </RelativeLayout>
 
-    <org.lasque.tusdk.geev2.impl.components.album.TuAlbumPopList
+    <org.lasque.tusdkpulse.geev2.impl.components.album.TuAlbumPopList
         android:id="@+id/lsq_albumListView"
         style="@style/lsq_listSplitView"
         android:layout_below="@+id/lsq_navigatorBar"
         android:background="@color/lsq_geev2_background_editor"
         android:divider="@color/lsq_geev2_split_cell" >
-    </org.lasque.tusdk.geev2.impl.components.album.TuAlbumPopList>
+    </org.lasque.tusdkpulse.geev2.impl.components.album.TuAlbumPopList>
 
 </RelativeLayout>

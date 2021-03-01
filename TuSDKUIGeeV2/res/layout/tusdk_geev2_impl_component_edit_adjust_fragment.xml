@@ -11,6 +11,10 @@
         android:layout_above="@+id/lsq_edit_skin_option_wrap_container"
         android:layout_below="@+id/lsq_bottomBar"
         android:background="@color/lsq_geev2_background_editor" >
+        <com.tusdk.pulse.filter.FilterDisplayView
+            android:id="@+id/lsq_surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -54,7 +58,7 @@
         android:layout_height="44dp"
         android:background="@color/lsq_geev2_background_editor_bottom_bar" >
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton
             android:id="@+id/lsq_cancelButton"
             android:layout_width="44dp"
             android:layout_height="match_parent"
@@ -65,7 +69,7 @@
             android:scaleType="center"
             android:src="@drawable/lsq_geev2_style_default_edit_button_cancel" />
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton
             android:id="@+id/lsq_completeButton"
             android:layout_width="44dp"
             android:layout_height="match_parent"

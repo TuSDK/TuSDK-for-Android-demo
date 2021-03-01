@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<org.lasque.tusdk.impl.components.widget.filter.GroupFilterItemView xmlns:android="http://schemas.android.com/apk/res/android"
+<org.lasque.tusdkpulse.impl.components.widget.filter.GroupFilterItemView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="60dp"
     android:layout_height="match_parent" >
 
-    <org.lasque.tusdk.core.view.TuSdkRelativeLayout
+    <org.lasque.tusdkpulse.core.view.TuSdkRelativeLayout
         android:id="@+id/lsq_item_wrap"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -20,7 +20,7 @@
             android:scaleType="centerCrop" />
 
 
-        <org.lasque.tusdk.core.view.TuSdkRelativeLayout
+        <org.lasque.tusdkpulse.core.view.TuSdkRelativeLayout
             android:id="@+id/lsq_item_selected"
             android:layout_width="match_parent"
             android:layout_height="56dp"
@@ -32,7 +32,7 @@
                 android:layout_height="56dp"
                 android:scaleType="center"
                 android:src="@drawable/lsq_style_default_filter_capture" />
-        </org.lasque.tusdk.core.view.TuSdkRelativeLayout>
+        </org.lasque.tusdkpulse.core.view.TuSdkRelativeLayout>
 
         <TextView
             android:id="@+id/lsq_item_title"
@@ -45,6 +45,6 @@
             android:text="@string/lsq_text"
             android:textColor="@color/lsq_color_white"
             android:textSize="10sp" />
-    </org.lasque.tusdk.core.view.TuSdkRelativeLayout>
+    </org.lasque.tusdkpulse.core.view.TuSdkRelativeLayout>
 
-</org.lasque.tusdk.impl.components.widget.filter.GroupFilterItemView>
+</org.lasque.tusdkpulse.impl.components.widget.filter.GroupFilterItemView>

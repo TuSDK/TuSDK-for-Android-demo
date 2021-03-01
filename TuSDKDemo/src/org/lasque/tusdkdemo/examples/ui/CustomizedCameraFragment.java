@@ -9,11 +9,11 @@
  */
 package org.lasque.tusdkdemo.examples.ui;
 
-import org.lasque.tusdk.impl.components.camera.TuCameraFragment;
-import org.lasque.tusdk.impl.components.edit.TuNormalFilterView;
-import org.lasque.tusdk.impl.components.edit.TuNormalFilterView.TuNormalFilterViewDelegate;
-import org.lasque.tusdk.modules.view.widget.filter.GroupFilterItem;
-import org.lasque.tusdk.modules.view.widget.filter.GroupFilterItem.GroupFilterItemType;
+import org.lasque.tusdkpulse.impl.components.camera.TuCameraFragment;
+import org.lasque.tusdkpulse.impl.components.edit.TuNormalFilterView;
+import org.lasque.tusdkpulse.impl.components.edit.TuNormalFilterView.TuNormalFilterViewDelegate;
+import org.lasque.tusdkpulse.modules.view.widget.filter.GroupFilterItem;
+import org.lasque.tusdkpulse.modules.view.widget.filter.GroupFilterItem.GroupFilterItemType;
 import org.lasque.tusdkdemo.R;
 
 import android.graphics.Color;
@@ -82,7 +82,7 @@ public class CustomizedCameraFragment extends TuCameraFragment
 		{
 			if (itemData.type == GroupFilterItemType.TypeFilter)
 			{
-				return handleSwitchFilter(itemData.getFilterCode());
+				handleSwitchFilter(itemData.getFilterCode());
 			}
 			return true;
 		}

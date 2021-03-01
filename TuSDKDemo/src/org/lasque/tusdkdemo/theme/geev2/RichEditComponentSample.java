@@ -9,12 +9,12 @@
  */
 package org.lasque.tusdkdemo.theme.geev2;
 
-import org.lasque.tusdk.core.TuSdkResult;
-import org.lasque.tusdk.core.utils.TLog;
-import org.lasque.tusdk.geev2.TuSdkGeeV2;
-import org.lasque.tusdk.geev2.impl.components.TuRichEditComponent;
-import org.lasque.tusdk.impl.activity.TuFragment;
-import org.lasque.tusdk.modules.components.TuSdkComponent.TuSdkComponentDelegate;
+import org.lasque.tusdkpulse.core.TuSdkResult;
+import org.lasque.tusdkpulse.core.utils.TLog;
+import org.lasque.tusdkpulse.geev2.TuSdkGeeV2;
+import org.lasque.tusdkpulse.geev2.impl.components.TuRichEditComponent;
+import org.lasque.tusdkpulse.impl.activity.TuFragment;
+import org.lasque.tusdkpulse.modules.components.TuSdkComponent.TuSdkComponentDelegate;
 import org.lasque.tusdkdemo.R;
 import org.lasque.tusdkdemo.SampleBase;
 import org.lasque.tusdkdemo.SampleGroup.GroupType;

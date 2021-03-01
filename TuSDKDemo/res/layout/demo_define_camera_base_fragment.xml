@@ -8,6 +8,10 @@
         android:id="@+id/cameraView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
+        <com.tusdk.pulse.filter.FilterDisplayView
+            android:id="@+id/surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     </RelativeLayout>
 
     <LinearLayout
@@ -67,7 +71,7 @@
         android:layout_height="80dp"
         android:layout_alignParentBottom="true" >
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkButton
             android:id="@+id/captureButton"
             android:layout_width="60dp"
             android:layout_height="60dp"
@@ -75,7 +79,7 @@
             android:background="@drawable/demo_simple_camera_button_capture"
             android:text="" />
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkTextButton
             android:id="@+id/filterButton"
             android:layout_width="80dp"
             android:layout_height="40dp"
@@ -87,10 +91,27 @@
             android:textSize="18sp" />
     </RelativeLayout>
 
-    <include
-        android:id="@+id/lsq_group_filter_view"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        layout="@layout/tusdk_impl_component_camera_filter_view" />
+        android:layout_below="@+id/configBar">
+
+        <include
+            android:id="@+id/lsq_group_filter_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            layout="@layout/tusdk_impl_component_camera_filter_view" />
+
+        <!-- 滤镜参数调节栏 -->
+
+        <include
+            android:id="@+id/lsq_filter_parameter_config_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="166dp"
+            layout="@layout/tusdk_impl_component_widget_filter_parameter_config_view" />
+    </RelativeLayout>
 
 </RelativeLayout>

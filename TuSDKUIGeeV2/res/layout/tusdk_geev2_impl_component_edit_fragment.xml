@@ -13,7 +13,7 @@
         android:paddingLeft="30dp"
         android:paddingRight="30dp" >
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton
             android:id="@+id/lsq_editFragmentCancelButton"
             android:layout_width="44dp"
             android:layout_height="match_parent"
@@ -22,7 +22,7 @@
             android:scaleType="center"
             android:src="@drawable/lsq_geev2_style_default_edit_button_cancel" />
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton
             android:id="@+id/lsq_editFragmentCompleteButton"
             android:layout_width="44dp"
             android:layout_height="match_parent"

@@ -13,7 +13,7 @@
         android:paddingRight ="30dp"
         android:background="@color/lsq_geev2_background_editor_bottom_bar" >
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton
             android:id="@+id/lsq_cancelButton"
             android:layout_width="44dp"
             android:layout_height="match_parent"
@@ -22,7 +22,7 @@
             android:src="@drawable/lsq_geev2_style_default_edit_button_cancel" />
 
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton
             android:id="@+id/lsq_onlineStickerButton"
             android:layout_width="44dp"
             android:layout_height="match_parent"
@@ -45,7 +45,7 @@
                android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp" >
 
-            <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+            <org.lasque.tusdkpulse.core.view.widget.button.TuSdkTextButton
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -54,7 +54,7 @@
                 android:textColor="@color/lsq_geev2_sticker_title_color"
                 android:textSize="18sp" />
 
-            <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+            <org.lasque.tusdkpulse.core.view.widget.button.TuSdkTextButton
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -63,7 +63,7 @@
                 android:textColor="@color/lsq_geev2_sticker_title_color"
                 android:textSize="18sp" />
 
-            <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+            <org.lasque.tusdkpulse.core.view.widget.button.TuSdkTextButton
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -83,11 +83,11 @@
             android:background="@color/lsq_geev2_sticker_title_selected_cursor_color" />
     </RelativeLayout>
 
-    <org.lasque.tusdk.core.view.widget.TuSdkViewPager
+    <org.lasque.tusdkpulse.core.view.widget.TuSdkViewPager
         android:id="@+id/lsq_viewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/lsq_categoryWrap" >
-    </org.lasque.tusdk.core.view.widget.TuSdkViewPager>
+    </org.lasque.tusdkpulse.core.view.widget.TuSdkViewPager>
 
 </RelativeLayout>

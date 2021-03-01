@@ -12,7 +12,7 @@
         android:gravity="center_vertical"
         android:orientation="horizontal" >
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton
             android:id="@+id/lsq_bar_cancelButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -20,7 +20,7 @@
             android:scaleType="center"
             android:src="@drawable/lsq_geev2_style_default_edit_button_cancel" />
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton
             android:id="@+id/lsq_bar_completeButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -39,15 +39,15 @@
         android:background="@color/lsq_geev2_background_editor"
         android:scaleType="fitCenter" />
 
-    <org.lasque.tusdk.impl.components.widget.sticker.StickerView
+    <org.lasque.tusdkpulse.impl.components.widget.sticker.StickerView
         android:id="@+id/lsq_stickerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/lsq_sticker_bar_container"
         android:layout_below="@+id/lsq_bar_bottomBar" >
-    </org.lasque.tusdk.impl.components.widget.sticker.StickerView>
+    </org.lasque.tusdkpulse.impl.components.widget.sticker.StickerView>
 
-    <org.lasque.tusdk.core.view.widget.TuMaskRegionView
+    <org.lasque.tusdkpulse.core.view.widget.TuMaskRegionView
         android:id="@+id/lsq_cutRegionView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

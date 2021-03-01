@@ -11,15 +11,15 @@ package org.lasque.tusdkdemo.examples.ui;
 
 import java.util.Arrays;
 
-import org.lasque.tusdk.core.TuSdkResult;
-import org.lasque.tusdk.core.utils.TLog;
-import org.lasque.tusdk.core.utils.hardware.CameraHelper;
-import org.lasque.tusdk.core.utils.image.RatioType;
-import org.lasque.tusdk.impl.activity.TuFragment;
-import org.lasque.tusdk.impl.components.camera.TuCameraFragment;
-import org.lasque.tusdk.impl.components.camera.TuCameraFragment.TuCameraFragmentDelegate;
-import org.lasque.tusdk.impl.components.camera.TuCameraOption;
-import org.lasque.tusdk.modules.components.TuSdkHelperComponent;
+import org.lasque.tusdkpulse.core.TuSdkResult;
+import org.lasque.tusdkpulse.core.utils.TLog;
+import org.lasque.tusdkpulse.core.utils.hardware.CameraHelper;
+import org.lasque.tusdkpulse.core.utils.image.RatioType;
+import org.lasque.tusdkpulse.impl.activity.TuFragment;
+import org.lasque.tusdkpulse.impl.components.camera.TuCameraFragment;
+import org.lasque.tusdkpulse.impl.components.camera.TuCameraFragment.TuCameraFragmentDelegate;
+import org.lasque.tusdkpulse.impl.components.camera.TuCameraOption;
+import org.lasque.tusdkpulse.modules.components.TuSdkHelperComponent;
 import org.lasque.tusdkdemo.R;
 import org.lasque.tusdkdemo.SampleBase;
 import org.lasque.tusdkdemo.SampleGroup.GroupType;

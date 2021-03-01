@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<org.lasque.tusdk.geev2.impl.components.widget.filter.ParameterConfigView xmlns:android="http://schemas.android.com/apk/res/android"
+<org.lasque.tusdkpulse.geev2.impl.components.widget.filter.ParameterConfigView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/lsq_geev2_edit_filter_parameter_configView_color"
@@ -35,4 +35,4 @@
 
     </RelativeLayout>
 
-</org.lasque.tusdk.geev2.impl.components.widget.filter.ParameterConfigView>
+</org.lasque.tusdkpulse.geev2.impl.components.widget.filter.ParameterConfigView>

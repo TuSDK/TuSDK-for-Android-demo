@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<org.lasque.tusdk.impl.view.widget.listview.TuDefaultLineListCellView xmlns:android="http://schemas.android.com/apk/res/android"
+<org.lasque.tusdkpulse.impl.view.widget.listview.TuDefaultLineListCellView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="50dp" >
 
@@ -15,4 +15,4 @@
         android:textColor="@color/lsq_color_black"
         android:textSize="15sp" />
 
-</org.lasque.tusdk.impl.view.widget.listview.TuDefaultLineListCellView>
+</org.lasque.tusdkpulse.impl.view.widget.listview.TuDefaultLineListCellView>

@@ -12,10 +12,10 @@ package org.lasque.tusdkdemo.view;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.lasque.tusdk.core.view.listview.TuSdkCellViewInterface;
-import org.lasque.tusdk.core.view.listview.TuSdkIndexPath;
-import org.lasque.tusdk.core.view.listview.TuSdkIndexPath.TuSdkDataSource;
-import org.lasque.tusdk.impl.view.widget.listview.TuGroupListView;
+import org.lasque.tusdkpulse.core.view.listview.TuSdkCellViewInterface;
+import org.lasque.tusdkpulse.core.view.listview.TuSdkIndexPath;
+import org.lasque.tusdkpulse.core.view.listview.TuSdkIndexPath.TuSdkDataSource;
+import org.lasque.tusdkpulse.impl.view.widget.listview.TuGroupListView;
 import org.lasque.tusdkdemo.SampleBase;
 import org.lasque.tusdkdemo.SampleGroup;
 import org.lasque.tusdkdemo.SampleGroup.GroupHeader;

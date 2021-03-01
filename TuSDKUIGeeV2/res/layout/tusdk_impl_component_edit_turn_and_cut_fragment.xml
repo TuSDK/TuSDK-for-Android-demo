@@ -18,7 +18,7 @@
         android:clipToPadding="false" >
     </RelativeLayout>
 
-    <org.lasque.tusdk.core.view.widget.TuMaskRegionView
+    <org.lasque.tusdkpulse.core.view.widget.TuMaskRegionView
         android:id="@+id/lsq_cutRegionView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -40,7 +40,7 @@
         android:background="@color/lsq_background_editor_bottom_bar"
         android:orientation="horizontal" >
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton
             android:id="@+id/lsq_filterButton"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -48,7 +48,7 @@
             android:scaleType="center"
             android:src="@drawable/lsq_style_default_camera_bg_filter" />
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton
             android:id="@+id/lsq_trunButton"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -56,7 +56,7 @@
             android:scaleType="center"
             android:src="@drawable/lsq_style_default_edit_button_trun_left" />
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkImageButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton
             android:id="@+id/lsq_mirrorButton"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -64,7 +64,7 @@
             android:scaleType="center"
             android:src="@drawable/lsq_style_default_edit_button_horizontal_mirror" />
 
-        <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkTextButton
             android:id="@+id/lsq_completeButton"
             android:layout_width="0dp"
             android:layout_height="match_parent"

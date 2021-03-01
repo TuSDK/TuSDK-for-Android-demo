@@ -9,7 +9,7 @@
         android:layout_height="match_parent"
         android:background="#ffffff" >
 
-        <org.lasque.tusdk.core.view.TuSdkImageView
+        <org.lasque.tusdkpulse.core.view.TuSdkImageView
             android:id="@+id/lsq_posterView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

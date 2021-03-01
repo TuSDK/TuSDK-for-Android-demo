@@ -9,14 +9,14 @@
  */
 package org.lasque.tusdkdemo.examples.feature;
 
-import org.lasque.tusdk.core.TuSdkResult;
-import org.lasque.tusdk.core.utils.TLog;
-import org.lasque.tusdk.core.utils.image.BitmapHelper;
-import org.lasque.tusdk.impl.activity.TuFragment;
-import org.lasque.tusdk.impl.components.sticker.TuEditStickerFragment;
-import org.lasque.tusdk.impl.components.sticker.TuEditStickerFragment.TuEditStickerFragmentDelegate;
-import org.lasque.tusdk.impl.components.sticker.TuEditStickerOption;
-import org.lasque.tusdk.modules.components.TuSdkHelperComponent;
+import org.lasque.tusdkpulse.core.TuSdkResult;
+import org.lasque.tusdkpulse.core.utils.TLog;
+import org.lasque.tusdkpulse.core.utils.image.BitmapHelper;
+import org.lasque.tusdkpulse.impl.activity.TuFragment;
+import org.lasque.tusdkpulse.impl.components.sticker.TuEditStickerFragment;
+import org.lasque.tusdkpulse.impl.components.sticker.TuEditStickerFragment.TuEditStickerFragmentDelegate;
+import org.lasque.tusdkpulse.impl.components.sticker.TuEditStickerOption;
+import org.lasque.tusdkpulse.modules.components.TuSdkHelperComponent;
 import org.lasque.tusdkdemo.R;
 import org.lasque.tusdkdemo.SampleBase;
 import org.lasque.tusdkdemo.SampleGroup.GroupType;

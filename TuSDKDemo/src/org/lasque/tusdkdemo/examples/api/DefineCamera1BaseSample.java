@@ -9,8 +9,8 @@
  */
 package org.lasque.tusdkdemo.examples.api;
 
-import org.lasque.tusdk.core.utils.hardware.CameraHelper;
-import org.lasque.tusdk.modules.components.TuSdkHelperComponent;
+import org.lasque.tusdkpulse.core.utils.hardware.CameraHelper;
+import org.lasque.tusdkpulse.modules.components.TuSdkHelperComponent;
 import org.lasque.tusdkdemo.R;
 import org.lasque.tusdkdemo.SampleBase;
 import org.lasque.tusdkdemo.SampleGroup.GroupType;

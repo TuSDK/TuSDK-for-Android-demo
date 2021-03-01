@@ -7,14 +7,14 @@
         android:id="@+id/lsq_navigatorBar"
         layout="@layout/tusdk_view_widget_navigator" />
 
-    <org.lasque.tusdk.core.view.TuSdkWebView
+    <org.lasque.tusdkpulse.core.view.TuSdkWebView
         android:id="@+id/lsq_webview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/lsq_navigatorBar"
         android:background="@color/lsq_color_white" />
 
-    <org.lasque.tusdk.core.view.TuSdkProgressBar
+    <org.lasque.tusdkpulse.core.view.TuSdkProgressBar
         android:id="@+id/lsq_progress_bar"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"

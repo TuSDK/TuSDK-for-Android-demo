@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<org.lasque.tusdk.impl.view.widget.button.TuNavigatorButton xmlns:android="http://schemas.android.com/apk/res/android"
+<org.lasque.tusdkpulse.impl.view.widget.button.TuNavigatorButton xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="31dp"
     android:layout_marginLeft="10dp"
@@ -37,4 +37,4 @@
         android:layout_alignRight="@+id/lsq_buttonBg"
         android:layout_marginTop="-5dp" />
 
-</org.lasque.tusdk.impl.view.widget.button.TuNavigatorButton>
+</org.lasque.tusdkpulse.impl.view.widget.button.TuNavigatorButton>

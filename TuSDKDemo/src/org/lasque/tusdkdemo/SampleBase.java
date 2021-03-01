@@ -9,7 +9,7 @@
  */
 package org.lasque.tusdkdemo;
 
-import org.lasque.tusdk.modules.components.TuSdkHelperComponent;
+import org.lasque.tusdkpulse.modules.components.TuSdkHelperComponent;
 import org.lasque.tusdkdemo.SampleGroup.GroupType;
 
 import android.app.Activity;
