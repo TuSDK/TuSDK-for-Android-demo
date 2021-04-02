@@ -68,13 +68,6 @@ public class DemoEntryActivity extends TuFragmentActivity
 		// 设置应用退出信息ID 一旦设置将触发连续点击两次退出应用事件
 		this.setAppExitInfoId(R.string.lsq_exit_info);
 
-		SharedPreferences sp = TuSdkContext.context().getSharedPreferences("TU-TTF", Context.MODE_PRIVATE);
-		if (!sp.contains(Constants.TTF_KEY)){
-			AssetsMapper assetsMapper = new AssetsMapper(TuSdkContext.context());
-			String path = assetsMapper.mapAsset("SourceHanSansSC-Normal.ttf");
-			sp.edit().putString(Constants.TTF_KEY,path).commit();
-		}
-
 	}
 
 	/** 相机按钮容器 */

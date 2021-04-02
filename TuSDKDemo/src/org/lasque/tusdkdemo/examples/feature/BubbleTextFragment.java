@@ -86,6 +86,8 @@ public class BubbleTextFragment extends Fragment {
 
     private Button mTextCommit;
 
+    private Image mInputImage;
+
     private int mCurrentTextIndex = -1;
 
     private boolean isFirstCallSoftInput = false;
@@ -212,11 +214,15 @@ public class BubbleTextFragment extends Fragment {
         });
 
         SharedPreferences sp = TuSdkContext.context().getSharedPreferences("TU-TTF", Context.MODE_PRIVATE);
-        BubbleItem b14 = new BubbleItem("标签", sp.getString(Constants.BUBBLE_1, ""), "bubble_1");
-        BubbleItem b15 = new BubbleItem("粉色心", sp.getString(Constants.BUBBLE_2, ""), "bubble_2");
-        BubbleItem b16 = new BubbleItem("气泡", sp.getString(Constants.BUBBLE_3, ""), "bubble_3");
+//        BubbleItem b1 = new BubbleItem("标签", sp.getString(Constants.BUBBLE_1, ""), "bubble_1");
+//        BubbleItem b2 = new BubbleItem("粉色心", sp.getString(Constants.BUBBLE_2, ""), "bubble_2");
+//        BubbleItem b3 = new BubbleItem("气泡7", sp.getString(Constants.BUBBLE_3, ""), "bubble_3");
+//        BubbleItem b4 = new BubbleItem("气泡6", sp.getString(Constants.BUBBLE_4, ""), "bubble_4");
+        BubbleItem b5 = new BubbleItem("message", sp.getString(Constants.BUBBLE_5, ""), "bubble_5");
+        BubbleItem b6 = new BubbleItem("带劲", sp.getString(Constants.BUBBLE_6, ""), "bubble_6");
+        BubbleItem b7 = new BubbleItem("快乐水", sp.getString(Constants.BUBBLE_7, ""), "bubble_7");
 
-        mBubbleAdapter = new BubbleAdapter(getContext(), Arrays.asList(b14, b15, b16));
+        mBubbleAdapter = new BubbleAdapter(getContext(), Arrays.asList(b5,b6,b7));
         mBubbleAdapter.setOnItemClickListener(new OnItemClickListener<BubbleItem, BubbleAdapter.BubbleViewHolder>() {
             @Override
             public void onItemClick(BubbleItem item, BubbleAdapter.BubbleViewHolder holder, int pos) {
@@ -270,7 +276,6 @@ public class BubbleTextFragment extends Fragment {
             @Override
             public Boolean call() throws Exception {
                 mFP = new FilterPipe();
-
                 boolean ret = mFP.create();
                 return ret;
             }
@@ -288,11 +293,13 @@ public class BubbleTextFragment extends Fragment {
     private void onDrawImage() {
         Image input = new Image(inputImage, 0);
         final Image output = mFP.process(input);
+        input.release();
         mLashImage = output;
         mDisplayView.post(new Runnable() {
             @Override
             public void run() {
                 mDisplayView.updateImage(output);
+                output.release();
             }
         });
     }

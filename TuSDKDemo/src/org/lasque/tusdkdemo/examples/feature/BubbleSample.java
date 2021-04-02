@@ -41,28 +41,45 @@ public class BubbleSample extends SampleBase {
         SharedPreferences sp = TuSdkContext.context().getSharedPreferences("TU-TTF", Context.MODE_PRIVATE);
         AssetsMapper assetsMapper = new AssetsMapper(TuSdkContext.context());
         if (!sp.contains(Constants.BUBBLE_FONTS)){
-            assetsMapper.mapAsset("AppleEmoji.10.2Full.ttf");
-            assetsMapper.mapAsset("DengXian.ttf");
-            assetsMapper.mapAsset("MicrosoftYaHeiLight.ttf");
+            assetsMapper.mapAsset("AliHYAiHei.ttf");
             assetsMapper.mapAsset("NotoColorEmoji.ttf");
-            assetsMapper.mapAsset("Roboto-Regular.ttf");
-            assetsMapper.mapAsset("SourceHanSansSC-Normal.ttf");
+            assetsMapper.mapAsset("SOURCEHANSANSCN-LIGHT.OTF");
+            assetsMapper.mapAsset("SOURCEHANSANSCN-REGULAR.OTF");
+            assetsMapper.mapAsset("站酷快乐体2016修订版_0.ttf");
             String path = TuSdkContext.context().getExternalCacheDirs()[0].getAbsolutePath() + "/assets";
             sp.edit().putString(Constants.BUBBLE_FONTS,path).apply();
         }
 
-        if (!sp.contains(Constants.BUBBLE_1)){
-            String path = assetsMapper.mapAsset("bubbles/lsq_bubble_1.bt");
-            sp.edit().putString(Constants.BUBBLE_1,path).apply();
+//        if (!sp.contains(Constants.BUBBLE_1)){
+//            String path = assetsMapper.mapAsset("bubbles/lsq_bubble_1.bt");
+//            sp.edit().putString(Constants.BUBBLE_1,path).apply();
+//        }
+//        if (!sp.contains(Constants.BUBBLE_2)){
+//            String path = assetsMapper.mapAsset("bubbles/lsq_bubble_2.bt");
+//            sp.edit().putString(Constants.BUBBLE_2,path).apply();
+//        }
+//        if (!sp.contains(Constants.BUBBLE_3)){
+//            String path = assetsMapper.mapAsset("bubbles/lsq_bubble_3.bt");
+//            sp.edit().putString(Constants.BUBBLE_3,path).apply();
+//        }
+//        if (!sp.contains(Constants.BUBBLE_4)){
+//            String path = assetsMapper.mapAsset("bubbles/lsq_bubble_4.bt");
+//            sp.edit().putString(Constants.BUBBLE_4,path).apply();
+//        }
+        if (!sp.contains(Constants.BUBBLE_5)){
+            String path = assetsMapper.mapAsset("bubbles/lsq_bubble_5.bt");
+            sp.edit().putString(Constants.BUBBLE_5,path).apply();
         }
-        if (!sp.contains(Constants.BUBBLE_2)){
-            String path = assetsMapper.mapAsset("bubbles/lsq_bubble_2.bt");
-            sp.edit().putString(Constants.BUBBLE_2,path).apply();
+        if (!sp.contains(Constants.BUBBLE_6)){
+            String path = assetsMapper.mapAsset("bubbles/lsq_bubble_6.bt");
+            sp.edit().putString(Constants.BUBBLE_6,path).apply();
         }
-        if (!sp.contains(Constants.BUBBLE_3)){
-            String path = assetsMapper.mapAsset("bubbles/lsq_bubble_3.bt");
-            sp.edit().putString(Constants.BUBBLE_3,path).apply();
+        if (!sp.contains(Constants.BUBBLE_7)){
+            String path = assetsMapper.mapAsset("bubbles/lsq_bubble_7.bt");
+            sp.edit().putString(Constants.BUBBLE_7,path).apply();
         }
+
+
 
         this.componentHelper = new TuSdkHelperComponent(activity);
 

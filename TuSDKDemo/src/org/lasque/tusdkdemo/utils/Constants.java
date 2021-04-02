@@ -31,6 +31,10 @@ public class Constants {
     public static String BUBBLE_1 = "Bubble_1";
     public static String BUBBLE_2 = "Bubble_2";
     public static String BUBBLE_3 = "Bubble_3";
+    public static String BUBBLE_4 = "Bubble_4";
+    public static String BUBBLE_5 = "Bubble_5";
+    public static String BUBBLE_6 = "Bubble_6";
+    public static String BUBBLE_7 = "Bubble_7";
 
 
     /**

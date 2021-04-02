@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/tusdk-for-android-demo.iml" filepath="$PROJECT_DIR$/tusdk-for-android-demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TuSDKDemo/tusdk-for-android-demo.TuSDKDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/TuSDKDemo/tusdk-for-android-demo.TuSDKDemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TuSDKUIDefault/tusdk-for-android-demo.TuSDKUIDefault.iml" filepath="$PROJECT_DIR$/.idea/modules/TuSDKUIDefault/tusdk-for-android-demo.TuSDKUIDefault.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TuSDKUIGeeV2/tusdk-for-android-demo.TuSDKUIGeeV2.iml" filepath="$PROJECT_DIR$/.idea/modules/TuSDKUIGeeV2/tusdk-for-android-demo.TuSDKUIGeeV2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TuSDK-for-Android-demo.iml" filepath="$PROJECT_DIR$/.idea/modules/TuSDK-for-Android-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TuSDKDemo/TuSDK-for-Android-demo.TuSDKDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/TuSDKDemo/TuSDK-for-Android-demo.TuSDKDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TuSDKUIDefault/TuSDK-for-Android-demo.TuSDKUIDefault.iml" filepath="$PROJECT_DIR$/.idea/modules/TuSDKUIDefault/TuSDK-for-Android-demo.TuSDKUIDefault.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TuSDKUIGeeV2/TuSDK-for-Android-demo.TuSDKUIGeeV2.iml" filepath="$PROJECT_DIR$/.idea/modules/TuSDKUIGeeV2/TuSDK-for-Android-demo.TuSDKUIGeeV2.iml" />
     </modules>
   </component>
 </project>

@@ -37,6 +37,7 @@ import org.lasque.tusdkpulse.core.utils.RectHelper;
 import org.lasque.tusdkpulse.core.utils.TLog;
 import org.lasque.tusdkpulse.core.utils.ThreadHelper;
 import org.lasque.tusdkpulse.core.utils.TuSdkGestureRecognizer;
+import org.lasque.tusdkpulse.core.view.TuSdkImageView;
 import org.lasque.tusdkpulse.core.view.TuSdkViewHelper;
 import org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton;
 
@@ -83,6 +84,8 @@ public class BubbleItemView extends ConstraintLayout implements BubbleItemViewIn
     private TuSdkImageButton mCancelButton;
 
     private TuSdkImageButton mTurnButton;
+
+    private TuSdkImageView mImageView;
 
     protected PointF mLastPoint = new PointF();
 
@@ -378,6 +381,13 @@ public class BubbleItemView extends ConstraintLayout implements BubbleItemViewIn
         return mCancelButton;
     }
 
+    private TuSdkImageView getImageView(){
+        if (mImageView == null){
+            mImageView = (TuSdkImageView) getViewById(R.id.lsq_bubble_imageView);
+        }
+        return mImageView;
+    }
+
     private TuSdkImageButton getTurnButton() {
         if (mTurnButton == null){
             mTurnButton = (TuSdkImageButton) getViewById(R.id.lsq_bubble_turnButton);
@@ -411,9 +421,6 @@ public class BubbleItemView extends ConstraintLayout implements BubbleItemViewIn
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        if (mTextsPos.size() > 0){
-
-        }
     }
 
     @Override
@@ -797,8 +804,8 @@ public class BubbleItemView extends ConstraintLayout implements BubbleItemViewIn
     @Override
     public void setSelected(boolean selected) {
         if (!isLayouted) return;
-        int color = selected ? R.drawable.bubble_stroke : 0;
-        setBackgroundResource(color);
+        int color = selected ? Color.WHITE : 0;
+        getImageView().setStroke(color,mStrokeWidth);
         showViewIn(getCancelButton(),selected);
         showViewIn(getTurnButton(),selected);
         for (View v : mTextRectView){

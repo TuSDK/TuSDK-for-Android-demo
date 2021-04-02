@@ -5,6 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <org.lasque.tusdkpulse.core.view.TuSdkImageView
+        android:id="@+id/lsq_bubble_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="12dp"
+        android:scaleType="fitCenter" />
+
     <org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton
         android:id="@+id/lsq_bubble_cancelButton"
         android:layout_width="32dp"
