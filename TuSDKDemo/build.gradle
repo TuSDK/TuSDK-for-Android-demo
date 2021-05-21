@@ -16,7 +16,13 @@ dependencies {
 }
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 30
+
+    defaultConfig{
+        applicationId "org.lasque.tusdkdemo"
+        minSdkVersion 21
+        targetSdkVersion 30
+    }
 
     sourceSets {
         main {

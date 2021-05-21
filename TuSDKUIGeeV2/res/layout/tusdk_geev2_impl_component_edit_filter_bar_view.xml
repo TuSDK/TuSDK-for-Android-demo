@@ -13,12 +13,12 @@
     <include
         android:id="@+id/lsq_param_config_view"
         android:layout_width="match_parent"
-        android:layout_height="42dp"
+        android:layout_height="50dp"
         android:layout_above="@+id/lsq_group_filter_bar_container"
         layout="@layout/tusdk_geev2_impl_component_widget_parameter_config_view" />
 
     <RelativeLayout
-           android:id="@+id/lsq_group_filter_bar_container"
+        android:id="@+id/lsq_group_filter_bar_container"
         android:layout_width="fill_parent"
         android:layout_height="124dp" 
         android:paddingRight="8dp"
