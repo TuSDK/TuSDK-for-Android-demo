@@ -89,7 +89,7 @@ public class TuComponentListActivity extends TuFragmentActivity implements TuSdk
 
 		// 导航栏 实现类
 		mNavigatorBar = this.getViewById(R.id.lsq_navigatorBar);
-		mNavigatorBar.setTitle(String.format("%s %s", TuSdkContext.getString(R.string.lsq_sdk_name), TuSdk.SDK_VERSION));
+		mNavigatorBar.setTitle(String.format("%s %s", TuSdkContext.getString(R.string.lsq_sdk_name), "4.0.2"));
 		mNavigatorBar.setBackButtonId(R.id.lsq_backButton);
 		mNavigatorBar.showBackButton(true);
 		mNavigatorBar.delegate = this;
