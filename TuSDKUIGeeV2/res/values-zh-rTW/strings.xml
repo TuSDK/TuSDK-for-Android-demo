@@ -55,10 +55,10 @@
     <string name="lsq_carema_image_process">正在處理&#8230;</string>
     <string name="lsq_carema_image_process_completed">處理完成</string>
     <string name="lsq_carema_unsupport_camera2">您當前的系統版本小於5.0或硬件設備不能完整支持Camera2 API，無法開啟Camera2</string>
-      <!-- Geev2 2 -->
+    <!-- Geev2 2 -->
     <string name="lsq_geev2_carema_reCapture">重拍</string>
     <string name="lsq_geev2_carema_goedit">去美化</string>
-    
+
     <!-- album -->
     <string name="lsq_album_alert_title">無法訪問系統相冊</string>
     <string name="lsq_album_no_access">無法訪問系統相冊，請在\r\n設置&#045;&#062;應用程序&#045;&#062;權限&#045;&#062;%1$s&#034; \r\n开启 存儲空間</string>
@@ -69,14 +69,14 @@
     <string name="lsq_album_empty_selection_msg">請至少選擇一張照片</string>
     <string name="lsq_album_max_selection_msg">最多選擇 %d 張照片</string>
     <string name="lsq_album_multi_preview_select">選擇</string>
-	<string name="lsq_album_multi_preview_done">完成</string>
-	<string name="lsq_album_image_size_limited">暫不支持大於 %1$d*%2$d 的圖片</string>
-    
-	
-	  <!-- geev2 -->
+    <string name="lsq_album_multi_preview_done">完成</string>
+    <string name="lsq_album_image_size_limited">暫不支持大於 %1$d*%2$d 的圖片</string>
+
+
+    <!-- geev2 -->
     <string name="lsq_album_continue">继续</string>
-    
-    
+
+
     <!-- save -->
     <string name="lsq_save_saveToTemp">正在處理&#8230;</string>
     <string name="lsq_save_saveToTemp_completed">處理完成</string>
@@ -122,8 +122,8 @@
     <string name="lsq_edit_multiple_title">編輯</string>
     <string name="lsq_edit_skin_title">美顏</string>
     <string name="lsq_edit_holy_light">聖光</string>
-    
-        <!-- geev2 -->
+
+    <!-- geev2 -->
     <string name="lsq_edit_max_count_msg">一次最多編輯%d張圖片</string>
     <string name="lsq_edit_trun">旋轉</string>
     <string name="lsq_edit_trun_left">左轉</string>
@@ -134,8 +134,8 @@
     <string name="lsq_edit_pen_medium">中號</string>
     <string name="lsq_edit_pen_large">大號</string>
     <string name="lsq_edit_step_redo">重做</string>
-	<string name="lsq_edit_processing_index">正在處理第%1$d/%2$d張</string>
-    
+    <string name="lsq_edit_processing_index">正在處理第%1$d/%2$d張</string>
+
     <!-- sticker -->
     <string name="lsq_sticker_title">貼紙</string>
     <string name="lsq_geev2_sticker_cate_default">貼紙</string>
@@ -154,12 +154,12 @@
     <string name="lsq_sticker_remove_msg">您是否需要刪除貼紙「%s」？</string>
     <string name="lsq_sticker_cate_all">全部</string>
     <string name="lsq_sticker_cate_history">常用</string>
-     <!-- geev2 -->
-     <string name="lsq_sticker_latest">最新下載</string>
+    <!-- geev2 -->
+    <string name="lsq_sticker_latest">最新下載</string>
     <string name="lsq_sticker_click">點擊</string>
     <string name="lsq_sticker_download_more">下載更多貼紙</string>
     <string name="lsq_sticker_add">添加</string>
-    
+
     <!-- format -->
     <string name="las_date_format">yyyy年M月d日</string>
 
@@ -209,8 +209,8 @@
     <!-- GeeV2 2 -->
     <string name="lsq_geev2_filter_collection">收藏</string>
     <string name="lsq_geev2_filter_download">下載</string>
-    
-    
+
+
     <!-- Beauty -->
     <string name="lsq_filter_SkinNature">自然</string>
     <string name="lsq_filter_SkinPink">粉嫩</string>
@@ -245,33 +245,33 @@
     <string name="lsq_filter_Wintersunshine">曦微</string>
 
     <string name="lsq_filter_group_SnapSeed">斑駁</string>
-	<string name="lsq_filter_Time">流年</string>
-	<string name="lsq_filter_Recall">追憶</string>
-	<string name="lsq_filter_Yellowing">泛黃</string>
-	<string name="lsq_filter_Years">經年</string>
-	<string name="lsq_filter_Age">歲月</string>
-	<string name="lsq_filter_group_Lip001">唇魅</string>
-	<string name="lsq_filter_Missing">想你色</string>
-	<string name="lsq_filter_Grapefruit">西柚色</string>
-	<string name="lsq_filter_RoseCarmine">玫紅色</string>
-	<string name="lsq_filter_Nude">裸色</string>
-	<string name="lsq_filter_Orange">橘色</string>
-	<string name="lsq_filter_BabyPink">粉色</string>
-	<string name="lsq_filter_Sweet002">甜蜜</string>
-	<string name="lsq_filter_Coffee">咖啡</string>
-	<string name="lsq_filter_Gold">金黃</string>
-	<string name="lsq_filter_Rum">朗姆</string>
-	<string name="lsq_filter_group_Food">美食</string>
-	<string name="lsq_filter_group_Mottle">斑駁</string>
-	<string name="lsq_filter_group_LipGloss">唇魅</string>
-    
+    <string name="lsq_filter_Time">流年</string>
+    <string name="lsq_filter_Recall">追憶</string>
+    <string name="lsq_filter_Yellowing">泛黃</string>
+    <string name="lsq_filter_Years">經年</string>
+    <string name="lsq_filter_Age">歲月</string>
+    <string name="lsq_filter_group_Lip001">唇魅</string>
+    <string name="lsq_filter_Missing">想你色</string>
+    <string name="lsq_filter_Grapefruit">西柚色</string>
+    <string name="lsq_filter_RoseCarmine">玫紅色</string>
+    <string name="lsq_filter_Nude">裸色</string>
+    <string name="lsq_filter_Orange">橘色</string>
+    <string name="lsq_filter_BabyPink">粉色</string>
+    <string name="lsq_filter_Sweet002">甜蜜</string>
+    <string name="lsq_filter_Coffee">咖啡</string>
+    <string name="lsq_filter_Gold">金黃</string>
+    <string name="lsq_filter_Rum">朗姆</string>
+    <string name="lsq_filter_group_Food">美食</string>
+    <string name="lsq_filter_group_Mottle">斑駁</string>
+    <string name="lsq_filter_group_LipGloss">唇魅</string>
+
     <!-- Filters Definition skin -->
     <string name="lsq_filter_set_smoothing">潤滑</string>
     <string name="lsq_filter_set_whitening">白皙</string>
     <string name="lsq_filter_set_blurSize">強度</string>
     <string name="lsq_filter_set_blurWeight">權重</string>
     <string name="lsq_filter_set_skinColorThreshold">膚色</string>
-	<string name="lsq_filter_set_eyeSize">大眼</string>
+    <string name="lsq_filter_set_eyeSize">大眼</string>
     <string name="lsq_filter_set_chinSize">瘦臉</string>
     <string name="lsq_filter_set_retouchSize">一鍵美顏</string>
     <string name="lsq_filter_set_skinColorThresholdQuadraticMixture">矩陣</string>
@@ -297,10 +297,9 @@
     <string name="lsq_filter_set_selective">選區</string>
     <string name="lsq_filter_set_linear">線性</string>
     <string name="lsq_filter_set_radial">徑向</string>
-        <!-- geev2 -->
+    <!-- geev2 -->
     <string name="lsq_filter_set_holy_light">聖光</string>
-    
-    
+
 
     <!-- Filters Definition Bokeh -->
     <string name="lsq_filter_set_radius">內半徑</string>
@@ -309,7 +308,7 @@
     <string name="lsq_filter_set_excessive">邊緣</string>
     <string name="lsq_filter_set_maskAlpha">強調</string>
     <string name="lsq_filter_set_degree">角度</string>
-    
+
     <!-- Brush Definition -->
     <string name="lsq_brush_Eraser">橡皮擦</string>
     <string name="lsq_brush_Mosaic">馬賽克</string>
@@ -318,13 +317,13 @@
     <string name="lsq_brush_WaterColor">水彩</string>
     <string name="lsq_brush_ColorLead">彩鉛</string>
     <string name="lsq_brush_MapleLeaf">葉子</string>
-     <!-- geev2 -->
+    <!-- geev2 -->
     <string name="lsq_brush_Strokes">筆觸</string>
-    
-    
+
+
     <string name="lsq_brush_remove_title">刪除筆刷</string>
     <string name="lsq_brush_remove_msg">您是否需要刪除筆刷「%s」？</string>
-    
+
     <!-- Brush Size Definition -->
     <string name="lsq_brush_size_small">细</string>
     <string name="lsq_brush_size_medium">中</string>
@@ -351,4 +350,86 @@
     <string name="lsq_filter_USComics_Image">美漫</string>
     <string name="lsq_filter_Lightcolor_Image">淡彩</string>
 
+
+    <!-- button -->
+    <string name="lsq_button_flash_model_off">禁用</string>
+    <string name="lsq_button_flash_model_auto">自動</string>
+    <string name="lsq_button_flash_model_open">開啓</string>
+
+
+    <!-- ratioType -->
+    <string name="lsq_camera_ratioType_title_9_16">9:16</string>
+    <string name="lsq_camera_ratioType_title_3_4">3:4</string>
+    <string name="lsq_camera_ratioType_title_2_3">2:3</string>
+    <string name="lsq_camera_ratioType_title_1_1">1:1</string>
+    <string name="lsq_camera_ratioType_title_3_2">3:2</string>
+    <string name="lsq_camera_ratioType_title_4_3">4:3</string>
+    <string name="lsq_camera_ratioType_title_16_9">16:9</string>
+    <string name="lsq_camera_ratioType_title_orgin">全屏</string>
+
+    <!-- guideLine -->
+    <string name="lsq_camera_guideLine_title_open">開</string>
+    <string name="lsq_camera_guideLine_title_off">關</string>
+
+
+    <!-- edit -->
+    <string name="lsq_edit_entry_paint">塗鴉</string>
+    <string name="lsq_edit_entry_hdr">HDR</string>
+
+    <!-- sticker -->
+    <string name="lsq_sticker_cate_default">貼紙</string>
+    <string name="lsq_sticker_cate_watermark">水印</string>
+    <string name="lsq_sticker_cate_mood">心情</string>
+
+    <string name="lsq_edit_text_title">文字</string>
+    <string name="lsq_style_default_edit_icon_text_add">添加</string>
+    <string name="lsq_style_default_edit_icon_text_color">顏色</string>
+    <string name="lsq_style_default_edit_icon_text_font">樣式</string>
+    <string name="lsq_edit_text_sticker_default_text">點擊輸入內容</string>
+    <string name="lsq_text_sticker_font_color">字體顏色</string>
+    <string name="lsq_text_sticker_background_color">背景顏色</string>
+    <string name="lsq_text_sticker_stroke_color">線條顏色</string>
+    <string name="lsq_text_style_right_to_left">從右到左</string>
+    <string name="lsq_text_style_left_to_right">從左到右</string>
+    <string name="lsq_text_style_underline">下劃線</string>
+    <string name="lsq_text_style_alignleft">左對齊</string>
+    <string name="lsq_text_style_alignright">右對齊</string>
+    <string name="lsq_text_style_aligncenter">居中</string>
+
+    <!-- FilterGroup -->
+    <string name="lsq_filter_group_MeituBeauty">柔光美顏</string>
+    <string name="lsq_filter_group_EdgeEffects">熱力圖</string>
+    <string name="lsq_filter_group_EdgeEffects001">邊緣特效</string>
+
+    <!-- EdgeEffects001 -->
+    <string name="lsq_filter_Multicolor">多彩</string>
+    <string name="lsq_filter_Azure">科幻藍</string>
+    <string name="lsq_filter_Infrared">紅外線</string>
+    <string name="lsq_filter_Fluorescence">熒光綠</string>
+    <string name="lsq_filter_Starshine">星塵</string>
+
+    <!-- EdgeEffects -->
+    <string name="lsq_filter_Flame">紅外</string>
+    <string name="lsq_filter_Polychrome">熱力</string>
+    <string name="lsq_filter_Angulation">科幻</string>
+    <string name="lsq_filter_Hallucination">迷幻</string>
+    <string name="lsq_filter_Nighttime">夜視</string>
+    <string name="lsq_filter_Splendid">多普勒</string>
+
+    <!-- MeituBeauty -->
+    <string name="lsq_filter_Nature">柔和</string>
+    <string name="lsq_filter_Blusher">粉色</string>
+    <string name="lsq_filter_Jelly">果醬</string>
+    <string name="lsq_filter_Jam">黑白</string>
+    <string name="lsq_filter_Ruddy">日出</string>
+    <string name="lsq_filter_Sugar">甜蜜</string>
+    <string name="lsq_filter_Powder">暮光</string>
+    <string name="lsq_filter_Whitening">唯美</string>
+
+
+    <!-- 边缘滤镜 -->
+    <string name="lsq_filter_set_edgeStrength">強度</string>
+    <string name="lsq_filter_set_thresholdLevel">位置</string>
+    <string name="lsq_filter_set_speed">速度</string>
+    <string name="lsq_filter_set_showType">模式</string>
 </resources>

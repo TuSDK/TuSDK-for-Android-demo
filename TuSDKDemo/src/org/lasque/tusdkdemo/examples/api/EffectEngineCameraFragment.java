@@ -17,8 +17,10 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import org.lasque.tusdkpulse.core.TuSdk;
+import org.lasque.tusdkpulse.core.TuSdkContext;
 import org.lasque.tusdkpulse.core.TuSdkResult;
 import org.lasque.tusdkpulse.core.seles.SelesParameters;
+import org.lasque.tusdkpulse.core.struct.TuSdkSize;
 import org.lasque.tusdkpulse.core.utils.ColorUtils;
 import org.lasque.tusdkpulse.core.utils.TLog;
 import org.lasque.tusdkpulse.core.utils.ThreadHelper;
@@ -295,6 +297,10 @@ public class EffectEngineCameraFragment extends TuFragment
         mCameraShower.camera().cameraOrient().setOutputImageOrientation(InterfaceOrientation.Portrait);
         // 水平镜像前置摄像头
         mCameraShower.camera().cameraOrient().setHorizontallyMirrorFrontFacingCamera(true);
+
+        TuSdkSize size = TuSdkContext.getScreenSize();
+
+        mCameraShower.setPreviewRatio(size.width,size.height);
         // 显示选区百分比
         // mCameraShower.setDisplayRect(new RectF(0, 0, 1.0f, 1.0f));
         /** step.7: 设置相机状态监听 */

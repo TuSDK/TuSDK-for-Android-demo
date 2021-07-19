@@ -91,6 +91,20 @@
         <item name="android:textColor">@color/lsq_color_white</item>
         <item name="android:textSize">10sp</item>
     </style>
+
+    <!-- edit entry Option -->
+    <style name="lsq_edit_textFeatureButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">18dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:textColor">@color/lsq_geev2_sticker_title_selected_cursor_color</item>
+        <item name="android:textSize">10sp</item>
+
+    </style>
     
        
 </resources>
