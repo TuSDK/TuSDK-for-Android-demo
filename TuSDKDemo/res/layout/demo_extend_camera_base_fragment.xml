@@ -58,15 +58,6 @@
             android:layout_marginRight="10dp"
             android:scaleType="center"
             android:src="@drawable/lsq_style_default_camera_button_switch" />
-
-        <org.lasque.tusdkpulse.core.view.widget.button.TuSdkImageButton
-            android:scaleType="center"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
-            android:layout_alignStart="@id/lsq_switchButton"
-            android:id="@+id/lsq_ratioButton"
-            android:layout_width="44dp"
-            android:layout_height="44dp"/>
     </RelativeLayout>
 
     <include

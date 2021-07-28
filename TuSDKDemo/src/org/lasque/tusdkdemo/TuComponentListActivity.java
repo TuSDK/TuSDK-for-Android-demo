@@ -10,6 +10,7 @@
 package org.lasque.tusdkdemo;
 
 import org.lasque.tusdkdemo.examples.feature.BubbleSample;
+import org.lasque.tusdkdemo.examples.feature.jigsaw.JigsawSample;
 import org.lasque.tusdkpulse.core.TuSdk;
 import org.lasque.tusdkpulse.core.TuSdkContext;
 import org.lasque.tusdkpulse.core.secret.StatisticsManger;
@@ -23,8 +24,12 @@ import org.lasque.tusdkpulse.modules.components.ComponentActType;
 import org.lasque.tusdkdemo.SampleGroup.GroupType;
 import org.lasque.tusdkdemo.examples.api.DefineCamera1BaseSample;
 import org.lasque.tusdkdemo.examples.api.DefineCamera2BaseSample;
+import org.lasque.tusdkdemo.examples.api.EffectEngineCameraSample;
 import org.lasque.tusdkdemo.examples.component.AlbumComponentSample;
 import org.lasque.tusdkdemo.examples.component.AlbumMultipleComponentSample;
+import org.lasque.tusdkdemo.examples.component.GifImageViewActivity;
+import org.lasque.tusdkdemo.examples.face.FaceDetectionImageSample;
+import org.lasque.tusdkdemo.examples.face.FaceDetectionVideoSample;
 import org.lasque.tusdkdemo.examples.feature.CameraAndEditorSample;
 import org.lasque.tusdkdemo.examples.feature.FilterEditorSampleActivity;
 import org.lasque.tusdkdemo.examples.feature.PaintEditorSample;
@@ -89,7 +94,7 @@ public class TuComponentListActivity extends TuFragmentActivity implements TuSdk
 
 		// 导航栏 实现类
 		mNavigatorBar = this.getViewById(R.id.lsq_navigatorBar);
-		mNavigatorBar.setTitle(String.format("%s %s", TuSdkContext.getString(R.string.lsq_sdk_name), "4.0.2"));
+		mNavigatorBar.setTitle(String.format("%s %s", TuSdkContext.getString(R.string.lsq_sdk_name), BuildConfig.VERSION_NAME));
 		mNavigatorBar.setBackButtonId(R.id.lsq_backButton);
 		mNavigatorBar.showBackButton(true);
 		mNavigatorBar.delegate = this;
@@ -138,6 +143,10 @@ public class TuComponentListActivity extends TuFragmentActivity implements TuSdk
 		group.appendSample(new StickerEditorSample());
 
 		group.appendSample(new BubbleSample());
+
+		group.appendSample(new JigsawSample());
+
+
 
 		// 涂抹编辑器示例
 		group.appendSample(new WipeAndFilterEditorSample());

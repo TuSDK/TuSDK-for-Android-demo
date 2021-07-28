@@ -54,6 +54,8 @@ import javax.microedition.khronos.opengles.GL10;
 
 import androidx.core.view.ViewCompat;
 
+import java.util.concurrent.Callable;
+
 /**
  * Camera1 快速相机范例
  * @author Clear
@@ -252,14 +254,28 @@ public class DefineCamera1BaseFragment extends TuFragment
 	private void stopCameraCapture()
 	{
 		if (mCameraShower == null) return;
-		mCameraShower.camera().stopPreview();
+		mCameraShower.camera().cameraBuilder().submitSync(new Callable<Boolean>() {
+			@Override
+			public Boolean call() throws Exception {
+				mCameraShower.camera().stopPreview();
+				return true;
+			}
+		});
+
 	}
 
 	/** Pause camera capturing */
 	private void pauseCameraCapture()
 	{
 		if (mCameraShower == null) return;
-		mCameraShower.camera().pausePreview();
+		mCameraShower.camera().cameraBuilder().submitSync(new Callable<Boolean>() {
+			@Override
+			public Boolean call() throws Exception {
+				mCameraShower.camera().pausePreview();
+				return true;
+			}
+		});
+
 	}
 
 	/** Resume camera capturing */

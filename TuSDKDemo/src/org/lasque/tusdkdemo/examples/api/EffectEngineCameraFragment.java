@@ -17,10 +17,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import org.lasque.tusdkpulse.core.TuSdk;
-import org.lasque.tusdkpulse.core.TuSdkContext;
 import org.lasque.tusdkpulse.core.TuSdkResult;
 import org.lasque.tusdkpulse.core.seles.SelesParameters;
-import org.lasque.tusdkpulse.core.struct.TuSdkSize;
 import org.lasque.tusdkpulse.core.utils.ColorUtils;
 import org.lasque.tusdkpulse.core.utils.TLog;
 import org.lasque.tusdkpulse.core.utils.ThreadHelper;
@@ -47,6 +45,7 @@ import org.lasque.tusdkpulse.modules.view.widget.filter.GroupFilterItem;
 import org.lasque.tusdkdemo.R;
 
 import java.util.ArrayList;
+import java.util.concurrent.Callable;
 
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
@@ -297,10 +296,6 @@ public class EffectEngineCameraFragment extends TuFragment
         mCameraShower.camera().cameraOrient().setOutputImageOrientation(InterfaceOrientation.Portrait);
         // 水平镜像前置摄像头
         mCameraShower.camera().cameraOrient().setHorizontallyMirrorFrontFacingCamera(true);
-
-        TuSdkSize size = TuSdkContext.getScreenSize();
-
-        mCameraShower.setPreviewRatio(size.width,size.height);
         // 显示选区百分比
         // mCameraShower.setDisplayRect(new RectF(0, 0, 1.0f, 1.0f));
         /** step.7: 设置相机状态监听 */
@@ -395,14 +390,28 @@ public class EffectEngineCameraFragment extends TuFragment
     private void stopCameraCapture()
     {
         if (mCameraShower == null) return;
-        mCameraShower.camera().stopPreview();
+        mCameraShower.camera().cameraBuilder().submitSync(new Callable<Boolean>() {
+            @Override
+            public Boolean call() throws Exception {
+                mCameraShower.camera().stopPreview();
+                return true;
+            }
+        });
+
     }
 
     /** Pause camera capturing */
     private void pauseCameraCapture()
     {
         if (mCameraShower == null) return;
-        mCameraShower.camera().pausePreview();
+        mCameraShower.camera().cameraBuilder().submitSync(new Callable<Boolean>() {
+            @Override
+            public Boolean call() throws Exception {
+                mCameraShower.camera().pausePreview();
+                return true;
+            }
+        });
+
     }
 
     /** Resume camera capturing */

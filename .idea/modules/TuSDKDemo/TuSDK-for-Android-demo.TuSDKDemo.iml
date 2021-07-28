@@ -44,11 +44,12 @@
     <orderEntry type="library" name="Gradle: ./TuSDKUIDefault/libs/TuSDKCamera-1.0.2.jar" level="project" />
     <orderEntry type="library" name="Gradle: ./TuSDKUIDefault/libs/TuSDKGeeV1-4.0.0.jar" level="project" />
     <orderEntry type="library" name="Gradle: ./TuSDKUIDefault/libs/TuSDKImageUI-1.0.1.jar" level="project" />
-    <orderEntry type="library" name="Gradle: ./TuSDKUIDefault/libs/TuSDKPulse-2.0.4.jar" level="project" />
-    <orderEntry type="library" name="Gradle: ./TuSDKUIDefault/libs/TuSDKPulseCore-4.0.2.jar" level="project" />
-    <orderEntry type="library" name="Gradle: ./TuSDKUIDefault/libs/TuSDKPulseFilter-1.0.3.jar" level="project" />
+    <orderEntry type="library" name="Gradle: ./TuSDKUIDefault/libs/TuSDKPulse-2.0.5.jar" level="project" />
+    <orderEntry type="library" name="Gradle: ./TuSDKUIDefault/libs/TuSDKPulseCore-4.1.0.jar" level="project" />
+    <orderEntry type="library" name="Gradle: ./TuSDKUIDefault/libs/TuSDKPulseFilter-1.0.4.jar" level="project" />
     <orderEntry type="library" name="Gradle: ./TuSDKUIDefault/libs/universal-image-loader-1.9.4.jar" level="project" />
     <orderEntry type="library" name="Gradle: ./TuSDKUIGeeV2/libs/TuSDKGeeV2-4.0.0.jar" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations-java5:15.0" level="project" />
     <orderEntry type="library" name="Gradle: androidx.collection:collection:1.0.0" level="project" />
     <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-common:2.0.0" level="project" />
     <orderEntry type="library" name="Gradle: androidx.arch.core:core-common:2.0.0" level="project" />

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lsq_jigsaw_bottom_bar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/lsq_background_editor_bottom_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:id="@+id/lsq_jigsaw_close"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="center"
+            android:src="@drawable/lsq_style_default_edit_button_cancel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.25" />
+
+        <ImageView
+            android:id="@+id/lsq_jigsaw_commit"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="center"
+            android:src="@drawable/lsq_style_default_edit_button_completed"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.25" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lsq_jigsaw_type_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toTopOf="@id/lsq_jigsaw_bottom_bar">
+
+        <org.lasque.tusdkpulse.core.view.TuSdkTextView
+            android:id="@+id/lsq_jigsaw_type_poster"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="海报"
+            android:textColor="@color/lsq_color_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.33" />
+
+        <org.lasque.tusdkpulse.core.view.TuSdkTextView
+            android:id="@+id/lsq_jigsaw_type_template"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="多格"
+            android:textColor="@color/lsq_color_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/lsq_jigsaw_type_poster"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.33" />
+
+        <org.lasque.tusdkpulse.core.view.TuSdkTextView
+            android:id="@+id/lsq_jigsaw_type_splicing"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="拼接"
+            android:textColor="@color/lsq_color_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/lsq_jigsaw_type_template"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.33" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lsq_jigasw_menu"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@id/lsq_jigsaw_type_bar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <org.lasque.tusdkpulse.core.view.TuSdkTextView
+            android:id="@+id/lsq_jigsaw_changed_image"
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:drawableTop="@drawable/lsq_style_default_edit_icon_original"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:text="替换"
+            android:textColor="@color/lsq_color_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.25" />
+
+        <org.lasque.tusdkpulse.core.view.TuSdkTextView
+            android:id="@+id/lsq_jigsaw_rotation"
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:drawableTop="@drawable/lsq_style_default_edit_button_trun_left"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:text="旋转"
+            android:textColor="@color/lsq_color_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/lsq_jigsaw_changed_image"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.25" />
+
+        <org.lasque.tusdkpulse.core.view.TuSdkTextView
+            android:id="@+id/lsq_jigsaw_mirror"
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:drawableTop="@drawable/lsq_style_default_edit_button_horizontal_mirror"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:text="镜像"
+            android:textColor="@color/lsq_color_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/lsq_jigsaw_rotation"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.25" />
+
+        <org.lasque.tusdkpulse.core.view.TuSdkTextView
+            android:id="@+id/lsq_jigsaw_flip"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:drawableTop="@drawable/lsq_style_default_edit_button_vertical_mirror"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:text="翻转"
+            android:textColor="@color/lsq_color_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/lsq_jigsaw_mirror"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.25" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lsq_template_menu"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@drawable/jigsaw_stroke"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/lsq_jigasw_menu"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <org.lasque.tusdkpulse.core.view.TuSdkTextView
+            android:id="@+id/lsq_template_padding"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="边框 : 无"
+            android:textColor="@color/lsq_color_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <org.lasque.tusdkpulse.core.view.TuSdkTextView
+            android:id="@+id/lsq_template_ratio"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="1:1"
+            android:textColor="@color/lsq_color_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/lsq_template_padding"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.5" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.tusdk.pulse.filter.FilterDisplayView
+        android:id="@+id/lsq_jigsaw_display_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/lsq_template_menu"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <org.lasque.tusdkdemo.views.jigsaw.JigsawLayerView
+        android:id="@+id/lsq_jigsaw_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/lsq_jigsaw_display_view"
+        app:layout_constraintLeft_toLeftOf="@id/lsq_jigsaw_display_view"
+        app:layout_constraintRight_toRightOf="@id/lsq_jigsaw_display_view"
+        app:layout_constraintTop_toTopOf="@id/lsq_jigsaw_display_view" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,6 +3,7 @@ package org.lasque.tusdkdemo.examples.feature;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
+import android.graphics.Canvas;
 import android.graphics.Rect;
 import android.os.Build;
 import android.os.Bundle;
@@ -17,6 +18,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -36,10 +38,15 @@ import org.lasque.tusdkdemo.views.bubble.BubbleItemView;
 import org.lasque.tusdkdemo.views.bubble.BubbleLayerView;
 import org.lasque.tusdkdemo.views.bubble.BubbleViewDelegate;
 import org.lasque.tusdkpulse.core.TuSdkContext;
+import org.lasque.tusdkpulse.core.exif.ExifInterface;
 import org.lasque.tusdkpulse.core.struct.TuSdkSize;
+import org.lasque.tusdkpulse.core.utils.ContextUtils;
 import org.lasque.tusdkpulse.core.utils.ThreadHelper;
+import org.lasque.tusdkpulse.core.utils.image.AlbumHelper;
 import org.lasque.tusdkpulse.core.utils.image.BitmapHelper;
+import org.lasque.tusdkpulse.core.utils.sqllite.ImageSqlHelper;
 
+import java.io.File;
 import java.util.Arrays;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
@@ -92,10 +99,19 @@ public class BubbleTextFragment extends Fragment {
 
     private boolean isFirstCallSoftInput = false;
 
+    protected boolean isNeedSaveImage = false;
+
     private OnClickListener mOnClickListener = new OnClickListener() {
         @Override
         public void onClick(View v) {
             if (v.getId() == mBubbleCommit.getId()) {
+                mThreadPool.execute(new Runnable() {
+                    @Override
+                    public void run() {
+                        isNeedSaveImage = true;
+                        onDrawImage();
+                    }
+                });
 
             } else if (v.getId() == mBubbleClose.getId()) {
                 getActivity().finish();
@@ -294,6 +310,12 @@ public class BubbleTextFragment extends Fragment {
         Image input = new Image(inputImage, 0);
         final Image output = mFP.process(input);
         input.release();
+        if (isNeedSaveImage){
+            Bitmap saveBitmap = output.toBitmap();
+            saveBitmap = setWaterMark(saveBitmap);
+            saveResource(saveBitmap);
+            isNeedSaveImage = false;
+        }
         mLashImage = output;
         mDisplayView.post(new Runnable() {
             @Override
@@ -337,5 +359,56 @@ public class BubbleTextFragment extends Fragment {
     public void onDestroy() {
         super.onDestroy();
         getActivity().getWindow().getDecorView().getViewTreeObserver().removeOnGlobalLayoutListener(mKeyBoardListener);
+    }
+
+    private Bitmap setWaterMark(Bitmap shotPhoto){
+        Bitmap photo = shotPhoto;
+        Bitmap waterMark = BitmapHelper.getRawBitmap(getContext(),R.raw.water);
+
+        int margin = ContextUtils.dip2px(getContext(), 6);
+
+        int width = photo.getWidth();
+        int height = photo.getHeight();
+
+        int paddingLeft = width - waterMark.getWidth() - margin;
+        int paddingTop = margin;
+
+        Bitmap newb = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
+        Canvas canvas = new Canvas(newb);
+
+        canvas.drawBitmap(photo, 0, 0, null);
+
+        canvas.drawBitmap(waterMark, paddingLeft, paddingTop, null);
+
+        canvas.save();
+
+        canvas.restore();
+
+        return newb;
+    }
+
+    /**
+     * 保存拍照资源
+     */
+    public void saveResource(Bitmap bitmap) {
+        ExifInterface exifInterface = new ExifInterface();
+        exifInterface.setTagValue(ExifInterface.TAG_IMAGE_WIDTH,bitmap.getWidth());
+        exifInterface.setTagValue(ExifInterface.TAG_IMAGE_LENGTH,bitmap.getByteCount());
+
+        File file = null;
+        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.Q) {
+            file = AlbumHelper.getAlbumFileAndroidQ();
+        } else {
+            file = AlbumHelper.getAlbumFile();
+        }
+        ImageSqlHelper.saveJpgToAblum(getContext(), bitmap, 80, file,exifInterface);
+
+        ThreadHelper.post(new Runnable() {
+            @Override
+            public void run() {
+                Toast.makeText(getContext(),"图片保存成功",Toast.LENGTH_SHORT).show();
+            }
+        });
+
     }
 }

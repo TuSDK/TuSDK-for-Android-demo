@@ -40,9 +40,9 @@
     <orderEntry type="library" name="Gradle: ./TuSDKUIDefault/libs/TuSDKCamera-1.0.2.jar" level="project" />
     <orderEntry type="library" name="Gradle: ./TuSDKUIDefault/libs/TuSDKGeeV1-4.0.0.jar" level="project" />
     <orderEntry type="library" name="Gradle: ./TuSDKUIDefault/libs/TuSDKImageUI-1.0.1.jar" level="project" />
-    <orderEntry type="library" name="Gradle: ./TuSDKUIDefault/libs/TuSDKPulse-2.0.4.jar" level="project" />
-    <orderEntry type="library" name="Gradle: ./TuSDKUIDefault/libs/TuSDKPulseCore-4.0.2.jar" level="project" />
-    <orderEntry type="library" name="Gradle: ./TuSDKUIDefault/libs/TuSDKPulseFilter-1.0.3.jar" level="project" />
+    <orderEntry type="library" name="Gradle: ./TuSDKUIDefault/libs/TuSDKPulse-2.0.5.jar" level="project" />
+    <orderEntry type="library" name="Gradle: ./TuSDKUIDefault/libs/TuSDKPulseCore-4.1.0.jar" level="project" />
+    <orderEntry type="library" name="Gradle: ./TuSDKUIDefault/libs/TuSDKPulseFilter-1.0.4.jar" level="project" />
     <orderEntry type="library" name="Gradle: ./TuSDKUIDefault/libs/universal-image-loader-1.9.4.jar" level="project" />
   </component>
 </module>

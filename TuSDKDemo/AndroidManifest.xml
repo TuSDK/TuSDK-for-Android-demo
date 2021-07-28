@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.lasque.tusdkdemo"
-    android:versionCode="20210301"
-    android:versionName="4.0.0"
     xmlns:tools="http://schemas.android.com/tools">
 
     <!-- 访问网络 -->

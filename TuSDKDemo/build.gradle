@@ -10,10 +10,18 @@ dependencies {
     api 'androidx.viewpager:viewpager:1.0.0'
     api 'androidx.constraintlayout:constraintlayout:1.1.3'
 
+    api 'org.jetbrains:annotations-java5:15.0'
+
+
     api('com.github.bumptech.glide:glide:4.9.0') {
         exclude group: 'com.android.support'
     }
 }
+
+static def releaseTime(){
+    return new Date().format("yyyyMMddHHmm", TimeZone.getTimeZone("GMT+08:00"))
+}
+
 
 android {
     compileSdkVersion 30
@@ -22,6 +30,8 @@ android {
         applicationId "org.lasque.tusdkdemo"
         minSdkVersion 21
         targetSdkVersion 30
+        versionName "4.1.0"
+        versionCode 20210728
     }
 
     sourceSets {

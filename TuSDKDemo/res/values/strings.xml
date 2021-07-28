@@ -28,6 +28,7 @@
     <string name="sample_comp_FilterComponent">滤镜组件示例</string>
     <string name="sample_comp_StickerComponent">贴纸组件示例</string>
     <string name="sample_comp_BubbleComponent">气泡文字组件示例</string>
+    <string name="sample_comp_JigsawComponent">拼图组件示例</string>
     <string name="sample_comp_BlurComponent">模糊组件示例</string>
     <string name="sample_ui_EditComponent">裁切组件自定义界面</string>
     <string name="sample_ui_CameraBase">相机界面自定义</string>

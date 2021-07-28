@@ -39,4 +39,90 @@
     <string name="sample_api_face_detection_image">Face Detection (Picture)</string>
     <string name="sample_api_face_detection_camera">Face Detection (Video)</string>
     <string name="sample_comp_PaintComponent">Paint Editor Example</string>
+
+
+    <string name="lsq_filter_group_Portrait_Image">Portrait</string>
+    <string name="lsq_filter_group_Food_Image">Food</string>
+    <string name="lsq_filter_group_Scenery_Image">Scenery</string>
+    <string name="lsq_filter_group_Sharp_Image">Sharp</string>
+
+    <string name="lsq_filter_Sharp_Orange">Orange</string>
+    <string name="lsq_filter_Sharp_Black">Black</string>
+    <string name="lsq_filter_Sharp_History">History</string>
+    <string name="lsq_filter_Sharp_Red">Red</string>
+    <string name="lsq_filter_Sharp_Neon">Neon</string>
+    <string name="lsq_filter_Sharp_Ash">Ash</string>
+    <string name="lsq_filter_Sharp_Pink">Pink</string>
+    <string name="lsq_filter_Sharp_Past">Past</string>
+    <string name="lsq_filter_Sharp_Otimes">Otimes</string>
+    <string name="lsq_filter_Sharp_Quiet">Quiet</string>
+    <string name="lsq_filter_Sharp_Mottled">Mottled</string>
+    <string name="lsq_filter_Sharp_Messy">Messy</string>
+    <string name="lsq_filter_Sharp_Imprint">Imprint</string>
+    <string name="lsq_filter_Sharp_Nostalgia">Nostalgia</string>
+    <string name="lsq_filter_Sharp_Dream">Dream</string>
+    <string name="lsq_filter_Sharp_Contrast">Contrast</string>
+    <string name="lsq_filter_Sharp_Dark">Dark</string>
+
+
+
+    <string name="lsq_filter_Scenery_SNight">Night</string>
+    <string name="lsq_filter_Scenery_Flower">Flower</string>
+    <string name="lsq_filter_Scenery_Rain">Rain</string>
+    <string name="lsq_filter_Scenery_Fresh">Fresh</string>
+    <string name="lsq_filter_Scenery_Izu">Izu</string>
+    <string name="lsq_filter_Scenery_Innocence">Innocence</string>
+    <string name="lsq_filter_Scenery_Tale">Tale</string>
+    <string name="lsq_filter_Scenery_Picnic">Picnic</string>
+    <string name="lsq_filter_Scenery_Blue">Blue</string>
+    <string name="lsq_filter_Scenery_Birch">Birch</string>
+    <string name="lsq_filter_Scenery_Afternoon">Afternoon</string>
+    <string name="lsq_filter_Scenery_City">City</string>
+    <string name="lsq_filter_Scenery_Film">Film</string>
+    <string name="lsq_filter_Scenery_Silent">Silent</string>
+    <string name="lsq_filter_Scenery_Lautumn">Late autumn</string>
+    <string name="lsq_filter_Scenery_Sunrise">Sunrise</string>
+    <string name="lsq_filter_Scenery_Sunset">Sunset</string>
+    <string name="lsq_filter_Scenery_Grace">Grace</string>
+    <string name="lsq_filter_Scenery_Withered">Withered</string>
+
+
+
+    <string name="lsq_filter_Food_Delicious">Delicious</string>
+    <string name="lsq_filter_Food_Lemon">Lemon</string>
+    <string name="lsq_filter_Food_Light">Light</string>
+    <string name="lsq_filter_Food_Whisky">Whisky</string>
+    <string name="lsq_filter_Food_Caramel">Caramel</string>
+    <string name="lsq_filter_Food_Peach">Peach</string>
+    <string name="lsq_filter_Food_Honey">Honey</string>
+    <string name="lsq_filter_Food_Mangosteen">Mangosteen</string>
+    <string name="lsq_filter_Food_Lime">Lime</string>
+
+
+    <string name="lsq_filter_Portrait_Natural">Natural</string>
+    <string name="lsq_filter_Portrait_Pale">Pale</string>
+    <string name="lsq_filter_Portrait_Clear">Clear</string>
+    <string name="lsq_filter_Portrait_Moisten">Moisten</string>
+    <string name="lsq_filter_Portrait_Spring">Spring</string>
+    <string name="lsq_filter_Portrait_Bellflower">Bellflower</string>
+    <string name="lsq_filter_Portrait_Cherry">Cherry</string>
+    <string name="lsq_filter_Portrait_First">First</string>
+    <string name="lsq_filter_Portrait_Pure">Pure</string>
+    <string name="lsq_filter_Portrait_Bright">Bright</string>
+    <string name="lsq_filter_Portrait_Retro">Retro</string>
+    <string name="lsq_filter_Portrait_Soda">Soda</string>
+    <string name="lsq_filter_Portrait_Indifference">Indifference</string>
+    <string name="lsq_filter_Portrait_Rosy">Rosy</string>
+    <string name="lsq_filter_Portrait_Icream">Ice cream</string>
+    <string name="lsq_filter_Portrait_Ruddy">Ruddy</string>
+    <string name="lsq_filter_Portrait_Dusk">Dusk</string>
+    <string name="lsq_filter_Portrait_Cream">Cream</string>
+    <string name="lsq_filter_Portrait_Texture">Texture</string>
+    <string name="lsq_filter_Portrait_Dawn">Dawn</string>
+    <string name="lsq_filter_Portrait_Milk">Milk</string>
+    <string name="lsq_filter_Portrait_Candy">Candy</string>
+    <string name="lsq_filter_Portrait_Warm">Warm</string>
+    <string name="lsq_filter_Portrait_Sweet">Sweet</string>
+    <string name="lsq_filter_Portrait_Fog">Fog</string>
+    <string name="lsq_filter_Portrait_Desserts">Desserts</string>
 </resources>
