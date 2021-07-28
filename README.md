@@ -1,10 +1,12 @@
-# 涂图·图像 SDK 服务 TuSDK 产品介绍
+# 涂图·图像 SDK 产品介绍
 
-涂图·图像 SDK 服务是涂图推出的一款适用于 Android 平台的图像 SDK，提供了包括录制、图片编辑等基础功能，以及人像美颜、滤镜、贴纸、文字、漫画滤镜等特效。
+## 概述
 
-## 1. 功能介绍
+涂图·图像 SDK 服务是涂图推出的一款适用于 Android 和 iOS 平台的图像 SDK，提供了包括录制、图片编辑等基础功能，以及人像美颜、滤镜、贴纸、文字、漫画滤镜等特效。
 
-### 1.1 界面
+## 功能介绍
+
+### 界面
 
 <table cellpadding="0" cellspacing="0"  style="width:720px;border-collapse: collapse;">
 	<thead>
@@ -24,7 +26,7 @@
 </table>
 
 
-### 1.2 相机拍摄
+### 相机拍摄
 
 <table cellpadding="0" cellspacing="0"  style="width:720px;border-collapse: collapse;">
 	<thead>
@@ -84,7 +86,7 @@
 </table>
 
 
-### 1.3 图片编辑
+### 图片编辑
 
 <table cellpadding="0" cellspacing="0"  style="width:720px;border-collapse: collapse;">
 	<thead>
@@ -116,9 +118,14 @@
 			<td >2.0.0(+)</td>
         </tr>
         <tr >
-            <td >文字</td>
+            <td >简单文字</td>
             <td >在图片上编辑文字，并支持旋转、缩放、位移</td>
 			<td >2.0.0(+)</td>
+        </tr>
+		<tr >
+            <td >气泡文字</td>
+            <td >基于气泡底图，添加文字。呈现气泡文字效果。</td>
+	    <td >4.0.0(+)</td>
         </tr>
         <tr >
             <td >涂抹（马赛克）</td>
@@ -175,10 +182,15 @@
             <td >支持对图片的涂鸦效果添加，笔画的粗细、颜色均可调节</td>
 			<td >3.1.0(+)</td>
         </tr>
+		<tr >
+            <td >拼图</td>
+            <td >支持不同模板的图片拼图功能，例如海报、长图、多格等形式</td>
+	    <td >4.1.0(+)</td>
+        </tr>
     </tbody>
 </table>
 
-### 1.4 其他支持
+### 其他支持
 
 <table cellpadding="0" cellspacing="0"  style="width:720px;border-collapse: collapse;">
 	<thead>
@@ -213,27 +225,20 @@
 </table>
 
 
-## 2. 设备以及系统要求
+## 设备及系统要求
+
+设备要求：搭载 Android 和 iOS 系统的手机设备
+
+系统要求：Android 5.0 和 iOS 9.0 及其以上
 
 
-* 设备要求：搭载 Android 系统的手机设备
-* 系统要求：Android 4.4 及其以上
 
-## 链接
+## 商务合作
 
-* [示例项目 Google Play](https://play.google.com/store/apps/details?id=org.lasque.tusdkdemo)
-* [示例项目 APK](http://tusdk.com/android)
-* [示例项目源码](https://github.com/TuSDK/TuSDK-for-Android-demo)
-* [SDK](https://github.com/TuSDK/TuSDK-for-Android)
-* [文档索引](https://tutucloud.com/doc)
+电话：177-6716-7529
 
-## 关注
+邮箱：sales@tusdk.com
 
-* 博客 [blog.tusdk.com](https://blog.tusdk.com/)
-* 微博 [@TuSDK](https://weibo.com/tusdk)
-* 微信 [TuSDK-HQ](https://tutucloud.com/img/tusdk-wechat-qrcode.png)
-* 客服电话：177-6716-7529
-* 客服邮箱： [sales@tusdk.com](mailto:sales@tusdk.com)
-* 客服 QQ： 2969573855
+QQ：2969573855
 
-更多信息请访问 [tutucloud.com](https://tutucloud.com/)，欢迎与我们联系~
+联系地址：浙江省杭州市西湖区 西斗门路 9号 福地创业园1号楼3楼
