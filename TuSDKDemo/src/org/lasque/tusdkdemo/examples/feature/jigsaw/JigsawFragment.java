@@ -585,7 +585,7 @@ public class JigsawFragment extends Fragment implements OnJigsawViewListener {
         if (inImage == null){
             inImage = new Image(inputImage, 0);
         }
-        final Image output = mFP.process(inImage);
+        final Image output = mFP.process(inImage,null);
         if (isNeedSaveImage){
             Bitmap saveBitmap = output.toBitmap();
             saveBitmap = setWaterMark(saveBitmap);
@@ -752,7 +752,7 @@ public class JigsawFragment extends Fragment implements OnJigsawViewListener {
         if (Build.VERSION.SDK_INT > Build.VERSION_CODES.Q) {
             file = AlbumHelper.getAlbumFileAndroidQ();
         } else {
-            file = AlbumHelper.getAlbumFile();
+            file = AlbumHelper.getAlbumFile(false);
         }
         ImageSqlHelper.saveJpgToAblum(getContext(), bitmap, 80, file,exifInterface);
 

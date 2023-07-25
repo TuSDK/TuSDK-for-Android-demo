@@ -308,7 +308,7 @@ public class BubbleTextFragment extends Fragment {
 
     private void onDrawImage() {
         Image input = new Image(inputImage, 0);
-        final Image output = mFP.process(input);
+        final Image output = mFP.process(input,null);
         input.release();
         if (isNeedSaveImage){
             Bitmap saveBitmap = output.toBitmap();
@@ -399,7 +399,7 @@ public class BubbleTextFragment extends Fragment {
         if (Build.VERSION.SDK_INT > Build.VERSION_CODES.Q) {
             file = AlbumHelper.getAlbumFileAndroidQ();
         } else {
-            file = AlbumHelper.getAlbumFile();
+            file = AlbumHelper.getAlbumFile(false);
         }
         ImageSqlHelper.saveJpgToAblum(getContext(), bitmap, 80, file,exifInterface);
 

@@ -63,7 +63,7 @@ android {
         abortOnError false
     }
     defaultConfig {
-        minSdkVersion 15
-        targetSdkVersion 28
+        minSdkVersion 21
+        targetSdkVersion 30
     }
 }
