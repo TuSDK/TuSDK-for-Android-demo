@@ -24,14 +24,14 @@ static def releaseTime(){
 
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 33
 
     defaultConfig{
         applicationId "org.lasque.tusdkdemo"
         minSdkVersion 21
-        targetSdkVersion 30
-        versionName "4.1.0"
-        versionCode 20210728
+        targetSdkVersion 33
+        versionName "4.1.6"
+        versionCode 20231227
     }
 
     sourceSets {
@@ -64,6 +64,6 @@ android {
     }
     defaultConfig {
         minSdkVersion 21
-        targetSdkVersion 30
+        targetSdkVersion 33
     }
 }

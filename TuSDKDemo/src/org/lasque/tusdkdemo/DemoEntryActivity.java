@@ -10,6 +10,7 @@
 package org.lasque.tusdkdemo;
 
 import org.lasque.tusdkdemo.utils.Constants;
+import org.lasque.tusdkpulse.core.BuildConfig;
 import org.lasque.tusdkpulse.core.TuSdk;
 import org.lasque.tusdkpulse.core.TuSdkContext;
 import org.lasque.tusdkpulse.core.secret.StatisticsManger;
@@ -24,6 +25,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.view.View;
+import android.widget.TextView;
 
 import com.tusdk.pulse.Engine;
 import com.tusdk.pulse.utils.AssetsMapper;
@@ -116,6 +118,8 @@ public class DemoEntryActivity extends TuFragmentActivity
 		mCameraButtonView.setOnClickListener(mButtonClickListener);
 		mEditorButtonView.setOnClickListener(mButtonClickListener);
 		mComponentListButtonView.setOnClickListener(mButtonClickListener);
+
+		((TextView) this.getViewById(R.id.lsq_register_version)).setText(BuildConfig.TUSDK_REGISTRATION_VERSON);
 	}
 
 	/** 按钮点击事件处理 */

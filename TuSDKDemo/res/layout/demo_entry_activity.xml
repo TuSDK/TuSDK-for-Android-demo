@@ -128,4 +128,14 @@
 	        android:layout_marginRight="9dp"/>
 	</RelativeLayout>
 </LinearLayout>
+	<TextView
+		android:textSize="18sp"
+		android:gravity="center"
+		android:text="11111111111111"
+		android:textColor="@color/lsq_color_black"
+		android:layout_centerHorizontal="true"
+		android:layout_alignParentBottom="true"
+		android:id="@+id/lsq_register_version"
+		android:layout_width="match_parent"
+		android:layout_height="40dp"/>
 </RelativeLayout>
